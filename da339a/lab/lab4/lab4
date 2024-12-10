@@ -1,0 +1,85 @@
+UPPGIFT 2
+Läs in tre tal från användare
+OM (tal1 == tal2 && tal2 == tal3)
+    skriv ut ("alla tre tal är lika stora")
+ELLER OM (tal1 > tal2 && tal1 > tal3)
+    skriv ut ("tal1 är störst")
+ELLER OM(tal2 > tal1 && tal2 > tal3)
+    skriv ut ("tal2 är störst")
+ELLER OM (tal3 > tal1 && tal3 > tal2)
+    skriv ut ("tal3 är störst")
+ELLER OM(tal1 > tal3 && tal2 > tal3)
+-||-
+
+UPPGIFT 3a
+
+FÖR VARJE tal mellan 1-10
+    skriv ut ("tal * 3 =" tal * 3)
+
+UPPGIFT 3b
+Läs in ett tal från användare spara i variabel input
+FÖR VARJE tal i serien 1-10
+    skriv ut ("input * tal =" input * tal)
+
+UPPGIFT 4
+FÖR VARJE tal1 i serien 1-10
+    FÖR VARJE tal2 i serien 1-10
+        skriv ut(tal1 * tal2)
+    skriv ut ny linje
+
+UPPGIFT 5
+SÄTT variabel summa till 0
+SÄTT variabel antal till 0
+Print ”Ange värde. Ange -1 om inga fler värden”
+Läs in värde
+SÅ LÄNGE (värde skilt från -1)
+    addera värde till summa
+    addera 1 till antal
+    Print ”Ange värde. Ange -1 om inga fler värden”
+    Läs in värde
+    
+Skriv ut (summa / antal)
+
+UPPGIFT 6
+tal = slumpat värde som är heltal mellan 1-100
+läs in värde
+SÅ LÄNGE (värde != tal)
+    OM (input > tal)
+        Print "Talet du gissat är större än det rätta"
+    ELLER
+        Print "Talet du gissat är mindre än det rätta"
+    läs in värde
+Print "Du gissade rätt tal"
+
+UPPGIFT 7
+sätt kostnad till 0
+läs in värde
+SÅ LÄNGE (värde skilt från -1)
+    OM (värde = 1)
+        lägg till 600 på kostnad
+    ELLER OM (värde = 2)
+        lägg till 300 på kostnad
+    ELLER OM (värde = 3)
+        lägg till 1500 på kostnad
+
+    läs in värde
+OM(kostnad => 3000)
+    kostnad = kostnad * 0.9
+
+Skriv ut faktura med kostnad
+
+
+UPPGIFT 11
+läs in pin
+OM (giltligtkort && giltligpin)
+    fråga om belopp
+    läs in belopp
+    OM(BELOPP > SALDO)
+        error
+    ANNARS
+        mata ut pengar
+        mata ut kort
+    
+ANNARS
+    error
+    mata ut kort
