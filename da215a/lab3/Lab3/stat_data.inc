@@ -29,32 +29,31 @@ rolls:	.BYTE 7
 
 store_stat:
 	LDI XH, high(rolls)
-	LDI XL, low(rolls)
-	LD R15, X
-	INC R15
+	LDI XL, low(rolls)	;Sätter X-pekarens position
+	LD R15, X		;Läser ut värdet på plats 0 = totala antal kast av tärning. 
+	INC R15			;och adderar 1 till den sedan laddas minnet med den nya värdet.
 	ST X, R15
 
-	ADD XL, R16
-	LD R24, X
+	ADD XL, R16		;Flyttar X-pekaren till index i R16 för att öka dess antal kast.
+	LD R24, X		
 	INC R24
 	ST X, R24
 
 	RET
 
 get_stat: 
-	LDI XH, high(rolls)
+	LDI XH, high(rolls);	;Sätter X-pekarens posistion
 	LDI XL, low(rolls)
 
-	ADD XL, R24
-	LDI R24, 0x00
-	ADC XH, R24
+	ADD XL, R24		;Flyttar X-pekarens position till index för önskat nummer. 
+	LDI R24, 0x00		
+	ADC XH, R24		;Lägger till Carry från föregående addition till XH-Pekaren.
+	LD R24, X		
 
-	LD R24, X       
-	      
 	RET
 clear_stat:
 	LDI R16, 0
-	STS rolls, R16
+	STS rolls, R16		;Sätter alla index i rolls arrayen till 0.
 	STS rolls+1, R16
 	STS rolls+2, R16
 	STS rolls+3, R16

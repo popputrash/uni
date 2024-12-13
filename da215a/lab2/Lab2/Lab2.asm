@@ -100,71 +100,41 @@ return_key_val:
 	RET					;returns to main
 
 main:
-	LDI R24, 0b10000000
+	LDI R24, 0b10000000	;Flyttar på LCDn till första positionen, onödig egentligen
 	RCALL lcd_write_instr
+			
 
 	LCD_WRITE_CHAR 'K'
 	LCD_WRITE_CHAR 'E'
 	LCD_WRITE_CHAR 'Y'
 	LCD_WRITE_CHAR ':'
 	
-	LDI R24, 0b11000000
+	LDI R24, 0b11000000	;Flyttar pekaren till andra raden.
 	RCALL lcd_write_instr
 
 l1:	
-	RCALL read_keyboard
-	CPI RVAL, NO_KEY
-	BREQ l1
-	MOV TEMP, RVAL
-	PUSH RVAL
-	SUBI RVAL, 10
-	POP RVAL
-	BRSH l3
+	RCALL read_keyboard	;Läser av tangentbordet och jämflr avlöst tangent med NO_KEY
+	CPI RVAL, NO_KEY	;ifall de är NO_KEY hoppar til l1, för att läsa av igen.
+	BREQ l1			
+	MOV TEMP, RVAL		;Flyttar avläst tangent till temp = R16 register 
+	PUSH RVAL		;Pushar RVAL till stacken för att kunna se om värdet
+	SUBI RVAL, 10		;är mindre än 10
+	POP RVAL		;POPPAR ut till RVAL, ifall värdet var större eller lika med 10
+	BRSH l3			;görs för att omvandla 10, 11 til A, B.
 l4: 
-	SUBI RVAL, -0x30
-	RCALL lcd_write_chr
+	SUBI RVAL, -0x30	;Omvandlar binär till ASCII.
+	RCALL lcd_write_chr	; Skriver ut ASCII värde.
 l2:
-	RCALL read_keyboard
-	CP TEMP, RVAL
-	BREQ l2
-
+	RCALL read_keyboard	;Läser in tangentbord igen för att kolla ifall
+	CP TEMP, RVAL		;samma knapp är nedtryckt eller om man släppt knappen.
+	BREQ l2			;Läser om tills knappen eller annan knapp är nedtryckt.
 	RJMP l1
-
 l3:
-	SUBI RVAL, -7
+	SUBI RVAL, -7		;Adderar 7 till RVAL då A, B ligger 7 platser från 9 i ASCII tabellen.
 	RJMP l4
 
 
-/**	CPI RVAL, NO_KEY
-	BREQ l1
-	MOV R24, RVAL
-	RCALL lcd_write_chr
-	MOV TEMP, RVAL
-l2:
-	RCALL delay_ms
-	RCALL read_keyboard
-	CP RVAL, TEMP
-	BREQ l2
-
-	RJMP l1**/
 
 loop:
 	RJMP loop
 
-/**
-read_keyboard:
-	IN TEMP, 
-	COM TEMP
-	MOV RVAL, TEMP	
-**/
-	;CALL read_keyboard
-
-	;LSL RVAL
-	;LSL RVAL
-	;LSL RVAL
-	;LSL RVAL
-	//COM RVAL
-	;OUT PORTF, RVAL
-	;NOP
-	;NOP
-	;RJMP main	

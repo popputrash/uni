@@ -77,26 +77,16 @@ init_pins:
 
 	RET
 
-write_welcome:
-	LDI ZH, high(Str_1<<1)
-	LDI ZL, low(Str_1<<1)
 
-
-; Replace with your application code
 main:
-	//LDI R24, 0b10000000
-	//RCALL lcd_write_instr
-
-	//RCALL write_welcome
-	
 	PRINTSTRING Hello_str
 loop:
 	RCALL compare_keys
 	RJMP loop
 
 compare_keys:
-	RCALL read_keyboard
-	CPI RVAL, ROLL_KEY
+	RCALL read_keyboard	;Avläser keyboard och kollar ifall värdet är 2,3,8,9
+	CPI RVAL, ROLL_KEY	;Hoppar till knappens label ifall RVALL = värdet för tangenten.
 	BREQ case2
 	CPI RVAL, STAT_KEY
 	BREQ case3
@@ -109,17 +99,17 @@ compare_keys:
 
 case2:
 	
-	RCALL lcd_clear_display
-	LDI R24, 2
+	RCALL lcd_clear_display	;Clearar LCDn, och printar ut Rolling_str.
+	LDI R24, 2		;Delayer efter clear då lcdn tar 1,52ms att cleara.
 	RCALL delay_ms
 	PRINTSTRING Rolling_str
-	RCALL roll_dice
+	RCALL roll_dice		;Callar på roll_dice för att generera pseudo random nummer
 	RCALL lcd_clear_display
 	LDI R24, 2
-	RCALL delay_ms
-	MOV R24, R16
-	SUBI R24, -0x30
-	PUSH R24
+	RCALL delay_ms		
+	MOV R24, R16		;Flyttar värdet från R16 till R24 då roll_dice sätter R16 till
+	SUBI R24, -0x30		;de genererade nummret. Omvandlar värdet till ASCII 
+	PUSH R24		;PUSH och POP på R24 då PRINTSTRING macrot använder R24
 	PRINTSTRING Value_str
 	POP R24
 	RCALL lcd_write_chr 
@@ -129,13 +119,13 @@ case2:
 
 
 case3:
-	RCALL showstat
+	RCALL showstat		;Kallar på showstat och hoppar tillbaks till main.
 	RJMP loop
 
 
 case8:
-	RCALL clear_stat
+	RCALL clear_stat	;Kallar på clearstat och hoppar tillbaka till main.
 	RJMP loop
 case9:
-	RCALL monitor
+	RCALL monitor		;Kallar på monitor och hoppar tillbaka till main.
 	RJMP loop

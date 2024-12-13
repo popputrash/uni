@@ -39,6 +39,7 @@ public class Faculty {
         }
         return "Läraren tillhör inte fakulteten.";
     }
+
     public String addCoursesToProgram(Course[] courses, String programName){
         for(Program program : programs){
             if(program.getProgramName().equals(programName)){
