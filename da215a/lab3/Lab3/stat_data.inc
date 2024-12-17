@@ -2,7 +2,7 @@
  * stat_data.inc
  *
  *  Created: 2024-12-04 16:44:57
- *   Author: aq3915
+ *   Author: Maximilian Andersen and Anton Ranklev
  */ 
  /* ----------------------------------------------------------------
 DESCRIPTION

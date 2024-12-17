@@ -3,6 +3,8 @@
  *
  *  Created: 2016-11-19 12:42:26
  *   Author: Magnus Krampell
+ * Updated by : Maximilian Andersen and Anton Ranklev
+ * Date:	2024-12-04
  */ 
  monitorstr: .DB "Monitor",0
 // moni_start_str: .DB ">0000: ",0

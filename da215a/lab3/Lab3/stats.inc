@@ -3,6 +3,8 @@
  *
  *  Created: 2016-11-16 20:03:40
  *   Author: Magnus Krampell
+ * Updated by : Maximilian Andersen and Anton Ranklev
+ * Date:	2024-12-04
  */ 
 
 

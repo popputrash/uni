@@ -1,7 +1,8 @@
 /*
  * delay.inc
  *
- * Author:	?????
+ * Author:	Maximilian Andersen, Anton Ranklev
+ * Date:	2024-11-20
  *
  * Date:	2014-??-??
  */ 

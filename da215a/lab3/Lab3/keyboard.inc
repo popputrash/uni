@@ -2,7 +2,7 @@
  * keyboard.inc
  *
  *  Created: 2024-12-04 13:19:14
- *   Author: aq3915
+ *   Author: Maximilian Andersen and Anton Ranklev
  */ 
 read_keyboard_num:
 	LDI R18, 0				; reset counter

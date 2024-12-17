@@ -2,7 +2,7 @@
 ; Lab3.asm
 ;
 ; Created: 2024-12-04 13:15:56
-; Author : aq3915
+; Author : Maximilian Andersen and Anton Ranklev
 ;
 
 ;==============================================================================

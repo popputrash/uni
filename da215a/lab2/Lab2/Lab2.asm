@@ -11,9 +11,11 @@
  * running, the embedded LED on the Arduino board should be turned on.
  * The LED is connected to the D13 pin (PORTC, bit 7).
  *
- * Author:	Mathias Beckius, updated by Magnus Krampell
+ * Author:	Mathias Beckius, updated by Magnus Krampell,
  *
  * Date:	2014-11-05, 2021-11-17
+ * Author:	Maximilian Andersen, Anton Ranklev
+ * Date:	2024-11-20
  */ 
  
 ;==============================================================================

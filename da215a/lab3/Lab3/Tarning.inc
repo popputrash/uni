@@ -2,7 +2,7 @@
  * Tarning.inc
  *
  *  Created: 2024-12-04 15:49:59
- *   Author: aq3915
+ *   Author: Maximilian Andersen and Anton Ranklev
  */ 
 
 

@@ -6,8 +6,9 @@
  * Malmo University.
  *
  * Author:	Mathias Beckius
- *
  * Date:	2014-11-24
+ * Author:	Maximilian Andersen and Anton Ranklev
+ * Date:	2024-11-20
  */
 
  ;==============================================================================

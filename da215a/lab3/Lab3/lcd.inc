@@ -8,6 +8,8 @@
  * Author:	Mathias Beckius
  *
  * Date:	2014-11-24
+ * Updated by : Maximilian Andersen and Anton Ranklev
+ * Date:	2024-12-04
  */
 
  ;==============================================================================
