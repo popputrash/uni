@@ -143,6 +143,8 @@ void lcd_write(enum lcd_register lcd_reg, uint8_t data)
  */
 void lcd_write_str(char *p_str)
 {
+	//Loopar igenom char arrayen tills att pekaren pekar på null terminatorn,
+	//skriver ut karaktären för varje steg.
 	while(*p_str != '\0'){
 		lcd_write(DATA, *p_str);
 		p_str++;
