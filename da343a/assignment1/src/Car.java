@@ -9,7 +9,7 @@ public class Car extends Element{
     IsLand is = new IsLand();
     public Car(int row, int col, BufferedImage icon) {
         super(row, col, icon, true);
-        setPollution(5);
+        super.setPollution(5);
         setSpeed(1);
     }
 

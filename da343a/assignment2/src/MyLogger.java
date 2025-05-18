@@ -6,7 +6,6 @@ import java.io.*;
 public class MyLogger extends Logger implements Runnable , Closeable {
     private Buffer<String> buffer = new Buffer<>();
     private Writer writer;
-    private File logFile;
     private boolean closing = false;
 
 
@@ -52,7 +51,7 @@ public class MyLogger extends Logger implements Runnable , Closeable {
     }
 
     public void initalizeLogger() throws IOException {
-        logFile = new File("log.txt");
+        File logFile = new File("log.txt");
         logFile.createNewFile();
         writer = new FileWriter(logFile, true);
     }

@@ -1,41 +1,40 @@
-import se.mau.DA343A.VT25.assignment2.*;
 
+import se.mau.DA343A.VT25.assignment2.*;
 import java.awt.image.BufferedImage;
-import java.io.*;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class App extends GUI implements IPlayPauseButtonPressedCallback {
 
-    private IPlayPauseButtonPressedCallback callback;
+    private ArrayList<IPlayPauseButtonPressedCallback> callbacks;
     private final Controller controller;
 
     public App(BufferedImage mapImage, Controller controller) {
         super(mapImage);
+        callbacks = new ArrayList<>();
         addPlayPauseButtonCallback(this);
         this.controller = controller;
     }
 
     @Override
     public synchronized void addPlayPauseButtonCallback(IPlayPauseButtonPressedCallback iPlayPauseButtonPressedCallback) {
-        callback = iPlayPauseButtonPressedCallback;
+        callbacks.add(iPlayPauseButtonPressedCallback);
     }
 
     @Override
     public synchronized void removePlayPauseButtonCallback(IPlayPauseButtonPressedCallback iPlayPauseButtonPressedCallback) {
-        callback = null;
+        callbacks.remove(iPlayPauseButtonPressedCallback);
     }
 
     @Override
     protected void invokePlayPauseButtonCallbacks() {
-        callback.playPauseButtonPressed();
+        for(IPlayPauseButtonPressedCallback callback : callbacks) {
+            callback.playPauseButtonPressed();
+        }
     }
 
     @Override
     protected void onExiting() {
-
+        controller.closeThreads();
     }
 
     @Override

@@ -12,15 +12,15 @@ public class Controller {
     private Weather weather;
     private App app;
     private MyLogger logger;
-    private ImageResources ir;
-    private DataInputStream dis;
-    private DataOutputStream dos;
+    private final ImageResources ir;
+    private final DataInputStream dis;
+    private final DataOutputStream dos;
     private Thread weatherThread, loggerThread;
-    private Map<Integer, String> sensors;
+    private final Map<Integer, String> sensors;
     private ArrayList<GridTemperature> temps;
-    private Timer timer;
+    private final Timer timer;
     boolean queryData = true;
-    private Buffer<String> logBuffer;
+    private final Buffer<String> logBuffer;
 
     public Controller() throws IOException {
         sensors = new HashMap<>();
@@ -81,7 +81,6 @@ public class Controller {
                         try {
                             dos.writeInt(1);
                             dos.writeInt(3);
-                            //System.out.println(s.getKey() + " " + s.getValue());
                             dos.writeInt(s.getKey());
                             dos.flush();
 
@@ -95,9 +94,8 @@ public class Controller {
                                 int col = dis.readInt();
                                 double temp = dis.readDouble();
 
-                                //System.out.println(col + " " + row + " " + temp);
                                 logBuffer.put("col: "+col + " row: " + row + " temp: " + temp + "C");
-                                temps.add(new GridTemperature(row, col, 10));
+                                temps.add(new GridTemperature(row, col, temp));
 
                             }else{
                                 System.out.println("fel messegetype");
@@ -126,6 +124,19 @@ public class Controller {
 
     public void setQueryData(){
         this.queryData = !queryData;
+    }
+
+    public void closeThreads() {
+        try{
+            timer.cancel();
+            weather.close();
+            logger.close();
+            dis.close();
+            dos.close();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+            throw new RuntimeException(e);
+        }
     }
 
 }
