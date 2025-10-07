@@ -1,0 +1,2 @@
+source /home/minipops/uni/da267a/labs/lab2_buffers/build/bootloader/gdbinit/symbols
+source /home/minipops/uni/da267a/labs/lab2_buffers/build/bootloader/gdbinit/connect

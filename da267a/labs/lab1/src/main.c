@@ -39,24 +39,25 @@ void app_main()
             {
                 winner = 2;
             }
-
         }
 
         switch (winner)
         {
         case 1:
             setLEDB(0);
-            for(int i = 0; i < 10; i++){
+            for (int i = 0; i < 10; i++)
+            {
                 setLEDA(1);
                 waitMs(200);
                 setLEDA(0);
                 waitMs(200);
             }
             break;
-        
+
         case 2:
             setLEDA(0);
-            for(int i = 0; i < 10; i++){
+            for (int i = 0; i < 10; i++)
+            {
                 setLEDB(1);
                 waitMs(200);
                 setLEDB(0);
@@ -65,9 +66,7 @@ void app_main()
             break;
         }
 
-
         waitMs(2000);
-
     }
 }
 
