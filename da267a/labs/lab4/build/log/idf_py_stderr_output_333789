@@ -1,0 +1,44 @@
+Command: /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/minipops/uni/da267a/labs/lab4/build/lab4.elf /home/minipops/uni/da267a/labs/lab4/build/bootloader/bootloader.elf -m '/home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/opt/esp-idf/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.7.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32m/opt/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32m/opt/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x40085365: [0;33mpanic_abort[0m[0m at [0;32m/opt/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4008532d: [0;33mesp_system_abort[0m[0m at [0;32m/opt/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x4008b3b1: [0;33m__assert_func[0m[0m at [0;32m/opt/esp-idf/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4008a1fa: [0;33mremove_free_block[0m[0m at [0;32m/opt/esp-idf/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m372[0m
+[0m--- (inlined by) [0;33mblock_locate_free[0m[0m at [0;32m/opt/esp-idf/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m619[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32m/opt/esp-idf/components/heap/tlsf/tlsf.c[0m[0m:[1;31m444[0m
+[0m--- 0x40089bc1: [0;33mmulti_heap_malloc_impl[0m[0m at [0;32m/opt/esp-idf/components/heap/multi_heap.c[0m[0m:[1;31m216[0m
+[0m--- 0x40081bb9: [0;33maligned_or_unaligned_alloc[0m[0m at [0;32m/opt/esp-idf/components/heap/heap_caps_base.c[0m[0m:[1;31m93[0m
+[0m--- 0x40081cdd: [0;33mheap_caps_aligned_alloc_base[0m[0m at [0;32m/opt/esp-idf/components/heap/heap_caps_base.c[0m[0m:[1;31m175[0m
+[0m--- 0x40081d0d: [0;33mheap_caps_malloc_base[0m[0m at [0;32m/opt/esp-idf/components/heap/heap_caps_base.c[0m[0m:[1;31m202[0m
+[0m--- 0x4008199c: [0;33mheap_caps_malloc[0m[0m at [0;32m/opt/esp-idf/components/heap/heap_caps.c[0m[0m:[1;31m84[0m
+[0m--- 0x400819d1: [0;33mheap_caps_malloc_default[0m[0m at [0;32m/opt/esp-idf/components/heap/heap_caps.c[0m[0m:[1;31m110[0m
+[0m--- 0x4008b42d: [0;33mmalloc[0m[0m at [0;32m/opt/esp-idf/components/newlib/src/heap.c[0m[0m:[1;31m24[0m
+[0m--- 0x400d61a1: [0;33maddElementDoubleLinkedList[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab4/main/double_linked_list.c[0m[0m:[1;31m8[0m
+[0m--- 0x400d609b: [0;33mapp_main[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab4/main/lab4.c[0m[0m:[1;31m35[0m
+[0m--- 0x400e3119: [0;33mmain_task[0m[0m at [0;32m/opt/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x40085d35: [0;33mvPortTaskWrapper[0m[0m at [0;32m/opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32m/opt/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32m/opt/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x40085365: [0;33mpanic_abort[0m[0m at [0;32m/opt/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4008532d: [0;33mesp_system_abort[0m[0m at [0;32m/opt/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x4008b3b1: [0;33m__assert_func[0m[0m at [0;32m/opt/esp-idf/components/newlib/src/assert.c[0m[0m:[1;31m80[0m
+[0m--- 0x4008a1fa: [0;33mremove_free_block[0m[0m at [0;32m/opt/esp-idf/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m372[0m
+[0m--- (inlined by) [0;33mblock_locate_free[0m[0m at [0;32m/opt/esp-idf/components/heap/tlsf/tlsf_control_functions.h[0m[0m:[1;31m619[0m
+[0m--- (inlined by) [0;33mtlsf_malloc[0m[0m at [0;32m/opt/esp-idf/components/heap/tlsf/tlsf.c[0m[0m:[1;31m444[0m
+[0m--- 0x40089bc1: [0;33mmulti_heap_malloc_impl[0m[0m at [0;32m/opt/esp-idf/components/heap/multi_heap.c[0m[0m:[1;31m216[0m
+[0m--- 0x40081bb9: [0;33maligned_or_unaligned_alloc[0m[0m at [0;32m/opt/esp-idf/components/heap/heap_caps_base.c[0m[0m:[1;31m93[0m
+[0m--- 0x40081cdd: [0;33mheap_caps_aligned_alloc_base[0m[0m at [0;32m/opt/esp-idf/components/heap/heap_caps_base.c[0m[0m:[1;31m175[0m
+[0m--- 0x40081d0d: [0;33mheap_caps_malloc_base[0m[0m at [0;32m/opt/esp-idf/components/heap/heap_caps_base.c[0m[0m:[1;31m202[0m
+[0m--- 0x4008199c: [0;33mheap_caps_malloc[0m[0m at [0;32m/opt/esp-idf/components/heap/heap_caps.c[0m[0m:[1;31m84[0m
+[0m--- 0x400819d1: [0;33mheap_caps_malloc_default[0m[0m at [0;32m/opt/esp-idf/components/heap/heap_caps.c[0m[0m:[1;31m110[0m
+[0m--- 0x4008b42d: [0;33mmalloc[0m[0m at [0;32m/opt/esp-idf/components/newlib/src/heap.c[0m[0m:[1;31m24[0m
+[0m--- 0x400d61a1: [0;33maddElementDoubleLinkedList[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab4/main/double_linked_list.c[0m[0m:[1;31m8[0m
+[0m--- 0x400d609b: [0;33mapp_main[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab4/main/lab4.c[0m[0m:[1;31m35[0m
+[0m--- 0x400e3119: [0;33mmain_task[0m[0m at [0;32m/opt/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x40085d35: [0;33mvPortTaskWrapper[0m[0m at [0;32m/opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32m/opt/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32m/opt/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m

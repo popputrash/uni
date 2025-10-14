@@ -1,0 +1,145 @@
+Command: /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/minipops/uni/da267a/labs/lab4/build/lab4.elf /home/minipops/uni/da267a/labs/lab4/build/bootloader/bootloader.elf -m '/home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/opt/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  8 2025 00:30:29[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09bf8h ( 39928) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=00019c20 vaddr=3ffb0000 size=023d8h (  9176) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001c000 vaddr=40080000 size=04018h ( 16408) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=13a18h ( 80408) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=00033a40 vaddr=40084018 size=08fe0h ( 36832) load[0m
+[0;32mI (156) esp_image: segment 5: paddr=0003ca28 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (163) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (163) boot: Disabling RNG early entropy source...[0m
+[0;32mI (174) cpu_start: Multicore app[0m
+[0;32mI (183) cpu_start: Pro cpu start user code[0m
+[0;32mI (183) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (183) app_init: Application information:[0m
+[0;32mI (183) app_init: Project name:     lab4[0m
+[0;32mI (186) app_init: App version:      2c3774c-dirty[0m
+[0;32mI (191) app_init: Compile time:     Oct  8 2025 09:46:24[0m
+[0;32mI (196) app_init: ELF file SHA256:  34ada6f75...[0m
+[0;32mI (200) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (205) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (209) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (213) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (217) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (223) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (228) heap_init: At 3FFB2CA8 len 0002D358 (180 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (239) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 4008CFF8 len 00013008 (76 KiB): IRAM[0m
+[0;33mW (251) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (263) spi_flash: detected chip: generic[0m
+[0;32mI (266) spi_flash: flash io: dio[0m
+[0;33mW (269) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (282) main_task: Started on CPU0[0m
+[0;32mI (292) main_task: Calling app_main()[0m
+----Sorted insert test----
+single linked list: 
+added:81
+added:85
+added:61
+added:31
+added:18
+list(first: 18)[18 31 61 81 85 ]
+
+
+double linked list: 
+added 24
+added 69
+added 0
+added 41
+added 7
+list(first:0, last69 )[0 7 24 41 69 ]
+----Removeing elements test----
+single linked list: 
+added:15
+added:60
+added:13
+added:61
+added:85
+list(first: 13)[13 15 60 61 85 ]
+removeing first element
+list(first: 15)[15 60 61 85 ]
+15 removed
+removeing last element
+list(first: 15)[15 60 61 ]
+15 removed
+
+
+double linked list: 
+added 82
+added 54
+added 2
+added 87
+added 95
+list(first:2, last95 )[2 54 82 87 95 ]
+removeing first element
+list(first:54, last95 )[54 82 87 95 ]
+54 removed
+removing last element
+list(first:54, last87 )[54 82 87 ]
+54 removed
+----Remove from empty list----
+remove from empty sll
+remove first: -2147483648
+remove last: -2147483648
+remove from empty dll
+remove first: -2147483648
+remove last: -2147483648
+
+
+----Adding duplicate values----
+single linked list: 
+added:1
+added:1
+list(first: 1)[1 1 ]
+double linked list: 
+added 1
+added 1
+list(first:1, last1 )[1 1 ]
+
+
+----Adding values to beginning----
+single linked list: 
+added:1
+added:1
+added:0
+list(first: 0)[0 1 1 ]
+double linked list: 
+added 1
+added 1
+added 0
+list(first:0, last1 )[0 1 1 ]
+
+
+----Adding values to end----
+single linked list: 
+added:3
+list(first: 0)[0 1 1 3 ]
+double linked list: 
+added 3
+list(first:0, last3 )[0 1 1 3 ]
+[0;32mI (412) main_task: Returned from app_main()[0m

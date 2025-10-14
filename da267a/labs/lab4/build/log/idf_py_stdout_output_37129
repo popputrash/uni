@@ -1,0 +1,258 @@
+Command: /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/minipops/uni/da267a/labs/lab4/build/lab4.elf /home/minipops/uni/da267a/labs/lab4/build/bootloader/bootloader.elf -m '/home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/opt/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  8 2025 00:30:29[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09a08h ( 39432) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=00019a30 vaddr=3ffb0000 size=023d8h (  9176) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001be10 vaddr=40080000 size=04208h ( 16904) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1355ch ( 79196) map[0m
+[0;32mI (141) esp_image: segment 4: paddr=00033584 vaddr=40084208 size=08da8h ( 36264) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0003c334 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (162) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (162) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) cpu_start: Multicore app[0m
+[0;32mI (182) cpu_start: Pro cpu start user code[0m
+[0;32mI (182) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (182) app_init: Application information:[0m
+[0;32mI (182) app_init: Project name:     lab4[0m
+[0;32mI (186) app_init: App version:      2c3774c-dirty[0m
+[0;32mI (190) app_init: Compile time:     Oct  8 2025 09:46:24[0m
+[0;32mI (195) app_init: ELF file SHA256:  109993972...[0m
+[0;32mI (199) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (204) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (208) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (212) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (216) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (222) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (227) heap_init: At 3FFB2CA0 len 0002D360 (180 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (238) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (243) heap_init: At 4008CFB0 len 00013050 (76 KiB): IRAM[0m
+[0;33mW (250) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (262) spi_flash: detected chip: generic[0m
+[0;32mI (265) spi_flash: flash io: dio[0m
+[0;33mW (268) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (281) main_task: Started on CPU0[0m
+[0;32mI (291) main_task: Calling app_main()[0m
+added:10
+added:20
+added:30
+added:40
+added:50
+added:60
+added:70
+added:80
+added:90
+added:100
+added:110
+added:120
+added:130
+added:140
+added:150
+added:160
+added:170
+added:180
+added:190
+added:200
+added:210
+added:220
+added:230
+added:240
+added:250
+added:260
+added:270
+added:280
+added:290
+added:300
+added:310
+added:320
+added:330
+added:340
+added:350
+added:360
+added:370
+added:380
+added:390
+added:400
+added:410
+added:420
+added:430
+added:440
+added:450
+added:460
+added:470
+added:480
+added:490
+added:500
+added:510
+added:520
+added:530
+added:540
+added:550
+added:560
+added:570
+added:580
+added:590
+added:600
+added:610
+added:620
+added:630
+added:640
+added:650
+added:660
+added:670
+added:680
+added:690
+added:700
+added:710
+added:720
+added:730
+added:740
+added:750
+added:760
+added:770
+added:780
+added:790
+added:800
+added:810
+added:820
+added:830
+added:840
+added:850
+added:860
+added:870
+added:880
+added:890
+added:900
+added:910
+added:920
+added:930
+added:940
+added:950
+added:960
+added:970
+added:980
+added:990
+index[0] = 0
+index[1] = 10
+index[2] = 20
+index[3] = 30
+index[4] = 40
+index[5] = 50
+index[6] = 60
+index[7] = 70
+index[8] = 80
+index[9] = 90
+index[10] = 100
+index[11] = 110
+index[12] = 120
+index[13] = 130
+index[14] = 140
+index[15] = 150
+index[16] = 160
+index[17] = 170
+index[18] = 180
+index[19] = 190
+index[20] = 200
+index[21] = 210
+index[22] = 220
+index[23] = 230
+index[24] = 240
+index[25] = 250
+index[26] = 260
+index[27] = 270
+index[28] = 280
+index[29] = 290
+index[30] = 300
+index[31] = 310
+index[32] = 320
+index[33] = 330
+index[34] = 340
+index[35] = 350
+index[36] = 360
+index[37] = 370
+index[38] = 380
+index[39] = 390
+index[40] = 400
+index[41] = 410
+index[42] = 420
+index[43] = 430
+index[44] = 440
+index[45] = 450
+index[46] = 460
+index[47] = 470
+index[48] = 480
+index[49] = 490
+index[50] = 500
+index[51] = 510
+index[52] = 520
+index[53] = 530
+index[54] = 540
+index[55] = 550
+index[56] = 560
+index[57] = 570
+index[58] = 580
+index[59] = 590
+index[60] = 600
+index[61] = 610
+index[62] = 620
+index[63] = 630
+index[64] = 640
+index[65] = 650
+index[66] = 660
+index[67] = 670
+index[68] = 680
+index[69] = 690
+index[70] = 700
+index[71] = 710
+index[72] = 720
+index[73] = 730
+index[74] = 740
+index[75] = 750
+index[76] = 760
+index[77] = 770
+index[78] = 780
+index[79] = 790
+index[80] = 800
+index[81] = 810
+index[82] = 820
+index[83] = 830
+index[84] = 840
+index[85] = 850
+index[86] = 860
+index[87] = 870
+index[88] = 880
+index[89] = 890
+index[90] = 900
+index[91] = 910
+index[92] = 920
+index[93] = 930
+index[94] = 940
+index[95] = 950
+index[96] = 960
+index[97] = 970
+index[98] = 980
+index[99] = 990
+[0;32mI (521) main_task: Returned from app_main()[0m

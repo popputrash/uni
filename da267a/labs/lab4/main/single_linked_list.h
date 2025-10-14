@@ -65,7 +65,7 @@ int removeFirstElementSingleLinkedList(struct singleLinkedList* list);
  */
 int removeLastElementSingleLinkedList(struct singleLinkedList* list);
 
-
+void printSingleLinkedList(struct singleLinkedList* list);
 
 
 #endif
