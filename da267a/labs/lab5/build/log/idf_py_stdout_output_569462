@@ -1,0 +1,28 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/minipops/uni/da267a/labs/lab5/build/bootloader/esp-idf/esptool_py && /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/minipops/uni/da267a/labs/lab5/build/bootloader/bootloader.bin
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[2/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/i2c.c.obj
+In file included from /opt/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:63,
+                 from /opt/esp-idf/components/driver/i2c/include/driver/i2c.h:17,
+                 from /home/minipops/uni/da267a/labs/lab5/main/i2c.c:6:
+/opt/esp-idf/components/freertos/config/include/freertos/FreeRTOSConfig.h:272:9: warning: "configUSE_LIST_DATA_INTEGRITY_CHECK_BYTES" redefined
+  272 | #define configUSE_LIST_DATA_INTEGRITY_CHECK_BYTES    CONFIG_FREERTOS_USE_LIST_DATA_INTEGRITY_CHECK_BYTES
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/minipops/uni/da267a/labs/lab5/main/i2c.c:3:
+/opt/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/projdefs.h:73:13: note: this is the location of the previous definition
+   73 |     #define configUSE_LIST_DATA_INTEGRITY_CHECK_BYTES    0
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3/9] No install step for 'bootloader'
+[4/9] Linking C static library esp-idf/main/libmain.a
+[5/9] Completed 'bootloader'
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+[7/9] Linking CXX executable lab5.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.10.dev2
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/minipops/uni/da267a/labs/lab5/build/lab5.bin
+[9/9] cd /home/minipops/uni/da267a/labs/lab5/build/esp-idf/esptool_py && /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/minipops/uni/da267a/labs/lab5/build/partition_table/partition-table.bin /home/minipops/uni/da267a/labs/lab5/build/lab5.bin
+lab5.bin binary size 0x36ee0 bytes. Smallest app partition is 0x100000 bytes. 0xc9120 bytes (79%) free.

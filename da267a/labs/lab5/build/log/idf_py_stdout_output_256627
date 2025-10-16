@@ -1,0 +1,1688 @@
+Command: /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/minipops/uni/da267a/labs/lab5/build/lab5.elf /home/minipops/uni/da267a/labs/lab5/build/bootloader/bootloader.elf -m '/home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/opt/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:  3100 x:   312 y:  -388 z: -29584vector:  1878 x:   308 y:  -408 z: 30756vector:  9899 x:   292 y:  -436 z: 28792vector:  4440 x:   348 y:  -348 z: -32748vector: 12113 x:   284 y:  -448 z: 17640vector: 14336 x:   300 y:  -484 z: 23660vector:  4165 x:   264 y:  -336 z: 23676vector:  8898 x:   412 y:  -364 z: -24496vector:  3781 x:   328 y:  -320 z: -16216vector:  4452 x:   328 y:  -352 z: -31724vector: 15458 x:   316 y:  -452 z: -19376vector:  4874 x:   308 y:  -344 z: -14260vector:  6491 x:   320 y:  -404 z: 19672vector:  6978 x:   312 y:  -432 z: -29460vector: 14329 x:   248 y:  -380 z: -20316vector:  9393 x:   308 y:  -320 z:    52vector:  7860 x:   268 y:  -424 z: 11376vector:  8345 x:   304 y:  -368 z: -28532vector:  3095 x:   304 y:  -420 z: -19392vector:  8347 x:   352 y:  -432 z: -15244vector:  1883 x:   292 y:  -464 z: -13232vector:  1635 x:   264 y:  -404 z: -32720vector:  4171 x:   284 y:  -340 z: 25720vector:  1440 x:   296 y:  -416 z: -21304vector: 14282 x:   328 y:  -372 z: -19340vector:  4460 x:   328 y:  -368 z: -19224vector:  6616 x:   272 y:  -300 z: -11212vector:  4601 x:   236 y:  -340 z: -31684vector: 10975 x:   372 y:  -316 z: -11196vector:  4928 x:   480 y:  -388 z: -14252vector:  8369 x:   288 y:  -424 z:  1212vector:  2516 x:   336 y:  -340 z: -27604vector: 11576 x:   356 y:  -360 z: 27848vector:  8880 x:   348 y:  -412 z: -19432vector:  2202 x:   320 y:  -364 z: -27424vector:  7854 x:   328 y:  -416 z: 24704vector: 12042 x:   248 y:  -392 z: 26724vector:  7054 x:   336 y:  -360 z: -17216vector:  7455 x:   284 y:  -424 z: -11116vector: 10413 x:   264 y:  -368 z: -21396vector: 11463 x:   308 y:  -304 z: 21612vector:  4144 x:   292 y:  -412 z: -25380vector:  3702 x:   256 y:  -404 z: 25728vector:  3068 x:   244 y:  -408 z: 26716vector: 20028 x:   320 y:  -428 z: -25372vector:  9856 x:   332 y:  -436 z: 25648vector:  4077 x:   288 y:  -448 z: 23576vector:  6607 x:   500 y:  -444 z: 31872vector:  7904 x:   304 y:  -404 z: -28472vector: 11509 x:   324 y:  -484 z: -21436vector:  4096 x:   352 y:  -380 z: 24648vector: 20615 x:   324 y:  -400 z: 20704vector: 11471 x:   272 y:  -348 z: 22768vector:  9844 x:   316 y:  -352 z: 31876vector:  4170 x:   228 y:  -380 z: 25816vector:  7383 x:   332 y:  -372 z: -26484vector: 20614 x:   312 y:  -364 z: -18320vector:  4513 x:   368 y:  -344 z: -21348vector:  9897 x:   316 y:  -396 z: -25476vector: 13154 x:   292 y:  -480 z: 26836vector:  1304 x:   312 y:  -356 z: 31840vector: 25484 x:   312 y:  -464 z: -23324vector:  6492 x:   216 y:  -264 z: 25784vector:  8456 x:   296 y:  -320 z: 21648vector:  5352 x:   124 y:  -360 z: -7048vector:  7371 x:   292 y:  -412 z: 26716vector:  4505 x:   324 y:  -396 z: 27708vector:  2728 x:   260 y:  -408 z: 19640vector:  7874 x:   340 y:  -360 z: 23676vector: 12540 x:   368 y:  -428 z: -28548vector: 13746 x:   328 y:  -384 z: -1840vector: 16682 x:   380 y:  -336 z: -15120vector:  6505 x:   304 y:  -460 z: -8972vector: 11415 x:   308 y:  -356 z: -31496vector:  3182 x:   276 y:  -396 z: -32580vector:  5011 x:   336 y:  -336 z: -13308vector: 16121 x:   260 y:  -440 z: 30820vector:  9929 x:   344 y:  -372 z: -28460vector: 24701 x:   304 y:  -460 z: -26460vector:  9893 x:   284 y:  -392 z: 19652vector: 10428 x:   296 y:  -364 z: -21504vector:  6119 x:   284 y:  -500 z: 23636vector:  8861 x:   316 y:  -344 z: 30824vector: 12550 x:   320 y:  -412 z: 27868vector: 65271 x:   280 y:  -396 z: 26744vector:  3751 x:   240 y:  -412 z: -20288vector:  6213ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d64bc
+file: "./main/i2c.c" line 74
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f30 0x400869c5:0x3ffb3f50 0x4008cc7d:0x3ffb3f70 0x40086957:0x3ffb3fe0 0x400d64bc:0x3ffb4010 0x400d6610:0x3ffb4030 0x400d6697:0x3ffb4060 0x400d6355:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:  2432 x:   316 y:  -288 z: 29752vector:  1919 x:    76 y:  -408 z: -19344vector: 11395 x:   300 y:  -396 z: -24568vector:  9354 x:   324 y:  -412 z: -30612vector:  9945 x:   204 y:  -416 z: -14148vector: 10968 x:   284 y:  -368 z: 26792vector:  6033 x:   276 y:  -424 z: 25656vector:  1610 x:   316 y:  -360 z: -28584vector: 11370 x:   252 y:  -360 z: -26472vector:  5351 x:   308 y:  -384 z: 12480vector:  4049 x:   280 y:  -480 z: 26680vector:  6557 x:   340 y:  -308 z: -30544vector:  2162 x:   408 y:  -412 z: -11196vector:  2618 x:   272 y:  -388 z: 19656vector: 12490 x:   352 y:  -416 z: 30956vector:  1847 x:   308 y:  -352 z: -27412vector:  9991 x:   364 y:  -428 z: -2904vector: 18789 x:   344 y:  -436 z: 19592vector: 23505 x:   292 y:  -384 z: -31604vector:  9998 x:   316 y:  -348 z: -32728vector:  1085 x:   144 y:  -396 z: -25352vector: 12006 x:   328 y:  -324 z: 15560vector: 11477 x:   356 y:  -356 z: -19232vector: 18066 x:   352 y:  -428 z: -21440vector:  9930 x:   296 y:  -356 z: 22556vector:  1471 x:   268 y:  -452 z: -5096vector:  7500 x:   364 y:  -344 z: -22432vector: 11401 x:   320 y:  -396 z: 19548vector:   146 x:   296 y:  -400 z: 30780vector:  1498 x:   352 y:  -424 z: -32556vector:  1643 x:   284 y:  -432 z: -30660vector:  6916 x:   360 y:  -404 z: 26760vector:  1135 x:   304 y:  -464 z: 26828vector: 13165 x:   300 y:  -360 z: 12368vector: 10914 x:   276 y:  -388 z: 29884vector: 13841 x:   352 y:  -372 z: -29504vector:  5292 x:   384 y:  -492 z: -24448vector: 12649 x:   256 y:  -484 z: 28740vector:  6148 x:   304 y:  -372 z: -10092vector:  8375 x:   320 y:  -316 z: -23440vector: 14369 x:   316 y:  -464 z: 15556vector:  9986 x:   348 y:  -408 z: 28748vector:  6965 x:   356 y:  -360 z:  7308vector:  3763 x:   252 y:  -248 z: -29476vector: 12516 x:   212 y:  -380 z: -31624vector:   952 x:   320 y:  -348 z: -30672vector: 19333 x:   344 y:  -336 z: -19440vector:  8350 x:   120 y:  -368 z: -29612vector: 13720 x:   400 y:  -400 z: 29792vector: 65386 x:   316 y:  -416 z: -11164vector: 13285 x:   296 y:  -372 z: 18656vector:  5667 x:   472 y:  -408 z: 25620vector: 65344 x:   292 y:  -436 z: -29588vector: 10389 x:   252 y:  -396 z: 29776vector:  7466 x:   308 y:  -476 z: 17568vector: 10429 x:   420 y:  -440 z: -19364vector: 12619 x:   496 y:  -396 z: 31764vector: 14439 x:   356 y:  -400 z: -15296vector:  4597 x:   344 y:  -436 z: -23484vector:  3799 x:   336 y:  -392 z: 20480vector: 15510 x:   304 y:  -440 z: 24700vector:  8387 x:   244 y:  -400 z: 18684vector: 11007 x:   308 y:  -432 z: 20708vector:  8885 x:   312 y:  -408 z: 18460vector: 10858 x:   304 y:  -420 z: 16596vector:  1240 x:   284 y:  -436 z: 15464vector:  2287 x:   360 y:  -344 z: -15252vector:  5297 x:   320 y:  -404 z: -32568vector:  2480 x:   280 y:  -428 z: -25524vector:  2818 x:   304 y:  -372 z: 23588vector: 15506 x:   252 y:  -436 z: -24492vector: 12547 x:   372 y:  -324 z: 26684vector: 16139 x:   344 y:  -276 z: 21640vector: 24736 x:    24 y:  -464 z: 14536vector:  4083 x:   316 y:  -432 z: -23520vector:  4521 x:   252 y:  -364 z: -26504vector:  4876 x:   272 y:  -340 z: -23448vector:  7440 x:   344 y:  -396 z: 20652vector: 17334 x:   336 y:  -396 z: 23648vector:  6956 x:   312 y:  -400 z: -26504vector:  ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d643e
+file: "./main/i2c.c" line 57
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d643e:0x3ffb4030 0x400d6621:0x3ffb4050 0x400d6346:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:  2191 x:   360 y:  -324 z: -24468vector:  1874 x:   336 y:  -368 z: -23532vector:  8838 x:   328 y:  -408 z: 25784vector:  4518 x:   276 y:  -352 z: -22276vector:  2444 x:   288 y:  -412 z: 22692vector: 65445 x:   368 y:  -320 z: 20652vector: 12122 x:   296 y:  -380 z: -26488vector:  3811 x:   200 y:  -332 z: 27836vector:  4864 x:   356 y:  -416 z: 24684vector:  4490 x:   308 y:  -380 z: -14332vector: 13757 x:   304 y:  -424 z: 27864vector:  7003 x:   308 y:  -400 z: -9004vector:  7964 x:   276 y:  -396 z: -30656vector:   336 x:   256 y:  -400 z: 19692vector:  6611 x:   348 y:  -416 z: -29556vector:  3377 x:  ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d643e
+file: "./main/i2c.c" line 57
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d643e:0x3ffb4030 0x400d6621:0x3ffb4050 0x400d6346:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector: 18113 x:   340 y:  -444 z: 15448vector:  6061 x:    96 y:  -436 z: 23784vector:  2805 x:   484 y:  -352 z: 27732vector:  9405 x:   308 y:  -360 z: -30628vector: 12000 x:   328 y:  -376 z: -29552vector: 16740 x:   248 y:  -368 z: -23324vector:  5704 x:   284 y:  -440 z: -18312vector: 12576 x:   300 y:  -392 z: -25596vector:  9294 x:   304 y:  -436 z: 19564vector: 19283 x:   348 y:  -384 z: -27488vector:  8356 x:   304 y:  -412 z: -28644vector:  4423 x:   376 y:  -372 z: -31516vector:  5707 x:   324 y:  -424 z: -20412vector:  3427 x:   316 y:  -452 z: 22580vector:   254 x:   332 y:  -356 z: 13456vector:  5679 x:   340 y:  -484 z: -23436vector:  8932 x:   308 y:  -272 z: 30964vector: 12058 x:   404 y:  -344 z: -22468vector: 14376 x:   348 y:  -336 z: 20684vector: 12094 x:   296 y:  -444 z: 19516vector:  8902 x:   388 y:  -472 z: 26720vector:  3733 x:   312 y:  -404 z: -24404vector:  8850 x:   268 y:  -364 z: -24396vector: 18592 x:   300 y:  -376 z: 25676vector:  4509 x:   292 y:  -428 z: -25376vector:  7434 x:   292 y:  -460 z: -29656vector: 10864 x:   376 y:  -444 z: 17480vector:  4502 x:   292 y:  -476 z: 13336vector:  5711 x:   240 y:  -396 z: -32620vector:  9393 x:   280 y:  -372 z: 28768vector:   205 x:   252 y:  -436 z:ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d643e
+file: "./main/i2c.c" line 57
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d643e:0x3ffb4030 0x400d6670:0x3ffb4050 0x400d6350:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:  6565 x:   324 y:  -368 z: 28900vector:  2801 x:   364 y:  -452 z: 29900vector:  1912 x:   332 y:  -428 z: -32556vector:  2468 x:   376 y:  -376 z: -27604vector: 11964 x:   356 y:  -464 z: 15360vector:  7904 x:   268 y:  -412 z: 27700vector:  2094 x:   436 y:  -376 z: -17228vector: 15627 x:   232 y:  -456 z: 26832vector:  2496 x:   300 y:  -396 z: 29748vector: 13131 x:   336 y:  -344 z: 20508vector:   788 x:   344 y:  -436 z: 21684vector: 10959 x:   328 y:  -468 z: -8064vector:  6976 x:   312 y:  -404 z: 21632vector:  4612 x:   336 y:  -340 z: 26792vector:  4502 x:   288 y:  -420 z: 27660vector:  4470 x:   372 y:  -396 z: -25580vector: 15542 x:   312 y:  -412 z: 27784vector:  7994 x:   296 y:  -384 z: -32684vector: 14942 x:   240 y:  -424 z: -19356vector:    19 x:    28 y:  -392 z: -31596vector:  7393 x:   292 y:  -308 z: -29576vector:  6936 x:   300 y:  -452 z: 11420vector:  3909 x:   380 y:  -408 z: 23756vector:  4914 x:   376 y:  -328 z: 28868vector:  1392 x:   356 y:  -368 z: 17484vector:   880 x:   308 y:  -392 z: 22580vector:  2484 x:   280 y:  -392 z: 30920vector:  5741 x:   256 y:  -460 z: -18432vector:  3114 x:   476 y:  -360 z: -17408vector:  9371 x:   368 y:  -368 z: -24468vector:  3071 x:   288 y:  -432 z: 27824vector:  7488 x:   304 y:  -420 z: 27652vector:  3149 x:   228 y:  -324 z: 11292vector: 65125 x:   368 y:  -360 z: -29656vector:  9352 x:   276 y:  -412 z: 29832vector:  7033 x:   356 y:  -472 z: 10424vector: 13734 x:   284 y:  -432 z: 28776vector:  8452 x:   332 y:  -340 z:    32vector:  4531 x:    56 y:  -396 z: 12416vector: 22704 x:   324 y:  -460 z:  7224vector:  4028 x:   236 y:  -440 z: 17416vector: 15449 x:   256 y:  -344 z: -29584vector: 14299 x:   320 y:  -368 z: 30788vector:  8329 x:   420 y:  -280 z: 14436vector:  7437 x:   232 y:  -376 z: -17276vector: 21287 x:   272 y:  -352 z: -25564vector:  7915 x:   332 y:  -404 z: -21472vector:  3112 x:   308 y:  -324 z: 27888vector:  4085 x:   284 y:  -368 z: 26636vector:  8393 x:   360 y:  -408 z: 22576vector: 12038 x:   304 y:  -408 z: -17288vector:  1609 x:   300 y:  -388 z:  7180vector:  6500 x:   268 y:  -424 z: -24452vector: 13165 x:   376 y:  -392 z: 19460vector:  7905 x:   204 y:  -396 z: 22624vector:  7889 x:   260 y:  -364 z: -26472vector:  3440 x:   352 y:  -356 z: -29464vector: 10891 x:   368 y:  -324 z: 23776vector: 11439 x:   380 y:  -448 z: -15264vector:  5201 x:   312 y:  -384 z:  5208vector:  4417 x:   320 y:  -308 z: -30604vector:  8423 x:   320 y:  -340 z: -27408vector:  4474 x:   324 y:  -376 z: -10068vector:  6084 x:   320 y:  -332 z: 22548vector:  6564 x:   392 y:  -260 z: 25840vector:  4888 x:   320 y:  -488 z: -20240vector:  7929 x:   352 y:  -416 z: 29752vector:  6135 x:  1084 y:  -452 z: -18376vector: 12573 x:    72 y:  -356 z: -32732vector:  3037 x:   272 y:  -452 z: -25572vector: 65168 x:   284 y:  -388 z: 31876vector: 10925 x:   268 y:  -504 z: 29872vector: 13184 x:   264 y:  -436 z: 21512vector:  4876 x:   320 y:  -308 z: -24416vector:  1749 x:   312 y:  -352 z: 30872vector:  8416 x:   352 y:  -444 z: 17512vector:  8850 x:   288 y:  -288 z: 23620vector:  7006 x:   380 y:  -412 z: 23580vector:  2243 x:   372 y:  -468 z: -24448vector: 35049 x:   292 y:  -520 z: -12180vector:  8675 x:  -308 y:  -308 z: -19404vector: 20601 x:  1700 y:  -480 z: 19484vector: 18788 x:  1604 y:    32 z: -12220vector: 24334 x:  1508 y:  -120 z: -22516vector:    33 x:   844 y:   -76 z: -19452vector: 13948 x:   816 y:  -196 z: 17580vector:  2008 x:  -996 y:   936 z: -20240vector:  2704 x:   904 y:  -224 z: 18648vector:  1162 x:  -956 y:  -216 z: 22536vector: 29926 x:   272 y:  -300 z: 22548vector: 19358 x:  1276 y:   -64 z: 29876vector:    61 x:   176 y:   224 z: -14088vector: 15034 x:  1088 y:  -344 z: 10396vector:   419 x:   752 y:  -104 z: -26396vector: 25487 x:   716 y:  -216 z: 18440vector:  5916 x:   324 y:  -224 z: 17568vector: 13800 x:   608 y:  -152 z: 22572vector:   776 x:   656 y:  -284 z:  7188vector:  1477 x:   632 y:  -188 z: -25384vector: 25433 x:   608 y:   152 z: -15212vector:  2421 x:   624 y:  -272 z: -26516vector:  1953 x:   696 y:  -224 z: 10300vector:   956 x:   720 y:  -252 z:  1076vector:  6328 x:   724 y:   -12 z:  8360vector:   340 x:   992 y:  -252 z: 23736vector:  6318 x:   724 y:  -216 z: -7140vector: 12601 x:   748 y:  -136 z: -8052vector:  1831 x:   696 y:   -12 z: 17492vector:  2339 x:   680 y:  -144 z:  6296vector: 24896 x:   704 y:  -192 z: -6092vector:  2402 x:   692 y:  -208 z: 14480vector:    66 x:   760 y:  -184 z: 18556vector: 24292 x:   732 y:  -248 z: 18652vector: 14839 x:   260 y:   264 z: 27660vector:  4400 x:   964 y:  -328 z: 10332vector: 18255 x:   660 y:  -228 z: 24668vector:  7255 x:   860 y:  -548 z: 28848vector:  9298 x:  1000 y:  -184 z: -24332vector: 25869 x:  1836 y:  1632 z: -2940vector:  7174 x:  1804 y:   268 z: 24796vector: 27110 x:   116 y: -1408 z: -28460vector: 44755 x:  -768 y: -1816 z: 22536vector:   728 x:   596 y:  -932 z: 21520vector: 62808 x:   900 y: -2012 z: 29740vector: 20643 x:    12 y:  -428 z:  2236vector:  1105 x:   632 y: -2272 z: 25648vector: 20151 x:  -236 y:  1168 z: -18280vector:   321 x:   756 y:   308 z: 31820vector: 34160 x:   832 y: -1552 z: 19456vector:    30 x:  1100 y: -1388 z: -27420vector: 47256 x:   484 y:  -928 z: -18364vector: 17521 x:   272 y:  -356 z: 14348vector: 61493 x:   684 y:   276 z: 31900vector: 21027 x:   912 y:  -444 z: -8020vector: 37098 x:  1528 y:  1808 z: -15336vector: 19707 x: -1304 y:  -208 z: 17600vector: 64578 x:  1080 y:  1396 z: -17316vector: 11673 x:   268 y:  2068 z: 25808vector:  5511 x:    -8 y:   928 z:  5248vector: 17593 x:   728 y:  -488 z: -21384vector: 13999 x:   272 y:   260 z: 14516vector: 20572 x:   764 y: -2172 z: -13188vector: 24377 x:   360 y:   184 z: -30648vector: 60430 x:   844 y:  -900 z: -18248vector: 12598 x:  1300 y:  -736 z: 13504vector: 20315 x:   436 y:  -936 z: -26472vector: 64104 x:  -464 y: -1536 z: 10372vector: 23959 x:  1932 y:  -220 z: -10212vector:  8536 x:  2316 y:  -132 z: 24772vector:  6425 x:   236 y:   164 z: -17248vector:  3308 x:  -980 y:   672 z: -13284vector: 65449 x:   816 y:  -112 z: -31532vector:   336 x:   692 y:  -164 z: 10376vector:  1722 x:   576 y:  -160 z:  5164vector:  5850 x:   988 y:  -228 z: 18676vector:  1803 x:  -612 y:  -244 z: 15480vector: 13684 x:   736 y:  -160 z:  7244vector: 58542 x:   996 y:   104 z: -9144vector:  5136 x:   704 y:  -244 z:  7304vector:  7754 x:  1136 y:   -88 z: -31664vector:   303 x:   708 y:  -332 z: -19264vector:   929 x:   748 y:  -248 z: 25768vector:  2376 x:   808 y:  -180 z: 24592vector:   178 x:   784 y:  -180 z: 30796vector:   982 x:   796 y:  -252 z: 14392vector:  1568 x:   892 y:  -192 z: 14396vector: 29992 x:   992 y:  -208 z: 24800vector: 18975 x:  1756 y:   -52 z: -23508vector:  4417 x:   768 y:  -264 z: -32648vector:   168 x:   984 y:  -180 z: 19508vector:   817 x:   772 y:   -92 z:  8348vector:  5899 x:   820 y:  -296 z: 24792vector:  2969 x:   852 y:  -220 z: -1012vector: 65506 x:   772 y:  -168 z: -27468vector:  1003 x:   888 y:  -164 z:   244vector:  7667 x:   904 y:   -80 z: 12300vector: 10650 x:   900 y:  -176 z:  6152vector: 11556 x:   796 y:  -160 z: 13336vector: 21248 x:   952 y:  -128 z: -32636vector:   537 x:   908 y:  -436 z: -1012vector:   370 x:   852 y:  -212 z: -4028vector:  8032 x:   812 y:  -160 z:  8248vector:  2679 x:   796 y:  -172 z: -4068vector: 65380 x:   868 y:  -176 z: 16484vector:  3018 x:   964 y:  -256 z: 15404vector:  1666 x:   900 y:  -224 z: 31744vector:  2182 x:   768 y:  -232 z:  7276vector:  5060 x:   884 y:  -108 z: -27616vector:  5060 x:   880 y:  -220 z: 24684vector:  1904 x:   840 y:  -208 z: 26668vector: 20120 x:   852 y:  -248 z: 29716vector:  2397 x:   784 y:  -184 z: 26632vector:   825 x:   800 y:  -212 z: 16432vector:   956 x:   864 y:  -208 z:  8368vector: 21343 x:   856 y:  -120 z: -19284vector: 22849 x:   868 y:  -248 z: -16368vector: 16938 x:   868 y:  -212 z: 11360vector:  4308 x:   808 y:  -104 z: 14520vector: ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d64bc
+file: "./main/i2c.c" line 74
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d64bc:0x3ffb4030 0x400d6651:0x3ffb4050 0x400d634b:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:  7266 x:   760 y:  -184 z:  3080vector:  4729 x:   812 y:  -224 z: -17172vector:  2101 x:   840 y:  -216 z: -29628vector:   551 x:   840 y:  -220 z:    40vector:  7558 x:   800 y:  -476 z: -3004vector:  3261 x:   804 y:  -204 z: 11448vector:   769 x:   888 y:  -192 z: 22604vector:   231 x:   764 y:  -192 z: 25720vector: 65462 x:   844 y:  -180 z:  9448vector:   812 x:   760 y:  -228 z: 19684vector: 22872 x:   812 y:  -196 z: 21572vector:  2757 x:   912 y:  -108 z: 22688vector:  2918 x:   844 y:  -208 z: 30856vector:  1265 x:   872 y:  -176 z:  8400vector: 12669 x:   812 y:  -412 z: -11016vector:   166 x:   576 y:  -208 z: -28476vector:  1184 x:   884 y:  -152 z: 18592vector:  6801 x:   832 y:  -216 z: 23784vector:  5134 x:   844 y:  -164 z: 15396vector:  2067 x:   768 y:  -172 z: -32556vector:  3954 x:   828 y:  -200 z: 14512vector:  6302 x:   820 y:  -176 z: 19456vector:  5937 x:   920 y:  -140 z: 16472vector:   575 x:   876 y:  -240 z: 20516vector:  3671 x:   880 y:   -96 z: 18548vector:  1367 x:   836 y:  -204 z: 16460vector:  1117 x:   812 y:  -272 z:  5284vector:  2644 x:   832 y:  -188 z: 17436vector:  1849 x:   816 y:  -268 z:  6344vector:  5511 x:   824 y:  -188 z: -6964vector:  1174 x:   888 y:  -140 z: 25680vector: 15789 x:   736 y:  -204 z: 17448vector:  1607 x:   736 y:  -180 z: -21416vector:  2124 x:   844 y:  -132 z:  9232vector: 65484 x:   864 y:  -232 z: 31976vector:   205 x:   812 y:  -168 z: 13412vector:  3986 x:   792 y:    -8 z: 20512vector:   535 x:   820 y:  -232 z:  9344vector:   364 x:   852 y:  -160 z: 26660vector:  1687 x:   860 y:  -264 z: 21708vector:  5889 x:   836 y:  -196 z: 29804vector:    30 x:   824 y:  -168 z: 12504vector:  5006 x:   892 y:  -212 z: 31888vector:  3020 x:   872 y:  -164 z: 11488vector: 65373 x:   868 y:  -176 z: 14464vector: 15597 x:   880 y:  -200 z:  9468vector:   585 x:   852 y:  -224 z: 28900vector:  8149 x:   892 y:  -180 z: 22600vector:  1367 x:   832 y:  -136 z: 26716vector: 14479 x:   980 y:  -200 zESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d64bc
+file: "./main/i2c.c" line 74
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d64bc:0x3ffb4030 0x400d6640:0x3ffb4050 0x400d634b:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:   382 x:   884 y:  -152 z: 17644vector: 65341 x:   856 y:   -88 z: -8140vector:  4314 x:   904 y:  -172 z:  1200vector:  6293 x:   808 y:  -200 z: -15236vector:  4310 x:   872 y:  -196 z:  5220vector:  1372 x:   832 y:  -204 z:  3288vector:   750 x:   888 y:  -276 z: -27544vector:  9634 x:   872 y:  -148 z: 22708vector:  4682 x:  1064 y:  -220 z:  9456vector:  9589 x:   880 y:  -208 z: 21744vector:  4917 x:   888 y:   -92 z: 16500vector:  3663 x:   788 y:  -232 z: -32688vector:  6350 x:   796 y:  -252 z: 10288vector: 65450 x:   948 y:  -220 z:   232vector:  4319 x:   880 y:  -216 z:  1092vector:  1202 x:   916 y:  -208 z:  1160vector: 11094 x:   892 y:  -252 z:  5352vector:  2370 x:   840 y:  -228 z:  7204vector:  8547 x:   948 y:  -200 z: 16428vector:  5490 x:   932 y:  -196 z: 17592vector:  4773 x:   812 y:  -192 z: 29740vector:  6326 x:   824 y:  -204 z: 14588vector:  8128 x:   912 y:  -160 z: 20600vector:  3617 x:   884 y:  -168 z:  3308vector:    78 x:   904 y:  -184 z:  7208vector:  3697 x:   832 y:  -104 z: 25764vector:   376 x:   880 y:  -220 z:  9392vector: 17743 x:   828 y:  -168 z:  7284vector: 20769 x:   500 y:  -168 z: -8164vector:   124 x:   944 y:  -112 z: 14352vector: 65332 x:   944 y:  -132 z:  -820vector:  8989 x:   900 y:  -136 z: 24708vector:   265 x:   820 y:  -156 z: 15516vector:  4755 x:   780 y:  -180 z: 16524vector:  2398 x:   864 y:  -200 z: -4020vector:  2047 x:   872 y:  -172 z: 21664vector:  3325 x:   808 y:  -420 z: -4068vector:  3061 x:   928 y:  -136 z: -26588vector: 26392 x:   928 y:  -128 z: 23556vector:  2373 x:   832 y:  -212 z:  5268vector:  1191 x:  1032 y:  -160 z: 15388vector: 43066 x:  1564 y:  -264 z: -20380vector:  1843 x:   776 y:  -148 z:  9372vector:  1701 x:   680 y:  -220 z: 26828vector: 24061 x:   820 y:  -136 z: 30940vector: 26368 x:   936 y:  -236 z: -32652vector:  6285 x:   900 y:  -160 z: -18376vector:  1415 x:   844 y:  -244 z: 20720vector:  5960 x:   816 y:  -140 z: 25720vector:  2701 x:   940 y:  -168 z: 27752vector: 24946 x:   932 y:   -80 z:  2096vector:  3724 x:   876 y:  -192 z: 21588vector: 65359 x:   864 y:  -200 z: 30880vector:  4338 x:  1036 y:  -188 z: 17448vector:  2630 x:   -16 y:  -196 z: -32568vector: 20865 x:   800 y:   -64 z: 21592vector:  3631 x:   852 y:  -228 z: 10412vector: 13856 x:  1048 y:  -152 z: 25768vector:  2133 x:  1128 y:  -104 z: -28544vector:  1489 x:   816 y:   -96 z: -1908vector:   155 x:  1188 y:  -240 z: -27448vector:  6784 x:  1044 y:  -196 z: -28560vector:  4851 x:  1020 y:  -216 z: 10360vector:  4378 x:  1080 y:  -160 z: 28764vector:  8148 x:  1096 y:  -232 z:  7252vector:  2435 x:  1128 y:  -216 z:  1112vector:  1610 x:  1484 y:  -156 z: 22532vector: 13991 x:  1156 y:  -112 z: 15436vector:  5505 x:  1220 y:  -208 z: 22680vector:  3050 x:  1232 y:  -196 z: 22536vector:    94 x:   900 y:  -188 z: -31584vector:  5112 x:   996 y:  -168 z: 22556vector:  1309 x:   996 y:  -236 z:  6176vector: 26517 x:  1228 y:  -216 z: 20500vector:   520 x:  1228 y:  -176 z:  5140vector:  5902 x:  1112 y:  -228 z: -30548vector:  3030 x:  1268 y:  -168 z:  7384vector: 65434 x:  1204 y:  -256 z: 16556vector:  2716 x:  1192 y:  -228 z: 23620vector:  3635 x:  1624 y:  -340 z: 20508vector:  2199 x:  1420 y:  -168 z: 22616vector:   733 x:   888 y:  -216 z: 25672vector:  8556 x:   788 y:  -164 z: 22724vector:   743 x:   824 y:  -180 z:  7216vector: 15168 x:   764 y:  -228 z:  4144vector:   382 x:   816 y:  -164 z: 15592vector:   234 x:   928 y:  -164 z: -16340vector: 12154 x:   900 y:  -216 z: 12440vector:  1339 x:   856 y:  -220 z:  4228vector: 18015 x:   892 y:  -120 z: -30484vector:  1213 x:  1412 y:   -60 z: -26532vector: 22348 x:   856 y:  -288 z:  6344vector: 13364 x:   820 y:  -204 z: 17492vector:  1037 x:   948 y:   -96 z: 26732vector:   185 x:   916 y:  -204 z:  2240vector:  1390 x:   900 y:  -176 z: 17616vector:  9544 x:ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d643e
+file: "./main/i2c.c" line 57
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d643e:0x3ffb4030 0x400d6651:0x3ffb4050 0x400d634b:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:  4708 x:   824 y:  -452 z: -11108vector:     9 x:   596 y:   -40 z: 31916vector: 15092 x:   844 y:  -256 z: -32640vector:  3633 x:   764 y:  -288 z: -10024vector:  1149 x:   768 y:  -160 z: 29892vector:  3357 x:   852 y:  -104 z: -32756vector: 12290 x:   924 y:  -300 z:  1144vector:  1383 x:   932 y:  -144 z: 20732vector: 26151 x:   864 y:  -216 z: 10328vector:   134 x:   912 y:  -176 z: 30828vector:   474 x:   808 y:  -240 z: 19560vector:  1347 x:   792 y:  -252 z: 29796vector:  5135 x:   896 y:  -236 z: 22760vector: 26225 x:   892 y:  -192 z: -24384vector:  1582 x:   852 y:  -200 z: 14560vector:  8139 x:   920 y:  -244 z: 17496vector:   311 x:   884 y:  -124 z: 12400vector: 65445 x:   940 y:  -116 z: -29572vector:   285 x:   876 y:  -156 z: 14456vector:  7145 x:   880 y:  -196 z: 14352vector:  1625 x:   792 y:  -104 z: 17420vector:  6390 x:   876 y:  -244 z: 23744vector:   276 x:   876 y:  -232 z: 13528vector:   668 x:   864 y:   -80 z: -9012vector: 11063 x:   840 y:  -232 z: 22672vector:  7276 x:   916 y:  -276 z: 29908vector:  5862 x:   936 y:  -308 z: -13120vector:   751 x:   840 y:  -104 z:  8332vector:    41 x:   852 y:  -128 z: 16476vector:  5408 x:   772 y:  -232 z: 24660vector:  1866 x:   880 y:  -176 z:  9216vector:  4758 x:   872 y:  -184 z: 16556vector: 65408 x:   888 y:  -100 z: 14412vector:    45 x:   936 y:  -204 z:  5244vector:  6640 x:   796 y:  -208 z: 17660vector: 65317 x:   872 y:  -136 z: 18588vector:  1302 x:   752 y:  -144 z:  8292vector:   742 x:   820 y:  -192 z: 30784vector:  4334 x:   924 y:  -140 z: 15496vector:  1221 x:   876 y:  -196 z: 22636vector:  5858 x:   916 y:  -208 z:  6212vector:  3384 x:   908 y:  -176 z: -28584vector: 12672 x:  1000 y:  -212 z: 11372vector:   382 x:   876 y:  -188 z:  5204vector:  8183 x:   892 y:  -224 z: 30896vector: 57474 x:   792 y:  -152 z: -31716vector: 65380 x:   868 y:  -416 z:  1260vector:   487 x:   864 y:  -228 z:  2068vector: 12319 x:   856 y:  -212 z: -28524vector: 65391 x:   896 y:  -212 z: -30620vector:   374 x:   772 y:  -200 z: -31504vector:   919 x:  1608 y:  -224 z: 27688vector: 10554 x:   916 y:  -208 z:  1088vector:  1103 x:   912 y:  -104 z: 28784vector: 65454 x:   832 y:    96 z: -26516vector:   227 x:  1084 y:   208 z: 11336vector: 24249 x:   764 y:  -172 z: 10432vector: 65409 x:   836 y:  -232 z: 28680vector:   628 x:   852 y:  -400 z: -1852vector:   648 x:   972 y:  -128 z:  -788vector:  7198 x:   868 y:  -180 z: 14392vector: 65351 x:   832 y:  -172 z: 26696vector:  4009 x:   820 y:  -252 z: 27852vector:  5061 x:   860 y:  -192 z: 21724vector:    74 x:   884 y:  -204 z:  4232vector:  3561 x:   876 y:  -152 z: 10400vector:  3651 x:   876 y:  -148 z: 23588vector: 10042 x:   800 y:  -184 z: 13372vector:  5515 x:   832 y:  -168 z: 24580vector:   241 x:   828 y:  -136 z: -26584vector:  6823 x:   876 y:  -136 z:  8352vector: 13844 x:   796 y:  -136 z: 28736vector: 21492 x:   824 y:  -236 z: 25748vector:   433 x:   768 y:  -316 z: -7124vector:  1379 x:   832 y:  -208 z: 22640vector: 65369 x:   856 y:  -176 z: 19492vector: 14452 x:   852 y:  -156 z: 12428vector:  9020 x:   864 y:  -248 z:  3164vector:  6718 x:   784 y:  -132 z:  9296vector:  1469 x:   900 y:  -188 z: 28744vector:  5481 x:   820 y:    56 z: 25740vector:   539 x:   852 y:  -176 z: 22676vector: 65478 x:   764 y:  -256 z: -26524vector: 35071 x:   856 y:  -524 z: -31568vector:  4290 x:   732 y:  -144 z: 12348vector: 65308 x:   812 y:  -212 z: 12384vector:  3664 x:   828 y:  -300 z:  1220vector: 16325 x:   840 y:  -340 z: -6100vector: 13923 x:   728 y:  -216 z: -10144vector: 24763 x:  1032 y:   -80 z: -2032vector:  8505 x:   716 y:  -188 z: 21604vector: 12425 x:   828 y:  -264 z: -32616vector:  2367 x:   800 y:  -208 z: -4880vector:  1248 x:   992 y:  -108 z: -30528vector:  4010 x:   968 y:   -88 z: 14520vector:   296 x:   800 y:  -260 z: 16572vector:  5152 x:   996 y:  -240 z:  6260vector: 65527 x:   776 y:  -116 z:  2208vector:  7643 x:   704 y:  -492 z: -5044vector:  8157 x:   556 y:  -248 z: 11492vector:  5897 x:   612 y:  -148 z: -26516vector:   654 x:   796 y:  -112 z: 15576vector: 15209 x:   592 y:  -624 z: -28420vector:  8461 x:   744 y:  -580 z: -16208vector: 29595 x:  1848 y:    68 z: -2048vector: 46228 x:  1352 y:   736 z:   152vector:   313 x:  1124 y:  -128 z: -24472vector: 23733 x:   668 y:  -236 z: 10468vector:  7291 x:   708 y:  -920 z: -24532vector:  4752 x:   672 y:  -100 z: -31728vector: 51332 x:   776 y:  -168 z: -31692vector:  8214 x:   528 y:  -224 z:  8332vector:  3115 x:   792 y:  -184 z: -22516vector: 34141 x:  1080 y:   -48 z: -25352vector:  3337 x:   600 y:  -248 z:  2144vector:  4346 x:   844 y:  -180 z: 30900vector: 11662 x:   896 y:  -296 z: -3860vector: 10109 x:   924 y:  -376 z: -5100vector: 18854 x:   868 y:  -192 z: 26748vector:  9008 x:   864 y:  -212 z: 20516vector:  1643 x:   788 y:  -144 z: 28816vector:  9136 x:   816 y:  -116 z: 18484vector:  4314 x:   560 y:  -172 z: -1008vector: 13231 x:   732 y:  -164 z: 10364vector: 24867 x:   744 y:  -176 z: 16496vector: 25529 x:   780 y:  -160 z: 11296vector:  4349 x:   788 y:  -180 z:  1232vector: 65381 x:   832 y:  -156 z:  3308vector:  8970 x:   788 y:   -60 z:  6364vector:  4016 x:   804 y:   -84 z: -21376vector:   608 x:   764 y:  -232 z: 14560vector:  2433 x:   784 y:  -148 z: 26792vector:   741 x:   856 y:   -36 z: -2996vector: 65370 x:   808 y:  -204 z: 25768vector:   705 x:   936 y:  -380 z: 25748vector: 29837 x:  1068 y:  -132 z:  3312vector:  1326 x:   544 y:   -52 z: 10368vector:  5810 x:   808 y:  -188 z: 20484vector: 65377 x:   740 y:  -100 z: -25476vector:  5463 x:   860 y:  -188 z: 28716vector:  3332 x:  1020 y:  -232 z: 31996vector:  4234 x:   776 y:  -184 z: 12440vector:  1867 x:   796 y:  -236 z: 23612vector:  1606 x:   824 y:   -72 z: 11292vector:  1766 x:   820 y:  -148 z: 26648vector:  2967 x:   784 y:  -140 z: -32560vector:  3670 x:   880 y:  -264 z: 14452vector:  2692 x:   796 y:  -124 z: -31620vector:   797 x:   768 y:  -128 z:  8428vector:  4255 x:   796 y:  -204 z: 24584vector:   649 x:   972 y:  -240 z: -9160vector:   799 x:   876 y:  -224 z: 22632vector:  1465 x:   824 y:  -144 z: -31664vector:  5505 x:   768 y:  -184 z: 27896vector:  3715 x:   900 y:  -232 z: -31656vector:  3330 x:   852 y:  -124 z:  3088vector:   602 x:   796 y:  -184 z: 18600vector:   609 x:   788 y:   -28 z: 12536vector: 26353 x:   848 y:   -92 z: -26552vector: 18156 x:   836 y:  -268 z:  9420vector:  5490 x:   788 y:  -232 z: 30860vector:  1061 x:   800 y:  -208 z: 30744vector: 65325 x:   840 y:  -104 z: 16448vector:  2163 x:   740 y:  -184 z: 25732vector:  2985 x:   784 y:  -188 z: 20640vector: 11119 x:   800 y:  -200 z: 14412vector: 26336 x:   780 y:  -204 z:  3276vector:  5821 x:   792 y:  -176 z:  4204vector:   106 x:   824 y:  -164 z: 17660vector:  7624 x:   756 y:  -300 z: 14348vector:  3698 x:   800 y:  -220 z: 10432vector:  1255 x:   820 y:  -196 z: 12484vector:   683 x:   844 y:  -264 z: 25648vector:  3681 x:   736 y:  -180 z:  3148vector: 25443 x:   888 y:  -228 z:  7280vector: 65516 x:   712 y:  -156 z: 15380vector:  3607 x:   852 y:  -184 z: 31888vector:  3060 x:   516 y:  -184 z: -26544vector:  3657 x:   748 y:  -184 z: -9164vector:  2898 x:   780 y:  -120 z: 22660vector:   374 x:   884 y:  -188 z: -31684vector:   180 x:   776 y:  -160 z: -9064vector:  9048 x:   836 y:  -252 z: -30468vector: 65394 x:   816 y:  -188 z: 17632vector:  2995 x:   832 y:  -112 z:  4172vector:  2159 x:   784 y:  -196 z: 10332vector:  2973 x:   840 y:  -116 z: 24600vector:  5894 x:   780 y:  -184 z:  1216vector:  3282 x:   764 y:  -156 z:  1224vector:  5094 x:   856 y:  -224 z: 25700vector:  7711 x:   632 y:  -104 z: 31912vector: 25537 x:   768 y:  -152 z: 11372vector: 65452 x:   888 y:  -164 z: 23680vector:  4347 x:   820 y:  -160 z: 28716vector:  8031 x:  1020 y:  -256 z: 24744vector:   548 x:  1020 y:  -188 z: -18284vector:  2989 x:   776 y:  -256 z: 20628vector:  1327 x:   860 y:  -156 z: 18600vector:  2342 x:   840 y:  -152 z: 12340vector:   211 x:   544 y:  -212 z: 14460vector:   292 x:   868 y:  -128 z: -23412vector:  2704 x:   736 y:  -224 z:  4260vector:  1546 x:   748 y:  -192 z: 25668vector:  4247 x:   848 y:  -264 z:  6212vector:    41 x:   544 y:  -252 z: 13424vector:   358 x:   792 y:  -244 z: 21596vector:  1791 x:   764 y:  -220 z: 24804vector:  7142 x:   816 y:  -204 z: 26652vector:  4773 x:   952 y:  -252 z: -3000vector:  3237 x:   860 y:  -224 z: 19496vector:  9608 x:   784 y:  -172 z: 22756vector:   964 x:   744 y:  -200 z: 16476vector:   575 x:   856 y:  -216 z: 21604vector: 11596 x:   788 y:  -232 z: 21680vector:   631 x:   804 y:  -256 z: 15388vector:   794 x:   784 y:  -428 z: -2964vector: 65390 x:   860 y:  -248 z: 19504vector: 18791 x:   776 y:  -104 z: 24628vector:   530 x:   752 y:  -140 z: 19528vector:   742 x:   844 y:  -216 z: 27748vector:  5835 x:   824 y:  -168 z: 22772vector:  4301 x:   788 y:  -212 z:  6296vector:  5863 x:   748 y:  -148 z: 15452vector: 18223 x:   776 y:  -252 z: 19572vector: 21380 x:   780 y:  -116 z: 18448vector:  2580 x:   972 y:  -228 z: -5072vector: 65402 x:   568 y:  -176 z: 26752vector:  2394 x:   848 y:  -192 z: 24612vector:  7637 x:   712 y:  -184 z: 25748vector:  1980 x:   744 y:  -256 z: 24728vector:  5074 x:   852 y:  -168 z: 26720vector: 19386 x:   832 y:  -164 z: 27744vector:  8184 x:   692 y:  -140 z: -29528vector:  5930 x:   788 y:  -136 z: -28428vector:  2995 x:   616 y:  -204 z: 25608vector:  3585 x:   708 y:  -256 z: 24716vector: 65387 x:   824 y:  -216 z: 24640vector:  5922 x:   868 y:  -244 z:  2108vector:  5466 x:   784 y:  -464 z:  -988vector:  1162 x:   996 y:  -176 z: 17476vector:   881 x:   832 y:  -188 z: 18500vector:   948 x:   824 y:  -260 z: -10012vector:  3385 x:   764 y:  -136 z:  8440vector: 65452 x:  1016 y:  -160 z:  8316vector:  2127 x:   736 y:  -200 z: 24704vector:  1852 x:   768 y:  -240 z: 30896vector:  1813 x:   796 y:  -228 z: 20624vector:  3260 x:   700 y:  -212 z: 13404vector:   349 x:   624 y:  -192 z: 20704vector: 18884 x:   836 y:  -112 z: 25712vector:   710 x:   792 y:  -236 z:  5200vector:   287 x:   816 y:  -224 z:  8324vector:   135 x:   776 y:  -240 z: -26548vector:  2443 x:   836 y:  -188 z: 25852vector: 27839 x:  1208 y:  1420 z: -13228vector: 31963 x:  1952 y:  2276 z: -19292vector:  4064 x:  2432 y:  1420 z: -14184vector: 56488 x:  1060 y:  1100 z: -13188vector: 23420 x: -1400 y: -1296 z: -13184vector: 24818 x: -2564 y: -2772 z: 11428vector:  2228 x:  -792 y: -2180 z: -9036vector:   820 x:   932 y: -1244 z:  -780vector: 65489 x:   864 y:   364 z:  7276vector: 17727 x:   -72 y:   156 z: -1964vector: 20184 x:  1536 y:  -232 z:  2092vector: 17457 x:  1508 y:  -420 z:  3176vector: 26064 x: -1148 y:  -488 z: 31764vector: 25612 x: -1948 y: -1000 z: -23540vector: 41580 x: -1224 y: -1668 z: 31832vector:  3461 x:   684 y: -1156 z: -23512vector: 58494 x:  1368 y:  -176 z: 24608vector: 39024 x:   -44 y:   576 z:  8428vector:  9550 x:  1240 y:    92 z: -29664vector: 40790 x:   612 y:  -936 z: 11420vector: 24955 x: -1152 y: -1676 z: -3008vector: 32357 x: -2668 y: -2272 z: 17588vector: 39836 x: -2372 y: -1200 z:     4vector: 29864 x: -1576 y: -1048 z: -6072vector: 25499 x: -1728 y: -1400 z: 12380vector: 25529 x: -2020 y: -1548 z: 19508vector: 29216 x: -2020 y: -1340 z: 28736vector: 24929 x: -1724 y: -1552 z: -29676vector: 28594 x: -1728 y: -1444 z: 25640vector: 27101 x: -1656 y: -1420 z: 17468vector: 34199 x: -1932 y: -1252 z: -7024vector: 25757 x: -1760 y: -1108 z: -18192vector: 25892 x: -1420 y: -1508 z: -12108vector: 34772 x: -1644 y: -1052 z: 28868vector: 43635 x: -1616 y: -1032 z: 11324vector: 43967 x: -1980 y: -1044 z: 27888vector: 36278 x: -1476 y: -1132 z:  9320vector: 26190 x: -1468 y: -1084 z: -27416vector: 37673 x: -1660 y: -1192 z: -7140vector: 37427 x: -1468 y:  -968 z: -22376vector: 29815 x: -1596 y:  -880 z: 15500vector: 31063 x: -1524 y: -1168 z: -13292vector: 25726 x:   -52 y: -2176 z: -12152vector: 33315 x: -1348 y: -3076 z: -8076vector: 10411 x: -1196 y:  -956 z: 22600vector: 64728 x: -1668 y:  1760 z: -25600vector: 16569 x: -2024 y:  2156 z: -2856vector: 38753 x:  -992 y:    80 z:  4116vector: 42307 x: -1212 y:  -216 z: -17212vector: 32916 x:  -820 y:  -508 z: 21744vector: 37854 x:  -700 y:  -880 z:  4128vector: 29819 x:  -988 y:  -464 z: 29720vector: 28664 x:  -560 y:  -868 z: -22476vector: 45205 x:  -664 y: -1260 z: -26568vector: 42770 x:  -512 y:  -964 z: 30804vector: 53507 x:  -268 y:  -596 z: 21744vector: 30723 x:  -736 y:   580 z: -12208vector: 16419 x:   924 y:  -420 z: 15468vector: 62709 x:  8424 y:  1172 z: -15340vector:   180 x:  4492 y:  -752 z: -13184vector: 21864 x:  4388 y:  -808 z:  5292vector: 17715 x:  5388 y:  -664 z:  1136vector:  2883 x:  4932 y:  -880 z: 23632vector: 18471 x:  4996 y:  -916 z: -31608vector:  7289 x:  4880 y:  -516 z: 21628vector:    45 x:  4788 y:  -800 z: -4932vector:   827 x:  5040 y:  -780 z: -4068vector: 21690 x:  4732 y:  -848 z: -6032vector:  8734 x:  4944 y:  -796 z: -26564vector:  9639 x:  4872 y: -1008 z: -26460vector: 19704 x:  4912 y:  -728 z: -11224vector: 21747 x:  4912 y:  -780 z: -6024vector:  3217 x:  4828 y:  -816 z: -15360vector:  8640 x:  4460 y:  -848 z: 31836vector: 13400 x:  4684 y:  -792 z: -22452vector: 20868 x:  5132 y: -1072 z: -6104vector: 11847 x:  5992 y: -1180 z:  -960vector:  1498 x:  5328 y: -1668 z: -24376vector: 63871 x:  4788 y: -1136 z:  3116vector: 63749 x:  2952 y:  1260 z:  2208vector: 25685 x:  1244 y:  2188 z: -13268vector: 26094 x:  1376 y:   300 z: 11292vector: 23917 x:  3588 y: -1380 z: -28444vector:  2235 x:  2684 y:   588 z: 15472vector: 13159 x:  2092 y:   256 z: 28760vector: 10958 x:    20 y:  -812 z: 27740vector: 16972 x:   696 y:  -192 z: -17392vector:   386 x:   740 y:   132 z: -24476vector:  2485 x:   752 y:  -240 z:  -932vector:  7502 x:   776 y:  -188 z: 23640vector: 26243 x:   728 y:  -192 z: 16444vector:  1833 x:   728 y:  -212 z: 21628vector: 18062 x:   976 y:  -276 z: 12468vector: 26301 x:   600 y:  -112 z: -15352vector:  2395 x:   840 y:  -208 z: -4884vector: 25509 x:   724 y:   -80 z: 13380vector: 65490 x:   728 y:  -156 z: 20532vector:  3562 x:   524 y:  -168 z: 26724vector:    59 x:   856 y:  -196 z:  -908vector:   765 x:   876 y:  -248 z:  2280vector:  5160 x:   820 y:   -20 z:  1092vector:  4305 x:   808 y:  -152 z: -2828vector:  5081 x:   800 y:  -284 z:  3124vector:  1601 x:   776 y:  -176 z: -11196vector:    84 x:   772 y:  -140 z: 16572vector: 65411 x:   740 y:  -212 z:  1104vector:  3010 x:   708 y:  -204 z: -9196vector: 22843 x:   740 y:  -224 z: 17516vector: 25432 x:   856 y:  -184 z: 18540vector: 65368 x:   740 y:  -228 z: 12372vector:   290 x:   828 y:  -200 z: -20404vector:  4235 x:   820 y:  -152 z:  6292vector:   953 x:   692 y:  -164 z:  3288vector:   129 x:   780 y:  -220 z: 21664vector:   520 x:   748 y:  -172 z: 27856vector: 65340 x:   820 y:  -204 z: 11428vector:  1012 x:   812 y:  -172 z: 29840vector:  3796 x:   848 y:   -76 z: -19424vector: 65316 x:   816 y:  -192 z:  2184vector:   585 x:   996 y:  -200 z:  3296vector:   605 x:  1016 y:  -248 z:  2120vector:   179 x:   668 y:  -192 z: 18588vector: 19337 x:   756 y:  -152 z:  5344vector:  8626 x:   684 y:  -252 z:  8436vector: 25627 x:   968 y:  -216 z: 20548vector:   357 x:   776 y:  -184 z: 10240vector:  1359 x:   764 y:  -224 z: 10244vector: 22814 x:   736 y:  -244 z: 20704vector:  1024 x:   544 y:  -216 z: 14396vector:  1435 x:   784 y:  -240 z: 11404vector:  1924 x:   832 y:  -212 z: 31784vector:  7110 x:   764 y:  -152 z: 10488vector:  2582 x:   744 y:  -148 z: -26496vector: 65343 x:   512 y:  -212 z: 12288vector:  1000 x:   844 y:  -220 z:   156vector: 65455 x:   788 y:  -208 z:    68vector: 18160 x:   764 y:  -156 z: 13508vector: 26346 x:   780 y:  -196 z: 13332vector:  1556 x:   704 y:  -232 z:  5336vector: 10512 x:   860 y:  -184 z: 14440vector:  7153 x:   760 y:  -460 z: -9124vector:  4716 x:   660 y:  -228 z: -1996vector:  3348 x:   584 y:  -212 z:  9380vector:  1100 x:   772 y:  -208 z: 12496vector:  1945 x:   736 y:  -204 z: 16600vector:   295 x:   740 y:  -488 z: -8052vector:  1807 x:   808 y:  -120 z: 25768vector:  3264 x:   796 y:  -204 z: 22664vector: 23245 x:   804 y:  -220 z:  4296vector:   501 x:   800 y:  -112 z:  7228vector:  4308 x:   776 y:  -232 z: 12476vector:  1166 x:   796 y:   -96 z: 27756vector:  4629 x:   784 y:  -192 z: -7104vector:   816 x:   812 y:  -156 z: 16444vector:  5926 x:   808 y:  -120 z: 17456vector: 26409 x:   772 y:  -188 z: 19568vector:  1370 x:   800 y:  -244 z:  6268vector: 65477 x:   780 y:  -208 z: 15460vector:   936 x:   732 y:  -228 z:  9348vector:    72 x:   832 y:  -172 z: 14376vector:  1139 x:   716 y:  -248 z: 12308vector: 65362 x:   736 y:  -212 z:  8404vector: 23323 x:   828 y:  -248 z:  9268vector:  4228 x:   784 y:  -124 z: 13380vector:   272 x:  1016 y:  -172 z:  7212vector:  7629 x:   820 y:  -232 z: 22644vector:   370 x:   728 y:  -152 z: 26700vector:  3084 x:   664 y:   -52 z: 22628vector:  1785 x:   996 y:  -176 z: 13352vector:   495 x:   668 y:  -300 z:  8216vector: 24980 x:   916 y:  -224 z:   192vector:  2851 x:   784 y:  -152 z:  6344vector:  3974 x:   844 y:  -156 z:  8312vector:  2662 x:   776 y:  -248 z: 26868vector: 24913 x:   820 y:  -192 z: 18556vector: 11644 x:   832 y:  -140 z: 29716vector:  1167 x:   800 y:   -40 z: 12384vector: 65359 x:   568 y:  -144 z: 22604vector: 18195 x:  1008 y:  -280 z: 22536vector:  2977 x:   704 y:  -312 z: -1796vector:  6283 x:   820 y:  -176 z: 14436vector:  2364 x:   632 y:   -24 z: 16420vector: 65389 x:   572 y:  -216 z: 19564vector:  1003 x:   780 y:  -224 z: 18640vector:  2722 x:   800 y:  -160 z: 24720vector: 13858 x:   824 y:   -24 z: 22580vector:   202 x:   524 y:  -296 z: -30616vector:  2084 x:   740 y:  -264 z:  5296vector:   975 x:   808 y:  -264 z: -1004vector: 65353 x:   852 y:  -228 z: 20632vector:  1010 x:   772 y:  -252 z: 20572vector:  7105 x:   596 y:  -212 z:  7312vector:  4275 x:   788 y:  -240 z: 29720vector:  3457 x:   784 y:  -180 z: 19548vector:   460 x:   772 y:  -176 z:  6260vector:  2986 x:   728 y:  -236 z: 21584vector:   501 x:   568 y:  -284 z:  3096vector: 26344 x:   768 y:  -300 z: -3844vector:   129 x:   812 y:  -204 z:  4256vector:  3564 x:   840 y:  -184 z: 10392vector:  2951 x:   576 y:  -248 z: 19704vector: 26335 x:   764 y:  -312 z:  4116vector:  7221 x:   748 y:  -256 z:    12vector: 16899 x:   788 y:  -512 z: -8136vector: 65338 x:   760 y:  -200 z: -3900vector:  4322 x:   556 y:  -220 z: 17440vector:    67 x:   808 y:  -224 z:  9384vector:  4012 x:   796 y:  -208 z: 27716vector: 24091 x:   836 y:  -212 z:  4220vector: 20758 x:   748 y:  -160 z: 15484vector:  5518 x:   756 y:  -128 z:  1180vector:   149 x:   804 y:  -208 z: 12332vector: 22079 x:   824 y:   -24 z: 11336vector: 23460 x:  1008 y:  -292 z:  5272vector:  4638 x:   832 y:  -176 z:   252vector: 15756 x:   752 y:  -184 z: 11464vector:   224 x:   804 y:  -188 z:  5304vector:  1589 x:   840 y:  -164 z:  2180vector: 23510 x:   820 y:  -196 z:  8228vector:   409 x:   724 y:  -192 z: 21560vector:   493 x:   896 y:  -220 z: 12512vector: 65415 x:   940 y:  -164 z: 12380vector: 65391 x:   816 y:  -196 z: -9216vector:   796 x:   624 y:  -184 z: 15392vector: 65388 x:   708 y:  -212 z: 16424vector:  4690 x:   792 y:  -460 z: -5964vector:  4653 x:   776 y:  -168 z: -1824vector: 65324 x:   812 y:  -252 z:  7232vector:  3549 x:   748 y:  -192 z:    88vector: 65369 x:   784 y:  -168 z: 18624vector: 16870 x:   844 y:  -172 z: 13460vector:    10 x:   828 y:  -200 z:  6144vector:   750 x:   740 y:  -220 z: 11508vector:   300 x:   708 y:  -280 z: -1800vector:  2413 x:   772 y:   -56 z: 26772vector: 16212 x:  1020 y:  -196 z:  4164vector:   782 x:   776 y:  -232 z: -1940vector:   133 x:   812 y:  -104 z:  5136vector: 13661 x:   740 y:  -488 z: -3008vector: 26328 x:   792 y:   -16 z: 25672vector: 65352 x:   740 y:  -120 z:  5364vector: 16245 x:   748 y:  -256 z: -20324vector:   492 x:   780 y:  -288 z: 23640vector:  2629 x:   752 y:    -4 z: 22740vector:   213 x:   776 y:  -248 z: -7100vector:   598 x:   780 y:  -188 z: -4004vector:   524 x:   788 y:  -176 z:  9276vector: 23407 x:   776 y:  -220 z: 15488vector:   765 x:   788 y:    -4 z: 14364vector:  5860 x:   952 y:  -308 z:    40vector:   222 x:   772 y:  -232 z: 13464vector: 65373 x:   708 y:  -204 z: 13456vector:  1222 x:   752 y:  -200 z: -27600vector: 65481 x:   752 y:  -272 z: 25696vector:  3293 x:   824 y:  -204 z:  6172vector:  2097 x:   748 y:  -248 z: 21572vector: 25480 x:   808 y:  -212 z:  6276vector: 65325 x:   796 y:  -248 z: 20732vector:   957 x:   796 y:  -248 z:  9372vector:  8934 x:   744 y:  -236 z:  8360vector:  3645 x:   788 y:  -240 z:  4280vector:   383 x:   796 y:  -216 z:  8212vector:  3930 x:   956 y:  -216 z: -7032vector:  2659 x:   740 y:  -176 z:  8300vector:   188 x:   692 y:  -188 z:  9420vector:  4340 x:   832 y:  -228 z: 22600vector:   100 x:   680 y:  -236 z:  6392vector:  8494 x:   828 y:  -232 z: -28504vector:  5831 x:   800 y:  -176 z: -17348vector:  1356 x:   752 y:  -144 z: 28816vector:   988 x:   732 y:  -184 z: 27720vector: 65525 x:   8ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d643e
+file: "./main/i2c.c" line 57
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f30 0x400869c5:0x3ffb3f50 0x4008cc7d:0x3ffb3f70 0x40086957:0x3ffb3fe0 0x400d643e:0x3ffb4010 0x400d6621:0x3ffb4030 0x400d6697:0x3ffb4060 0x400d6355:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d65f8
+file: "./main/accel.c" line 67
+func: initMPU
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f80 0x400869c5:0x3ffb3fa0 0x4008cc7d:0x3ffb3fc0 0x40086957:0x3ffb4030 0x400d65f8:0x3ffb4060 0x400d6343:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:  2352 x:   800 y:  -140 z: 12436vector:  3286 x:   992 y:  -188 z: 30792vector:  3583 x:   904 y:  -252 z: -27600vector:   301 x:   772 y:  -288 z: 30732vector:  1353 x:   764 y:  -176 z:  8256vector:  7221 x:   856 y:  -256 z: 24716vector: 24849 x:   540 y:  -144 z:  1268vector: 65461 x:   736 y:  -220 z:  9252vector:  4272 x:   796 y:  -208 z: 12496vector:   836 x:   828 y:  -192 z: 13544vector:  2572 x:  1004 y:  -216 z: -1984vector:  1617 x:   756 y:  -208 z: 22764vector:  9672 x:   820 y:  -260 z:   192vector:   957 x:   884 y:  -240 z: 10368vector:    91 x:   796 y:  -448 z: -4052vector:  2292 x:   568 y:  -268 z: 22680vector:  2955 x:   852 y:  -248 z: 10372vector:   567 x:   836 y:  -188 z: 17492vector:  2111 x:   716 y:  -232 z: 16540vector:   579 x:   832 y:  -236 z: 17460vector:  3328 x:   760 y:  -216 z: -6052vector: 65329 x:   832 y:  -252 z: 29768vector:  1138 x:   836 y:  -248 z:  8336vector: 23582 x:   744 y:  -228 z:  2188vector:  3560 x:   804 y:  -200 z: 11316vector: 17469 x:   828 y:  -208 z: 16524vector: 19840 x:   796 y:  -152 z: 26636vector:   460 x:   804 y:  -480 z: -1996vector: 20159 x:   540 y:  -224 z:  4116vector:   391 x:   556 y:  -224 z: 12452vector: 18169 x:   840 y:  -276 z:  6228vector: 24170 x:   800 y:  -248 z:  4220vector:  3308 x:   804 y:  -276 z: 11352vector: 65515 x:   560 y:  -212 z: 25692vector:  1662 x:   692 y:  -244 z: 11368vector:  2662 x:   812 y:  -452 z: -15208vector:  3726 x:   816 y:  -512 z: -13164vector:  4717 x:   540 y:  -264 z: -5100vector:  2152 x:   972 y:  -188 z:   140vector:  3941 x:   784 y:  -200 z: 12376vector: 65450 x:   796 y:  -224 z: -32700vector: 65386 x:   780 y:  -244 z: -29536vector: 65448 x:   968 y:  -268 z: 22708vector:  1636 x:   764 y:  -200 z: -15332vector:  5059 x:   804 y:  -196 z: 15516vector: 25682 x:   784 y:  -136 z:  8348vector:  5187 x:   576 y:  -140 z: 12412vector:  3015 x:   788 y:  -232 z: 10372vector: 13885 x:   856 y:  -152 z: -6104vector:  3235 x:   796 y:   -36 z:  2236vector: 22124 x:   800 y:   -76 z: 10364vector:   113 x:   560 y:  -204 z: -17268vector:   294 x:   716 y:  -168 z: 18592vector: 21254 x:   776 y:  -224 z: 11328vector: 65452 x:   840 y:  -148 z: 14356vector:  2383 x:   992 y:  -276 z: -28548vector: 65314 x:   764 y:  -244 z: -7096vector:  1572 x:   776 y:  -192 z: -3000vector:   639 x:   764 y:  -244 z:  1084vector:   191 x:  1008 y:  -232 z:  4192vector: 65357 x:   552 y:  -152 z:  9248vector: 25699 x:   824 y:  -156 z: -12172vector:  1156 x:   708 y:  -500 z: -17340vector:  2985 x:   864 y:  -232 z:  6288vector: 65415 x:   584 y:  -276 z: 20548vector: 25768 x:   812 y:  -268 z:  6220vector:   326 x:   660 y:  -184 z: 18648vector:   961 x:   744 y:  -184 z: 11340vector: 65287 x:   516 y:  -220 z:  5232vector:   689 x:   524 y:  -116 z: -11256vector:  2660 x:   812 y:  -320 z: -31540vector:     8 x:   736 y:  -172 z:   232vector:   371 x:   880 y:  -496 z: -1888vector:  4258 x:   792 y:  -236 z:  1024vector:   272 x:   716 y:  -168 z: 11504vector:  4299 x:   768 y:  -264 z: -1916vector:  2354 x:   780 y:  -104 z: 22568vector: 65480 x:   796 y:  -148 z: -4932vector:  4596 x:   776 y:  -164 z: -9136vector: 65328 x:   848 y:  -264 z:  3092vector:  1911 x:   840 y:  -208 z: 12344vector:  9974 x:   800 y:  -128 z: 11360vector:  2702 x:   800 y:  -216 z: 29788vector:  1387 x:   812 y:  -260 z: 27804vector:   148 x:   740 y:   -96 z: -24508vector:  2404 x:   840 y:  -228 z: 14456vector:   629 x:   588 y:  -200 z: 17516vector: 65322 x:   788 y:  -248 z: -29564vector:    74 x:   716 y:  -252 z:  -960vector:   382 x:   804 y:  -140 z:  3164vector:   571 x:   824 y:  -208 z: 24692vector:   438 x:   536 y:  -236 z: -1960vector:  1218 x:   800 y:  -144 z: 31888vector:  5875 x:   864 y:  -204 z: 26876vector:  3570 x:   740 y:  -172 z:  2068vector:  2383 x:   592 y:  -140 z: 15416vector:  2362 x:   832 y:  -204 z: 15508vector: 22618 x:   812 y:  -200 z: 11316vector:  5123 x:   812 y:  -200 z:     4vector:  3971 x:   788 y:  -192 z:    24vector:   532 x:   832 y:  -240 z: 24620vector:   954 x:   728 y:  -184 z: 15480vector:  1202 x:   744 y:  -208 z: 23804vector:  1129 x:   812 y:  -128 z: 13512vector: 65363 x:   552 y:  -172 z:   140vector:  7562 x:   832 y:  -256 z: 17524vector:   940 x:   884 y:  -212 z: 11284vector:  3599 x:   712 y:  -200 z:  5220vector:    99 x:   796 y:  -260 z: 13340vector:  5415 x:   540 y:  -228 z:  5212vector: 65491 x:   764 y:  -200 z:  9224vector: 24679 x:   812 y:  -236 z: 17464vector:   950 x:   772 y:  -152 z: 10464vector: 65392 x:  1012 y:  -232 z: 20728vector:  2358 x:   748 y:  -212 z:  1044vector: 65332 x:   736 y:  -184 z:  3136vector: 65300 x:   632 y:  -148 z:  9440vector: 65358 x:  1000 y:  -120 z:  9236vector:  1429 x:  1016 y:  -156 z: 25784vector: 65284 x:   844 y:  -152 z:  9276vector:  2383 x:   708 y:  -160 z:  1164vector:   391 x:   808 y:  -248 z: 30820vector:  2384 x:   772 y:  -328 z: -5088vector:  1105 x:   764 y:  -232 z: 22728vector:   917 x:   784 y:  -240 z:  4196vector: 65511 x:   732 y:  -384 z: -3924vector:  4250 x:   840 y:  -192 z:  8432vector:  3569 x:   804 y:  -264 z: 31864vector:  4399 x:   828 y:  -184 z: -2016vector:   492 x:   796 y:  -248 z: 21504vector:   219 x:   816 y:    -4 z: 14584vector: 65323 x:   804 y:  -208 z: 18560vector:  3543 x:   732 y:  -192 z: 31896vector:  4622 x:   832 y:  -208 z: 12480vector: 65437 x:   800 y:  -236 z: 16480vector:   614 x:   788 y:  -220 z: 10352vector: 65492 x:   928 y:  -144 z: -2008vector:  1360 x:   728 y:  -184 z: 13452vector:  3255 x:   744 y:  -232 z: 23668vector:  2598 x:   800 y:  -200 z: 14388vectorESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d64bc
+file: "./main/i2c.c" line 74
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f30 0x400869c5:0x3ffb3f50 0x4008cc7d:0x3ffb3f70 0x40086957:0x3ffb3fe0 0x400d64bc:0x3ffb4010 0x400d6651:0x3ffb4030 0x400d669d:0x3ffb4060 0x400d6355:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d655e
+file: "./main/accel.c" line 46
+func: initMPU
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f80 0x400869c5:0x3ffb3fa0 0x4008cc7d:0x3ffb3fc0 0x40086957:0x3ffb4030 0x400d655e:0x3ffb4060 0x400d6343:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector: 65312 x:   744 y:  -228 z: 13332vector:   462 x:   700 y:  -232 z: 16500vector:  2639 x:   552 y:  -228 z:   152vector: 65429 x:   736 y:  -188 z: -2016vector:  2984 x:   820 y:   -44 z: -31588vector:  2161 x:   844 y:    -4 z: -31740vector:  5841 x:   516 y:  -220 z:  6144vector:   918 x:   780 y:  -192 z: 25840vector:  3626 x:   736 y:  -200 z: 14444vector:  4726 x:   852 y:  -184 z: 11484vector:  2078 x:   832 y:  -160 z: 16532vector:  3275 x:   568 y:  -276 z:  4224vector: 24894 x:   764 y:  -264 z: -1964vector:   213 x:   720 y:   -68 z:  6168vector:   135 x:   788 y:  -208 z:  2176vector:  1857 x:   960 y:  -204 z:  4216vector:   256 x:   820 y:  -164 z:  7208vector: 65319 x:   824 y:  -212 z: 11360vector:   972 x:   676 y:  -220 z: 12296vector:  7663 x:   672 y:  -276 z: 27828vector: 18208 x:   864 y:  -244 z: 20604vector:  6722 x:   740 y:  -188 z: 11488vector:  3030 x:   780 y:  -192 z: -32740vector:   156 x:   760 y:  -224 z:  6188vector:    89 x:   992 y:  -136 z: 22640vector:  2078 x:   740 y:  -220 z: -3880vector:  5092 x:   724 y:  -444 z: -13304vector: 18255 x:   840 y:  -128 z: 18456vector:  2059 x:  1008 y:  -220 z:  6268vector:   635 x:   824 y:  -200 z: -6052vector: 10566 x:   812 y:  -264 z:  8268vector:   357 x:   836 y:  -232 z:  9368vector: 26372 x:   820 y:  -276 z: 18520vector:  1228 x:   768 y:  -220 z: 24652vector:  1543 x:   808 y:  -264 z: -5936vector: 24842 x:   824 y:  -196 z: 30864vector:    96 x:   784 y:   -44 z: 25788vector: 65425 x:   876 y:  -220 z: 27688vector: 65380 x:   756 y:  -244 z: 15512vector:  4373 x:   800 y:  -228 z: 28824vector:     7 x:   704 y:  -472 z: -4080vector:  6343 x:   544 y:  -220 z:  3236vector: 65412 x:   784 y:  -208 z: 30844vector: 11712 x:   828 y:  -200 z:  2116vector:   955 x:   844 y:  -252 z:   116vector: 24910 x:   792 y:  -248 z: 20588vector: 65475 x:   584 y:  -18ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d64bc
+file: "./main/i2c.c" line 74
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d64bc:0x3ffb4030 0x400d6681:0x3ffb4050 0x400d6350:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector: 65522 x:   752 y:  -504 z: -8032vector:   978 x:   872 y:  -252 z: 17436vector:  9054 x:   852 y:  -236 z:  6148vector:  4649 x:   860 y:  -280 z: -5936vector: 65373 x:   736 y:  -156 z: 16600vector: 65381 x:   776 y:    -8 z:  2068vector:    71 x:   800 y:  -228 z: -30668vector:   289 x:   852 y:  -236 z: 12464vector:   674 x:   828 y:  -236 z:  5228vector:  1848 x:   728 y:  -216 z:  4128vector:   554 x:   528 y:  -192 z: -5076vector: 65397 x:  1008 y:  -264 z: 18528vector:   604 x:   696 y:  -272 z: -8056vector:  2158 x:   788 y:  -200 z: 27672vector:   958 x:   796 y:  -256 z: 17440vector:    22 x:   588 y:  -148 z: -13184vector: 25679 x:   696 y:  -168 z: -7008vector:  1244 x:   736 y:  -208 z: 12420vector:   808 x:   776 y:  -220 z: 27900vector:   828 x:  1012 y:  -236 z: 24724vector:  5788 x:   592 y:  -268 z: 22568vector:   462 x:   772 y:  -204 z: -4888vector:   983 x:   768 y:  -240 z:  5292vector:  3653 x:   856 y:  -424 z: -6040vector:  8089 x:   568 y:  -216 z:  4288vector: 22860 x:   736 y:  -156 z: 17616vector:  5055 x:   820 y:  -136 z: 30960vector:  1402 x:   808 y:  -500 z: -18376vector:  9525 x:  1000 y:  -220 z: 11336vector:  4306 x:  1000 y:  -200 z: 18548vector:  2415 x:   760 y:  -140 z:  1164vector:    75 x:   744 y:  -252 z: 18516vector:  7557 x:   516 y:  -116 z: -4020vector: 14439 x:   552 y:  -148 z:  5136vector:  5022 x:  1744 y:  -460 z: -29580vector:  1401 x:   792 y:  -208 z: 12408vector: 65374 x:   796 y:  -160 z:  9468vector:   343 x:   644 y:  -236 z: -32684vector:  2996 x:   828 y:  -236 z:  5228vector: 26135 x:   840 y:  -252 z: 20572vector:   157 x:   724 y:  -252 z: 29700vector: 65341 x:   708 y:  -236 z:  9252vector:  1543 x:   872 y:  -224 z: 17588vector:  6287 x:   704 y:  -220 z: 25812vector:  4352 x:   876 y:  -140 z: 28764vector:  2682 x:   752 y:   -12 z: 10288vector:  7229 x:  1004 y:  -172 z: -5084vector: 26426 x:   764 y:  -268 z: 16608vector:  1507 x:   776 y:  -236 z: -20352vector:   395 x:   840 y:  -212 z: 10412vector:   429 x:   836 y:  -236 z: 24604vector:  1633 x:  1004 y:  -260 z:  4124vector:    52 x:   828 y:  -148 z: 20732vector: 65421 x:   728 y:  -232 z: 20552vector: 16291 x:   832 y:  -216 z: -31724vector:  2436 x:   804 y:  -152 z: 23560vector:   350 x:   796 y:  -200 z: 10328vector: 21267 x:   808 y:  -204 z: 13412vector: 26174 x:   776 y:  -216 z:  7348vector:  1795 x:   756 y:  -144 z: 10316vector:  5070 x:   984 y:  -208 z: 13356vector:  3314 x:   740 y:  -164 z: 16600vector:  4986 x:   776 y:   -44 z:  4332vector:   401 x:   720 y:   -20 z: 14432vector: 65351 x:   800 y:  -160 z:  4260vector:  1579 x:   760 y:  -252 z:  7376vector: 65326 x:   752 y:  -280 z: -6144vector: 65497 x:   780 y:  -212 z: -32708vector:   891 x:   716 y:  -200 z: -9048vector:   246 x:   752 y:  -248 z:  6348vector:  5956 x:   748 y:  -128 z: 19484vector:   941 x:   712 y:    -4 z: 19612vector: 11137 x:   776 y:   -52 z: -26524vector: 21511 x:   796 y:  -172 z: 13528vector:  1421 x:   784 y:  -180 z:  9288vector:    21 x:   740 y:  -252 z:  1108vector:  2390 x:   776 y:  -232 z: 12396vector:  2419 x:   784 y:  -244 z: -2032vector: 65358 x:   772 y:  -204 z:  8264vector: 22106 x:   736 y:  -172 z: 15496vector: 65495 x:   728 y:  -132 z:  1060vector:  8174 x:   740 y:  -220 z:  8308vector:  2105 x:   788 y:  -244 z: 30772vector:   455 x:   724 y:  -176 z: 13492vector: 65499 x:   836 y:  -220 z:  9216vector: 16246 x:   788 y:   -20 z: 27688vector: 20074 x:   812 y:  -256 z:  4176vector:  4337 x:   796 y:  -192 z: 21572vector:  1929 x:   800 y:  -272 z: 26824vector:  2689 x:   888 y:  -240 z: 11436vector:  3912����������������������������������������������������������������or: 65350 x:   548 y:  -268 z: -9132vector:  3270 x:   768 y:  -132 z: 16508vector:  7368 x:  1316 y:  -428 z: 16396vector: 65341 x:  1184 y:   -48 z:    12vector:  1925 x:   984 y:  -196 z: 22568vector: 51376 x:   888 y: -1636 z: -22348vector: 26245 x:  1128 y:   -40 z: -16380vector: 19843 x:   788 y:  -188 z:  6280vector:   259 x:   756 y:  -260 z:  9360vector: 65466 x:   768 y:  -220 z:    96vector:  4670 x:   748 y:  -236 z: 17452vector: 20542 x:   792 y:  -156 z: 28696vector: 65435 x:   756 y:  -216 z: 23644vector: 17558 x:   520 y:  -256 z: 28712vector:   493 x:   724 y:  -224 z: 18664vector:  9063 x:   804 y:  -232 z:  6216vector: 16888 x:   836 y: -2484 z: -9200vector: 58411 x:   600 y:   -44 z: -26620vector: 10596 x:   572 y:  -164 z: -5108vector:  4522 x:   900 y:  -392 z: -21344vector:  7384 x:   824 y:  -456 z: -3024vector:   851 x:   812 y:  -176 z: 19648vector:  4299 x:   940 y:  -192 z: 24684vector:  1011 x:   740 y:  -184 z: -27548vector:ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d643e
+file: "./main/i2c.c" line 57
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d643e:0x3ffb4030 0x400d6670:0x3ffb4050 0x400d6350:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:  1627 x:   804 y:  -252 z: 20516vector:  3679 x:   512 y:  -224 z: 25704vector:   133 x:   772 y:  -216 z:  6304vector:    64 x:   768 y:  -216 z:  6256vector: 25681 x:   780 y:  -176 z: 11384vector:    36 x:   724 y:   -36 z: 10296vector: 10599 x:   784 y:  -200 z: 16412vector:  2096 x:   748 y:  -200 z: 11348vector:  2121 x:   748 y:  -168 z: 22736vector:   482 x:   768 y:  -388 z: -5900vector: 65407 x:   788 y:  -188 z:  6388vector:  4346 x:   564 y:  -228 z: -6088vector: 65431 x:   804 y:   -96 z: 24600vector:  7326 x:   692 y:    -8 z:  2300vector:   221 x:   768 y:  -252 z: 18596vector:  1433 x:   984 y:  -260 z: 19592vector:  1847 x:   684 y:  -268 z:    48vector: 11684 x:   896 y:  -160 z: 24720vector: 11570 x:   748 y:  -460 z: -1024vector:  4683 x:   772 y:  -212 z: 20504vector:   745 x:   996 y:  -272 z: 19560vector:  3269 x:   764 y:  -148 z:  1136vector:  1818 x:   868 y:  -200 z: 19488vector:   422 x:   884 y:  -148 z: 16460vector:  6659 x:   752 y:   -96 z: -4052vector:  1811 x:   816 y:  -192 z: -4020vector: 25479 x:   812 y:  -192 z:  3164vector: 25596 x:   892 y:  -212 z: -22404vector:   101 x:   684 y:  -160 z: 16512vector:    53 x:   792 y:  -180 z:  1196vector: 24080 x:   824 y:  -272 z: 19532vector:  4654 x:   752 y:  -236 z: 28752vector:   276 x:   776 y:  -116 z:  8268vector: 19480 x:   812 y:  -280 z: 15464vector:   344 x:   652 y:  -148 z: 31920vector: 65456 x:   740 y:  -224 z: 13496vector: 26433 x:   900 y:  -232 z: 10284vector:   709 x:   972 y:  -232 z: 21636vector:  1887 x:   748 y:  -156 z: 10268vector:  7216 x:   736 y:  -268 z: 23744vector:  3272 x:   756 y:  -244 z: 13380vector: 65455 x:   816 y:  -176 z: -1008vector:  8536 x:   512 y:  -284 z: 18540vector:   975 x:   788 y:  -168 z: 10408vector:  1820 x:   820 y:   -44 z:  7404vector:   672 x:   740 y:  -168 z: 16500vector:  3301 x:   520 y:  -204 z: -8976vector:  8627 x:   796 y:  -232 z: 10492vector:  1050 x:   716 y:  -128 z: -32548vector:  7757 x:   744 y:  -228 z: -30608vector:  4077 x:   800 y:  -256 z: 10444vector: 65475 x:   784 y:  -204 z: 12460vector: 24269 x:   820 y:  -148 z:  2108vector:  6335 x:   812 y:  -164 z:  6172vector:  4252 x:   752 y:  -184 z: 14552vector:   135 x:   812 y:  -196 z: 17460vector:    61 x:   652 y:  -192 z:  2196vector: 20593 x:   772 y:  -156 z: 25792vector:   800 x:   700 y:  -196 z: 26796vector:  1052 x:   608 y:  -200 z:  8436vector:    83 x:   700 y:  -236 z: 30832vector:  2098 x:   816 y:  -280 z:  6264vector:  5055 x:   804 y:  -252 z: 13504vector:   254 x:   776 y:  -132 z: 18452vector:  2726 x:   964 y:   -80 z:  2164vector:  2416 x:   776 y:  -176 z: 12340vector:  1639 x:   812 y:  -184 z: 17600vector:  8563 x:   772 y:  -188 z:  4096vector: 26367 x:   992 y:ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d64bc
+file: "./main/i2c.c" line 74
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d64bc:0x3ffb4030 0x400d6640:0x3ffb4050 0x400d634b:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:   436 x:   844 y:   -16 z: 30776vector:   963 x:   540 y:  -212 z: 13460vector:   125 x:   732 y:  -180 z: 19692vector: 10133 x:   780 y:  -208 z: -3012vector: 65417 x:   752 y:  -176 z: 10412vector:  2672 x:   816 y:   -12 z: 20636vector:  3192 x:   820 y:  -264 z: 19488vector:  1696 x:   784 y:  -132 z: 22672vector:  3767 x:   696 y:  -188 z: 17476vector:   392 x:   812 y:   -56 z: 13472vector:  2949 x:   824 y:  -156 z: 21616vector:   214 x:   960 y:  -268 z: -25556vector:  4696 x:   856 y:  -228 z:  8352vector:  7544 x:   772 y:   -96 z: 21620vector:  1158 x:   752 y:  -184 z:  1172vector:  3285 x:   976 y:  -236 z: 21752vector:  8522 x:   752 y:  -164 z: -32700vector:  4714 x:   820 y:  -248 z:  2148vector:  1453 x:   704 y:  -ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d64bc
+file: "./main/i2c.c" line 74
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d64bc:0x3ffb4030 0x400d6610:0x3ffb4050 0x400d6346:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:   568 x:   804 y:  -240 z: 21620vector:  1900 x:   816 y:  -184 z: 18504vector:  7665 x:   708 y:  -164 z: 23676vector:  5071 x:   776 y:  -176 z: 30796vector:  2980 x:   800 y:  -208 z: 12436vector:  1576 x:   824 y:  -192 z: 20520vector: 19550 x:  1020 y:  -212 z: 16436vector: 11668 x:   760 y:  -196 z: 14396vector:  9527 x:   844 y:  -108 z: -27500vector:   963 x:   820 y:  -160 z: 17616vector: 65341 x:   820 y:  -156 z: 18684vector:     3 x:   564 y:  -172 z: -27520vector:  3648 x:   804 y:  -164 z: 10320vector:   637 x:   876 y:  -196 z: 16424vector:  3340 x:   768 y:  -232 z: 18588vector:   192 x:   572 y:  -168 z: 15440vector:  4645 x:   904 y:  -292 z: 22768vector: 65455 x:   816 y:  -184 z: 18548vector:  4047 x:   716 y:  -148 z: -31692vector:  8998 x:   808 y:  -232 z: -27500vector:  3620 x:   792 y:  -216 z:  9368vector: 25591 x:   764 y:  -144ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d64bc
+file: "./main/i2c.c" line 74
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d64bc:0x3ffb4030 0x400d6681:0x3ffb4050 0x400d6350:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:   477 x:   820 y:  -176 z: 18648vector:   308 x:   804 y:  -156 z: 16544vector:  9173 x:   828 y:  -196 z:  5248vector: 10140 x:   772 y:  -276 z: 27744vector:  1804 x:   788 y:  -240 z: 16444vector: 65323 x:   744 y:  -220 z:  1244vector:   432 x:   528 y:  -136 z: 19508vector: 24190 x:   840 y:  -280 z:  9432vector:  4761 x:   796 y:  -248 z:  2204vector:    68 x:   732 y:  -192 z: 10304vector:   247 x:   800 y:  -176 z: 18520vector: 12131 x:   852 y:  -164 z:  6200vector:   950 x:   868 y:  -236 z: 24748vector: 65371 x:   840 y:  -168 z:  9468vector:   879 x:   788 y:   -64 z: 28672vector: 65466 x:   740 y:  -264 z:  2152vector: 24926 x:   840 y:  -204 z: 23616vector: 20699 x:   764 y:  -224 z:  8260vector:  5504 x:   768 y:  -228 z: 22588vector:   142 x:  1008 y:  -176 z: -23312vector:  1870 x:   832 y:  -244 z:  -988vector:  6338 x:   820 y:  -176 z: 29836vector: 65429 x:   744 y:  -120 z: 17448vector:   965 x:   780 y:  -224 z: -29504vector:   314 x:   756 y:  -152 z: 19660vector:  1424 x:   816 y:  -104 z: 13504vector:  4339 x:   864 y:  -200 z: 20500vector:  1392 x:   800 y:  -236 z: 22696vector:   171 x:  1008 y:  -224 z: -17396vector: 65296 x:   852 y:  -256 z:  6260vector:   469 x:   744 y:  -192 z: 18620vectorESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d64bc
+file: "./main/i2c.c" line 74
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d64bc:0x3ffb4030 0x400d6610:0x3ffb4050 0x400d6346:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:  2141 x:   864 y:   -48 z: 14412vector: 11182 x:   776 y:  -288 z:  -900vector:  5419 x:   784 y:  -228 z: -17364vector:  3685 x:   864 y:  -160 z: 28844vector:  4404 x:   736 y:  -164 z: -27600vector:   404 x:   788 y:  -224 z: 16580vector: 22104 x:   800 y:  -280 z: 22720vector: 11051 x:   820 y:  -168 z: -4028vector:  2954 x:   772 y:  -160 z: 24728vector:  3283 x:   840 y:  -128 z: -30528vector:  1107 x:   524 y:  -252 z: 14460vector:   896 x:  1008 y:  -276 z: -32704vector:   432 x:   812 y:  -144 z: -2004vector:  8610 x:   792 y:  -164 z: 16476vector:  1391 x:   776 y:  -144 z: 14380vector:  1340 x:   772 y:  -308 z: 24692vector: 65402 x:   844 y:  -204 z: 11336vector:   806 x:   748 y:  -176 z: 20532vector:  4356 x:   712 y:  -136 z:  5368vector: 24276 x:   544 y:  -300 z: 18560vector:   984 x:   792 y:  -196 z: 20544vector:  4384 x:   760 y:  -180 z: -27572vector:  1330 x:   796 y:  -184 z: 23616vector:   701 x:   776 y:  -160 z: -32732vector: 17477 x:   828 y:  -316 z:ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d64bc
+file: "./main/i2c.c" line 74
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f30 0x400869c5:0x3ffb3f50 0x4008cc7d:0x3ffb3f70 0x40086957:0x3ffb3fe0 0x400d64bc:0x3ffb4010 0x400d6621:0x3ffb4030 0x400d6697:0x3ffb4060 0x400d6355:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:  5533 x:   756 y:  -184 z:  1136vector:  8614 x:   876 y:  -224 z: -11156vector: 24222 x:   560 y:  -144 z: 13552vector:  5490 x:   800 y:  -244 z: 15468vector: 26306 x:   728 y:  -148 z:    16vector: 23584 x:   840 y:  -236 z:  4132vector:   282 x:   872 y:  -204 z: 10300vector:  3661 x:   700 y:  -204 z:  7268vector:  1317 x:   720 y:  -172 z: 21680vector: 12827 x:   752 y:  -120 z: 12304vector:  1800 x:   780 y:  -204 z: 30964vector: 65384 x:   968 y:  -164 z: -8124vector:    65 x:   776 y:  -184 z:  9436vector:  6709 x:   724 y:  -160 z: 31800vector: 25612 x:   736 y:  -200 z: 21608vector:  5487 x:   568 y:  -208 z: 22592vector:  8568 x:   792 y:  -180 z: -24552vector:  5054 x:   804 y:  -216 z: 10352vector:  1817 x:   824 y:  -164 z: 11452vector: 14466 x:   512 y:  -176 z: 31888vector:  4691 x:   784 y:  -168 z: -9164vector:   772 x:   928 y:  -136 z: -30596vector: 23406 x:   756 y:  -220 z:  8408vector:  2455 x:   780 y:  -124 z: 17604vector:  1536 x:   828 y:  -252 z: 15364vector:  4657 x:   812 y:  -116 z: 10252vector:   264 x:   780 y:  -240 z:  4100vector:  5469 x:   720 y:  -180 z:  8384vector:  5098 x:   608 y:  -128 z: 10316vector:  6742 x:  1012 y:  -160 z: -1968vector:   443 x:   788 y:  -180 z:  5264vector:  3944 x:   796 y:  -156 z: 18476vector:  4762 x:   824 y:  -196 z:  -792vector:  1126 x:   800 y:  -120 z: 12396vector: 11569 x:   804 y:  -132 z: -32680vector:   954 x:   776 y:   -96 z: 15452vector: 22797 x:   736 y:   -32 z:  9416vector: 26433 x:  1016 y:  -280 z: 14360vector: 10049 x:   760 y:  -136 z: 11476vector:  5542 x:   684 y:  -308 z: -32572vector:  4690 x:   712 y:  -496 z: -3048vector:  3310 x:   784 y:  -264 z: 22580vector:   485 x:   576 y:  -228 z: 21604vector:  2190 x:   772 y:  -232 z: 29924vector:  1297 x:   716 y:  -188 z: 21584vector:  1013 x:   812 y:  -204 z: 21572vector: 65273 x:   804 y:  -2ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d64bc
+file: "./main/i2c.c" line 74
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d64bc:0x3ffb4030 0x400d6640:0x3ffb4050 0x400d634b:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:   355 x:   736 y:  -164 z: 14424vector: 65353 x:   820 y:  -168 z: 21708vector:   104 x:   804 y:  -252 z: 27720vector:  4641 x:   660 y:  -220 z: 12424vector: 12790 x:   856 y:  -156 z:  7268vector:    46 x:   796 y:  -244 z:  7188vector:  1516 x:   744 y:  -232 z:  6260vector:  1432 x:   824 y:  -200 z: -2036vector: 65523 x:   792 y:  -224 z:  8384vector:  1135 x:   832 y:  -160 z: 20612vector:  1350 x:   584 y:  -180 z: 26736vector:  7037 x:   800 y:  -180 z: 22760vector: 65511 x:   812 y:  -176 z: 15384vector:  5911 x:   764 y:  -432 z: -6136vector: 65429 x:   724 y:  -204 z: -29548vector:  3968 x:   772 y:  -236 z: 17440vector:   128 x:   892 y:  -220 z: 22544vector:  1365 x:   824 y:  -248 z:  2248vector:  9023 x:   812 y:    -8 z:   108vector:  3004 x:   992 y:  -176 z:  7260vector:  2735 x:  1000 y:  -176 z:  6384vector:   942 x:   772 y:  -104 z:  9248vector: 65413 x:   776 y:  -184 z:  4312vector:    93 x:   840 y:  -172 z: -6036vector:  1380 x:  1020 y:  -200 z: 25640vector:   374 x:   800 y:  -168 z: 22680vector: 65337 x:   792 y:  -192 z: 16540vector:   112 x:   812 y:  -436 z: -5060vector:   832 x:   548 y:  -164 z:  7372vector:  1849 x:   840 y:  -280 z: -28424vector:  8589 x:   760 y:  -156 z: 25624vector:  3573 x:   732 y:  -172 z:  9336vector:  4260 x:   796 y:  -132 z: 14492vector:  1238 x:   516 y:  -140 z: -19332vector:  1852 x:   732 y:  -204 z: 21536vector: 10059 x:   792 y:  -192 z: 17444vector:  6735 x:   748 y:  -124 z: 25844vector:  8101 x:   816 y:  -252 z: -31676vector:  1334 x:   960 y:  -188 z:  6156vector:  1432 x:   748 y:  -216 z: 31752vector: 65388 x:   720 y:  -236 z: 27700vector:  2790 x:   824 y:  -220 z: 23684vector:   448 x:   532 y:  -208 z: 22544vector:  3240 x:   848 y:  -228 z: 16484vector:  4304 x:   732 y:  -172 z: 11284vector:  2397 x:   852 y:  -252 z: 28844vector:  4724 x:   832 y:  -156 z: -15348vector:  3681 x:   780 y:  -192 z: 21736vector:  6301 x:   804 y:  -152 z: 24640vector: 16257 x:   768 y:  -168 z: -25372vector:  3924 x:   624 y:  -160 z: 18548vector: 21392 x:   804 y:  -260 z: 25604vector:   885 x:   820 y:  -172 z: 20592vector: 10062 x:   684 y:  -208 z: 13332vector: 65391 x:   768 y:  -236 z: 17448vector:  1929 x:   776 y:  -196 z: 17560vector:  1617 x:   896 y:  -216 z:  8264vector:   536 x:   836 y:  -180 z: 19480vector:  6740 x:   708 y:  -116 z: 17444vector:   189 x:  1008 y:  -224 z: 25620vector:  2452 x:   760 y:  -176 z: 12412vector:  8684 x:   728 y:  -224 z: 18500vector:  9080 x:   764 y:  -280 z: -17192vector:  4708 x:   760 y:  -200 z:  1052vector: 65420 x:   740 y:  -260 z: 15600vector:   531 x:   800 y:  -152 z: 11364vector:   108 x:   788 y:  -208 z: 12288vector:    78 x:   860 y:  -264 z: -3976vector:  5942 x:   728 y:  -148 z: 20684vector:  5374 x:   840 y:  -200 z: 16580vector: 65521 x:   740 y:  -164 z: -32580vector:   369 x:   740 y:  -240 z: 10368vector: 20820 x:   724 y:  -184 z: 21744vector:  3327 x:   520 y:  -212 z: -26564vector:  1012 x:   820 y:  -200 z:   196vector:   629 x:   740 y:  -156 z: 25740vector: 26377 x:   764 y:  -244 z:  8228vector: 24942 x:   820 y:  -216 z:  1204vector:  5435 x:   896 y:  -180 z: 15484vector:  2698 x:   748 y:  -236 z:  8308vector:  3266 x:   788 y:  -160 z: 10348vector:  3979 x:   812 y:  -176 z: 13344vector:  3282 x:   844 y:  -216 z: 20536vector:  1862 x:   832 y:  -220 z: 23684vector:  2598 x:   828 y:  -192 z: 23620vector:  5824 x:   792 y:  -208 z:  3252vector:  1017 x:   756 y:  -200 z:  8204vector: 65473 x:   828 y:  -176 z: 30936vector: 26210 x:   764 y:  -148 z: 22604vector: 12782 x:   800 y:  -168 z: 22636vector:  2190 x:   748 y:  -224 z: 14388vector: 21515 x:   556 y:  -196 z: 19584vector:   342 x:   820 y:  -180 z: -7968vector:  3053 x:   864 y:  -224 z:  2112vector:  5138 x:   776 y:  -160 z:  2060vector:   100 x:   528 y:  -136 z: 25720vector:  7626 x:   732 ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d643e
+file: "./main/i2c.c" line 57
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d643e:0x3ffb4030 0x400d6621:0x3ffb4050 0x400d6346:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:  1631 x:   692 y:  -164 z: -24452vector:   375 x:   512 y:  -260 z: 20544vector:   186 x:   536 y:  -184 z:  6180vector:  2142 x:   800 y:  -176 z: 25832vector:  1069 x:   704 y:  -168 z:  8292vector: 12753 x:   792 y:  -204 z: -28564vector:  5074 x:   800 y:  -260 z: 10288vector:  2000 x:   812 y:  -228 z: -31728vector:  2671 x:   820 y:  -192 z: 16476vector:  3596 x:   828 y:  -224 z:  2188vector:  4687 x:   868 y:  -108 z:  6180vector:   465 x:  1008 y:  -168 z: -18336vector:  9177 x:   776 y:  -152 z:  2248vector:   956 x:   832 y:  -136 z: 26700vector:   919 x:   820 y:  -216 z: 13424vector:  2894 x:  1012 y:  -220 z: 17428vector:   975 x:   752 y:  -288 z:  9244vector:  3984 x:   756 y:  -220 z:  9300vector:  4235 x:   780 y:  -204 z:   132vector: 25692 x:  1008 y:  -200 z: -2912vector:  6278 x:   860 y:  -228 z: 10392vector:  2410 x:   780 y:  -252 z: 22676vector:  3012 x:   816 y:  -208 z: 18480vector:  9479 x:   824 y:  -168 z: 20724vector:   483 x:   532 y:  -232 z: 24684vector:  1410 x:   824 y:  -156 z: -23444vector:  2370 x:   696 y:  -200 z: 28780vector:  3564 x:   736 y:   -12 z: 16488vector:  6683 x:   772 y:  -204 z:  8424vector:   450 x:   564 y:  -248 z: 13312vector:  5063 x:   936 y:  -188 z:  5160vector:   764 x:   764 y:  -224 z: 31784vector: 65460 x:   776 y:  -164 z: -7952vector: 65366 x:   524 y:  -176 z:  7188vector:  4992 x:   820 y:  -188 z: 22612vector:  5095 x:   744 y:  -152 z:  8384vector:  6768 x:   712 y:  -176 z: 19516vector:   448 x:   828 y:  -100 z: -4032vector:  5151 x:   792 y:  -160 z: 27784vector:  4613 x:   768 y:  -256 z:   108vector:   185 x:   724 y:  -180 z: 30972vector: 11705 x:   796 y:  -248 z: -28460vector:  6728 x:   576 y:  -268 z: 17588vector:  3252 x:   876 y:  -152 z:  -852vector:  1438 x:   768 y:  -172 z: 22680vector:  3255 x:   784 y:  -212 z: 18448vector:    71 x:   780 y:  -120 z: 28836vector:  9594 x:   700 y:  -152 z: 29780vector: 24823 x:   924 y:  -236 z: 14580vector:  2858 x:   752 y:  -224 z:  8432vector:   885 x:   560 y:  -176 z: 16592vector:  2927 x:   796 y:  -212 z: 11460vector:  4022 x:   800 y:  -252 z:   108vector: 26252 x:   852 y:  -164 z: 18620vector:  2018 x:   844 y:  -192 z: 10328vector:  1323 x:   728 y:  -208 z:    56vector:  1089 x:   788 y:  -176 z:  4236vector:   807 x:   740 y:  -236 z:  5268vector: 18597 x:   760 y:  -232 z:  6188vector:   250 x:   804 y:  -144 z: 17424vector:  2710 x:  1008 y:  -196 z: 17432vector:  4732 x:   856 y:  -204 z: 14572vector:  2680 x:   756 y:  -128 z: 17572vector: 65393 x:   852 y:  -168 z:  6284vector:  1145 x:   548 y:   -80 z: 14340vector:  3471 x:   844 y:  -212 z: 24588vector:  4693 x:   868 y:  -188 z: 17484vector:   486 x:   792 y:    -4 z:  8240vector:  2734 x:   876 y:  -228 z:  8264vector: 26373 x:   568 y:  -180 z: -28664vector:  2381 x:   748 y:  -204 z: 20684vector: 24791 x:   904 y:  -216 z: 27796vector:  1706 x:   784 y:  -224 z: -28640vector:  3640 x:   572 y:  -204 z:  2088vector: 65428 x:   816 y:  -208 z:    92vector: 25564 x:   756 y:  -200 z: 14400vector:  3725 x:   828 y:   -72 z: 14588vector:  2724 x:  1008 y:  -108 z: 24600vector: 24874 x:   896 y:  -216 z:  6276vector:  1409 x:   764 y:  -168 z:  -816vector:  1223 x:   800 y:   -80 z: -30564vector:  1604 x:   764 y:  -188 z: 24704vector:  4702 x:   728 y:  -192 z: 13384vector:  1016 x:   744 y:  -196 z: 21612vector:   119 x:   788 y:  -188 z: 17640vector:  1618 x:   796 y:  -236 z: 10408vector:  2978 x:   796 y:  -200 z: -8072vector:  4706 x:   524 y:  -208 z:  4316vector:  1161 x:   840 y:  -240 z: -2824vector:  1854 x:   756 y:  -132 z: 13532vector:  1609 x:   860 y:  -216 z: 27900vector: 12166 x:   776 y:  -100 z: 12424vector:  5091 x:   756 y:  -240 z: -6028vector:   626 x:   928 y:  -152 z: 18504vector:  7655 x:   776 y:   -36 z:  8224vector:  1326 x:   584 y:  -160 z: 14576vector:  4284 x:   832 y:  -152 z: 22676vector:   904 x:   796 y:  -204 z:  2060vector:   461 x:   880 y:  -460 z: -1960vector:  1882 x:   800 y:  -268 z: 19548vector: 24940 x:   824 y:  -212 z: 20516vector:  6359 x:   796 y:  -220 z: 24636vector:   282 x:   756 y:  -140 z: 13428vector: 65400 x:   724 y:  -208 z: -32636vector:  7204 x:   584 y:   -92 z: 15388vector:  6701 x:   856 y:  -220 z: 29860vector:   325 x:   788 y:  -196 z: 15360vector:   822 x:   820 y:  -208 z:  8332vector:  1334 x:   764 y:   -56 z:  1192vector: 65468 x:   968 y:  -248 z: -6084vector:   144 x:   828 y:  -232 z: 13504vector:  6772 x:   808 y:  -484 z: -4060vector:  3512 x:   720 y:  -176 z: 17604vector: 65330 x:   980 y:  -200 z: 13404vector:   188 x:   748 y:  -232 z: 15364vector: 25435 x:   728 y:  -220 z: 12460vector: 65517 x:   764 y:  -116 z: -30656vector:  3289 x:   564 y:   -96 z: 18440vector:   139 x:  1016 y:  -252 z:  4260vector: 25554 x:   808 y:   -84 z: 18512vector:  3022 x:   808 y:  -144 z: 26764vector:   491 x:   852 y:  -192 z: 20540vector: 22920 x:   792 y:  -192 z: 22696vector:  4362 x:   884 y:  -216 z: -25388vector: 10525 x:   796 y:  -204 z: 13432vector:  2453 x:   900 y:  -216 z: 22564vector: 65365 x:   864 y:  -136 z: 30760vector:  2342 x:   984 y:  -204 z:  3260vector:    71 x:   764 y:  -152 z: 27900vector:   455 x:   852 y:   -20 z: 15464vector:  5112 x:   780 y:  -148 z: 24708vector:  2902 x:   808 y:  -216 z: 20552vector:  4347 x:   760 y:  -140 z: 16560vector:  5136 x:   732 y:  -200 z: 14420vector:    41 x:   808 y:  -168 z:  6280vector:   195 x:   528 y:  -256 z: 25628vector: 65482 x:   812 y:  -140 z: 12444vector:   598 x:   720 y:  -172 z: 19460vector: 22659 x:   720 y:  -208 z:  6156vector:   409 x:   824 y:  -188 z: 18680vector:  1797 x:   884 y:  -128 z:  4164vector:  3003 x:   788 y:  -136 z:  1052vector:   105 x:   780 y:  -192 z: 16444vector:   605 x:   852 y:  -176 z: 12392vector: 10575 x:   776 y:  -212 z: -24392vector: 21531 x:   776 y:  -264 z: -2016vector:  9669 x:   748 y:  -168 z: 19656vector:  5132 x:   644 y:   -24 z: 18556vector:  1791 x:   844 y:  -152 z: 13360vector:   847 x:   652 y:  -120 z: -9012vector: 22890 x:   744 y:  -260 z: 10288vector:  9164 x:   788 y:   -24 z: 20520vector:  2103 x:   760 y:  -152 z:  2092vector:   105 x:   868 y:  -100 z:  4172vector:  2444 x:   788 y:  -248 z: -24408vector:   486 x:   836 y:  -172 z: 23596vector:   791 x:   772 y:  -208 z:  8436vector: 65273 x:   788 y:  -248 z:  2292vector: 65409 x:   564 y:  -160 z: 16576vector:   387 x:   808 y:  -264 z:    72vector: 65324 x:   744 y:  -224 z: -29572vector:   193 x:   712 y:  -256 z: -2858ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d64bc
+file: "./main/i2c.c" line 74
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f30 0x400869c5:0x3ffb3f50 0x4008cc7d:0x3ffb3f70 0x40086957:0x3ffb3fe0 0x400d64bc:0x3ffb4010 0x400d6621:0x3ffb4030 0x400d6697:0x3ffb4060 0x400d6355:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d65f8
+file: "./main/accel.c" line 67
+func: initMPU
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f80 0x400869c5:0x3ffb3fa0 0x4008cc7d:0x3ffb3fc0 0x40086957:0x3ffb4030 0x400d65f8:0x3ffb4060 0x400d6343:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 0ce9fac1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  0ce9fac1f...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:   483 x:   824 y:  -104 z: 14500vector: 24180 x:  1020 y:  -236 z: 18520vector:   839 x:   800 y:  -180 z: 18504vector:  2146 x:   684 y:  -204 z:  6280vector: 25396 x:   748 y:    -4 z:   252vector:  1933 x:   764 y:   -56 z: 30944vector:  1609 x:   992 y:  -160 z: 25840vector:  1365 x:   840 y:  -296 z:  8200vector: 17937 x:   800 y:  -172 z: 21648vector:  3609 x:   756 y:  -236 z: 16600vector:  3911 x:   548 y:  -196 z:  6372vector:  1827 x:  1000 y:  -212 z: 15520vector: 65436 x:   800 y:  -136 z:  9440vector:  2342 x:   740 y:  -224 z:  2300vector:  1579 x:   792 y:  -456 z: -4040vector:  2999 x:   940 y:  -200 z: 26808vector:  4623 x:   812 y:  -200 z: 13328vector: 23508 x:   752 y:  -124 z: -31496vector: 65360 x:   796 y:   -24 z: 19552vector:   897 x:   992 y:  -116 z: -2868vector: 65320 x:   776 y:  -256 z: -32764vector: 65326 x:   764 y:  -152 z: 16400vector:  2549 x:   772 y:  -248 z: 10284vector: 65445 x:   712 y:  -260 z: -5944vector:   133 x:   776 y:  -276 z: 19560vector:   538 x:   820 y:  -292 z: 15496vector:  1664 x:   724 y:  -168 z: 22636vector:   454 x:   756 y:  -196 z:  6332vector: 22217 x:   800 y:  -160 z:    28vector:    38 x:   832 y:  -136 z: 17640vector:  2267 x:   824 y:  -176 z: -9132vector:  7201 x:   752 y:  -236 z: 28728vector:  1856 x:   844 y:  -212 z:  7220vector:  5369 x:   864 y:  -224 z: 10396vector:  1162 x:   776 y:  -172 z:  7260vector:  6274 x:   784 y:  -204 z: 14444vector:  1426 x:   840 y:  -232 z: 16548

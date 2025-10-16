@@ -1,0 +1,745 @@
+Command: /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/minipops/uni/da267a/labs/lab5/build/lab5.elf /home/minipops/uni/da267a/labs/lab5/build/bootloader/bootloader.elf -m '/home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/opt/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc04h ( 48132) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bc2c vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e0cc vaddr=40080000 size=01f4ch (  8012) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=180ech ( 98540) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=00038114 vaddr=40081f4c size=0ece4h ( 60644) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046e00 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  579378632...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:   8143 x:    376 y:   -220 z:   8132 stepcount:   0vector:   8302 x:    456 y:    -72 z:   8284 stepcount:   0vector: ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d66de
+file: "./main/i2c.c" line 58
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40088917 on core 0
+
+
+Backtrace: 0x400889f5:0x3ffb6fc0 0x40088985:0x3ffb6fe0 0x4008eeb1:0x3ffb7000 0x40088917:0x3ffb7070 0x400d66de:0x3ffb70a0 0x400d68ac:0x3ffb70c0 0x400d6933:0x3ffb70f0 0x400d648b:0x3ffb7110 0x40089629:0x3ffb7140
+
+
+
+
+ELF file SHA256: 579378632
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc04h ( 48132) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc2c vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e0cc vaddr=40080000 size=01f4ch (  8012) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=180ech ( 98540) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=00038114 vaddr=40081f4c size=0ece4h ( 60644) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046e00 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  579378632...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (225) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:   8195 x:    396 y:   -196 z:   8184 stepcount:   0vector:   8166 x:    296 y:   -216 z:   8396 stepcount:   0vector:   8215 x:    332 y:   -104 z:   8208 stepcount:   0vector:   8340 x:    220 y:   -184 z:   8324 stepcount:   0vector:   8106 x:    344 y:   -216 z:   8096 stepcount:   0vector:   8250 x:    432 y:   -240 z:   8236 stepcount:   0vector:   8054 x:    404 y:   -108 z:   8180 stepcount:   0vector:   8253 x:    336 y:   -216 z:   8244 stepcount:   0vector:   8263 x:    316 y:   -176 z:   8256 stepcount:   0vector:   8163 x:    444 y:   -348 z:   7940 stepcount:   0vector:   8341 x:    364 y:   -156 z:   8332 stepcount:   0vector:   8230 x:    364 y:   -216 z:   8220 stepcount:   0vector:   8213 x:    348 y:   -256 z:   8308 stepcount:   0vector:   8305 x:    376 y:   -128 z:   8296 stepcount:   0vector:   8206 x:    440 y:   -192 z:   8192 stepcount: ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d66de
+file: "./main/i2c.c" line 58
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40088917 on core 0
+
+
+Backtrace: 0x400889f5:0x3ffb6fe0 0x40088985:0x3ffb7000 0x4008eeb1:0x3ffb7020 0x40088917:0x3ffb7090 0x400d66de:0x3ffb70c0 0x400d68bd:0x3ffb70e0 0x400d647c:0x3ffb7110 0x40089629:0x3ffb7140
+
+
+
+
+ELF file SHA256: 579378632
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc04h ( 48132) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc2c vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e0cc vaddr=40080000 size=01f4ch (  8012) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=180ech ( 98540) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=00038114 vaddr=40081f4c size=0ece4h ( 60644) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046e00 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  579378632...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (225) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (289) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:   8301 x:    360 y:   -156 z:   8292 stepcount:   0vector:   8275 x:    352 y:   -208 z:   8328 stepcount:   0vector:   8203 x:    296 y:   -196 z:   8196 stepcount:   0vector:   8213 x:    312 y:   -236 z:   8200 stepcount:   0vector:   8410 x:    328 y:    -84 z:   8404 stepcount:   0vector:   8187 x:    284 y:   -224 z:   8180 stepcount:   0vector:   8130 x:    392 y:   -144 z:   7948 stepcount:   0vector:   8295 x:    372 y:   -212 z:   8284 stepcount:   0vector:   8220 x:    364 y:   -104 z:   8212 stepcount:   0vector:   8375 x:    332 y:   -156 z:   8364 stepcount:   0vector:   8188 x:    332 y:   -144 z:   8180 stepcount:   0vector:   8307 x:    364 y:   -240 z:   8296 stepcount:   0vector:   8362 x:    376 y:   -192 z:   8424 stepcount:   0vector:   8254 x:    388 y:   -128 z:   8244 stepcount:   0vector:   8247 x:    320 y:   -160 z:   8240 stepcount:   0vector:   8208 x:    500 y:   -208 z:   8436 stepcount:   0vector:   8114 x:    364 y:   -212 z:   8104 stepcount:   0vector:   8192 x:    284 y:   -248 z:   8184 stepcount:   0vector:   8071 x:    412 y:    -48 z:   8188 stepcount:   0vector:   81ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d66de
+file: "./main/i2c.c" line 58
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40088917 on core 0
+
+
+Backtrace: 0x400889f5:0x3ffb6fe0 0x40088985:0x3ffb7000 0x4008eeb1:0x3ffb7020 0x40088917:0x3ffb7090 0x400d66de:0x3ffb70c0 0x400d691d:0x3ffb70e0 0x400d6486:0x3ffb7110 0x40089629:0x3ffb7140
+
+
+
+
+ELF file SHA256: 579378632
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc04h ( 48132) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc2c vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e0cc vaddr=40080000 size=01f4ch (  8012) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=180ech ( 98540) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=00038114 vaddr=40081f4c size=0ece4h ( 60644) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046e00 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  579378632...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (225) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:   8325 x:    404 y:   -264 z:   8312 stepcount:   0vector:   8246 x:    380 y:   -160 z:   8232 stepcount:   0vector:   8212 x:    332 y:   -156 z:   8204 stepcount:   0vector:   8393 x:    412 y:   -188 z:   8280 stepcount:   0vector:   8214 x:    348 y:   -216 z:   8204 stepcount:   0vector:   8286 x:    360 y:   -224 z:   8276 stepcount:   0vector:   8363 x:    248 y:    -88 z:   8168 stepcount:   0vector:   8020 x:    344 y:   -120 z:   8012 stepcount:   0vector:   8244 x:    432 y:   -1ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d66de
+file: "./main/i2c.c" line 58
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40088917 on core 0
+
+
+Backtrace: 0x400889f5:0x3ffb6fe0 0x40088985:0x3ffb7000 0x4008eeb1:0x3ffb7020 0x40088917:0x3ffb7090 0x400d66de:0x3ffb70c0 0x400d68bd:0x3ffb70e0 0x400d647c:0x3ffb7110 0x40089629:0x3ffb7140
+
+
+
+
+ELF file SHA256: 579378632
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc04h ( 48132) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc2c vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e0cc vaddr=40080000 size=01f4ch (  8012) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=180ech ( 98540) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=00038114 vaddr=40081f4c size=0ece4h ( 60644) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046e00 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  579378632...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:   8264 x:    352 y:   -120 z:   8256 stepcount:   0vector:   8238 x:    352 y:   -200 z:   8212 stepcount:   0vector:   8419 x:    328 y:   -164 z:   8412 stepcount:   0vector:   8277 x:    328 y:   -184 z:   8268 stepcount:   0vector:   8441 x:    444 y:   -172 z:   8172 stepcount:   0vector:   8294 x:    292 y:   -164 z:   8288 stepcount:   0vector:   8259 x:    392 y:   -168 z:   8248 stepcount:   0vector:   8173 x:    456 y:   -264 z:   8156 stepcount:   0vector:   8316 x:    352 y:   -156 z:   8308 stepcount:   0vector:   8165 x:    360 y:   -176 z:   8160 stepcount:   0vector:   8339 x:    344 y:   -276 z:   8328 stepcount:   0vector:   8155 x:    404 y:   -136 z:   8144 stepcount:   0vector:   8227 x:    344 y:   -284 z:   8264 steESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d6758
+file: "./main/i2c.c" line 76
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40088917 on core 0
+
+
+Backtrace: 0x400889f5:0x3ffb6fe0 0x40088985:0x3ffb7000 0x4008eeb1:0x3ffb7020 0x40088917:0x3ffb7090 0x400d6758:0x3ffb70c0 0x400d68bd:0x3ffb70e0 0x400d647c:0x3ffb7110 0x40089629:0x3ffb7140
+
+
+
+
+ELF file SHA256: 579378632
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc04h ( 48132) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc2c vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e0cc vaddr=40080000 size=01f4ch (  8012) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=180ech ( 98540) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=00038114 vaddr=40081f4c size=0ece4h ( 60644) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046e00 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  579378632...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (225) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (289) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:   8330 x:    448 y:   -204 z:   8316 stepcount:   0vector:   8330 x:    388 y:   -152 z:   8216 stepcount:   0vector:   8388 x:    420 y:   -168 z:   8376 stepcount:   0vector:   8348 x:    320 y:   -136 z:   8392 stepcount:   0vector:   8297 x:    328 y:   -240 z:   8288 stepcount:   0vector:   8309 x:    392 y:    -80 z:   8300 stepcount:   0vector:   8072 x:    368 y:   -216 z:   8048 stepcount:   0vector:   8179 x:    308 y:   -152 z:   8172 stepcount:   0vector:   8131 x:    392 y:   -164 z:   8120 stepcount:   0vector:   8199 x:    424 y:   -164 z:   8224 stepcount:   0vector:   8366 x:    372 y:   -192 z:   8356 stepcount:   0vector:   8391 x:    340 y:   -132 z:   8384 stepcount:   0vector:   8296 x:    404 y:   -132 z:   8284 steESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d66de
+file: "./main/i2c.c" line 58
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40088917 on core 0
+
+
+Backtrace: 0x400889f5:0x3ffb6fc0 0x40088985:0x3ffb6fe0 0x4008eeb1:0x3ffb7000 0x40088917:0x3ffb7070 0x400d66de:0x3ffb70a0 0x400d68bd:0x3ffb70c0 0x400d6933:0x3ffb70f0 0x400d648b:0x3ffb7110 0x40089629:0x3ffb7140
+
+
+
+
+ELF file SHA256: 579378632
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc04h ( 48132) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc2c vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e0cc vaddr=40080000 size=01f4ch (  8012) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=180ech ( 98540) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=00038114 vaddr=40081f4c size=0ece4h ( 60644) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046e00 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  579378632...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (225) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:   8163 x:    464 y:   -180 z:   8148 stepcount:   0vector:   8262 x:    368 y:   -216 z:   8136 stepcount:   0vector:   8307 x:    352 y:   -248 z:   8296 stepcount:   0vector:   8243 x:    280 y:    -88 z:   8236 stepcount:   0vector:   7960 x:    412 y:   -192 z:   8204 stepcount:   0vector:   8176 x:    388 y:   -240 z:   8164 stepcount:   0vector:   8183 x:    364 y:   -100 z:   8168 stepcount:   0vector:   8237 x:    316 y:   -248 z:   8228 stepcount:   0vector:   8268 x:    356 y:    -88 z:   8260 stepcount:   0vector:   8281 x:    352 y:   -188 z:   8272 stepcount:   0vector:   8382 x:    384 y:   -184 z:   8372 stepcount:   0vector:   8214 x:    460 y:   -184 z:   8200 stepcount:   0vector:   8240 x:    320 y:   -200 z:   8228 stepcount:   0vector:   8229 x:    356 y:   -192 z:   8220 stepcount:   0vector:   8295 x:    376 y:   -232 z:   8284 stepcount:   0vector:   8138 x:    400 y:   -212 z:   8176 stepcount:   0vector:   8178 x:    340 y:   -248 z:   8168 stepcount:   0vector:   8163 x:    376 y:   -212 z:   8152 stepcount:   0vector:   8155 x:    340 y:   -256 z:   8076 stepcount:   0vector:   8141 x:    320 y:   -212 z:   8132 stepcount:   0vector:   8177 x:    376 y:   -292 z:   8164 stepcount:   0vector:   8266 x:    432 y:   -216 z:   8260 stepcount:   0vector:   8139 x:    376 y:   -228 z:   8128 stepcount:   0vector:   8133 x:    340 y:   -184 z:   8124 stepcount:   0vector:   8324 x:    364 y:   -164 z:   8220 stepcount:   0vector:   8191 x:    388 y:   -180 z:   8180 stepcount:   0vector:   8229 x:    364 y:   -156 z:   8220 stepcount:   0vector:   8258 x:    280 y:   -108 z:   8260 stepcount:   0vector:   8134 x:    292 y:   -148 z:   8128 stepcount:   0vector:   8112 x:    312 y:   -188 z:   8104 stepcount:   0vector:   8164 x:    316 y:   -152 z:   8096 stepcount:   0vector:   8257 x:    412 y:   -224 z:   8244 stepcount:   0vector:   8146 x:    324 y:   -248 z:   8136 stepcount:   0vector:   8272 x:    424 y:   -228 z:   8160 stepcount:   0vector:   8219 x:    316 y:   -140 z:   8212 stepcount:   0vector:   8227 x:    424 y:   -100 z:   8216 stepcount:   0vector:   8221 x:    328 y:   -248 z:   8304 stepcount:   0vector:   8258 x:    364 y:   -212 z:   8248 stepcount:   0vector:   8359 x:    404 y:   -160 z:   8348 stepcount:   0vector:   8198 x:    372 y:   -176 z:   8328 stepcount:   0vector:   8166 x:    432 y:   -208 z:   8152 stepcount:   0vector:   8302 x:    396 y:   -136 z:   8292 stepcount:   0vector:   8354 x:    252 y:   -316 z:   8168 stepcount:   0vector:   8403 x:    420 y:   -276 z:   8388 stepcount:   0vector:   8307 x:    332 y:   -108 z:   8300 stepcount:   0vector:   8351 x:    448 y:   -180 z:   8216 stepcount:   0vector:   8317 x:    364 y:   -164 z:   8308 stepcount:   0vector:   8243 x:    340 y:   -184 z:   8228 stepcount:   0vector:   8255 x:    368 y:   -236 z:   8212 stepcount:   0vector:   8348 x:    276 y:   -260 z:   8340 stepcount:   0vector:   8349 x:    404 y:   -176 z:   8340 stepcount:   0vector:   8246 x:    324 y:    -80 z:   8488 stepcount:   0vector:   8172 x:    420 y:   -176 z:   8160 stepcount:   0vector:   8422 x:    300 y:    -88 z:   8416 stepcount:   0vector:   8071 x:    468 y:   -144 z:   8180 stepcount:   0vector:   8322 x:    368 y:   -192 z:   8312 stepcount:   0vector:   8306 x:    364 y:   -180 z:   8292 stepcount:   0vector:   8421 x:    424 y:   -204 z:   8300 stepcount:   0vector:   8299 x:    148 y:   -200 z:   8296 stepcount:   0vector:   8060 x:    420 y:   -212 z:   8044 stepcount:   0vector:   8254 x:    264 y:   -184 z:   8208 stepcount:   0vector:   8168 x:    280 y:   -244 z:   8160 stepcount:   0vector:   8255 x:    392 y:   -188 z:   8244 stepcount:   0vector:   8168 x:    340 y:   -152 z:   8236 stepcount:   0vector:   8210 x:    344 y:   -228 z:   8200 stepcount:   0vector:   8210 x:    424 y:   -168 z:   8204 stepcount:   0vector:   8308 x:    340 y:   -136 z:   8192 stepcount:   0vector:   8433 x:    348 y:   -200 z:   8424 stepcount:   0vector:   8171 x:    356 y:   -176 z:   8164 stepcount:   0vector:   8167 x:    372 y:   -208 z:   8272 stepcount:   0vector:   8360 x:    320 y:   -196 z:   8352 stepcount:   0vector:   8332 x:    356 y:   -236 z:   8324 stepcount:   0vector:   8277 x:    348 y:   -184 z:   8292 stepcount:   0vector:   8253 x:    352 y:   -200 z:   8244 stepcount:   0vector:   8330 x:    400 y:     -8 z:   8316 stepcount:   0vector:   8450 x:    412 y:   -264 z:   8180 stepcount:   0vector:   8274 x:    420 y:   -256 z:   8260 stepcount:   0vector:   8323 x:    376 y:   -156 z:   8316 stepcount:   0vector:   8263 x:    368 y:   -244 z:   8252 stepcount:   0vector:   8157 x:    340 y:   -180 z:   8148 stepcount:   0vector:   8338 x:    356 y:   -208 z:   8332 stepcount:   0vectESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d6758
+file: "./main/i2c.c" line 76
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40088917 on core 0
+
+
+Backtrace: 0x400889f5:0x3ffb6fc0 0x40088985:0x3ffb6fe0 0x4008eeb1:0x3ffb7000 0x40088917:0x3ffb7070 0x400d6758:0x3ffb70a0 0x400d68bd:0x3ffb70c0 0x400d6933:0x3ffb70f0 0x400d648b:0x3ffb7110 0x40089629:0x3ffb7140
+
+
+
+
+ELF file SHA256: 579378632
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc04h ( 48132) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc2c vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e0cc vaddr=40080000 size=01f4ch (  8012) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=180ech ( 98540) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=00038114 vaddr=40081f4c size=0ece4h ( 60644) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046e00 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  579378632...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (225) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:   8186 x:    368 y:   -176 z:   8176 stepcount:   0vector:   8346 x:    316 y:   -164 z:   8128 stepcount:   0vector:   8199 x:    308 y:   -180 z:   8192 stepcount:   0vector:   8397 x:    376 y:   -192 z:   8384 stepcount:   0vector:   8172 x:    332 y:   -184 z:   8164 stepcount:   0vector:   8016 x:    328 y:   -152 z:   8008 stepcount:   0vector:   8367 x:    364 y:   -160 z:   8236 stepcount:   0vector:   8159 x:    368 y:   -236 z:   8148 stepcount:   0vector:   8401 x:    408 y:   -236 z:   8388 stepcount:   0vector:   8392 x:    400 y:   -232 z:   8376 stepcount:   0vector:   8100 x:    312 y:   -192 z:   8092 stepcount:   0vector:   8237 x:    400 y:   -252 z:   8224 stepcount:   0vector:   8364 x:    344 y:   -212 z:   8228 stepcount:   0vector:   8150 x:    432 y:   -236 z:   8136 stepcount:   0vector:   8282 x:    428 y:   -224 z:   8268 stepcount:   0vector:   8246 x:    408 y:   -212 z:   8236 stepcount:   0vector:   8337 x:    352 y:   -172 z:   8328 stepcount:   0vector:   8200 x:    420 y:   -184 z:   8188 stepcount:   0vector:   8193 x:    376 y:   -148 z:   8276 stepcount:   0vector:   8192 x:    404 y:   -196 z:   8180 stepcount:   0vector:   8106 x:    368 y:   -192 z:   8096 stepcount:   0vector:   8208 x:    328 y:   -184 z:   8208 stepcount:   0vector:   8118 x:    408 y:   -260 z:   8104 stepcount:   0vector:   8358 x:    372 y:   -184 z:   8348 stepcount:   0vector:   8341 x:    396 y:   -200 z:   8252 stepcount:   0vector:   8276 x:    284 y:   -236 z:   8268 stepcount:   0vector:   8159 x:    356 y:   -248 z:   8148 stepcount:   0vector:   8144 x:    368 y:   -316 z:   8236 stepcount:   0vector:   8194 x:    320 y:   -260 z:   8184 stepcount:   0vector:   8303 x:    416 y:   -160 z:   8292 stepcount:   0vector:   8193 x:    308 y:   -124 z:   8192 stepcount:   0vector:   8290 x:    384 y:   -148 z:   8280 stepcount:   0vector:   8253 x:    384 y:   -124 z:   8244 stepcount:   0vector:   8105 x:    380 y:   -148 z:   8264 stepcount:   0vector:   8309 x:    324 y:   -220 z:   8300 stepcount:   0vector:   8310 x:    376 y:   -160 z:   8300 stepcount:   0vector:   8322 x:    328 y:   -224 z:   8332 stepcount:   0vector:   8254 x:    368 y:   -184 z:   8244 stepcount:   0vector:   8077 x:    368 y:   -112 z:   8068 stepcount:   0vector:   8168 x:    480 y:   -184 z:   8260 stepcount:   0vector:   8421 x:    364 y:   -184 z:   8412 stepcount:   0vector:   8367 x:    300 y:   -180 z:   8360 stepcount:   0vector:   8315 x:    280 y:   -200 z:   8192 stepcount:   0vector:   8427 x:    276 y:   -208 z:   8420 stepcount:   0vector:   8314 x:    368 y:   -208 z:   8304 steESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d66de
+file: "./main/i2c.c" line 58
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40088917 on core 0
+
+
+Backtrace: 0x400889f5:0x3ffb6fc0 0x40088985:0x3ffb6fe0 0x4008eeb1:0x3ffb7000 0x40088917:0x3ffb7070 0x400d66de:0x3ffb70a0 0x400d691d:0x3ffb70c0 0x400d693f:0x3ffb70f0 0x400d648b:0x3ffb7110 0x40089629:0x3ffb7140
+
+
+
+
+ELF file SHA256: 579378632
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc04h ( 48132) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc2c vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e0cc vaddr=40080000 size=01f4ch (  8012) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=180ech ( 98540) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=00038114 vaddr=40081f4c size=0ece4h ( 60644) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046e00 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  579378632...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (225) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:   8308 x:    312 y:   -220 z:   8300 stepcount:   0vector:   8147 x:    372 y:   -180 z:   8144 stepcount:   0vector:   8214 x:    360 y:   -224 z:   8204 stepcount:   0vector:   8249 x:    416 y:   -284 z:   8236 stepcount:   0vector:   7996 x:    396 y:   -204 z:   8240 stepcount:   0vector:   8234 x:    296 y:   -152 z:   8228 stepcount:   0vector:   8197 x:    332 y:   -184 z:   8184 stepcount:   0vector:   8401 x:    368 y:   -132 z:   8392 stepcount:   0vector:   8243 x:    348 y:   -248 z:   8232 stepcount:   0vector:   8042 x:    368 y:   -152 z:   8032 stepcount:   0vector:   8252 x:    352 y:   -152 z:   ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d66de
+file: "./main/i2c.c" line 58
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40088917 on core 0
+
+
+Backtrace: 0x400889f5:0x3ffb6fc0 0x40088985:0x3ffb6fe0 0x4008eeb1:0x3ffb7000 0x40088917:0x3ffb7070 0x400d66de:0x3ffb70a0 0x400d68ed:0x3ffb70c0 0x400d6939:0x3ffb70f0 0x400d648b:0x3ffb7110 0x40089629:0x3ffb7140
+
+
+
+
+ELF file SHA256: 579378632
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc04h ( 48132) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc2c vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e0cc vaddr=40080000 size=01f4ch (  8012) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=180ech ( 98540) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=00038114 vaddr=40081f4c size=0ece4h ( 60644) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046e00 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  579378632...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (225) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m

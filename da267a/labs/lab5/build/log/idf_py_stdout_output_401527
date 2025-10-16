@@ -1,0 +1,987 @@
+Command: /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/minipops/uni/da267a/labs/lab5/build/lab5.elf /home/minipops/uni/da267a/labs/lab5/build/bootloader/bootloader.elf -m '/home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/opt/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc2ch ( 48172) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bc54 vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e0f4 vaddr=40080000 size=01f24h (  7972) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=18198h ( 98712) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=000381c0 vaddr=40081f24 size=0ed0ch ( 60684) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046ed4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  9d8891bbe...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:  8376 x:   748 y:  -204 z:  8124
+vector:  8375 x:   660 y:  -176 z:  8432
+vector:  8410 x:   532 y:  -140 z:  8364
+vector:  8215 x:   584 y:  -224 z:  8320
+vector:  8210 x:   728 y:  -156 z:  8364
+vector:  8346 x:   684 y:  -416 z:  8020
+vector:  8436 x:   660 y:  -272 z:  8272
+vector:  8355 x:   632 y:  -228 z:  8316
+sd:2 mean:8340 size:8
+step detected
+vector:  8249 x:   708 y:  -184 z:  8348
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d66f2
+file: "./main/i2c.c" line 58
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40088917 on core 0
+
+
+Backtrace: 0x400889f5:0x3ffb6f90 0x40088985:0x3ffb6fb0 0x4008eeb1:0x3ffb6fd0 0x40088917:0x3ffb7040 0x400d66f2:0x3ffb7070 0x400d68c4:0x3ffb7090 0x400d6484:0x3ffb70c0 0x40089629:0x3ffb70f0
+
+
+
+
+ELF file SHA256: 9d8891bbe
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc2ch ( 48172) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc54 vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e0f4 vaddr=40080000 size=01f24h (  7972) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=18198h ( 98712) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=000381c0 vaddr=40081f24 size=0ed0ch ( 60684) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046ed4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  9d8891bbe...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (225) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (289) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:  8140 x:   700 y:  -196 z:  7948
+vector:  8279 x:   620 y:  -160 z:  8236
+vector:  8206 x:   588 y:  -232 z:  8416
+vector:  8278 x:   708 y:  -168 z:  8192
+vector:  8382 x:   672 y:  -168 z:  8404
+vector:  8072 x:   620 y:  -232 z:  8292
+vector:  8374 x:   676 y:  -204 z:  8380
+vector:  8396 x:   652 y:  -208 z:  8268
+sd:3 mean:8265 size:8
+step detected
+vector:  8258 x:   692 y:  -152 z:  8436
+vector:  8312 x:   652 y:  -232 z:  8300
+vector:  8010 x:   664 y:   -16 z:  8200
+vector:  8421 x:   696 y:  -144 z:  8196
+vector:  8342 x:   648 y:  -188 z:  8276
+vector:  8242 x:   664 y:  -212 z:  8332
+vector:  8273 x:   696 y:  -192 z:  8264
+vector:  8312 x:   644 y:  -220 z:  8244
+sd:4 mean:126322823 size:8
+vector:  8377 x:   724 y:  -140 z:  8232
+vector:  8458 x:   584 y:  -216 z:  8424
+vector:  8336 x:   644 y:  -160 z:  8208
+vector:  8261 x:   672 y:  -160 z:  8264
+vector:  8300 x:   672 y:  -180 z:  7960
+vector:  8240 x:   648 y:  -164 z:  8188
+vector:  8295 x:   612 y:  -208 z:  8360
+vector:  8263 x:   656 y:  -160 z:  8172
+sd:10 mean:-31580386 size:8
+step detected
+vector:  8083 x:   684 y:  -160 z:  8056
+vector:  8369 x:   724 y:  -116 z:  7948
+vector:  8450 x:   620 y:  -232 z:  8256
+vector:  8284 x:   636 y:  -160 z:  8268
+vector:  8207 x:   612 y:  -220 z:  8196
+vector:  8360 x:   604 y:  -188 z:  8248
+vector:  8259 x:   564 y:  -144 z:  8360
+vector:  8411 x:   704 y:  -228 z:  8252
+vector:  8153 x:   656 y:  -140 z:  8064
+sd:3 mean:140358635 size:9
+vector:  8280 x:   748 y:  -180 z:  8228
+vector:  8339 x:   748 y:  -208 z:  8444
+vector:  8223 x:   708 y:  -196 z:  8180
+vector:  8356 x:   656 y:  -112 z:  8332
+vector:  8355 x:   620 y:  -212 z:  8396
+vector:  8320 x:   732 y:  -180 z:  8200
+vector:  8063 x:   628 y:  -176 z:  8016
+vector:  8373 x:   632 y:  -144 z:  8228
+sd:10 mean:-268435200 size:8
+step detected
+vector:  8220 x:   588 y:  -136 z:  8236
+vector:  8274 x:   720 y:  -192 z:  8024
+vector:  8019 x:   700 y:   -68 z:  7984
+vector:  7971 x:   632 y:  -244 z:  8044
+vector:  8216 x:   656 y:  -376 z:  8144
+vector:  7995 x:   564 y:  -184 z:  8200
+vector:  8275 x:   624 y:  -240 z:  8380
+vector:  8339 x:   604 y:  -184 z:  8012
+sd:4 mean:8163 size:8
+step detected
+vector:  8017 x:   692 y:    -8 z:  8408
+vector:  8291 x:   688 y:  -208 z:  8264
+vector:  8063 x:   620 y:  -140 z:  8228
+vector:  8270 x:   696 y:   -12 z:  8260
+vector:  8219 x:   700 y:    -4 z:  8380
+vector:  8264 x:   652 y:  -232 z:  8396
+vector:  8474 x:   740 y:  -176 z:  8344
+vector:  8329 x:   672 y:  -172 z:  8052
+vector:  8289 x:   624 y:  -204 z:  8316
+sd:10 mean:14036067 size:9
+vector:  8166 x:   656 y:  -140 z:  8084
+vector:  8205 x:   596 y:  -468 z:  8420
+vector:  8292 x:   644 y:   -36 z:  8288
+vector:  8280 x:   712 y:   -24 z:  8276
+vector:  8190 x:   572 y:  -256 z:  8308
+vector:  8288 x:   700 y:  -148 z:  8180
+vector:  8280 x:   676 y:  -260 z:  8232
+vector:  7970 x:   600 y:  -176 z:  8292
+sd:4 mean:126322823 size:8
+vector:  8455 x:   756 y:  -196 z:  8244
+vector:  8227 x:   628 y:   -20 z:  8368
+vector:  8229 x:   560 y:  -108 z:  8372
+vector:  8370 x:   740 y:   -32 z:  8292
+vector:  8079 x:   744 y:  -216 z:  8112
+vector:  8290 x:   688 y:  -240 z:  8376
+vector:  8416 x:   684 y:  -148 z:  8248
+vector:  8281 x:   648 y:  -484 z:  8028
+sd:10 mean:-31580386 size:8
+step detected
+vector:  8262 x:   596 y:  -224 z:  8236
+vector:  8327 x:   700 y:  -268 z:  8220
+vector:  8314 x:   640 y:  -160 z:  8052
+vector:  8061 x:   556 y:  -128 z:  8192
+vector:  8213 x:   692 y:  -168 z:  8424
+vector:  8093 x:   676 y:  -264 z:  8204
+vector:  8387 x:   600 y:  -192 z:  8436
+vector:  8314 x:   548 y:  -232 z:  8320
+vector:  8265 x:   588 y:  -244 z:  8228
+sd:3 mean:140358635 size:9
+vector:  8439 x:   696 y:  -508 z:  8376
+vector:  8200 x:   580 y:  -160 z:  8376
+vector:  8268 x:   636 y:  -164 z:  8336
+vector:  8332 x:   552 y:  -364 z:  8396
+vector:  8028 x:   688 y:  -216 z:  8172
+vector:  8434 x:   992 y:  -308 z:  8504
+vector:  8312 x:   588 y:  -148 z:  8400
+vector:  7981 x:   644 y:  -244 z:  8252
+sd:10 mean:-268435200 size:8
+step detected
+vector:  8206 x:   640 y:  -216 z:  8040
+vector:  7992 x:   668 y:    -8 z:  8000
+vector:  8059 x:   684 y:  -156 z:  8288
+vector:  8359 x:   624 y:  -128 z:  8004
+vector:  8238 x:   680 y:  -136 z:  8288
+vector:  8084 x:   628 y:  -192 z:  8180
+vector:  8662 x:   592 y:  -208 z:  8288
+vector:  8230 x:   748 y:   -84 z:  8240
+sd:6 mean:8228 size:8
+step detected
+vector:  7980 x:   544 y:  -172 z:  8308
+vector:  8250 x:   564 y:  -256 z:  8280
+vector:  8267 x:   668 y:  -424 z:  8148
+vector:  8414 x:   632 y:  -240 z:  8004
+vector:  8443 x:   604 y:  -152 z:  8260
+vector:  8394 x:   624 y:    -4 z:  8280
+vector:  8220 x:   548 y:  -160 z:  8292
+vector:  8262 x:   636 y:  -212 z:  8416
+vector:  8271 x:   640 y:  -128 z:  7964
+sd:10 mean:14036067 size:9
+vector:  8281 x:   708 y:   -12 z:  8280
+vector:  8363 x:   732 y:  -144 z:  8016
+vector:  8182 x:   548 y:  -216 z:  8420
+vector:  8149 x:   736 y:  -168 z:  8264
+vector:  8398 x:   712 y:  -116 z:  8228
+vector:  8310 x:   700 y:    -4 z:  8380
+vector:  7979 x:   648 y:  -204 z:  8300
+vector:  8315 x:   628 y:   -16 z:  8324
+sd:4 mean:126322823 size:8
+vector:  8451 x:   612 y:   -32 z:  8404
+vector:  8125 x:   624 y:  -412 z:  8356
+vector:  8393 x:   516 y:   -44 z:  8212
+vector:  8058 x:   760 y:  -164 z:  8020
+vector:  8229 x:   712 y:   -24 z:  8308
+vector:  8405 x:   648 y:  -200 z:  8412
+vector:  8307 x:   644 y:  -392 z:  8224
+vector:  8205 x:   660 y:  -236 z:  8104
+sd:10 mean:-31580386 size:8
+step detected
+vector:  8288 x:   628 y:  -192 z:  8172
+vector:  8198 x:   656 y:  -176 z:  8272
+vector:  8399 x:   604 y:  -116 z:  8260
+vector:  8363 x:   656 y:  -188 z:  8204
+vector:  8352 x:   664 y:  -248 z:  8224
+vector:  8283 x:   532 y:  -196 z:  8440
+vector:  8342 x:   704 y:  -220 z:  7936
+vector:  8264 x:   624 y:  -188 z:  8004
+vector:  8374 x:   692 y:  -172 z:  8356
+sd:3 mean:140358635 size:9
+vector:  8181 x:   688 y:  -492 z:  8060
+vector:  8422 x:   624 y:  -460 z:  8172
+vector:  8291 x:   588 y:  -180 z:  8268
+vector:  8384 x:   656 y:  -296 z:  8108
+vector:  8213 x:   596 y:  -168 z:  8032
+vector:  8131 x:   708 y:  -184 z:  7956
+vector:  8338 x:   728 y:  -244 z:  8420
+vector:  8181 x:   704 y:  -228 z:  8400
+sd:10 mean:-268435200 size:8
+step detected
+vector:  8252 x:   560 y:  -156 z:  8164
+vector:  8208 x:   624 y:  -128 z:  8228
+vector:  8037 x:   624 y:  -236 z:  8140
+vector:  8291 x:   688 y:  -252 z:  8324
+vector:  8307 x:   648 y:   -12 z:  8320
+vector:  8459 x:   608 y:  -232 z:  8180
+vector:  8218 x:   648 y:  -208 z:  8212
+vector:  8389 x:   700 y:  -228 z:  8360
+sd:3 mean:8270 size:8
+step detected
+vector:  8023 x:   636 y:  -184 z:  7988
+vector:  8457 x:   588 y:  -200 z:  7964
+vector:  7898 x:   688 y:  -224 z:  8244
+vector:  8334 x:   704 y:  -184 z:  7996
+vector:  8402 x:   644 y:  -188 z:  8224
+vector:  8225 x:   644 y:  -376 z:  8352
+vector:  8317 x:   676 y:  -176 z:  8392
+vector:  8277 x:   620 y:  -224 z:  8224
+vector:  8456 x:   668 y:  -192 z:  8144
+sd:10 mean:14036067 size:9
+vector:  8458 x:   644 y:  -112 z:  8280
+vector:  8228 x:   600 y:  -468 z:  8328
+vector:  8126 x:   620 y:  -160 z:  8296
+vector:  8700 x:   892 y:  -184 z:  8328
+vector:  8265 x:   660 y:  -224 z:  8320
+vector:  8437 x:   940 y:  -192 z:  8188
+vector:  8372 x:   612 y:  -200 z:  8208
+vector:  8108 x:   552 y:  -168 z:  8112
+sd:4 mean:126322823 size:8
+vector:  8353 x:   672 y:  -184 z:  8128
+vector:  8358 x:   652 y:  -212 z:  8168
+vector:  8304 x:   696 y:  -160 z:  7972
+vector:  8262 x:   636 y:  -412 z:  8472
+vector:  8342 x:   704 y:  -192 z:  8316
+vector:  8349 x:   672 y:  -220 z:  8316
+vector:  8064 x:   588 y:  -220 z:  8436
+vector:  8114 x:   736 y:  -156 z:  8032
+sd:10 mean:-31580386 size:8
+step detected
+vector:  8293 x:   696 y:  -212 z:  8164
+vector:  7990 x:   728 y:  -172 z:  8408
+vector:  8140 x:   604 y:  -180 z:  8244
+vector:  8455 x:   684 y:  -188 z:  8444
+vector:  8360 x:   628 y:   -12 z:  8336
+vector:  8166 x:   572 y:  -184 z:  8120
+vector:  8271 x:   676 y:  -148 z:  8272
+vector:  8186 x:   648 y:  -192 z:  8220
+vector:  8191 x:   656 y:  -192 z:  8376
+sd:3 mean:140358635 size:9
+vector:  8229 x:   684 y:  -180 z:  8292
+vector:  8239 x:   648 y:  -452 z:  8152
+vector:  8132 x:   700 y:  -200 z:  8256
+vector:  8173 x:   644 y:  -192 z:  8240
+vector:  7990 x:   600 y:  -436 z:  8228
+vector:  8216 x:   684 y:  -252 z:  8252
+vector:  8003 x:   624 y:  -216 z:  8292
+vector:  8464 x:   636 y:  -124 z:  8364
+sd:10 mean:-268435200 size:8
+step detected
+vector:  7971 x:   640 y:   -12 z:  8208
+vector:  8054 x:   632 y:  -248 z:  8208
+vector:  8202 x:   660 y:   -48 z:  8332
+vector:  8421 x:   756 y:  -212 z:  8260
+vector:  8185 x:   648 y:  -252 z:  8004
+vector:  8371 x:   728 y:  -184 z:  8140
+vector:  8296 x:   544 y:  -168 z:  8324
+vector:  8256 x:   680 y:  -228 z:  8444
+sd:4 mean:8219 size:8
+step detected
+vector:  8249 x:   624 y:  -428 z:  8060
+vector:  8370 x:   648 y:  -168 z:  8416
+vector:  8396 x:   696 y:  -360 z:  8124
+vector:  8090 x:   724 y:  -140 z:  8000
+vector:  8244 x:   664 y:  -144 z:  8364
+vector:  8029 x:   652 y:  -180 z:  8280
+vector:  8211 x:   648 y:  -440 z:  7988
+vector:  8418 x:   708 y:  -208 z:  8184
+vector:  8347 x:   724 y:  -144 z:  8220
+sd:10 mean:14036067 size:9
+vector:  8184 x:   704 y:  -112 z:  8040
+vector:  8457 x:   664 y:  -148 z:  8228
+vector:  8044 x:   760 y:  -240 z:  8268
+vector:  8291 x:   688 y:  -228 z:  8284
+vector:  8131 x:   640 y:  -120 z:  8264
+vector:  8042 x:   744 y:  -200 z:  8180
+vector:  8310 x:   692 y:  -192 z:  8228
+vector:  8303 x:   672 y:  -228 z:  8340
+sd:4 mean:126322823 size:8
+vector:  8443 x:   528 y:  -184 z:  8052
+vector:  8322 x:   728 y:  -252 z:  8272
+vector:  8430 x:   700 y:  -184 z:  8272
+vector:  8204 x:   668 y:   -96 z:  8412
+vector:  8283 x:   680 y:   -92 z:  7980
+vector:  8231 x:   612 y:  -452 z:  8080
+vector:  8315 x:   616 y:  -240 z:  8180
+vector:  8322 x:   632 y:  -188 z:  8120
+sd:10 mean:-31580386 size:8
+step detected
+vector:  8330 x:   636 y:  -176 z:  8308
+vector:  8420 x:   692 y:  -212 z:  8292
+vector:  7981 x:   624 y:  -236 z:  8044
+vector:  8336 x:   716 y:  -160 z:  8300
+vector:  8367 x:   684 y:  -204 z:  8300
+vector:  8257 x:   676 y:  -236 z:  8036
+vector:  8374 x:   636 y:  -208 z:  7984
+vector:  8320 x:   680 y:  -152 z:  8008
+vector:  8368 x:   644 y:  -156 z:  8364
+sd:3 mean:140358635 size:9
+vector:  8052 x:   656 y:  -184 z:  8248
+vector:  8340 x:   616 y:  -108 z:  8280
+vector:  8150 x:   732 y:  -188 z:  8244
+vector:  8033 x:   636 y:  -192 z:  8260
+vector:  8535 x:   640 y:  -224 z:  8108
+vector:  8314 x:   664 y:   -80 z:  8296
+vector:  8360 x:   552 y:   -16 z:  8244
+vector:  8190 x:   600 y:  -212 z:  8248
+sd:10 mean:-268435200 size:8
+step detected
+vector:  8398 x:   632 y:  -104 z:  8224
+vector:  8339 x:   696 y:  -216 z:  8260
+vector:  7969 x:   716 y:  -220 z:  8228
+vector:  8277 x:   588 y:  -160 z:  8328
+vector:  8457 x:   660 y:  -212 z:  8268
+vector:  8330 x:   596 y:  -172 z:  8432
+vector:  8344 x:   644 y:  -240 z:  8020
+vector:  8468 x:   644 y:  -216 z:  8252
+sd:4 mean:8322 size:8
+step detected
+vector:  8023 x:   648 y:  -176 z:  8380
+vector:  8282 x:   680 y:  -180 z:  8304
+vector:  8387 x:   632 y:  -268 z:  8268
+vector:  8387 x:   664 y:  -212 z:  8340
+vector:  8173 x:   656 y:  -260 z:  8280
+vector:  8345 x:   592 y:  -240 z:  8256
+vector:  8342 x:   720 y:  -144 z:  8424
+vector:  8289 x:   652 y:  -168 z:  8416
+vector:  8297 x:   680 y:  -236 z:  8156
+sd:10 mean:14036067 size:9
+vector:  8361 x:   720 y:  -192 z:  8316
+vector:  8327 x:   632 y:  -200 z:  8060
+vector:  8280 x:   712 y:  -196 z:  8256
+vector:  8016 x:   624 y:  -168 z:  8260
+vector:  8274 x:   680 y:  -160 z:  8348
+vector:  8065 x:   648 y:  -192 z:  8208
+vector:  8404 x:   676 y:  -120 z:  8160
+vector:  8087 x:   708 y:  -144 z:  8012
+sd:4 mean:126322823 size:8
+vector:  8408 x:   728 y:  -132 z:  7940
+vector:  8426 x:   628 y:  -216 z:  8160
+vector:  8138 x:   668 y:  -196 z:  8252
+vector:  8211 x:   580 y:   -16 z:  8052
+vector:  8248 x:   704 y:  -228 z:  8444
+vector:  8275 x:   636 y:  -436 z:  7980
+vector:  8394 x:   616 y:  -192 z:  8440
+vector:  8432 x:   620 y:  -204 z:  8196
+sd:10 mean:-31580386 size:8
+step detected
+vector:  8353 x:   680 y:  -212 z:  8176
+vector:  8060 x:   656 y:  -228 z:  8268
+vector:  8304 x:   740 y:  -204 z:  8392
+vector:  8275 x:   652 y:  -208 z:  8212
+vector:  8431 x:   556 y:  -180 z:  8192
+vector:  8340 x:   736 y:  -148 z:  8300
+vector:  7978 x:   644 y:  -188 z:  8236
+vector:  8143 x:   696 y:  -248 z:  8204
+vector:  8332 x:   672 y:  -240 z:  8196
+sd:3 mean:140358635 size:9
+vector:  8339 x:   640 y:  -236 z:  8292
+vector:  8366 x:   696 y:  -216 z:  8228
+vector:  8273 x:   620 y:  -200 z:  8052
+vector:  8218 x:   600 y:  -224 z:  8296
+vector:  8357 x:   672 y:  -152 z:  8192
+vector:  8262 x:   664 y:  -224 z:  8272
+vector:  8268 x:   628 y:  -224 z:  8392
+vector:  8343 x:   636 y:  -252 z:  8380
+sd:10 mean:-268435200 size:8
+step detected
+vector:  8467 x:   620 y:  -228 z:  8208
+vector:  8021 x:   676 y:  -240 z:  8388
+vector:  8265 x:   584 y:  -156 z:  8196
+vector:  8257 x:   688 y:  -240 z:  8320
+vector:  8174 x:   564 y:  -256 z:  8268
+vector:  8292 x:   616 y:  -152 z:  8232
+vector:  8290 x:   636 y:  -212 z:  8260
+vector:  8445 x:   644 y:  -240 z:  8192
+sd:4 mean:8276 size:8
+step detected
+vector:  8407 x:   668 y:  -104 z:  8212
+vector:  8385 x:   656 y:  -176 z:  8300
+vector:  7983 x:   668 y:  -248 z:  8372
+vector:  8251 x:   640 y:  -136 z:  8044
+vector:  8326 x:   636 y:  -252 z:  8308
+vector:  8263 x:   620 y:  -176 z:  8168
+vector:  8166 x:   624 y:  -452 z:  8276
+vector:  8262 x:   628 y:  -136 z:  8444
+vector:  8328 x:   632 y:  -208 z:  7948
+sd:10 mean:14036067 size:9
+vector:  8287 x:   652 y:  -220 z:  8340
+vector:  8264 x:   596 y:  -152 z:  7956
+vector:  8230 x:   684 y:  -188 z:  8212
+vector:  8151 x:   656 y:  -120 z:  8368
+vector:  8234 x:   696 y:  -184 z:  8244
+vector:  8401 x:   672 y:  -224 z:  8340
+vector:  8462 x:   644 y:  -184 z:  8212
+vector:  8364 x:   576 y:  -208 z:  8332
+sd:4 mean:126322823 size:8
+vector:  8308 x:   584 y:  -224 z:  8240
+vector:  8217 x:   600 y:  -500 z:  8260
+vector:  8435 x:   648 y:  -256 z:  8212
+vector:  8272 x:   644 y:  -272 z:  8112
+vector:  8316 x:   756 y:  -128 z:  8192
+vector:  8030 x:   624 y:  -132 z:  8264
+vector:  8209 x:   728 y:  -144 z:  7956
+vector:  8307 x:   672 y:  -248 z:  8040
+sd:10 mean:-31580386 size:8
+step detected
+vector:  8243 x:   720 y:  -192 z:  8244
+vector:  8461 x:   640 y:  -224 z:  8112
+vector:  8418 x:   644 y:  -176 z:  8420
+vector:  8284 x:   664 y:  -144 z:  8264
+vector:  8220 x:   664 y:  -236 z:  8240
+vector:  8452 x:   684 y:  -232 z:  8120
+vector:  8045 x:   604 y:  -216 z:  8056
+vector:  8345 x:   664 y:  -176 z:  8332
+vector:  8258 x:   632 y:  -448 z:  8228
+sd:3 mean:140358635 size:9
+vector:  7975 x:   672 y:  -176 z:  8260
+vector:  8329 x:   600 y:  -204 z:  8404
+vector:  8298 x:   636 y:  -184 z:  8200
+vector:  8053 x:   696 y:  -228 z:  8196
+vector:  8219 x:   628 y:  -224 z:  8332
+vector:  8444 x:   628 y:  -176 z:  8088
+vector:  8392 x:   668 y:  -444 z:  8248
+vector:  8267 x:   616 y:  -192 z:  7984
+sd:10 mean:-268435200 size:8
+step detected
+vector:  8362 x:   632 y:  -140 z:  8352
+vector:  8445 x:   764 y:   -32 z:  8168
+vector:  8446 x:   652 y:  -204 z:  8304
+vector:  8238 x:   712 y:  -188 z:  8388
+vector:  8447 x:   580 y:  -208 z:  8236
+vector:  8068 x:   716 y:  -144 z:  8252
+vector:  8468 x:   620 y:  -164 z:  8360
+vector:  8380 x:   712 y:  -136 z:  8332
+sd:4 mean:8356 size:8
+step detected
+vector:  8326 x:   660 y:  -184 z:  8192
+vector:  8705 x:   728 y:   -36 z:  8204
+vector:  8248 x:   656 y:  -148 z:  7952
+vector:  8446 x:   692 y:  -412 z:  8084
+vector:  8257 x:   608 y:  -232 z:  8348
+vector:  8413 x:   656 y:  -252 z:  8236
+vector:  8444 x:   560 y:  -156 z:  8268
+vector:  8286 x:   736 y:  -164 z:  7996
+vector:  8237 x:   584 y:  -476 z:  8348
+sd:10 mean:14036067 size:9
+vector:  8395 x:   716 y:  -108 z:  8344
+vector:  8363 x:   664 y:  -184 z:  8196
+vector:  8468 x:   660 y:  -252 z:  8308
+vector:  8305 x:   688 y:  -176 z:  8236
+vector:  8458 x:   724 y:  -184 z:  8212
+vector:  8088 x:   704 y:  -228 z:  8080
+vector:  8254 x:   644 y:  -228 z:  8356
+vector:  8031 x:   612 y:  -188 z:  8004
+sd:4 mean:126322823 size:8
+vector:  8360 x:   720 y:  -256 z:  8228
+vector:  8276 x:   660 y:  -184 z:  8260
+vector:  8321 x:   584 y:  -196 z:  8432
+vector:  8392 x:   672 y:   -80 z:  8224
+vector:  8390 x:   604 y:  -136 z:  8288
+vector:  8213 x:   668 y:  -160 z:  8252
+vector:  8392 x:   652 y:  -184 z:  7976
+vector:  8421 x:   624 y:   -16 z:  8224
+sd:10 mean:-31580386 size:8
+step detected
+vector:  8231 x:   656 y:  -192 z:  8236
+vector:  8451 x:   624 y:  -204 z:  8112
+vector:  8157 x:   652 y:    -8 z:  8280
+vector:  8219 x:   532 y:  -140 z:  8344
+vector:  8451 x:   628 y:  -248 z:  8420
+vector:  8434 x:   604 y:   -36 z:  8332
+vector:  7978 x:   704 y:  -232 z:  8408
+vector:  8202 x:   656 y:  -180 z:  8296
+vector:  8226 x:   680 y:  -176 z:  8380
+sd:3 mean:140358635 size:9
+vector:  8226 x:   652 y:   -80 z:  8224
+vector:  8240 x:   636 y:   -16 z:  8304
+vector:  8389 x:   648 y:  -184 z:  8208
+vector:  8325 x:   588 y:  -100 z:  8264
+vector:  8218 x:   696 y:  -168 z:  8080
+vector:  8322 x:   692 y:  -144 z:  8420
+vector:  8523 x:   512 y:   -28 z:  8072
+vector:  8126 x:   612 y:  -240 z:  7976
+sd:10 mean:-268435200 size:8
+step detected
+vector:  8324 x:   672 y:  -240 z:  8236
+vector:  8234 x:   696 y:  -240 z:  8444
+vector:  8283 x:   580 y:    -8 z:  8312
+vector:  8063 x:   756 y:  -224 z:  8260
+vector:  8336 x:   596 y:  -256 z:  8136
+vector:  8214 x:   652 y:  -420 z:  8316
+vector:  8432 x:   644 y:  -204 z:  8244
+vector:  8331 x:   660 y:  -132 z:  8260
+sd:3 mean:8277 size:8
+step detected
+vector:  8265 x:   632 y:  -176 z:  8200
+vector:  8122 x:   620 y:  -208 z:  7980
+vector:  8179 x:   696 y:  -204 z:  8112
+vector:  8007 x:   672 y:  -248 z:  8000
+vector:  8347 x:   608 y:  -172 z:  8292
+vector:  8270 x:   680 y:  -184 z:  8324
+vector:  8312 x:   624 y:  -160 z:  8300
+vector:  8013 x:   612 y:  -156 z:  8436
+vector:  8079 x:   580 y:    -8 z:  8308
+sd:10 mean:14036067 size:9
+vector:  8257 x:   644 y:   -24 z:  8236
+vector:  8464 x:   632 y:  -180 z:  8436
+vector:  8434 x:   640 y:  -224 z:  8244
+vector:  8243 x:   644 y:   -12 z:  8364
+vector:  8274 x:   672 y:  -188 z:  8284
+vector:  8479 x:   512 y:  -116 z:  8344
+vector:  7993 x:   724 y:  -268 z:  8432
+vector:  8309 x:   728 y:  -152 z:  8108
+sd:4 mean:126322823 size:8
+vector:  8436 x:   616 y:  -236 z:  8212
+vector:  8452 x:   624 y:  -128 z:  8280
+vector:  8238 x:   676 y:  -196 z:  8300
+vector:  8378 x:   636 y:  -156 z:  8304
+vector:  8309 x:   704 y:  -512 z:  8288
+vector:  8470 x:   660 y:  -212 z:  8404
+vector:  8236 x:   644 y:  -208 z:  8344
+vector:  8308 x:   744 y:  -176 z:  8344
+sd:10 mean:-31580386 size:8
+step detected
+vector:  8405 x:   672 y:  -188 z:  8400
+vector:  8381 x:   712 y:  -136 z:  8260
+vector:  8306 x:   580 y:  -276 z:  8420
+vector:  8136 x:   556 y:  -196 z:  8432
+vector:  8190 x:   604 y:  -216 z:  8088
+vector:  7968 x:   628 y:  -120 z:  8216
+vector:  8079 x:   900 y:  -192 z:  8260
+vector:  7977 x:   720 y:  -216 z:  8060
+vector:  8224 x:   736 y:  -184 z:  8136
+sd:3 mean:140358635 size:9
+vector:  8181 x:   644 y:  -208 z:  8324
+vector:  8396 x:   552 y:  -152 z:  8344
+vector:  8053 x:   656 y:  -144 z:  8284
+vector:  8238 x:   652 y:  -176 z:  7992
+vector:  8258 x:   652 y:  -188 z:  8204
+vector:  8282 x:   596 y:  -144 z:  8400
+vector:  8298 x:   668 y:  -184 z:  8252
+vector:  8416 x:   600 y:  -200 z:  8192
+sd:10 mean:-268435200 size:8
+step detected
+vector:  8352 x:   668 y:  -240 z:  8404
+vector:  8352 x:   684 y:  -216 z:  8444
+vector:  8355 x:   612 y:  -192 z:  8424
+vector:  8318 x:   700 y:  -148 z:  8364
+vector:  8047 x:   628 y:  -500 z:  8356
+vector:  8392 x:   684 y:    -4 z:  8016
+vector:  8182 x:   624 y:  -232 z:  8228
+vector:  8471 x:   764 y:  -256 z:  8336
+sd:3 mean:8308 size:8
+step detected
+vector:  8170 x:   656 y:  -188 z:  8312
+vector:  8454 x:   712 y:   -16 z:  8200
+vector:  8062 x:   736 y:  -184 z:  8268
+vector:  8457 x:   672 y:  -188 z:  8248
+vector:  8372 x:   696 y:  -136 z:  8264
+vector:  8278 x:   728 y:  -208 z:  8004
+vector:  8001 x:   664 y:  -136 z:  8096
+vector:  8257 x:   584 y:  -136 z:  8224
+vector:  8039 x:   608 y:  -208 z:  8192
+sd:10 mean:14036067 size:9
+vector:  8074 x:   632 y:  -188 z:  8368
+vector:  8333 x:   796 y:  -216 z:  8064
+vector:  8207 x:   616 y:  -168 z:  8280
+vector:  8369 x:   724 y:  -136 z:  8028
+vector:  8457 x:   612 y:  -132 z:  7996
+vector:  8075 x:   564 y:  -232 z:  8408
+vector:  8129 x:   728 y:  -176 z:  8300
+vector:  8376 x:   640 y:  -196 z:  8300
+sd:4 mean:126322823 size:8
+vector:  8262 x:   688 y:  -224 z:  8268
+vector:  8326 x:   712 y:   -16 z:  7964
+vector:  8320 x:   708 y:  -248 z:  8292
+vector:  8221 x:   620 y:  -224 z:  8128
+vector:  8304 x:   648 y:  -196 z:  8188
+vector:  8339 x:   644 y:  -128 z:  8344
+vector:  8258 x:   608 y:  -188 z:  8088
+vector:  8089 x:   620 y:  -204 z:  8220
+sd:10 mean:-31580386 size:8
+step detected
+vector:  8176 x:   696 y:   -16 z:  8284
+vector:  8039 x:   612 y:  -208 z:  8408
+vector:  8379 x:   636 y:  -224 z:  8172
+vector:  8453 x:   648 y:  -224 z:  8192
+vector:  8276 x:   600 y:  -196 z:  8352
+vector:  8429 x:   636 y:  -184 z:  7952
+vector:  8366 x:   636 y:  -468 z:  8300
+vector:  8462 x:   676 y:  -228 z:  8160
+vector:  8223 x:   684 y:  -208 z:  8284
+sd:3 mean:140358635 size:9
+vector:  8193 x:   644 y:  -152 z:  8032
+vector:  8088 x:   684 y:  -176 z:  8444
+vector:  8275 x:   660 y:  -248 z:  8244
+vector:  8249 x:   556 y:  -176 z:  8160
+vector:  8469 x:   700 y:  -152 z:  8244
+vector:  8141 x:   680 y:    -4 z:  8252
+vector:  8443 x:   616 y:  -196 z:  8284
+vector:  8274 x:   552 y:  -192 z:  8260
+sd:10 mean:-268435200 size:8
+step detected
+vector:  8140 x:   680 y:  -208 z:  8268
+vector:  8342 x:   644 y:  -184 z:  8036
+vector:  8182 x:   656 y:  -128 z:  8384
+vector:  8297 x:   644 y:  -212 z:  7948
+vector:  8404 x:   596 y:   -88 z:  7980
+vector:  8256 x:   636 y:   -16 z:  8260
+vector:  7974 x:   624 y:  -236 z:  8388
+vector:  7981 x:   692 y:  -200 z:  8180
+sd:4 mean:8197 size:8
+step detected
+vector:  8206 x:   620 y:  -224 z:  8320
+vector:  8352 x:   620 y:  -168 z:  8316
+vector:  8050 x:   596 y:  -192 z:  8248
+vector:  8408 x:   620 y:  -148 z:  8304
+vector:  8217 x:   656 y:  -224 z:  8124
+vector:  8284 x:   720 y:  -208 z:  8076
+vector:  8318 x:   684 y:  -184 z:  8164
+vector:  8056 x:   644 y:  -156 z:  8380
+vector:  8270 x:   608 y:  -196 z:  8216
+sd:10 mean:14036067 size:9
+vector:  8447 x:   652 y:  -192 z:  8256
+vector:  8422 x:   680 y:  -216 z:  8260
+vector:  8248 x:   504 y:  -244 z:  8052
+vector:  8272 x:   584 y:  -416 z:  8208
+vector:  8438 x:   684 y:  -244 z:  8260
+vector:  8048 x:   660 y:  -204 z:  8240
+vector:  8345 x:   628 y:  -216 z:  8256
+vector:  8253 x:   616 y:   -96 z:  8416
+sd:4 mean:126322823 size:8
+vector:  8244 x:   656 y:  -220 z:  8204
+vector:  8294 x:   688 y:  -176 z:  7980
+vector:  8263 x:   668 y:  -160 z:  8140
+vector:  8234 x:   632 y:  -256 z:  8196
+vector:  8290 x:   644 y:  -224 z:  8268
+vector:  8371 x:   620 y:  -244 z:  7976
+vector:  8302 x:   700 y:   -36 z:  8232
+vector:  8157 x:   864 y:  -192 z:  8268
+sd:10 mean:-31580386 size:8
+step detected
+vector:  8233 x:   696 y:  -192 z:  8400
+vector:  8077 x:   700 y:  -188 z:  8348
+vector:  8392 x:   636 y:  -208 z:  8264
+vector:  8278 x:   764 y:  -200 z:  8308
+vector:  8224 x:   620 y:  -184 z:  8416
+vector:  8248 x:   596 y:  -192 z:  8264
+vector:  7981 x:   644 y:  -216 z:  8144
+vector:  8298 x:   692 y:  -252 z:  8384
+vector:  8322 x:   600 y:  -216 z:  8252
+sd:3 mean:140358635 size:9
+vector:  8229 x:   660 y:  -232 z:  8244
+vector:  8469 x:   664 y:  -208 z:  8052
+vector:  8328 x:   744 y:   -12 z:  8372
+vector:  8013 x:   684 y:  -236 z:  8352
+vector:  8309 x:   708 y:  -204 z:  8192
+vector:  8344 x:   732 y:  -172 z:  7936
+vector:  8226 x:   688 y:  -220 z:  8004
+vector:  8178 x:   616 y:    -8 z:  8344
+sd:10 mean:-268435200 size:8
+step detected
+vector:  8319 x:   596 y:  -152 z:  8416
+vector:  7988 x:   612 y:  -140 z:  8316
+vector:  8449 x:   520 y:  -180 z:  8016
+vector:  8271 x:   628 y:  -200 z:  8432
+vector:  8457 x:   732 y:  -180 z:  7940
+vector:  8007 x:   580 y:  -180 z:  8260
+vector:  8231 x:   600 y:  -112 z:  8160
+vector:  8441 x:   616 y:  -144 z:  8364
+sd:5 mean:8270 size:8
+step detected
+vector:  8340 x:   636 y:  -220 z:  8428
+vector:  8468 x:   672 y:  -232 z:  8244
+vector:  8310 x:   632 y:  -156 z:  7988
+vector:  8234 x:   612 y:  -132 z:  8152
+vector:  8132 x:   736 y:  -272 z:  8208
+vector:  8282 x:   640 y:  -236 z:  8268
+vector:  8239 x:   696 y:  -252 z:  8436
+vector:  8165 x:   632 y:  -200 z:  8264
+vector:  8303 x:   620 y:  -256 z:  8256
+sd:10 mean:14036067 size:9
+vector:  8308 x:   592 y:    -4 z:  8180
+vector:  8124 x:   696 y:  -276 z:  8144
+vector:  8284 x:   540 y:  -104 z:  8296
+vector:  8376 x:   684 y:    -4 z:  8208
+vector:  8212 x:   608 y:  -176 z:  8048
+vector:  8254 x:   672 y:  -200 z:  8360
+vector:  8446 x:   656 y:  -240 z:  8540
+vector:  8366 x:   672 y:  -264 z:  8376
+sd:4 mean:126322823 size:8
+vector:  8181 x:   592 y:  -240 z:  8044
+vector:  8053 x:   644 y:  -204 z:  8316
+vector:  8201 x:   716 y:  -100 z:  8284
+vector:  8276 x:   696 y:  -208 z:  8404
+vector:  8415 x:   624 y:  -148 z:  8388
+vector:  8255 x:   712 y:   -72 z:  8292
+vector:  8055 x:   588 y:  -224 z:  8316
+vector:  8312 x:   608 y:  -124 z:  8368
+sd:10 mean:-31580386 size:8
+step detected
+vector:  8437 x:   644 y:  -236 z:  8144
+vector:  8261 x:   656 y:  -268 z:  7968
+vector:  8031 x:   700 y:  -228 z:  8180
+vector:  8220 x:   684 y:  -148 z:  8220
+vector:  8375 x:   644 y:  -196 z:  8272
+vector:  8325 x:   604 y:  -164 z:  8132
+vector:  8320 x:   600 y:  -200 z:  8076
+vector:  8219 x:   720 y:  -160 z:  8244
+vector:  8448 x:   620 y:  -236 z:  8236
+sd:3 mean:140358635 size:9
+vector:  8295 x:   720 y:  -164 z:  8224
+vector:  8327 x:   624 y:  -120 z:  8264
+vector:  8234 x:   664 y:  -168 z:  8260
+vector:  8016 x:   520 y:  -224 z:  8176
+vector:  8125 x:   664 y:  -188 z:  8296
+vector:  8178 x:   596 y:  -156 z:  8400
+vector:  8001 x:   668 y:  -208 z:  8028
+vector:  8336 x:   664 y:  -152 z:  8216
+sd:10 mean:-268435200 size:8
+step detected
+vector:  8320 x:   660 y:  -136 z:  8316
+vector:  8282 x:   672 y:  -164 z:  8224
+vector:  8250 x:   588 y:   -76 z:  8200
+vector:  8117 x:   644 y:   -16 z:  8300
+vector:  8366 x:   640 y:  -244 z:  8284
+vector:  8481 x:   608 y:  -160 z:  8216
+vector:  8322 x:   644 y:   -16 z:  8196
+vector:  8463 x:   616 y:  -132 z:  8184
+sd:3 mean:8325 size:8
+step detected
+vector:  8473 x:   660 y:  -228 z:  8212
+vector:  8308 x:   740 y:  -156 z:  8340
+vector:  8333 x:   712 y:  -472 z:  8308
+vector:  8327 x:   648 y:  -104 z:  8392
+vector:  8349 x:   588 y:  -120 z:  8188
+vector:  8388 x:   620 y:  -160 z:  8268
+vector:  8229 x:   624 y:  -224 z:  8228
+vector:  8296 x:   684 y:  -176 z:  8444
+vector:  8343 x:   608 y:  -208 z:  8444
+sd:10 mean:14036067 size:9
+vector:  8409 x:   620 y:  -252 z:  8324
+vector:  8238 x:   648 y:  -116 z:  8440
+vector:  8180 x:   728 y:  -132 z:  8244
+vector:  8268 x:   628 y:  -240 z:  8408
+vector:  8353 x:   636 y:  -116 z:  8548
+vector:  8427 x:   632 y:  -176 z:  8296
+vector:  8414 x:   604 y:  -188 z:  8060
+vector:  8304 x:   736 y:  -120 z:  8396
+sd:4 mean:126322823 size:8
+vector:  8277 x:   696 y:  -200 z:  8048
+vector:  8232 x:   656 y:  -124 z:  7996
+vector:  8430 x:   640 y:  -136 z:  8104
+vector:  8255 x:   692 y:  -208 z:  8152
+vector:  8256 x:   712 y:  -224 z:  8172
+vector:  8460 x:   684 y:  -164 z:  8232
+vector:  8333 x:   592 y:  -120 z:  8292
+vector:  8339 x:   612 y:  -136 z:  8248
+sd:10 mean:-31580386 size:8
+step detected
+vector:  8355 x:   680 y:  -188 z:  8268
+vector:  8251 x:   664 y:  -172 z:  8204
+vector:  8278 x:   628 y:  -180 z:  8308
+vector:  8312 x:   676 y:  -232 z:  8424
+vector:  8302 x:   700 y:  -156 z:  8268
+vector:  8147 x:   656 y:  -208 z:  8384
+vector:  8238 x:   660 y:  -200 z:  8304
+vector:  8454 x:   728 y:  -176 z:  8080
+vector:  8324 x:   712 y:  -160 z:  8084
+sd:3 mean:140358635 size:9
+vector:  8240 x:   668 y:  -184 z:  8244
+vector:  8314 x:   652 y:  -144 z:  8260
+vector:  8275 x:   544 y:  -108 z:  8248
+vector:  8166 x:   668 y:   -40 z:  8292
+vector:  8117 x:   652 y:  -120 z:  8152
+vector:  8056 x:   720 y:  -204 z:  8304
+vector:  8357 x:   652 y:  -172 z:  8424
+vector:  8241 x:   536 y:  -216 z:  8092
+sd:10 mean:-268435200 size:8
+step detected
+vector:  8257 x:   656 y:   -16 z:  8284
+vector:  8241 x:   712 y:  -164 z:  8264
+vector:  8377 x:   720 y:  -288 z:  8260
+vector:  8280 x:   632 y:  -244 z:  8240
+vector:  8442 x:   684 y:  -216 z:  8328
+vector:  8260 x:   660 y:  -172 z:  8320
+vector:  8108 x:   596 y:  -204 z:  8196
+vector:  8268 x:   760 y:  -224 z:  8444
+sd:2 mean:8279 size:8
+step detected
+vector:  8278 x:   644 y:  -144 z:  8332
+vector:  8471 x:   628 y:  -168 z:  8228
+vector:  8042 x:   572 y:  -388 z:  8204
+vector:  8079 x:   664 y:  -152 z:  8168
+vector:  8212 x:   660 y:  -156 z:  8376
+vector:  8318 x:   628 y:  -144 z:  8060
+vector:  8370 x:   672 y:  -104 z:  7976
+vector:  8334 x:   628 y:  -116 z:  8000
+vector:  8272 x:   676 y:  -360 z:  8244
+sd:10 mean:14036067 size:9
+vector:  8002 x:   708 y:  -152 z:  8228
+vector:  7981 x:   656 y:  -216 z:  8144
+vector:  8462 x:   656 y:  -184 z:  8256
+vector:  8234 x:   628 y:   -16 z:  8220
+vector:  8348 x:   592 y:  -200 z:  8340
+vector:  8296 x:   600 y:  -240 z:  8232
+vector:  8283 x:   548 y:  -200 z:  8164
+vector:  8472 x:   700 y:  -188 z:  7996
+sd:4 mean:126322823 size:8
+vector:  8239 x:   568 y:  -192 z:  8432
+vector:  8303 x:   660 y:  -136 z:  8276
+vector:  8285 x:   684 y:  -208 z:  8392
+vector:  8236 x:   628 y:  -220 z:  8288
+vector:  8377 x:   640 y:  -240 z:  8352
+vector:  8357 x:   664 y:  -184 z:  7960
+vector:  8249 x:   636 y:  -196 z:  8132
+vector:  8260 x:   704 y:  -216 z:  8248
+sd:10 mean:-31580386 size:8
+step detected
+vector:  8452 x:   652 y:  -192 z:  8276
+vector:  8278 x:   676 y:  -196 z:  8052
+vector:  8473 x:   576 y:  -404 z:  8356
+vector:  8406 x:   740 y:  -216 z:  8320
+vector:  8166 x:   608 y:  -160 z:  8076
+vector:  8378 x:   660 y:  -228 z:  8044
+vector:  8004 x:   696 y:  -196 z:  8436
+vector:  8323 x:   664 y:  -212 z:  8168
+vector:  8466 x:   712 y:  -192 z:  8300
+sd:3 mean:140358635 size:9
+vector:  8124 x:   656 y:  -164 z:  8304
+vector:  8221 x:   672 y:  -184 z:  8060
+vector:  8008 x:   700 y:  -476 z:  8228
+vector:  8331 x:   644 y:  -156 z:  8308
+vector:  8351 x:   656 y:  -132 z:  8548
+vector:  8326 x:   672 y:  -208 z:  8408
+vector:  8187 x:   656 y:  -212 z:  8252
+vector:  8264 x:   668 y:  -228 z:  8264
+sd:10 mean:-268435200 size:8
+step detected
+vector:  8367 x:   896 y:  -184 z:  8220
+vector:  8067 x:   648 y:  -176 z:  8688
+vector:  8325 x:   640 y:  -192 z:  8152
+vector:  8204 x:   732 y:  -172 z:  8100
+vector:  8275 x:   644 y:  -112 z:  8012
+vector:  8460 x:   672 y:  -132 z:  8228
+vector:  8111 x:   652 y:  -172 z:  8332
+vector:  8293 x:   672 y:  -144 z:  8296
+sd:3 mean:8262 size:8
+step detected
+vector:  8163 x:   576 y:  -160 z:  8196
+vector:  8132 x:   656 y:  -268 z:  8012
+vector:  8467 x:   608 y:  -204 z:  8400
+vector:  8216 x:   728 y:    -4 z:  8264
+vector:  8240 x:   760 y:  -264 z:  8240
+vector:  8205 x:   576 y:  -316 z:  8304
+vector:  8417 x:   688 y:  -144 z:  8380
+vector:  8261 x:   640 y:   -52 z:  8356
+vector:  8121 x:   608 y:  -192 z:  8056
+sd:10 mean:14036067 size:9
+vector:  8394 x:   676 y:   -76 z:  8220
+vector:  8248 x:   616 y:  -216 z:  8256
+vector:  8301 x:   636 y:  -176 z:  8012

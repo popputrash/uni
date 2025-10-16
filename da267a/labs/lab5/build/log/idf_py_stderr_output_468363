@@ -1,0 +1,55 @@
+Command: /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/minipops/uni/da267a/labs/lab5/build/lab5.elf /home/minipops/uni/da267a/labs/lab5/build/bootloader/bootloader.elf -m '/home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/opt/esp-idf/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.7.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32m/opt/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32m/opt/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x4000bff0: [0;33m_xtos_set_intlevel[0m[0m in [0;32mROM[0m
+[0m--- 0x4000c2e0: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x4000c2f6: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x400d22b3: [0;33muart_hal_write_txfifo[0m[0m at [0;32m/opt/esp-idf/components/hal/uart_hal_iram.c[0m[0m:[1;31m27[0m
+[0m--- 0x4000bff0: [0;33m_xtos_set_intlevel[0m[0m in [0;32mROM[0m
+[0m--- 0x4000bfed: [0;33m_xtos_set_intlevel[0m[0m in [0;32mROM[0m
+[0m--- 0x40083da4: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32m/opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m560[0m
+[0m--- (inlined by) [0;33mesp_pm_impl_isr_hook[0m[0m at [0;32m/opt/esp-idf/components/esp_pm/pm_impl.c[0m[0m:[1;31m1032[0m
+[0m--- 0x40083711: [0;33m_xt_lowint1[0m[0m at [0;32m/opt/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400da4cf: [0;33mi2c_master_read[0m[0m at [0;32m/opt/esp-idf/components/driver/i2c/i2c.c[0m[0m:[1;31m1387[0m
+[0m--- 0x400d675d: [0;33mreadI2C[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/i2c.c[0m[0m:[1;31m70[0m
+[0m--- 0x400d68f0: [0;33mget_accel_x[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/accel.c[0m[0m:[1;31m73[0m
+[0m--- 0x400d647c: [0;33msampling_task[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/main.c[0m[0m:[1;31m78[0m
+[0m--- 0x40089629: [0;33mvPortTaskWrapper[0m[0m at [0;32m/opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4008570a: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32m/opt/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m64[0m
+[0m--- 0x40085707: [0;33mxt_utils_wait_for_intr[0m[0m at [0;32m/opt/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m82[0m
+[0m--- (inlined by) [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32m/opt/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m55[0m
+[0m--- 0x400877e1: [0;33mesp_pm_impl_waiti[0m[0m at [0;32m/opt/esp-idf/components/esp_pm/pm_impl.c[0m[0m:[1;31m1042[0m
+[0m--- 0x400889b8: [0;33mesp_vApplicationIdleHook[0m[0m at [0;32m/opt/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m56[0m
+[0m--- 0x4008b35a: [0;33mprvIdleTask[0m[0m at [0;32m/opt/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m4350[0m
+[0m--- 0x40089629: [0;33mvPortTaskWrapper[0m[0m at [0;32m/opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32m/opt/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32m/opt/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x40083da4: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32m/opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m560[0m
+[0m--- (inlined by) [0;33mesp_pm_impl_isr_hook[0m[0m at [0;32m/opt/esp-idf/components/esp_pm/pm_impl.c[0m[0m:[1;31m1032[0m
+[0m--- 0x40083714: [0;33m_xt_lowint1[0m[0m at [0;32m/opt/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x4000bfdc: [0;33m_xtos_set_intlevel[0m[0m in [0;32mROM[0m
+[0m--- 0x4000c2e0: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x4000c2f6: [0;33mmemcpy[0m[0m in [0;32mROM[0m
+[0m--- 0x400d22b3: [0;33muart_hal_write_txfifo[0m[0m at [0;32m/opt/esp-idf/components/hal/uart_hal_iram.c[0m[0m:[1;31m27[0m
+[0m--- 0x40083da4: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32m/opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m560[0m
+[0m--- (inlined by) [0;33mesp_pm_impl_isr_hook[0m[0m at [0;32m/opt/esp-idf/components/esp_pm/pm_impl.c[0m[0m:[1;31m1032[0m
+[0m--- 0x40083da1: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32m/opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m560[0m
+[0m--- (inlined by) [0;33mesp_pm_impl_isr_hook[0m[0m at [0;32m/opt/esp-idf/components/esp_pm/pm_impl.c[0m[0m:[1;31m1032[0m
+[0m--- 0x40083711: [0;33m_xt_lowint1[0m[0m at [0;32m/opt/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400da4cf: [0;33mi2c_master_read[0m[0m at [0;32m/opt/esp-idf/components/driver/i2c/i2c.c[0m[0m:[1;31m1387[0m
+[0m--- 0x400d675d: [0;33mreadI2C[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/i2c.c[0m[0m:[1;31m70[0m
+[0m--- 0x400d68f0: [0;33mget_accel_x[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/accel.c[0m[0m:[1;31m73[0m
+[0m--- 0x400d647c: [0;33msampling_task[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/main.c[0m[0m:[1;31m78[0m
+[0m--- 0x40089629: [0;33mvPortTaskWrapper[0m[0m at [0;32m/opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4008570a: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32m/opt/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m64[0m
+[0m--- 0x40085707: [0;33mxt_utils_wait_for_intr[0m[0m at [0;32m/opt/esp-idf/components/xtensa/include/xt_utils.h[0m[0m:[1;31m82[0m
+[0m--- (inlined by) [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32m/opt/esp-idf/components/esp_hw_support/cpu.c[0m[0m:[1;31m55[0m
+[0m--- 0x400877e1: [0;33mesp_pm_impl_waiti[0m[0m at [0;32m/opt/esp-idf/components/esp_pm/pm_impl.c[0m[0m:[1;31m1042[0m
+[0m--- 0x400889b8: [0;33mesp_vApplicationIdleHook[0m[0m at [0;32m/opt/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m56[0m
+[0m--- 0x4008b35a: [0;33mprvIdleTask[0m[0m at [0;32m/opt/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c[0m[0m:[1;31m4350[0m
+[0m--- 0x40089629: [0;33mvPortTaskWrapper[0m[0m at [0;32m/opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32m/opt/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32m/opt/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m

@@ -1,0 +1,921 @@
+Command: /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/minipops/uni/da267a/labs/lab5/build/lab5.elf /home/minipops/uni/da267a/labs/lab5/build/bootloader/bootloader.elf -m '/home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/opt/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0be4ch ( 48716) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001be74 vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e314 vaddr=40080000 size=01d04h (  7428) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=18ce8h (101608) map[0m
+[0;32mI (152) esp_image: segment 4: paddr=00038d10 vaddr=40081d04 size=0f0e8h ( 61672) load[0m
+[0;32mI (176) esp_image: segment 5: paddr=00047e00 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (185) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     lab5[0m
+[0;32mI (209) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (213) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (218) app_init: ELF file SHA256:  7623cb21d...[0m
+[0;32mI (222) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2E68 len 0002D198 (180 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 40090DEC len 0000F214 (60 KiB): IRAM[0m
+[0;33mW (273) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (291) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (303) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[1;31mE (335) gpio: gpio_set_intr_type(155): GPIO interrupt type error[0m
+[0;32mI (345) main_task: Returned from app_main()[0m
+vector:   8356 x:     40 y:   -120 z:   8356 stepcount:   0
+vector:   8193 x:     48 y:   -132 z:   8128 stepcount:   0
+vector:   8146 x:    100 y:   -156 z:   8144 stepcount:   0
+vector:   8193 x:     48 y:   -108 z:   8192 stepcount:   0
+vector:   8222 x:     84 y:   -172 z:   8008 stepcount:   0
+vector:   8125 x:     68 y:   -164 z:   8124 stepcount:   0
+vector:   8374 x:    120 y:   -168 z:   8372 stepcount:   0
+vector:   8099 x:     20 y:   -228 z:   8096 stepcount:   0
+vector:   8086 x:     72 y:   -204 z:   8136 stepcount:   0
+vector:   8241 x:     68 y:   -152 z:   8240 stepcount:   0
+vector:   8230 x:     80 y:   -188 z:   8228 stepcount:   0
+vector:   8139 x:    -44 y:   -232 z:   8136 stepcount:   0
+vector:   8066 x:     24 y:   -148 z:   8136 stepcount:   0
+vector:   8274 x:    112 y:   -144 z:   8272 stepcount:   0
+vector:   8177 x:     60 y:   -152 z:   8176 stepcount:   0
+vector:   8139 x:     52 y:   -192 z:   8136 stepcount:   0
+vector:   8318 x:     56 y:   -236 z:   8136 stepcount:   0
+vector:   8111 x:     84 y:   -204 z:   8108 stepcount:   0
+vector:   8141 x:     72 y:   -120 z:   8140 stepcount:   0
+vector:   8257 x:    108 y:   -116 z:   8256 stepcount:   0
+vector:   8247 x:      8 y:   -184 z:   8252 stepcount:   0
+vector:   8199 x:     80 y:   -216 z:   8196 stepcount:   0
+vector:   8299 x:    120 y:   -192 z:   8296 stepcount:   0
+vector:   8269 x:     44 y:   -152 z:   8268 stepcount:   0
+vector:   8200 x:    -52 y:   -184 z:   8244 stepcount:   0
+vector:   8281 x:     56 y:   -128 z:   8280 stepcount:   0
+vector:   8281 x:      4 y:   -156 z:   8280 stepcount:   0
+vector:   8249 x:    -12 y:   -288 z:   8244 stepcount:   0
+vector:   8239 x:     64 y:   -228 z:   8164 stepcount:   0
+vector:   8262 x:     96 y:   -156 z:   8260 stepcount:   0
+vector:   8213 x:     -8 y:   -176 z:   8212 stepcount:   0
+vector:   8358 x:     92 y:   -188 z:   8356 stepcount:   0
+vector:   8215 x:     44 y:   -176 z:   8232 stepcount:   0
+vector:   8185 x:     40 y:   -168 z:   8184 stepcount:   0
+vector:   8221 x:    144 y:   -264 z:   8216 stepcount:   0
+vector:   8137 x:     56 y:   -160 z:   8136 stepcount:   0
+vector:   8213 x:     12 y:   -180 z:   8212 stepcount:   0
+vector:   8332 x:     64 y:   -228 z:   8328 stepcount:   0
+vector:   8319 x:     64 y:   -244 z:   8188 stepcount:   0
+vector:   8136 x:    -16 y:   -120 z:   8136 stepcount:   0
+vector:   8229 x:     68 y:   -160 z:   8228 stepcount:   0
+vector:   8151 x:     40 y:   -236 z:   8148 stepcount:   0
+vector:   8145 x:     28 y:   -100 z:   8212 stepcount:   0
+vector:   8030 x:     84 y:   -196 z:   8284 stepcount:   0
+vector:   8296 x:    124 y:   -240 z:   8292 stepcount:   0
+vector:   8030 x:     24 y:   -216 z:   8028 stepcount:   0
+vector:   8230 x:     92 y:   -184 z:   8252 stepcount:   0
+vector:   8166 x:     76 y:   -180 z:   8164 stepcount:   0
+vector:   8150 x:    160 y:   -108 z:   8148 stepcount:   0
+vector:   8253 x:     64 y:   -152 z:   8252 stepcount:   0
+vector:   8236 x:     24 y:   -152 z:   8392 stepcount:   0
+vector:   8113 x:     36 y:   -164 z:   8184 stepcount:   0
+vector:   8283 x:   -912 y:   -104 z:   8232 stepcount:   0
+vector:   8479 x:   1564 y:   -488 z:   8320 stepcount:   0
+vector:   8310 x:   -120 y:   -116 z:   8420 stepcount:   0
+vector:   8124 x:    124 y:   -244 z:   8200 stepcount:   0
+vector:   8222 x:    120 y:   -184 z:   8220 stepcount:   0
+vector:   8292 x:    372 y:   -684 z:   8256 stepcount:   0
+vector:   6898 x:  -1480 y:   -496 z:   6788 stepcount:   0
+vector:   8302 x:    128 y:   -140 z:   8028 stepcount:   0
+vector:   8266 x:    -44 y:   -192 z:   8264 stepcount:   1
+vector:   8081 x:    -56 y:   -156 z:   8080 stepcount:   1
+vector:   7810 x:   1244 y:   -264 z:   7800 stepcount:   1
+vector:   8245 x:     -8 y:   -164 z:   8208 stepcount:   1
+vector:   8074 x:     84 y:   -172 z:   8072 stepcount:   1
+vector:   8154 x:     36 y:   -184 z:   8152 stepcount:   1
+vector:   8193 x:    -20 y:   -100 z:   8192 stepcount:   1
+vector:   8194 x:     16 y:   -204 z:   8224 stepcount:   1
+vector:   8117 x:     36 y:   -156 z:   8116 stepcount:   1
+vector:   8262 x:    116 y:   -184 z:   8260 stepcount:   1
+vector:   8199 x:     72 y:   -160 z:   8196 stepcount:   1
+vector:   8323 x:     92 y:   -192 z:   8268 stepcount:   1
+vector:   8289 x:     40 y:   -164 z:   8288 stepcount:   1
+vector:   8226 x:     40 y:   -188 z:   8224 stepcount:   1
+vector:   8138 x:    144 y:   -208 z:   8136 stepcount:   1
+vector:   8229 x:      8 y:   -108 z:   8276 stepcount:   1
+vector:   8233 x:     80 y:   -108 z:   8232 stepcount:   1
+vector:   8158 x:     88 y:   -160 z:   8156 stepcount:   1
+vector:   8286 x:     48 y:   -212 z:   8284 stepcount:   1
+vector:   8187 x:    156 y:   -176 z:   8220 stepcount:   1
+vector:   8215 x:     40 y:   -240 z:   8212 stepcount:   1
+vector:   8282 x:      8 y:   -192 z:   8280 stepcount:   1
+vector:   8293 x:     20 y:   -116 z:   8292 stepcount:   1
+vector:   8232 x:    -32 y:   -224 z:   8356 stepcount:   1
+vector:   8121 x:    124 y:   -120 z:   8120 stepcount:   1
+vector:   8311 x:     84 y:   -216 z:   8308 stepcount:   1
+vector:   8301 x:    -28 y:   -180 z:   8300 stepcount:   1
+vector:   8081 x:     48 y:   -144 z:   8276 stepcount:   1
+vector:   8143 x:     60 y:   -224 z:   8140 stepcount:   1
+vector:   8221 x:     68 y:   -160 z:   8220 stepcount:   1
+vector:   8178 x:     64 y:   -196 z:   8176 stepcount:   1
+vector:   8302 x:     80 y:   -172 z:   8248 stepcount:   1
+vector:   8217 x:     24 y:   -152 z:   8216 stepcount:   1
+vector:   8252 x:     24 y:   -260 z:   8248 stepcount:   1
+vector:   8177 x:     32 y:   -152 z:   8176 stepcount:   1
+vector:   8246 x:     84 y:   -124 z:   8272 stepcount:   1
+vector:   8182 x:     60 y:   -208 z:   8180 stepcount:   1
+vector:   8237 x:     44 y:   -136 z:   8236 stepcount:   1
+vector:   8402 x:     64 y:   -200 z:   8400 stepcount:   1
+vector:   8098 x:      8 y:   -148 z:   7992 stepcount:   1
+vector:   8197 x:     80 y:   -136 z:   8136 stepcount:   1
+vector:   8161 x:     36 y:   -136 z:   8160 stepcount:   1
+vector:   8365 x:    116 y:   -268 z:   8360 stepcount:   1
+vector:   8318 x:    100 y:   -152 z:   8316 stepcount:   1
+vector:   8198 x:    -40 y:   -212 z:   8264 stepcount:   1
+vector:   8169 x:      4 y:   -164 z:   8168 stepcount:   1
+vector:   8207 x:     36 y:   -240 z:   8204 stepcount:   1
+vector:   8165 x:     64 y:   -128 z:   8164 stepcount:   1
+vector:   8346 x:     88 y:   -168 z:   8344 stepcount:   1
+vector:   8275 x:    140 y:   -192 z:   8296 stepcount:   1
+vector:   8226 x:    100 y:   -152 z:   8176 stepcount:   1
+vector:   8295 x:     24 y:   -240 z:   8292 stepcount:   1
+vector:   8005 x:     44 y:   -152 z:   8004 stepcount:   1
+vector:   8137 x:     44 y:    -56 z:   8136 stepcount:   1
+vector:   8167 x:     76 y:   -224 z:   8112 stepcount:   1
+vector:   8150 x:    140 y:   -144 z:   8148 stepcount:   1
+vector:   8216 x:      0 y:   -280 z:   8212 stepcount:   1
+vector:   8214 x:     72 y:   -224 z:   8212 stepcount:   1
+vector:   8201 x:    152 y:   -252 z:   8188 stepcount:   1
+vector:   8210 x:     24 y:   -192 z:   8208 stepcount:   1
+vector:   8190 x:    100 y:   -168 z:   8188 stepcount:   1
+vector:   8221 x:     84 y:    -48 z:   8220 stepcount:   1
+vector:   8074 x:     40 y:   -216 z:   8236 stepcount:   1
+vector:   8189 x:     40 y:   -124 z:   8188 stepcount:   1
+vector:   8287 x:     72 y:   -216 z:   8284 stepcount:   1
+vector:   8266 x:     28 y:   -152 z:   8264 stepcount:   1
+vector:   8245 x:      0 y:   -256 z:   8144 stepcount:   1
+vector:   8264 x:     88 y:    -76 z:   8264 stepcount:   1
+vector:   8241 x:     32 y:   -136 z:   8240 stepcount:   1
+vector:   8282 x:    -12 y:   -144 z:   8280 stepcount:   1
+vector:   8198 x:    116 y:   -140 z:   8204 stepcount:   1
+vector:   8138 x:    164 y:   -124 z:   8136 stepcount:   1
+vector:   8197 x:     16 y:   -172 z:   8196 stepcount:   1
+vector:   8222 x:     68 y:   -196 z:   8220 stepcount:   1
+vector:   8318 x:     24 y:   -256 z:   8324 stepcount:   1
+vector:   8213 x:    100 y:   -120 z:   8212 stepcount:   1
+vector:   8239 x:     76 y:   -232 z:   8236 stepcount:   1
+vector:   8131 x:     64 y:   -232 z:   8128 stepcount:   1
+vector:   8286 x:     48 y:    -80 z:   8124 stepcount:   1
+vector:   8181 x:     64 y:   -160 z:   8180 stepcount:   1
+vector:   8156 x:    112 y:   -260 z:   8152 stepcount:   1
+vector:   8281 x:     52 y:   -164 z:   8280 stepcount:   1
+vector:   8145 x:    -24 y:   -100 z:   8260 stepcount:   1
+vector:   8350 x:    -40 y:   -184 z:   8348 stepcount:   1
+vector:   8271 x:     56 y:   -232 z:   8268 stepcount:   1
+vector:   8214 x:     28 y:   -204 z:   8212 stepcount:   1
+vector:   8150 x:     16 y:   -192 z:   8284 stepcount:   1
+vector:   8328 x:    124 y:   -240 z:   8324 stepcount:   1
+vector:   7903 x:     32 y:   -224 z:   7900 stepcount:   1
+vector:   8122 x:    100 y:   -160 z:   8120 stepcount:   1
+vector:   8108 x:     56 y:   -192 z:   8412 stepcount:   1
+vector:   8146 x:     80 y:   -196 z:   8144 stepcount:   1
+vector:   8278 x:     16 y:   -184 z:   8276 stepcount:   1
+vector:   8106 x:     36 y:   -192 z:   8104 stepcount:   1
+vector:   8231 x:     44 y:   -128 z:   8412 stepcount:   1
+vector:   8378 x:     64 y:   -200 z:   8376 stepcount:   1
+vector:   8162 x:    108 y:   -188 z:   8160 stepcount:   1
+vector:   8165 x:     36 y:   -132 z:   8164 stepcount:   1
+vector:   8249 x:     96 y:   -128 z:   8412 stepcount:   1
+vector:   8390 x:     48 y:   -212 z:   8236 stepcount:   1
+vector:   8326 x:     68 y:   -204 z:   8324 stepcount:   1
+vector:   8271 x:    -16 y:   -236 z:   8268 stepcount:   1
+vector:   8291 x:     84 y:   -124 z:   8288 stepcount:   1
+vector:   8266 x:     60 y:   -180 z:   8264 stepcount:   1
+vector:   8261 x:     88 y:   -148 z:   8244 stepcount:   1
+vector:   8177 x:      0 y:   -180 z:   8076 stepcount:   1
+vector:   8221 x:     88 y:   -120 z:   8220 stepcount:   1
+vector:   8160 x:    120 y:   -232 z:   8156 stepcount:   1
+vector:   8221 x:    164 y:    -68 z:   8300 stepcount:   1
+vector:   8173 x:     28 y:   -172 z:   8048 stepcount:   1
+vector:   8277 x:      4 y:   -144 z:   8276 stepcount:   1
+vector:   8294 x:     32 y:   -208 z:   8292 stepcount:   1
+vector:   8198 x:     20 y:   -192 z:   8196 stepcount:   1
+vector:   8135 x:     12 y:   -232 z:   8284 stepcount:   1
+vector:   8228 x:     40 y:    -72 z:   8228 stepcount:   1
+vector:   8206 x:     76 y:   -168 z:   8204 stepcount:   1
+vector:   8097 x:     32 y:   -172 z:   8096 stepcount:   1
+vector:   8219 x:     20 y:   -228 z:   8244 stepcount:   1
+vector:   8233 x:     60 y:   -160 z:   8232 stepcount:   1
+vector:   8180 x:     16 y:   -124 z:   8180 stepcount:   1
+vector:   8254 x:    -12 y:    -96 z:   8252 stepcount:   1
+vector:   8206 x:    100 y:   -168 z:   8140 stepcount:   1
+vector:   8081 x:    -56 y:   -168 z:   8080 stepcount:   1
+vector:   8253 x:    128 y:    -92 z:   8252 stepcount:   1
+vector:   8214 x:     64 y:   -220 z:   8212 stepcount:   1
+vector:   8162 x:     16 y:   -168 z:   8272 stepcount:   1
+vector:   8290 x:     24 y:   -212 z:   8288 stepcount:   1
+vector:   8102 x:     68 y:   -200 z:   8100 stepcount:   1
+vector:   8146 x:     48 y:   -212 z:   8144 stepcount:   1
+vector:   8313 x:     20 y:   -228 z:   8148 stepcount:   1
+vector:   8217 x:     32 y:   -144 z:   8216 stepcount:   1
+vector:   8147 x:     48 y:   -220 z:   8144 stepcount:   1
+vector:   8168 x:    108 y:    -68 z:   8168 stepcount:   1
+vector:   8119 x:     36 y:   -124 z:   8160 stepcount:   1
+vector:   8310 x:    100 y:   -188 z:   8308 stepcount:   1
+vector:   8181 x:    -16 y:   -148 z:   8180 stepcount:   1
+vector:   8102 x:     52 y:   -188 z:   8100 stepcount:   1
+vector:   8358 x:     72 y:   -248 z:   7992 stepcount:   1
+vector:   8102 x:     28 y:   -188 z:   8100 stepcount:   1
+vector:   8322 x:    -12 y:   -216 z:   8320 stepcount:   1
+vector:   8141 x:    -24 y:   -132 z:   8140 stepcount:   1
+vector:   8142 x:    -12 y:   -208 z:   8172 stepcount:   1
+vector:   8214 x:     76 y:   -168 z:   8212 stepcount:   1
+vector:   8298 x:    100 y:   -180 z:   8296 stepcount:   1
+vector:   8195 x:     60 y:   -232 z:   8192 stepcount:   1
+vector:   8346 x:     16 y:   -116 z:   8192 stepcount:   1
+vector:   8166 x:     16 y:   -220 z:   8164 stepcount:   1
+vector:   8182 x:    100 y:   -160 z:   8180 stepcount:   1
+vector:   8287 x:     80 y:   -216 z:   8284 stepcount:   1
+vector:   8315 x:     -4 y:   -176 z:   8244 stepcount:   1
+vector:   8442 x:     88 y:   -192 z:   8184 stepcount:   1
+vector:   8326 x:     36 y:   -184 z:   8324 stepcount:   1
+vector:   8191 x:     96 y:   -208 z:   8188 stepcount:   1
+vector:   8143 x:     84 y:   -188 z:   7988 stepcount:   1
+vector:   8374 x:     12 y:   -204 z:   8212 stepcount:   1
+vector:   8206 x:     68 y:   -208 z:   8204 stepcount:   1
+vector:   8218 x:    -52 y:   -212 z:   8216 stepcount:   1
+vector:   8253 x:     -8 y:   -244 z:   8388 stepcount:   1
+vector:   8334 x:    108 y:   -180 z:   8332 stepcount:   1
+vector:   8253 x:    124 y:   -212 z:   8236 stepcount:   1
+vector:   8284 x:   -468 y:   -244 z:   8524 stepcount:   1
+vector:   8137 x:      4 y:   -176 z:   8136 stepcount:   1
+vector:   8184 x:     24 y:   -120 z:   8184 stepcount:   1
+vector:   7535 x:    132 y:   -152 z:   7476 stepcount:   1
+vector:   8312 x:    -12 y:    -88 z:   8316 stepcount:   1
+vector:   8256 x:     48 y:    -80 z:   8256 stepcount:   1
+vector:   8244 x:     24 y:   -272 z:   8240 stepcount:   1
+vector:   8230 x:     32 y:   -156 z:   8228 stepcount:   1
+vector:   8161 x:     84 y:   -132 z:   8304 stepcount:   1
+vector:   8194 x:     72 y:   -188 z:   8192 stepcount:   1
+vector:   8185 x:     84 y:   -144 z:   8184 stepcount:   1
+vector:   8125 x:     16 y:   -184 z:   8124 stepcount:   1
+vector:   8149 x:     76 y:   -144 z:   8220 stepcount:   1
+vector:   8190 x:     56 y:   -204 z:   8188 stepcount:   1
+vector:   8331 x:      4 y:   -224 z:   8328 stepcount:   1
+vector:   8291 x:     48 y:   -180 z:   8288 stepcount:   1
+vector:   8214 x:     88 y:   -196 z:   8264 stepcount:   1
+vector:   8214 x:     96 y:   -172 z:   8212 stepcount:   1
+vector:   8305 x:      8 y:   -144 z:   8304 stepcount:   1
+vector:   8238 x:    -16 y:   -112 z:   8236 stepcount:   1
+vector:   8035 x:     -8 y:   -176 z:   8276 stepcount:   1
+vector:   8206 x:     68 y:   -208 z:   8204 stepcount:   1
+vector:   8314 x:    116 y:   -176 z:   8312 stepcount:   1
+vector:   8003 x:     28 y:   -244 z:   8000 stepcount:   1
+vector:   8284 x:     44 y:   -232 z:   8384 stepcount:   1
+vector:   8173 x:    -76 y:   -152 z:   8172 stepcount:   1
+vector:   8220 x:      4 y:   -128 z:   8220 stepcount:   1
+vector:   8173 x:    -20 y:   -144 z:   8172 stepcount:   1
+vector:   8295 x:     76 y:   -196 z:   8068 stepcount:   1
+vector:   8354 x:     20 y:   -216 z:   8352 stepcount:   1
+vector:   8389 x:     36 y:   -144 z:   8388 stepcount:   1
+vector:   8109 x:      0 y:   -128 z:   8108 stepcount:   1
+vector:   8115 x:    100 y:   -228 z:   8272 stepcount:   1
+vector:   8154 x:     80 y:   -200 z:   8152 stepcount:   1
+vector:   8213 x:     20 y:   -144 z:   8212 stepcount:   1
+vector:   8189 x:     72 y:   -112 z:   8188 stepcount:   1
+vector:   8184 x:    -44 y:   -272 z:   8284 stepcount:   1
+vector:   8118 x:    136 y:   -160 z:   8116 stepcount:   1
+vector:   8156 x:     48 y:    -96 z:   8156 stepcount:   1
+vector:   8168 x:    104 y:   -104 z:   8168 stepcount:   1
+vector:   8102 x:     32 y:   -144 z:   8288 stepcount:   1
+vector:   8258 x:    140 y:   -156 z:   8256 stepcount:   1
+vector:   8109 x:     60 y:   -144 z:   8108 stepcount:   1
+vector:   8073 x:     56 y:   -136 z:   8072 stepcount:   1
+vector:   8145 x:     72 y:    -96 z:   8168 stepcount:   1
+vector:   8349 x:     24 y:   -160 z:   8348 stepcount:   1
+vector:   8318 x:     48 y:   -180 z:   8316 stepcount:   1
+vector:   8278 x:    124 y:   -140 z:   8276 stepcount:   1
+vector:   8093 x:     44 y:   -196 z:   8144 stepcount:   1
+vector:   8459 x:     76 y:   -228 z:   8200 stepcount:   1
+vector:   8153 x:     -8 y:   -172 z:   8152 stepcount:   1
+vector:   8227 x:     36 y:   -228 z:   8224 stepcount:   1
+vector:   8257 x:     48 y:   -208 z:   8228 stepcount:   1
+vector:   8231 x:     76 y:   -236 z:   8360 stepcount:   1
+vector:   8154 x:     72 y:   -204 z:   8152 stepcount:   1
+vector:   8218 x:    104 y:   -168 z:   8216 stepcount:   1
+vector:   8286 x:     28 y:   -144 z:   8284 stepcount:   1
+vector:   8270 x:     60 y:   -172 z:   8212 stepcount:   1
+vector:   8169 x:     84 y:   -144 z:   8168 stepcount:   1
+vector:   8111 x:     24 y:   -236 z:   8108 stepcount:   1
+vector:   8217 x:     -8 y:   -232 z:   8216 stepcount:   2
+vector:   8217 x:     40 y:   -160 z:   8224 stepcount:   2
+vector:   8304 x:     36 y:    -64 z:   8304 stepcount:   2
+vector:   8229 x:     16 y:   -136 z:   8228 stepcount:   2
+vector:   8169 x:     48 y:   -152 z:   8168 stepcount:   2
+vector:   8090 x:     96 y:   -168 z:   8176 stepcount:   2
+vector:   8230 x:    -16 y:   -188 z:   8228 stepcount:   2
+vector:   8107 x:     68 y:   -232 z:   8104 stepcount:   2
+vector:   8098 x:     72 y:   -184 z:   8096 stepcount:   2
+vector:   8317 x:     28 y:   -112 z:   8220 stepcount:   2
+vector:   8045 x:     32 y:   -132 z:   8044 stepcount:   2
+vector:   8281 x:     72 y:   -160 z:   8280 stepcount:   2
+vector:   8197 x:    -12 y:   -192 z:   8196 stepcount:   2
+vector:   8242 x:    100 y:   -156 z:   8320 stepcount:   2
+vector:   8229 x:     44 y:   -164 z:   8228 stepcount:   2
+vector:   8119 x:    104 y:   -200 z:   8116 stepcount:   2
+vector:   8221 x:     44 y:   -160 z:   8220 stepcount:   2
+vector:   8064 x:     68 y:   -144 z:   8252 stepcount:   2
+vector:   8247 x:     96 y:   -208 z:   8244 stepcount:   2
+vector:   8196 x:    100 y:     12 z:   8196 stepcount:   2
+vector:   8226 x:     56 y:   -192 z:   8224 stepcount:   2
+vector:   8154 x:     88 y:   -148 z:   8288 stepcount:   2
+vector:   8286 x:     64 y:   -172 z:   8284 stepcount:   2
+vector:   8097 x:    -64 y:   -140 z:   8096 stepcount:   2
+vector:   8149 x:     28 y:   -164 z:   8148 stepcount:   2
+vector:   8258 x:    -12 y:   -232 z:   8220 stepcount:   2
+vector:   8361 x:    100 y:   -152 z:   8104 stepcount:   2
+vector:   8293 x:     56 y:   -156 z:   8292 stepcount:   2
+vector:   8177 x:     40 y:   -128 z:   8176 stepcount:   2
+vector:   8343 x:     48 y:   -148 z:   8316 stepcount:   2
+vector:   8199 x:     96 y:   -232 z:   8196 stepcount:   2
+vector:   8299 x:    100 y:   -224 z:   8296 stepcount:   2
+vector:   8246 x:    136 y:   -172 z:   8244 stepcount:   2
+vector:   8363 x:     72 y:   -112 z:   8212 stepcount:   2
+vector:   8222 x:     72 y:   -184 z:   8260 stepcount:   2
+vector:   8034 x:     56 y:   -172 z:   8032 stepcount:   2
+vector:   8159 x:     -8 y:   -240 z:   8156 stepcount:   2
+vector:   8162 x:    180 y:   -220 z:   8180 stepcount:   2
+vector:   8211 x:     80 y:   -220 z:   8148 stepcount:   2
+vector:   8292 x:     56 y:    -96 z:   8292 stepcount:   2
+vector:   8207 x:    112 y:   -208 z:   8204 stepcount:   2
+vector:   8301 x:     20 y:   -104 z:   8300 stepcount:   2
+vector:   8327 x:     84 y:   -236 z:   8296 stepcount:   2
+vector:   8349 x:     32 y:   -168 z:   8348 stepcount:   2
+vector:   8212 x:    -24 y:    -96 z:   8212 stepcount:   2
+vector:   8055 x:     28 y:   -144 z:   8052 stepcount:   2
+vector:   8193 x:     60 y:   -168 z:   8216 stepcount:   2
+vector:   8301 x:     40 y:   -168 z:   8300 stepcount:   2
+vector:   8191 x:    148 y:   -208 z:   8188 stepcount:   2
+vector:   8266 x:    124 y:   -224 z:   8264 stepcount:   2
+vector:   8251 x:    -68 y:   -236 z:   8192 stepcount:   2
+vector:   8534 x:    300 y:   -304 z:   8524 stepcount:   2
+vector:   8092 x:    -32 y:   -100 z:   8092 stepcount:   2
+vector:   8183 x:     -8 y:   -216 z:   8180 stepcount:   2
+vector:   8240 x:    -16 y:   -272 z:   8248 stepcount:   2
+vector:   8206 x:    112 y:   -188 z:   8204 stepcount:   2
+vector:   8229 x:     72 y:   -132 z:   8228 stepcount:   2
+vector:   8131 x:    -24 y:   -180 z:   8128 stepcount:   2
+vector:   8241 x:     44 y:   -208 z:   8160 stepcount:   2
+vector:   8343 x:    120 y:   -216 z:   8340 stepcount:   2
+vector:   8192 x:     84 y:    -88 z:   8192 stepcount:   3
+vector:   8365 x:    128 y:   -180 z:   8364 stepcount:   3
+vector:   8285 x:    104 y:   -184 z:   8204 stepcount:   3
+vector:   7982 x:    156 y:   -144 z:   7980 stepcount:   3
+vector:   8378 x:     60 y:    -76 z:   8208 stepcount:   3
+vector:   8219 x:     20 y:   -224 z:   8216 stepcount:   3
+vector:   8293 x:     32 y:   -156 z:   8292 stepcount:   3
+vector:   8281 x:    176 y:   -184 z:   8280 stepcount:   3
+vector:   8307 x:      0 y:   -228 z:   8248 stepcount:   3
+vector:   8245 x:     32 y:   -160 z:   8244 stepcount:   3
+vector:   8033 x:     12 y:   -152 z:   8032 stepcount:   3
+vector:   8230 x:      0 y:   -192 z:   8228 stepcount:   3
+vector:   8013 x:     60 y:   -156 z:   8168 stepcount:   3
+vector:   8158 x:     24 y:   -188 z:   8156 stepcount:   3
+vector:   8225 x:     48 y:   -172 z:   8224 stepcount:   3
+vector:   8225 x:    120 y:   -152 z:   8224 stepcount:   3
+vector:   8182 x:     28 y:   -136 z:   8196 stepcount:   3
+vector:   8189 x:     80 y:   -152 z:   8188 stepcount:   3
+vector:   8266 x:     12 y:   -200 z:   8264 stepcount:   3
+vector:   8151 x:     16 y:   -216 z:   8148 stepcount:   3
+vector:   8251 x:    132 y:   -212 z:   8244 stepcount:   3
+vector:   8380 x:     24 y:   -108 z:   8380 stepcount:   3
+vector:   8267 x:     12 y:   -236 z:   8264 stepcount:   3
+vector:   8154 x:    124 y:   -184 z:   8152 stepcount:   3
+vector:   8105 x:     96 y:   -184 z:   8296 stepcount:   3
+vector:   8174 x:     72 y:   -196 z:   8172 stepcount:   3
+vector:   8197 x:     40 y:   -144 z:   8196 stepcount:   3
+vector:   8173 x:     16 y:   -136 z:   8172 stepcount:   3
+vector:   8249 x:      8 y:   -128 z:   8144 stepcount:   3
+vector:   8139 x:     96 y:   -216 z:   8136 stepcount:   3
+vector:   8170 x:     56 y:   -192 z:   8168 stepcount:   3
+vector:   8237 x:     12 y:   -148 z:   8236 stepcount:   3
+vector:   8134 x:     60 y:   -228 z:   8264 stepcount:   3
+vector:   8259 x:    100 y:   -204 z:   8256 stepcount:   3
+vector:   8129 x:    -44 y:   -148 z:   8128 stepcount:   3
+vector:   8234 x:     12 y:   -208 z:   8232 stepcount:   3
+vector:   8307 x:     44 y:   -196 z:   8376 stepcount:   3
+vector:   8414 x:     24 y:   -196 z:   8156 stepcount:   3
+vector:   8232 x:     28 y:   -112 z:   8232 stepcount:   3
+vector:   8285 x:    112 y:   -136 z:   8284 stepcount:   3
+vector:   8241 x:     44 y:   -244 z:   8444 stepcount:   3
+vector:   8262 x:     20 y:   -192 z:   8320 stepcount:   3
+vector:   8121 x:    108 y:   -100 z:   8120 stepcount:   3
+vector:   8377 x:    152 y:   -100 z:   8376 stepcount:   3
+vector:   8206 x:    -20 y:   -224 z:   8396 stepcount:   3
+vector:   8278 x:     72 y:   -208 z:   8252 stepcount:   3
+vector:   8344 x:    128 y:   -232 z:   8340 stepcount:   3
+vector:   8310 x:    192 y:   -112 z:   8308 stepcount:   3
+vector:   8590 x:    -80 y:   -112 z:   8584 stepcount:   3
+vector:   8301 x:     72 y:   -164 z:   8212 stepcount:   3
+vector:   8182 x:    -32 y:   -200 z:   8180 stepcount:   3
+vector:   8180 x:    160 y:   -212 z:   8176 stepcount:   3
+vector:   8120 x:     68 y:   -180 z:   8120 stepcount:   3
+vector:   8082 x:    -40 y:   -192 z:   8236 stepcount:   3
+vector:   8267 x:     40 y:   -252 z:   8264 stepcount:   3
+vector:   8273 x:     96 y:   -288 z:   8268 stepcount:   3
+vector:   8195 x:    212 y:   -200 z:   8192 stepcount:   3
+vector:   8106 x:     24 y:   -208 z:   8092 stepcount:   3
+vector:   8193 x:     28 y:   -132 z:   8192 stepcount:   3
+vector:   8177 x:     32 y:   -176 z:   8176 stepcount:   3
+vector:   8297 x:    148 y:   -168 z:   8296 stepcount:   4
+vector:   8124 x:     60 y:   -324 z:   8272 stepcount:   4
+vector:   8213 x:     96 y:   -112 z:   8212 stepcount:   4
+vector:   8182 x:     84 y:   -176 z:   8180 stepcount:   4
+vector:   8356 x:     96 y:    -96 z:   8356 stepcount:   4
+vector:   8303 x:    116 y:   -192 z:   8136 stepcount:   4
+vector:   8183 x:    176 y:   -144 z:   8180 stepcount:   4
+vector:   8175 x:    124 y:   -200 z:   8172 stepcount:   4
+vector:   8269 x:     64 y:   -160 z:   8268 stepcount:   4
+vector:   8042 x:     92 y:   -176 z:   8180 stepcount:   4
+vector:   8243 x:    108 y:   -220 z:   8240 stepcount:   4
+vector:   8070 x:     68 y:   -204 z:   8068 stepcount:   4
+vector:   8401 x:      8 y:   -168 z:   8400 stepcount:   4
+vector:   8237 x:     88 y:   -132 z:   8268 stepcount:   4
+vector:   8394 x:    132 y:   -176 z:   8392 stepcount:   4
+vector:   8192 x:     -4 y:   -272 z:   8188 stepcount:   4
+vector:   8304 x:     16 y:   -212 z:   8300 stepcount:   4
+vector:   8321 x:     84 y:   -184 z:   8188 stepcount:   4
+vector:   8230 x:     52 y:   -208 z:   8228 stepcount:   4
+vector:   8366 x:     24 y:   -192 z:   8364 stepcount:   4
+vector:   8286 x:    196 y:   -208 z:   8284 stepcount:   4
+vector:   8185 x:     92 y:   -204 z:   8188 stepcount:   4
+vector:   8442 x:     48 y:   -184 z:   8184 stepcount:   4
+vector:   8118 x:     32 y:   -208 z:   8116 stepcount:   4
+vector:   8135 x:     80 y:   -224 z:   8132 stepcount:   4
+vector:   8065 x:     36 y:   -200 z:   8100 stepcount:   4
+vector:   8042 x:    100 y:   -160 z:   8296 stepcount:   4
+vector:   8345 x:     20 y:   -136 z:   8344 stepcount:   4
+vector:   8061 x:     92 y:   -128 z:   8060 stepcount:   4
+vector:   8220 x:     64 y:   -140 z:   8192 stepcount:   4
+vector:   8185 x:    104 y:   -136 z:   8228 stepcount:   4
+vector:   8150 x:    124 y:   -164 z:   8148 stepcount:   4
+vector:   8325 x:    -20 y:   -152 z:   8324 stepcount:   4
+vector:   8173 x:     40 y:   -224 z:   8144 stepcount:   4
+vector:   8351 x:    196 y:   -148 z:   8128 stepcount:   4
+vector:   8166 x:     72 y:   -312 z:   8160 stepcount:   4
+vector:   8286 x:     64 y:   -208 z:   8284 stepcount:   4
+vector:   8083 x:    108 y:   -212 z:   8080 stepcount:   4
+vector:   8119 x:    108 y:   -212 z:   8096 stepcount:   4
+vector:   8318 x:    132 y:   -168 z:   8316 stepcount:   4
+vector:   8154 x:      8 y:   -216 z:   8144 stepcount:   5
+vector:   8146 x:     80 y:   -180 z:   8144 stepcount:   5
+vector:   8181 x:     24 y:   -140 z:   8180 stepcount:   5
+vector:   8317 x:    112 y:   -136 z:   8316 stepcount:   5
+vector:   8183 x:     64 y:   -240 z:   8176 stepcount:   5
+vector:   8170 x:     76 y:   -192 z:   8168 stepcount:   5
+vector:   8365 x:     28 y:   -172 z:   8364 stepcount:   5
+vector:   8263 x:    -44 y:   -212 z:   8260 stepcount:   5
+vector:   8199 x:     60 y:   -224 z:   8228 stepcount:   5
+vector:   8341 x:     88 y:   -156 z:   8340 stepcount:   5
+vector:   8139 x:    120 y:   -192 z:   8136 stepcount:   5
+vector:   8257 x:     64 y:   -248 z:   8256 stepcount:   5
+vector:   8193 x:     80 y:   -120 z:   8144 stepcount:   5
+vector:   8112 x:    128 y:   -232 z:   8108 stepcount:   5
+vector:   8199 x:    120 y:   -224 z:   8196 stepcount:   5
+vector:   8254 x:     48 y:   -228 z:   8252 stepcount:   5
+vector:   8185 x:     56 y:   -148 z:   8160 stepcount:   5
+vector:   8214 x:     72 y:   -176 z:   8212 stepcount:   5
+vector:   8075 x:     76 y:   -232 z:   8072 stepcount:   5
+vector:   8244 x:    100 y:   -256 z:   8244 stepcount:   5
+vector:   8285 x:     48 y:   -268 z:   8220 stepcount:   5
+vector:   8156 x:     40 y:    -84 z:   8156 stepcount:   5
+vector:   8126 x:     32 y:   -200 z:   8124 stepcount:   5
+vector:   8373 x:     60 y:   -112 z:   8372 stepcount:   5
+vector:   8132 x:     60 y:   -144 z:   8284 stepcount:   5
+vector:   8197 x:    124 y:   -124 z:   8196 stepcount:   5
+vector:   8169 x:      0 y:   -148 z:   8168 stepcount:   5
+vector:   8255 x:    132 y:   -236 z:   8252 stepcount:   5
+vector:   8083 x:      0 y:   -236 z:   8080 stepcount:   5
+vector:   8226 x:     76 y:   -208 z:   8224 stepcount:   5
+vector:   8302 x:     96 y:   -196 z:   8300 stepcount:   5
+vector:   8210 x:     32 y:   -160 z:   8208 stepcount:   5
+vector:   8229 x:     24 y:   -204 z:   8108 stepcount:   5
+vector:   8310 x:    176 y:    -80 z:   8308 stepcount:   5
+vector:   8345 x:    -32 y:   -136 z:   8344 stepcount:   5
+vector:   8318 x:    108 y:   -176 z:   8316 stepcount:   5
+vector:   8221 x:    100 y:   -256 z:   8232 stepcount:   5
+vector:   8129 x:    128 y:   -120 z:   8128 stepcount:   5
+vector:   8222 x:     36 y:   -204 z:   8220 stepcount:   5
+vector:   8265 x:      4 y:   -148 z:   8264 stepcount:   5
+vector:   8097 x:     32 y:   -120 z:   8332 stepcount:   5
+vector:   8093 x:    104 y:   -144 z:   8092 stepcount:   5
+vector:   8050 x:     92 y:   -164 z:   8048 stepcount:   5
+vector:   8373 x:     72 y:   -156 z:   8372 stepcount:   5
+vector:   8184 x:     76 y:   -188 z:   8272 stepcount:   5
+vector:   7945 x:     92 y:   -144 z:   8200 stepcount:   5
+vector:   8132 x:     36 y:   -260 z:   8128 stepcount:   5
+vector:   8178 x:     64 y:   -212 z:   8176 stepcount:   5
+vector:   8345 x:    112 y:   -144 z:   8076 stepcount:   5
+vector:   8328 x:     44 y:    -96 z:   8072 stepcount:   5
+vector:   8255 x:    112 y:   -212 z:   8252 stepcount:   5
+vector:   8198 x:    100 y:   -156 z:   8196 stepcount:   5
+vector:   8342 x:     72 y:   -184 z:   8244 stepcount:   5
+vector:   8107 x:    160 y:   -164 z:   8104 stepcount:   5
+vector:   8145 x:     96 y:   -120 z:   8144 stepcount:   5
+vector:   8428 x:     12 y:    -72 z:   8172 stepcount:   5
+vector:   8128 x:     80 y:    -72 z:   8128 stepcount:   5
+vector:   8311 x:    144 y:   -176 z:   8308 stepcount:   5
+vector:   8081 x:     16 y:   -220 z:   7980 stepcount:   5
+vector:   8306 x:    124 y:   -160 z:   8304 stepcount:   5
+vector:   8269 x:     88 y:   -136 z:   8268 stepcount:   6
+vector:   8095 x:     92 y:   -236 z:   8092 stepcount:   6
+vector:   8340 x:    112 y:   -152 z:   8244 stepcount:   6
+vector:   8320 x:     64 y:    -80 z:   8220 stepcount:   6
+vector:   8317 x:     64 y:   -168 z:   8316 stepcount:   6
+vector:   8161 x:     80 y:   -108 z:   8160 stepcount:   6
+vector:   8205 x:     36 y:   -200 z:   8204 stepcount:   6
+vector:   8206 x:     32 y:   -180 z:   8292 stepcount:   6
+vector:   8250 x:     72 y:   -208 z:   8248 stepcount:   6
+vector:   8189 x:     52 y:   -124 z:   8188 stepcount:   6
+vector:   8220 x:     44 y:   -200 z:   8220 stepcount:   6
+vector:   8245 x:     88 y:   -136 z:   8200 stepcount:   6
+vector:   8305 x:     44 y:   -168 z:   8304 stepcount:   6
+vector:   8121 x:     40 y:   -132 z:   8120 stepcount:   6
+vector:   8058 x:     64 y:   -120 z:   8056 stepcount:   6
+vector:   8286 x:     76 y:   -192 z:   8220 stepcount:   6
+vector:   8245 x:     52 y:   -140 z:   8244 stepcount:   6
+vector:   8195 x:     44 y:   -232 z:   8192 stepcount:   6
+vector:   8089 x:     64 y:   -184 z:   8088 stepcount:   6
+vector:   8037 x:     44 y:   -248 z:   8160 stepcount:   6
+vector:   8178 x:     64 y:   -192 z:   8176 stepcount:   6
+vector:   8430 x:     64 y:   -176 z:   8428 stepcount:   6
+vector:   8270 x:     40 y:   -140 z:   8268 stepcount:   6
+vector:   8261 x:     72 y:   -192 z:   8332 stepcount:   6
+vector:   8269 x:     12 y:   -176 z:   8268 stepcount:   6
+vector:   8241 x:    152 y:   -256 z:   8236 stepcount:   6
+vector:   8134 x:     88 y:   -172 z:   8132 stepcount:   6
+vector:   8371 x:     88 y:   -164 z:   8160 stepcount:   6
+vector:   8197 x:      4 y:   -176 z:   8196 stepcount:   6
+vector:   8105 x:     56 y:   -144 z:   8104 stepcount:   6
+vector:   8271 x:    120 y:   -224 z:   8268 stepcount:   6
+vector:   8178 x:    160 y:   -180 z:   8236 stepcount:   6
+vector:   8230 x:    -12 y:   -188 z:   8228 stepcount:   6
+vector:   8174 x:     84 y:   -176 z:   8172 stepcount:   6
+vector:   8406 x:     48 y:   -188 z:   8404 stepcount:   6
+vector:   8154 x:     84 y:   -216 z:   8416 stepcount:   6
+vector:   8326 x:    144 y:   -140 z:   8324 stepcount:   6
+vector:   8190 x:     60 y:   -204 z:   8188 stepcount:   6
+vector:   8390 x:     76 y:   -204 z:   8388 stepcount:   6
+vector:   8186 x:    -24 y:   -144 z:   8072 stepcount:   6
+vector:   8286 x:     36 y:   -220 z:   8284 stepcount:   6
+vector:   8239 x:     20 y:   -252 z:   8236 stepcount:   6
+vector:   8265 x:     60 y:   -144 z:   8264 stepcount:   6
+vector:   8145 x:    112 y:   -232 z:   8268 stepcount:   6
+vector:   8245 x:     80 y:   -124 z:   8244 stepcount:   6
+vector:   8226 x:     72 y:   -176 z:   8224 stepcount:   6
+vector:   8256 x:    136 y:   -240 z:   8252 stepcount:   6
+vector:   8162 x:     76 y:   -168 z:   8008 stepcount:   6
+vector:   8121 x:     36 y:   -168 z:   8120 stepcount:   6
+vector:   8189 x:     64 y:   -160 z:   8188 stepcount:   6
+vector:   8033 x:     40 y:   -140 z:   8288 stepcount:   6
+vector:   8214 x:     96 y:   -168 z:   8212 stepcount:   6
+vector:   8192 x:     68 y:   -108 z:   8192 stepcount:   6
+vector:   8312 x:    148 y:   -112 z:   8324 stepcount:   6
+vector:   8022 x:     -8 y:   -216 z:   8276 stepcount:   6
+vector:   8161 x:     92 y:   -148 z:   8160 stepcount:   6
+vector:   8162 x:     24 y:   -192 z:   8160 stepcount:   6
+vector:   8168 x:    140 y:   -144 z:   7996 stepcount:   6
+vector:   8294 x:     88 y:   -160 z:   8160 stepcount:   6
+vector:   8286 x:     36 y:   -184 z:   8284 stepcount:   6
+vector:   8106 x:     40 y:   -208 z:   8104 stepcount:   6
+vector:   8253 x:     60 y:   -216 z:   8252 stepcount:   6
+vector:   8161 x:     40 y:   -128 z:   8244 stepcount:   6
+vector:   8233 x:     20 y:   -144 z:   8232 stepcount:   6
+vector:   8277 x:     60 y:   -116 z:   8276 stepcount:   6
+vector:   8222 x:     76 y:   -168 z:   8220 stepcount:   6
+vector:   8275 x:    120 y:   -188 z:   8332 stepcount:   6
+vector:   8253 x:    128 y:   -124 z:   8252 stepcount:   6
+vector:   8229 x:    -12 y:   -152 z:   8228 stepcount:   6
+vector:   8352 x:     60 y:   -216 z:   8352 stepcount:   6
+vector:   8154 x:     64 y:   -172 z:   8208 stepcount:   6
+vector:   8199 x:     88 y:   -224 z:   8196 stepcount:   6
+vector:   8297 x:     24 y:   -180 z:   8296 stepcount:   6
+vector:   8128 x:     52 y:   -180 z:   8124 stepcount:   6
+vector:   8170 x:    148 y:   -168 z:   8092 stepcount:   6
+vector:   8166 x:     36 y:   -196 z:   8164 stepcount:   6
+vector:   8153 x:     76 y:   -156 z:   8152 stepcount:   6
+vector:   8133 x:    104 y:   -120 z:   8132 stepcount:   6
+vector:   8173 x:     28 y:   -184 z:   8100 stepcount:   6
+vector:   8130 x:     60 y:   -172 z:   8128 stepcount:   6
+vector:   7994 x:     48 y:   -196 z:   7992 stepcount:   6
+vector:   8236 x:     60 y:   -240 z:   8232 stepcount:   6
+vector:   8071 x:     92 y:   -204 z:   8096 stepcount:   6
+vector:   8258 x:     -4 y:   -208 z:   8256 stepcount:   6
+vector:   8222 x:     80 y:   -192 z:   8220 stepcount:   6
+vector:   8299 x:     84 y:   -192 z:   8296 stepcount:   6
+vector:   8262 x:     96 y:   -200 z:   8180 stepcount:   6
+vector:   8205 x:     -4 y:   -140 z:   8204 stepcount:   6
+vector:   8189 x:     88 y:   -148 z:   8188 stepcount:   6
+vector:   8078 x:     68 y:   -200 z:   8076 stepcount:   6
+vector:   7989 x:     52 y:   -168 z:   8224 stepcount:   6
+vector:   8130 x:     84 y:   -324 z:   8124 stepcount:   6
+vector:   8180 x:     12 y:   -120 z:   8180 stepcount:   6
+vector:   8169 x:    140 y:   -152 z:   8168 stepcount:   6
+vector:   8254 x:     28 y:   -220 z:   8220 stepcount:   6
+vector:   8206 x:     60 y:   -204 z:   8204 stepcount:   6
+vector:   8257 x:     48 y:   -160 z:   8256 stepcount:   6
+vector:   8254 x:     68 y:   -192 z:   8252 stepcount:   6
+vector:   8134 x:    -16 y:   -144 z:   7948 stepcount:   6
+vector:   8150 x:    -16 y:   -200 z:   8148 stepcount:   6
+vector:   8109 x:     80 y:   -140 z:   8108 stepcount:   6
+vector:   8204 x:     12 y:   -120 z:   8204 stepcount:   6
+vector:   8104 x:     56 y:   -292 z:   7988 stepcount:   6
+vector:   8076 x:     32 y:   -120 z:   8216 stepcount:   6
+vector:   8154 x:     12 y:   -192 z:   8152 stepcount:   6
+vector:   8280 x:    -40 y:   -112 z:   8280 stepcount:   6
+vector:   8130 x:     52 y:   -164 z:   8128 stepcount:   6
+vector:   8226 x:     76 y:   -184 z:   8216 stepcount:   6
+vector:   8073 x:     20 y:   -144 z:   8072 stepcount:   6
+vector:   8253 x:     16 y:   -296 z:   8248 stepcount:   6
+vector:   8257 x:    156 y:   -116 z:   8256 stepcount:   6
+vector:   8096 x:     24 y:   -288 z:   8216 stepcount:   6
+vector:   8172 x:     64 y:   -104 z:   8172 stepcount:   6
+vector:   8265 x:     32 y:   -160 z:   8264 stepcount:   6
+vector:   8061 x:     68 y:   -216 z:   8060 stepcount:   6
+vector:   8293 x:     44 y:    -72 z:   8196 stepcount:   6
+vector:   8213 x:    -56 y:   -152 z:   8212 stepcount:   6
+vector:   8209 x:     64 y:   -140 z:   8208 stepcount:   6
+vector:   8121 x:     28 y:   -144 z:   8120 stepcount:   6
+vector:   8190 x:     80 y:   -220 z:   8232 stepcount:   6
+vector:   8170 x:     68 y:   -200 z:   8168 stepcount:   6
+vector:   8289 x:    124 y:   -284 z:   8284 stepcount:   6
+vector:   8305 x:     44 y:   -140 z:   8304 stepcount:   6
+vector:   8259 x:     88 y:   -244 z:   8164 stepcount:   6
+vector:   8205 x:     36 y:   -176 z:   8204 stepcount:   6
+vector:   8286 x:    136 y:   -172 z:   8284 stepcount:   6
+vector:   8233 x:    144 y:   -152 z:   8232 stepcount:   6
+vector:   8194 x:    116 y:   -224 z:   8136 stepcount:   6
+vector:   8235 x:     96 y:   -232 z:   8232 stepcount:   6
+vector:   8048 x:     -4 y:    -96 z:   8048 stepcount:   6
+vector:   8235 x:     36 y:   -232 z:   8232 stepcount:   6
+vector:   8281 x:    140 y:   -168 z:   8292 stepcount:   6
+vector:   8236 x:     32 y:    -64 z:   8236 stepcount:   6
+vector:   8207 x:     72 y:   -228 z:   8204 stepcount:   6
+vector:   8034 x:    116 y:   -176 z:   8032 stepcount:   6
+vector:   8303 x:     60 y:    -64 z:   8284 stepcount:   6
+vector:   8170 x:     68 y:   -192 z:   8168 stepcount:   6
+vector:   8126 x:     84 y:   -160 z:   8124 stepcount:   6
+vector:   8188 x:     88 y:    -72 z:   8188 stepcount:   6
+vector:   8130 x:     48 y:   -148 z:   8208 stepcount:   6
+vector:   8029 x:     12 y:   -176 z:   8284 stepcount:   6
+vector:   8098 x:     40 y:   -208 z:   8096 stepcount:   6
+vector:   8245 x:     64 y:   -160 z:   8244 stepcount:   6
+vector:   8296 x:    100 y:   -168 z:   8292 stepcount:   6
+vector:   8086 x:     48 y:   -212 z:   8084 stepcount:   6
+vector:   8155 x:     88 y:   -208 z:   8152 stepcount:   6
+vector:   8291 x:     52 y:   -220 z:   8032 stepcount:   6
+vector:   8177 x:     12 y:   -148 z:   8176 stepcount:   6
+vector:   8138 x:    132 y:   -136 z:   8136 stepcount:   6
+vector:   8112 x:    156 y:   -164 z:   8160 stepcount:   6
+vector:   8206 x:    132 y:   -148 z:   8204 stepcount:   6
+vector:   8170 x:    104 y:   -168 z:   8168 stepcount:   6
+vector:   8150 x:    116 y:   -168 z:   8148 stepcount:   6
+vector:   8202 x:     92 y:   -236 z:   8240 stepcount:   6
+vector:   8095 x:      4 y:   -232 z:   8348 stepcount:   6
+vector:   8213 x:     32 y:   -144 z:   8212 stepcount:   6
+vector:   8256 x:     56 y:    -72 z:   8256 stepcount:   6
+vector:   8129 x:      0 y:   -132 z:   7960 stepcount:   6
+vector:   8161 x:     68 y:   -136 z:   8288 stepcount:   6
+vector:   8276 x:    172 y:   -204 z:   8272 stepcount:   6
+vector:   8340 x:    -16 y:    -96 z:   8340 stepcount:   6
+vector:   8245 x:    -52 y:   -168 z:   8256 stepcount:   6
+vector:   8233 x:    112 y:   -268 z:   8208 stepcount:   6
+vector:   8186 x:    104 y:   -164 z:   8184 stepcount:   6
+vector:   8184 x:     84 y:    -88 z:   8184 stepcount:   6
+vector:   8075 x:    -16 y:   -220 z:   8072 stepcount:   6
+vector:   8198 x:    124 y:   -168 z:   8224 stepcount:   6
+vector:   8228 x:    112 y:   -244 z:   8224 stepcount:   6
+vector:   8234 x:      0 y:   -196 z:   8232 stepcount:   6
+vector:   8135 x:     32 y:   -252 z:   8132 stepcount:   6
+vector:   8430 x:     48 y:   -208 z:   8204 stepcount:   6
+vector:   8351 x:    124 y:   -192 z:   8348 stepcount:   6
+vector:   8254 x:    100 y:   -176 z:   8252 stepcount:   6
+vector:   8080 x:     16 y:   -252 z:   8076 stepcount:   6
+vector:   8101 x:     56 y:   -152 z:   8164 stepcount:   6
+vector:   8181 x:     16 y:   -164 z:   8180 stepcount:   6
+vector:   8173 x:     36 y:   -172 z:   8172 stepcount:   6
+vector:   8345 x:     52 y:   -228 z:   8344 stepcount:   6
+vector:   8293 x:     48 y:   -116 z:   8280 stepcount:   6
+vector:   8328 x:     32 y:   -264 z:   8324 stepcount:   6
+vector:   8160 x:     16 y:   -116 z:   8160 stepcount:   7
+vector:   8121 x:     -4 y:   -232 z:   8120 stepcount:   7
+vector:   8320 x:      4 y:   -136 z:   8276 stepcount:   7
+vector:   8061 x:    108 y:   -136 z:   8060 stepcount:   7
+vector:   8215 x:    -40 y:   -232 z:   8212 stepcount:   7
+vector:   8154 x:    100 y:   -164 z:   8152 stepcount:   7
+vector:   8235 x:     72 y:   -212 z:   8212 stepcount:   7
+vector:   8091 x:    -32 y:   -232 z:   8088 stepcount:   7
+vector:   8121 x:     16 y:   -176 z:   8120 stepcount:   7
+vector:   8206 x:    112 y:   -184 z:   8204 stepcount:   7
+vector:   8280 x:    -16 y:   -272 z:   8284 stepcount:   7
+vector:   8201 x:     40 y:   -172 z:   8200 stepcount:   7
+vector:   8225 x:     44 y:   -124 z:   8224 stepcount:   7
+vector:   8210 x:     88 y:   -276 z:   8204 stepcount:   7
+vector:   8217 x:     36 y:   -112 z:   8256 stepcount:   7
+vector:   8030 x:     88 y:   -176 z:   8284 stepcount:   7
+vector:   8045 x:     36 y:   -172 z:   8044 stepcount:   7
+vector:   8062 x:    120 y:   -172 z:   8060 stepcount:   7
+vector:   8125 x:     84 y:   -224 z:   8120 stepcount:   7
+vector:   8442 x:    152 y:   -120 z:   8184 stepcount:   7
+vector:   8213 x:     -4 y:   -172 z:   8212 stepcount:   8
+vector:   8198 x:     72 y:   -192 z:   8196 stepcount:   8
+vector:   8189 x:     96 y:   -176 z:   8132 stepcount:   8
+vector:   8134 x:     52 y:   -192 z:   8168 stepcount:   8
+vector:   8119 x:     96 y:   -216 z:   8116 stepcount:   8
+vector:   8187 x:      8 y:   -224 z:   8184 stepcount:   8
+vector:   8171 x:    -60 y:   -188 z:   8084 stepcount:   8
+vector:   8196 x:     40 y:   -104 z:   8352 stepcount:   8
+vector:   8309 x:     88 y:   -104 z:   8308 stepcount:   8
+vector:   8286 x:     24 y:   -188 z:   8284 stepcount:   8
+vector:   8192 x:    -20 y:   -208 z:   8192 stepcount:   8
+vector:   8209 x:     64 y:   -156 z:   8228 stepcount:   8
+vector:   8197 x:    100 y:   -144 z:   8196 stepcount:   8
+vector:   8313 x:     40 y:   -176 z:   8312 stepcount:   8
+vector:   8305 x:      4 y:   -272 z:   8304 stepcount:   8
+vector:   8266 x:     20 y:   -212 z:   8232 stepcount:   8
+vector:   8222 x:     96 y:   -168 z:   8220 stepcount:   8
+vector:   8320 x:      4 y:   -272 z:   8316 stepcount:   8
+vector:   8234 x:     80 y:   -184 z:   8232 stepcount:   8
+vector:   8078 x:     40 y:   -200 z:   8276 stepcount:   8
+vector:   8105 x:     64 y:   -156 z:   8104 stepcount:   8
+vector:   8058 x:    -64 y:   -180 z:   8056 stepcount:   8
+vector:   8208 x:     -8 y:   -456 z:   8204 stepcount:   8
+vector:   8074 x:    132 y:   -192 z:   8172 stepcount:   8
+vector:   8174 x:     76 y:   -208 z:   8172 stepcount:   8
+vector:   8273 x:     16 y:   -180 z:   8272 stepcount:   8
+vector:   8137 x:     24 y:   -132 z:   8136 stepcount:   8
+vector:   8168 x:     44 y:   -132 z:   8168 stepcount:   8
+vector:   8235 x:    112 y:   -208 z:   8232 stepcount:   8
+vector:   8273 x:     68 y:   -112 z:   8272 stepcount:   8
+vector:   8197 x:     68 y:   -120 z:   8196 stepcount:   8
+vector:   8228 x:    120 y:   -124 z:   8228 stepcount:   8
+vector:   8122 x:     76 y:   -176 z:   8120 stepcount:   8
+vector:   8106 x:     64 y:   -196 z:   8104 stepcount:   8
+vector:   8236 x:   -224 y:    -96 z:   8236 stepcount:   8
+vector:   8230 x:    104 y:   -120 z:   8252 stepcount:   8
+vector:   8139 x:     20 y:   -240 z:   8136 stepcount:   8
+vector:   8233 x:     72 y:   -156 z:   8184 stepcount:   8
+vector:   8269 x:     40 y:   -152 z:   8268 stepcount:   8
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d6b1c
+file: "./main/i2c.c" line 76
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40088ab3 on core 0
+
+
+Backtrace: 0x40088b91:0x3ffb71b0 0x40088b21:0x3ffb71d0 0x4008f06d:0x3ffb71f0 0x40088ab3:0x3ffb7260 0x400d6b1c:0x3ffb7290 0x400d6c81:0x3ffb72b0 0x400d6790:0x3ffb72e0 0x400897c5:0x3ffb7310
+
+
+
+
+ELF file SHA256: 7623cb21d
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0be4ch ( 48716) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001be74 vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e314 vaddr=40080000 size=01d04h (  7428) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=18ce8h (101608) map[0m
+[0;32mI (152) esp_image: segment 4: paddr=00038d10 vaddr=40081d04 size=0f0e8h ( 61672) load[0m
+[0;32mI (176) esp_image: segment 5: paddr=00047e00 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (185) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (205) cpu_start: Pro cpu start user code[0m
+[0;32mI (205) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (205) app_init: Application information:[0m
+[0;32mI (205) app_init: Project name:     lab5[0m
+[0;32mI (208) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (213) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (218) app_init: ELF file SHA256:  7623cb21d...[0m
+[0;32mI (222) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (227) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (231) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (235) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (239) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (245) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFB2E68 len 0002D198 (180 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (261) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (266) heap_init: At 40090DEC len 0000F214 (60 KiB): IRAM[0m
+[0;33mW (273) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (285) spi_flash: detected chip: generic[0m
+[0;32mI (288) spi_flash: flash io: dio[0m
+[0;33mW (291) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (303) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[1;31mE (335) gpio: gpio_set_intr_type(155): GPIO interrupt type error[0m
+[0;32mI (345) main_task: Returned from app_main()[0m
+vector:   8255 x:     84 y:   -220 z:   8252 stepcount:   0
+vector:   8181 x:     40 y:   -160 z:   8188 stepcount:   0
+vector:   8024 x:     16 y:   -120 z:   8024 stepcount:   0
+vector:   8240 x:     96 y:   -156 z:   8236 stepcount:   0
+vector:   8265 x:    108 y:   -136 z:   8204 stepcount:   0
+vector:   8274 x:     84 y:   -192 z:   8272 stepcount:   0
+vector:   8148 x:     24 y:   -256 z:   8144 stepcount:   0
+vector:   8139 x:     48 y:    -60 z:   8136 stepcount:   0
+vector:   8413 x:     52 y:   -124 z:   8192 stepcount:   0
+vector:   8161 x:     52 y:   -132 z:   8160 stepcount:   0
+vector:   8201 x:    -24 y:   -160 z:   8200 stepcount:   0
+vector:   8106 x:    -60 y:   -148 z:   8104 stepcount:   0
+vector:   8206 x:    120 y:   -132 z:   8244 stepcount:   0
+vector:   8067 x:     -8 y:   -232 z:   8064 stepcount:   0
+vector:   8237 x:     64 y:   -124 z:   8236 stepcount:   0
+vector:   8320 x:     72 y:   -260 z:   8316 stepcount:   0
+vector:   8212 x:    128 y:   -144 z:   8256 stepcount:   0
+vector:   8114 x:     84 y:   -160 z:   8112 stepcount:   0
+vector:   8210 x:    156 y:   -144 z:   8208 stepcount:   0
+vector:   8339 x:      4 y:   -256 z:   8336 stepcount:   0
+vector:   7972 x:      8 y:   -200 z:   8176 stepcount:   1
+vector:   8218 x:     60 y:   -180 z:   8216 stepcount:   1
+vector:   8199 x:    136 y:   -316 z:   8192 stepcount:   1
+vector:   8298 x:    224 y:   -200 z:   8296 stepcount:   1
+vector:   8234 x:     24 y:   -164 z:   8268 stepcount:   1
+vector:   8237 x:     32 y:   -140 z:   8236 stepcount:   1
+vector:   8145 x:     60 y:   -288 z:   8140 stepcount:   1
+vector:   8225 x:    108 y:   -176 z:   8224 stepcount:   1
+vector:   8251 x:     28 y:   -200 z:   8304 stepcount:   1
+vector:   8417 x:    108 y:   -148 z:   8160 stepcount:   1
+vector:   8309 x:    -12 y:   -144 z:   8308 stepcount:   1
+vector:   8113 x:    -20 y:   -144 z:   8112 stepcount:   1
+vector:   8271 x:     60 y:   -188 z:   8216 stepcount:   1
+vector:   8310 x:    176 y:   -136 z:   8308 stepcount:   1
+vector:   8192 x:     84 y:    -96 z:   8192 stepcount:   1
+vector:   8198 x:     80 y:   -168 z:   8196 stepcount:   1
+vector:   8154 x:    176 y:    -52 z:   8152 stepcount:   1
+vector:   8213 x:     72 y:   -136 z:   8212 stepcount:   1
+vector:   8098 x:     68 y:   -152 z:   8152 stepcount:   1
+vector:   8326 x:     80 y:   -188 z:   8324 stepcount:   1
+vector:   8322 x:     12 y:   -184 z:   8320 stepcount:   1
+vector:   8261 x:    116 y:    -96 z:   8260 stepcount:   1
+vector:   8136 x:     84 y:   -148 z:   7944 stepcount:   1

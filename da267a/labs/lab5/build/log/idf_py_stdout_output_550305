@@ -1,0 +1,104 @@
+Command: /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/minipops/uni/da267a/labs/lab5/build/lab5.elf /home/minipops/uni/da267a/labs/lab5/build/bootloader/bootloader.elf -m '/home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/opt/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc44h ( 48196) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bc6c vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e10c vaddr=40080000 size=01f0ch (  7948) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1813ch ( 98620) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=00038164 vaddr=40081f0c size=0ed24h ( 60708) load[0m
+[0;32mI (175) esp_image: segment 5: paddr=00046e90 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  d40d87bc1...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:  8440 x:   476 y:  -108 z:  8264 stepcount:     0
+vector:  8211 x:   508 y:  -196 z:  8196 stepcount:     0
+vector:  8118 x:   396 y:  -392 z:  8028 stepcount:     0
+vector:  8450 x:   496 y:  -192 z:  8292 stepcount:     0
+vector:  8250 x:   256 y:  -176 z:  8316 stepcount:     0
+vector:  8331 x:   532 y:  -144 z:  8248 stepcount:     0
+vector:  8334 x:   480 y:  -196 z:  8444 stepcount:     0
+vector:  8388 x:   256 y:  -244 z:  8020 stepcount:     0
+d: 15625.000000
+d: 10816.000000
+d: 38809.000000
+d: 18225.000000
+d: 4225.000000
+d: 256.000000
+d: 361.000000
+d: 5329.000000
+sd - before:108 mean:8315 size:8
+sd:1000 mean:8315 size:8
+vector:  8313 x:   476 y:  -164 z:  8296 stepcount:     0
+vector:  8198 x:   556 y:  -168 z:  8224 stepcount:     0
+vector:  8443 x:   492 y:  -192 z:  8028 stepcount:     0
+vector:  9096 x:   428 y:  -180 z:  8316 stepcount:     0
+vector:  7987 x:   180 y:  -172 z:  7996 stepcount:     0
+vector:  8136 x:   492 y:  -136 z:  8348 stepcount:     0
+vector:  8381 x:   692 y:  -124 z:  8212 stepcount:     0
+vector:  8675 x:   448 y:  -192 z:  8424 stepcount:     0
+d: 8100.000000
+d: 42025.000000
+d: 1600.000000
+d: 480249.000000
+d: 173056.000000
+d: 71289.000000
+d: 484.000000
+d: 73984.000000
+sd - before:326 mean:8403 size:8
+sd:1000 mean:8403 size:8
+vector:  8203 x:   492 y:  -208 z:  8252 stepcount:     0
+vector:  8312 x:   492 y:  -252 z:  8088 stepcount:     0
+vector:  8256 x:   440 y:  -236 z:  7944 stepcount:     0
+vector:  8315 x:   332 y:  -124 z:  8332 stepcount:     0
+vector:  8176 x:   488 y:  -200 z:  8128 stepcount:     0
+vector:  8171 x:   376 y:  -196 z:  8140 stepcount:     0
+vector:  7980 x:   736 y:  -220 z:  8340 stepcount:     0

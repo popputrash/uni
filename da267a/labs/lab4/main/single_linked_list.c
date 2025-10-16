@@ -6,25 +6,26 @@
 int addElementSingleLinkedList(struct singleLinkedList *list, int value) {
   struct singleLinkedListElement *e =
       malloc(sizeof(struct singleLinkedListElement));
+  if (!e)
+    return INT_MIN;
+
   e->data = value;
   e->next = NULL;
 
-  struct singleLinkedListElement *curr = list->first;
-
-  if (curr == NULL || curr->data >= value) {
-    e->next = curr;
+  if (!list->first || list->first->data >= value) {
+    e->next = list->first;
     list->first = e;
-  } else {
-    while (curr->next) {
-      if (curr->next->data > value) {
-        break;
-      }
-      curr = curr->next;
-    }
-
-    e->next = curr->next;
-    curr->next = e;
+    return value;
   }
+
+  struct singleLinkedListElement *curr = list->first;
+  while (curr->next && curr->next->data < value) {
+    curr = curr->next;
+  }
+
+  e->next = curr->next;
+  curr->next = e;
+
   printf("added:%d\n", value);
   return value;
 }
@@ -33,49 +34,52 @@ void initSingleLinkedList(struct singleLinkedList *list) { list->first = NULL; }
 
 int removeFirstElementSingleLinkedList(struct singleLinkedList *list) {
 
-  if (!list->first) {
+  if (!list || !list->first)
     return INT_MIN;
-  }
   struct singleLinkedListElement *remove = list->first;
-  list->first = list->first->next;
-	free(remove);
-	printf("removeing first element\n");
-	printSingleLinkedList(list);
-  return (int)1;
+  int removed_value = remove->data;
+  list->first = remove->next;
+  free(remove);
+  printf("removing first element\n");
+  printSingleLinkedList(list);
+  return removed_value;
 }
 
 int removeLastElementSingleLinkedList(struct singleLinkedList *list) {
+  if (!list || !list->first)
+    return INT_MIN;
+
   struct singleLinkedListElement *curr = list->first;
   struct singleLinkedListElement *prev = list->first;
 
-  if (!list->first) {
-    return INT_MIN;
+  if (!curr->next) {
+    int val = curr->data;
+    free(curr);
+    list->first = NULL;
+    return val;
   }
+
   while (curr->next) {
     prev = curr;
     curr = curr->next;
   }
+  int val = curr->data;
   prev->next = NULL;
   free(curr);
-	printf("removeing last element\n");
-	printSingleLinkedList(list);
-  return list->first->data;
+  printf("removing last element\n");
+  printSingleLinkedList(list);
+  return val;
 }
 
 void printSingleLinkedList(struct singleLinkedList *list) {
-	if(!list->first){
-		return;
-	}
-  struct singleLinkedListElement *curr = list->first;
-  int c = 0;
-	printf("list(first: %d)[", curr->data);
-  for (;;) {
-    printf("%d ",curr->data);
-    if (curr->next == NULL) {
-      break;
-    }
-    curr = curr->next;
-    c++;
+  if (!list->first) {
+    return;
   }
-	printf("]\n");
+  struct singleLinkedListElement *curr = list->first;
+  printf("list[first: %d] [", curr->data);
+  while (curr) {
+    printf("%d ", curr->data);
+    curr = curr->next;
+  }
+  printf("]\n");
 }

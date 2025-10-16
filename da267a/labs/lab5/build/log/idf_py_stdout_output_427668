@@ -1,0 +1,533 @@
+Command: /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/minipops/uni/da267a/labs/lab5/build/lab5.elf /home/minipops/uni/da267a/labs/lab5/build/bootloader/bootloader.elf -m '/home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/opt/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc2ch ( 48172) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bc54 vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e0f4 vaddr=40080000 size=01f24h (  7972) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=18194h ( 98708) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=000381bc vaddr=40081f24 size=0ed0ch ( 60684) load[0m
+[0;32mI (175) esp_image: segment 5: paddr=00046ed0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  d93312e1f...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:  8308 x:   692 y:  -256 z:  8336
+vector:  8199 x:   616 y:  -176 z:  8372
+vector:  8316 x:   592 y:   -72 z:  8288
+vector:  8343 x:   688 y:  -164 z:  8376
+vector:  8250 x:   636 y:  -220 z:  8344
+vector:  8007 x:   620 y:  -212 z:  8168
+vector:  8015 x:   632 y:   -92 z:  8332
+vector:  8317 x:   740 y:  -216 z:  8196
+sd:3 mean:8219 size:8
+vector:  8190 x:   620 y:  -212 z:  8408
+vector:  8284 x:   616 y:  -136 z:  8116
+vector:  8353 x:   640 y:  -232 z:  8236
+vector:  8214 x:   604 y:  -208 z:  8308
+vector:  8308 x:   648 y:  -216 z:  8268
+vector:  8225 x:   672 y:  -144 z:  8204
+vector:  8281 x:   640 y:  -164 z:  8248
+vector:  8268 x:   644 y:  -136 z:  8220
+sd:1 mean:8265 size:8
+vector:  7989 x:   652 y:  -176 z:  8200
+vector:  8399 x:   680 y:  -176 z:  8380
+vector:  8269 x:   656 y:  -164 z:  8304
+vector:  8270 x:   684 y:  -112 z:  8212
+vector:  8226 x:   668 y:  -208 z:  8320
+vector:  8237 x:   740 y:  -240 z:  8192
+vector:  7959 x:   648 y:  -220 z:  8228
+vector:  8281 x:   668 y:  -184 z:  8360
+sd:4 mean:8203 size:8
+vector:  8241 x:   720 y:  -128 z:  8068
+vector:  8205 x:   736 y:  -108 z:  8288
+vector:  8309 x:   748 y:  -160 z:  8188
+vector:  8268 x:   728 y:  -148 z:  8428
+vector:  8207 x:   592 y:  -192 z:  8212
+vector:  8215 x:   692 y:  -136 z:  8284
+vector:  8198 x:   676 y:  -184 z:  8416
+vector:  8126 x:   636 y:  -140 z:  8280
+vector:  8316 x:   676 y:  -136 z:  8228
+sd:1 mean:8231 size:9
+vector:  8407 x:   896 y:  -104 z:  8408
+vector:  8010 x:   660 y:  -168 z:  8400
+vector:  8255 x:   676 y:   -92 z:  8364
+vector:  8050 x:   692 y:   -92 z:  8196
+vector:  8228 x:   632 y:  -120 z:  8296
+vector:  8136 x:   588 y:  -164 z:  8184
+vector:  8304 x:   660 y:  -152 z:  8328
+vector:  8206 x:   672 y:  -168 z:  8340
+sd:3 mean:8199 size:8
+vector:  8147 x:   676 y:  -160 z:  8300
+vector:  8261 x:   548 y:   -72 z:  7944
+vector:  8284 x:   724 y:  -136 z:  8252
+vector:  8377 x:   304 y:   -92 z:  8444
+vector:  8267 x:   576 y:  -252 z:  8320
+vector:  8301 x:   620 y:   -88 z:  8236
+vector:  8352 x:   664 y:  -124 z:  8244
+vector:  8333 x:   672 y:  -216 z:  8420
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d66fa
+file: "./main/i2c.c" line 58
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40088917 on core 0
+
+
+Backtrace: 0x400889f5:0x3ffb6f90 0x40088985:0x3ffb6fb0 0x4008eeb1:0x3ffb6fd0 0x40088917:0x3ffb7040 0x400d66fa:0x3ffb7070 0x400d68cc:0x3ffb7090 0x400d6484:0x3ffb70c0 0x40089629:0x3ffb70f0
+
+
+
+
+ELF file SHA256: d93312e1f
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc2ch ( 48172) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc54 vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e0f4 vaddr=40080000 size=01f24h (  7972) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=18194h ( 98708) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=000381bc vaddr=40081f24 size=0ed0ch ( 60684) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046ed0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  d93312e1f...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:  8258 x:   644 y:  -196 z:  8444
+vector:  8209 x:   712 y:  -192 z:  7972
+vector:  8238 x:   680 y:  -192 z:  8264
+vector:  8255 x:   668 y:  -120 z:  8436
+vector:  8412 x:   716 y:    -8 z:  8288
+vector:  8287 x:   708 y:  -212 z:  8436
+vector:  8467 x:   708 y:  -200 z:  8036
+vector:  8348 x:   588 y:  -200 z:  8372
+sd:2 mean:8309 size:8
+vector:  8196 x:   680 y:  -464 z:  8264
+vector:  8449 x:   672 y:  -188 z:  8416
+vector:  8208 x:   764 y:  -228 z:  8192
+vector:  8333 x:   652 y:  -152 z:  8384
+vector:  8227 x:  1128 y:   240 z:  8328
+vector:  8295 x:   680 y:  -172 z:  8408
+vector:  8470 x:   568 y:  -120 z:  8104
+vector:  8381 x:   620 y:   384 z:  8360
+sd:3 mean:8319 size:8
+vector:  8447 x:   544 y:    20 z:  8208
+vector:  8518 x:   616 y:  -196 z:  7960
+vector:  8352 x:  1440 y:   680 z:  8544
+vector:  8213 x:  1068 y:   396 z:  8176
+vector:  8337 x:  1064 y:   184 z:  8380
+vector:  9391 x:   856 y:   764 z:  8428
+vector: 10743 x:  2640 y:   232 z:  9552
+vector:  3209 x:  3708 y:  -332 z:  9408
+sd:63 mean:8151 size:8
+vector:  7785 x:   296 y: -1352 z:  2156
+vector: 13198 x:  2072 y:  -920 z: 13904
+vector:  3062 x:  3404 y:  -688 z:  7332
+vector: 14604 x:  1052 y: -1200 z:  3196
+vector: 10909 x:  2616 y:  -676 z: 15264
+vector:  2986 x:  2824 y:  -356 z:  1144
+vector: 18925 x:  3084 y:  -284 z: 10200
+vector:  7273 x:  1100 y:   580 z: 15640
+vector:  2422 x:  2920 y:    88 z: -3220
+sd:173 mean:9018 size:9
+vector: 16615 x:  1856 y:   -68 z:  9340
+vector:  7529 x:   968 y:   868 z: 16100
+vector:  1890 x:  3352 y:   476 z:  2620
+vector: 16782 x:   560 y:  -832 z:  3572
+vector: 11037 x:  -388 y: -3796 z:  9088
+vector:  5337 x:  2092 y:  -228 z:  8076
+vector:  3875 x:  2172 y:   -16 z:   204
+vector: 10096 x:  1368 y:  2268 z: 15184
+sd:153 mean:9145 size:8
+vector:  4107 x:   720 y:  1064 z:  9736
+vector:  3024 x:  1628 y:  -892 z:  1664
+vector:  7456 x:  1360 y:   444 z: 20456
+vector: 10640 x:  1852 y:  -172 z: 11840
+vector:  2139 x:  1768 y:   668 z:  3232
+vector: 28079 x:   840 y:  -264 z:  2184
+vector: 12137 x: -1056 y: -1540 z:  8492
+vector:  3189 x:  2468 y:   692 z:  5756
+sd:242 mean:8846 size:8
+vector: 12800 x:  2756 y: -1284 z:  -116
+vector: 10486 x:  2716 y:   432 z:  9276
+vector:  4474 x:  2724 y:  1172 z: 10956
+vector:  1578 x:   748 y:  -324 z:   644
+vector:  8013 x:  1628 y:  2960 z: 22783
+vector:  8544 x:  -632 y:  1336 z: 10600
+vector:  1407 x:  1488 y:  -400 z:  5048
+vector: 10389 x:  1840 y: -1024 z:  3924
+vector: 11512 x: -1860 y: -1852 z:  9716
+sd:136 mean:7689 size:9
+vector:  3039 x:  1760 y:  -428 z:  5752
+vector: 14677 x:   564 y: -1008 z: -1388
+vector: 11219 x:  -556 y: -2472 z:  4820
+vector:  5444 x:  1456 y:  1200 z:  9268
+vector:  3062 x:   800 y:   204 z: -1136
+vector: 11131 x:  -504 y: -1676 z:  3332
+vector:  8221 x: -1748 y:   680 z:  8992
+vector:  1753 x:  -460 y:  -632 z:  1832
+sd:145 mean:7318 size:8
+vector: 10814 x: -1428 y: -2652 z:  4948
+vector:  5293 x:   360 y:   360 z: 11376
+vector:  3955 x:    96 y: -1332 z:  2088
+vector:  6357 x: -1484 y:  5348 z: 27912
+vector:  4244 x:  -508 y:   -68 z:  9692
+vector:  5506 x:   316 y: -1076 z:  3104
+vector:  6114 x: -32564 y:  1240 z: 11396
+vector:  4728 x:   120 y:   308 z:  7980
+sd:74 mean:5876 size:8
+vector:  6516 x:    52 y:   808 z: 32656
+vector:  3788 x: -2156 y: -1756 z:  2484
+vector:  2835 x:  1784 y:  1424 z: 12456
+vector:  3777 x:  -520 y: -1184 z:  3472
+vector:  1855 x:  1512 y:  1284 z: 18976
+vector:  3429 x: -1100 y:  -876 z:  2912
+vector:  3377 x:  1376 y:  3720 z: 25820
+vector:  2972 x:  -884 y:  -580 z:  2080
+vector:  1947 x:   868 y:  2476 z: 14732
+sd:66 mean:3388 size:9
+vector:  3892 x:  -980 y: -1820 z:  1720
+vector:  4922 x:   976 y: 18664 z: 32767
+vector:  3996 x:   100 y: -1308 z:  2064
+vector:  3187 x:  1392 y:   536 z:  9448
+vector:  5388 x:  1104 y:   -88 z:  3160
+vector:  3983 x: -3560 y:  3312 z:  1768
+vector: 33836 x:  1388 y:    40 z:  3068
+vector:  2290 x:  6208 y: -1884 z:   876
+sd:320 mean:7686 size:8
+vector: 45570 x:   752 y:  -400 z:  4236
+vector:  4093 x:  5328 y: -3876 z:  2284
+vector:  6530 x:   128 y:   304 z:  5440
+vector:  3407 x: -2464 y: -3040 z:  1680
+vector:  4837 x:  -180 y:   888 z: 16000
+vector:  3924 x: -2372 y: -1752 z:  2484
+vector:  4195 x:   960 y:  2800 z: 25855
+vector:  5508 x:  1048 y:  -576 z:  2764
+sd:388 mean:9758 size:8
+vector:  4676 x: -15316 y:  3244 z:  8652
+vector: 30596 x:  1360 y:  -100 z:  3460
+vector:  3165 x:  4436 y: -3056 z:  2440
+vector:  9553 x:   516 y:   672 z:  4368
+vector:  3693 x: -3224 y: -2856 z:  3272
+vector:  5290 x:    80 y: -6500 z: 30668
+vector:  4856 x:  -432 y: -1592 z:  2248
+vector:  4896 x:   636 y:  2760 z: 25212
+vector:  3677 x:   712 y:  -656 z:  3960
+sd:279 mean:7822 size:9
+vector:  3985 x:  -400 y: -1012 z: 14676
+vector:  4935 x:  -196 y: -1516 z:  2616
+vector:  6833 x:  -956 y:  1044 z: 11576
+vector:  7161 x: -1060 y: -1152 z:  7228
+vector: 10038 x:  -860 y: -1372 z:  7680
+vector:  7146 x:  -980 y:  1116 z:  7960
+vector: 12649 x:  -388 y:   956 z:  6728
+vector:   974 x:   260 y:  2668 z: 18928
+sd:115 mean:6715 size:8
+vector:  4801 x: -2920 y: -2504 z:  2220
+vector: 13684 x:   176 y:   156 z:  5840
+vector:  4436 x:  -980 y: -4020 z:  2172
+vector:  6836 x:   656 y:   156 z:  4412
+vector:  3090 x:  -900 y:  5472 z:  5356
+vector:  5902 x:  1028 y:  -268 z:  4748
+vector:  4178 x:   460 y:  1576 z: 13220
+vector:  5694 x:  -368 y:  -500 z:  5288
+sd:111 mean:6077 size:8
+vector: 10577 x:   592 y:  1028 z:  4976
+vector:  6633 x: -2540 y:  1484 z:  2460
+vector:  5722 x:  -116 y:  1092 z:  6168
+vector:  4812 x:  1520 y:   636 z:  7320
+vector:  4231 x:   140 y:   476 z:  5312
+vector:  2636 x:  -332 y:  4804 z:  6272
+vector: 26919 x:  -520 y:  -252 z:  2444
+vector:  5041 x:   -60 y:  -168 z: 11392
+vector:  7466 x: -2260 y:  -924 z:  9372
+sd:229 mean:8226 size:9
+vector:  8390 x:  -708 y:  -924 z:  7780
+vector:  8286 x:  -400 y:  -236 z:  8260
+vector:  8549 x:  -532 y: -1048 z:  8200
+vector: 10264 x: -2772 y: -2248 z:  8140
+vector:  4587 x:  -100 y:  -900 z:  7280
+vector:  5203 x:  1024 y:  -380 z:  3632
+vector:  8930 x:  -692 y: -4388 z:  1992
+vector:  8384 x: -1084 y:   408 z:  7968
+sd:57 mean:7824 size:8
+vector:  7000 x:   156 y:   676 z:  4588
+vector:  7299 x: 32648 y: -2240 z:  8296
+vector:  6194 x:   876 y:  1144 z:  7628
+vector:  5547 x:  -876 y:   284 z:  3236
+vector:  7699 x:  1160 y:  3136 z: 28936
+vector:  8670 x: -2592 y:   296 z:  6528
+vector:  2292 x:  -572 y:  -440 z:  6304
+vector: 32561 x:  -192 y:   140 z:  3160
+sd:254 mean:9657 size:8
+vector:  7275 x:  -644 y: -2372 z:  7840
+vector:  6376 x:   736 y:  -220 z:  6356
+vector:  1934 x:  -132 y:  -576 z:  2968
+vector: 35430 x:  1400 y:  1656 z:  6500
+vector:  9216 x:  2664 y:    20 z:  6872
+vector:  7854 x:  1144 y:  2952 z: 10492
+vector:  1154 x:   584 y:  1032 z:  4820
+vector: 11777 x:  -796 y:   920 z:  1436
+vector:  8154 x: -1392 y: -5320 z:  5904
+sd:288 mean:9907 size:9
+vector:  9160 x:   600 y:  1292 z: 12160
+vector:  4072 x:  -632 y:  -780 z:  6204
+vector:  2480 x:   696 y: -1336 z:  2988
+vector:  8772 x:  1432 y:  1692 z:  4095
+vector:  8442 x:  -908 y: -2484 z:  7848
+vector: 12103 x:  1744 y:  1680 z:  8908
+vector:  7171 x: -1556 y:  1884 z:  9320
+vector:  1483 x:   376 y:   -32 z:  2936
+sd:118 mean:6710 size:8
+vector: 12597 x:   444 y:  -156 z:  2160
+vector:  8267 x:   272 y: -1292 z:  9420
+vector:  7353 x:  -332 y:  -640 z:  8504
+vector: 10286 x:  2848 y:  1560 z: 11948
+vector:  3248 x:    56 y:   248 z:  7648
+vector:  1684 x:  -496 y: -1000 z:  1304
+vector:  8691 x:  1224 y:  6148 z: 12816
+vector:  8209 x:   108 y: -3772 z:  6588
+sd:108 mean:7541 size:8
+vector:  9399 x:   852 y: -1660 z:  8832
+vector:  8598 x:   676 y:   -28 z: 12120
+vector:  1735 x:    20 y: -1024 z:  5788
+vector:  2678 x:   200 y: -1852 z:  2072
+vector:  8453 x: 32552 y: -3180 z:  5080
+vector:  8156 x:   740 y: -1124 z:  7996
+vector: 12411 x:   392 y: -1256 z:  7472
+vector:  7237 x:   140 y:   992 z: 11784
+vector:  1155 x:  1260 y:  -160 z:  4392
+sd:134 mean:6646 size:9
+vector:  5184 x:   224 y: -1676 z:  1432
+vector:  8402 x: -7376 y: -3136 z: 14020
+vector:  8216 x:   756 y: -1792 z:  7700
+vector: 11283 x:   720 y:  1088 z:  8844
+vector:  8857 x:  -104 y:   924 z: 10044
+vector:   975 x:   720 y:   236 z:  5256
+vector:  3905 x:   -80 y:  -400 z:   644
+vector:  7985 x:  7660 y: -3680 z: 16408
+sd:104 mean:6850 size:8
+vector:  7913 x:   484 y:   -84 z:  8564
+vector:  8291 x:   920 y:  -264 z:  8408
+vector: 11009 x:  1312 y:  1464 z: 12280
+vector:  2507 x:   288 y:   320 z:  6456
+vector:  2812 x:  -396 y:  -328 z:   760
+vector:  9340 x:  1132 y:  4872 z:  4496
+vector:  8296 x:  1028 y: -1240 z:  7260
+vector: 11419 x:   492 y:  1572 z: 12344
+sd:101 mean:7698 size:8
+vector:  3037 x: -1284 y:  -452 z:  8036
+vector:  5951 x:  2700 y: -2000 z:  5252
+vector:  9762 x:  2804 y:  -532 z:  6896
+vector:  6841 x:  1056 y:   528 z:  7940
+vector:  8624 x:  -236 y:   736 z:  8696
+vector:  9070 x: -1568 y:  -372 z: 16012
+vector:  8515 x:  2068 y:  -248 z:  8464
+vector:  8523 x:  1380 y:   704 z:  5396
+vector:  8300 x:   316 y:  -184 z:  8248
+sd:66 mean:7624 size:9
+vector:  8230 x:   668 y:  -216 z:  7984
+vector:  8250 x:   552 y:  -148 z:  8200
+vector:  8277 x:   652 y:  -240 z:  8324
+vector:  8271 x:   548 y:   -80 z:  8280
+vector:  8358 x:   668 y:  -116 z:  8192
+vector:  8266 x:   512 y:  -128 z:  8216
+vector:  8065 x:   760 y:   -20 z:  8252
+vector:  8275 x:   396 y:  -256 z:  8252
+sd:2 mean:8249 size:8
+vector:  8271 x:   560 y:  -204 z:  8296
+vector:  7985 x:   636 y:  -188 z:  8276
+vector:  8272 x:   544 y:  -180 z:  8428
+vector:  8446 x:   668 y:  -168 z:  8224
+vector:  8445 x:   588 y:  -152 z:  8252
+vector:  8251 x:   596 y:  -160 z:  8208
+vector:  8324 x:   752 y:  -144 z:  8292
+vector:  8280 x:   564 y:  -148 z:  8244
+sd:4 mean:8284 size:8
+vector:  8224 x:   616 y:  -100 z:  8412
+vector:  8240 x:   528 y:  -124 z:  8316
+vector:  8382 x:   644 y:  -236 z:  7956
+vector:  7999 x:   516 y:  -132 z:  8072
+vector:  8290 x:   548 y:  -128 z:  8248
+vector:  8310 x:   532 y:  -112 z:  8280
+vector:  8290 x:   504 y:  -104 z:  8176
+vector:  8303 x:   668 y:   -92 z:  8432
+vector:  8294 x:   640 y:  -148 z:  8296
+sd:3 mean:8259 size:9
+vector:  8393 x:   572 y:  -176 z:  8180
+vector:  8322 x:   600 y:  -152 z:  8264
+vector:  8224 x:   636 y:  -120 z:  8292
+vector:  8315 x:   628 y:  -144 z:  8272
+vector:  8362 x:   572 y:  -160 z:  8012
+vector:  8378 x:   520 y:   -92 z:  8296
+vector:  8035 x:   584 y:  -176 z:  8296
+vector:  8236 x:   512 y:  -204 z:  8360
+sd:3 mean:8283 size:8
+vector:  8359 x:   756 y:  -224 z:  8044
+vector:  8324 x:   572 y:  -128 z:  8392
+vector:  8333 x:   640 y:  -120 z:  8284
+vector:  7967 x:   608 y:  -160 z:  8164
+vector:  8301 x:   636 y:  -228 z:  8196
+vector:  8457 x:   580 y:  -120 z:  8388
+vector:  8350 x:   532 y:  -116 z:  8296
+vector:  7965 x:   596 y:  -156 z:  8444
+sd:5 mean:8257 size:8
+vector:  8142 x:   576 y:  -160 z:  8276
+vector:  8171 x:   544 y:  -160 z:  8184
+vector:  8177 x:   628 y:   -48 z:  8216
+vector:  8341 x:   612 y:  -256 z:  8272
+vector:  8358 x:   644 y:  -116 z:  8212
+vector:  8232 x:   552 y:  -172 z:  8240
+vector:  8246 x:   596 y:  -224 z:  8204
+vector:  7811 x:   596 y:  -140 z:  8392
+vector:  8446 x:   568 y:  -124 z:  8044
+sd:5 mean:8213 size:9
+vector:  8338 x:   316 y:  -192 z:  7980
+vector:  8255 x:   496 y:   -32 z:  8416
+vector:  8048 x:   736 y:  -156 z:  8292
+vector:  8341 x:   304 y:  -156 z:  8296
+vector:  8313 x:   628 y:  -120 z:  8220
+vector:  8431 x:   620 y:  -180 z:  8264
+vector:  8324 x:   564 y:  -132 z:  8352
+vector:  8135 x:   564 y:  -316 z:  8240
+sd:3 mean:8273 size:8
+vector:  8417 x:   628 y:  -148 z:  7992
+vector:  8240 x:   592 y:  -184 z:  8312
+vector:  8376 x:   744 y:  -180 z:  8440
+vector:  8254 x:   760 y:  -168 z:  8388
+vector:  8087 x:   572 y:  -116 z:  8268
+vector:  8447 x:   712 y:  -232 z:  8028
+vector:  8172 x:   584 y:  -408 z:  8432
+vector:  8459 x:   752 y:  -184 z:  8356
+sd:4 mean:8306 size:8
+vector:  8208 x:   492 y:  -180 z:  8384
+vector:  7982 x:   556 y:  -396 z:  8296
+vector:  8256 x:   540 y:  -156 z:  8252
+vector:  8413 x:   544 y:  -172 z:  8320
+vector:  8357 x:   296 y:  -184 z:  8288
+vector:  8386 x:   564 y:  -160 z:  8368
+vector:  8300 x:   548 y:  -188 z:  8256
+vector:  8347 x:   620 y:  -124 z:  8312
+vector:  8419 x:   668 y:  -168 z:  8284
+sd:4 mean:8296 size:9
+vector:  8463 x:   548 y:  -132 z:  8416
+vector:  8370 x:   528 y:  -192 z:  8084
+vector:  8029 x:   548 y:  -208 z:  8312
+vector:  8097 x:   556 y:   -96 z:  8220
+vector:  8230 x:   272 y:    -4 z:  8312
+vector:  8293 x:   676 y:  -204 z:  8276
+vector:  8226 x:   528 y:  -168 z:  8220
+vector:  8344 x:   600 y:  -144 z:  8424
+sd:4 mean:8256 size:8
+vector:  8041 x:   760 y:  -224 z:  8188
+vector:  8051 x:   344 y:  -144 z:  8300
+vector:  8215 x:   764 y:  -224 z:  8000
+vector:  8247 x:   648 y:  -176 z:  8112
+vector:  8343 x:   320 y:  -128 z:  8388
+vector:  8344 x:   572 y:  -376 z:  8444
+vector:  8264 x:   628 y:   -64 z:  8300
+vector:  8299 x:   568 y:  -120 z:  8156
+sd:3 mean:8225 size:8
+vector:  8454 x:   652 y:  -188 z:  8168
+vector:  8351 x:   524 y:  -164 z:  8304
+vector:  8372 x:   592 y:  -156 z:  8200
+vector:  8419 x:   568 y:  -208 z:  8260
+vector:  8026 x:   588 y:  -140 z:  8224
+vector:  8044 x:   660 y:  -184 z:  8228
+vector:  7985 x:   556 y:  -148 z:  8292

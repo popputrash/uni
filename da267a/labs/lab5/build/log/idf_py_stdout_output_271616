@@ -1,0 +1,504 @@
+Command: /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/minipops/uni/da267a/labs/lab5/build/lab5.elf /home/minipops/uni/da267a/labs/lab5/build/bootloader/bootloader.elf -m '/home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/opt/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  1d029ede4...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d64bc
+file: "./main/i2c.c" line 74
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d64bc:0x3ffb4030 0x400d6640:0x3ffb4050 0x400d634b:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 1d029ede4
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  1d029ede4...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:   346 x:   776 y:  -240 z:  8204vector:   355 x:   860 y:  -236 z:  8264vector:   334 x:   724 y:  -212 z:  8192vector:   416 x:   796 y:  -184 z:  8208vector:   515 x:   816 y:  -220 z:  8176vector:   333 x:   812 y:  -508 z:  8256vector:   292 x:   780 y:  -140 z:  8328vector:   272 x:   940 y:  -204 z:  8216vector:   313 x:   792 y:  -176 z:  8444vector:   300 x:   860 y:  -188 z:  8272vector:   305 x:   520 y:  -220 z:  8024vector:   347 x:   856 y:  -232 z:  8308vector:   444 x:   748 y:  -436 z:  8272vector:   295 x:   828 y:  -208 z:  8344vector:   287 x:   820 y:  -492 z:  8112vector:   282 x:   808 y:  -232 z:  8312vector:   337 x:   800 y:  -240 z:  8104vector:   227 x:   856 y:  -480 z:  8276vector:   334 x:   788 y:  -456 z:  8156vector:   283 x:   796 y:  -124 z:  8144vector:   364 x:   856 y:  -196 z:  8400vector:   349 x:   616 y:  -356 z:  8432vector:   306 x:   796 y:  -196 z:  8308vector:   240 x:   776 y:  -180 z:  8312vector:    88 x:   800 y:  -164 z:  8244vector:   344 x:   820 y:   -32 z:  8112vector:   320 x:   788 y:  -236 z:  8428vector:   380 x:   820 y:  -184 z:  8444vector:   228 x:   836 y:  -164 z:  8228vector:   103 x:   856 y:  -184 z:  8388vector:   221 x:   544 y:  -184 z:  8552vector:   285 x:   880 y:  -216 z:  8324vector:   263 x:   788 y:  -212 z:  8240vector:   324 x:   756 y:  -448 z:  8184vector:   392 x:   796 y:  -188 z:  8064vector:   328 x:   860 y:  -164 z:  8436vector:   105 x:   852 y:  -212 z:  8112vector:   529 x:  1016 y:  -232 z:  8200vector:   379 x:   796 y:  -200 z:  8224vector:   315 x:   856 y:  -168 z:  8440vector:   382 x:   864 y:   -20 z:  8396vector:   302 x:   752 y:  -216 z:  8244vector:   484 x:   768 y:  -152 z:  8288vector:   287 x:   784 y:    -4 z:  8268vector:   308 x:   852 y:  -504 z:  8236vector:   328 x:   788 y:  -176 z:  8220vector:   264 x:   772 y:  -212 z:  8064vector:   272 x:   776 y:  -152 z:  8692vector:   320 x:   860 y:  -236 z:  8364vector:   460 x:   756 y:   -60 z:  8260vector:   383 x:   604 y:  -328 z:  8284vector:   393 x:   812 y:  -132 z:  8184vector:   262 x:   840 y:  -168 z:  8248vector:  8659 x:   620 y: -1076 z:  8344vector:    78 x:  1076 y:   -92 z:  8324vector:   331 x:   588 y:  -316 z:  8340vector:   317 x:   740 y:  -216 z:  8404vector:   342 x:   304 y:  -300 z:  8208vector:   262 x:   364 y:  -236 z:  8196vector:    30 x:   276 y:  -164 z:  8168vector:   319 x:   288 y:  -200 z:  8276vector:   360 x:   556 y:  -464 z:  8292vector:   207 x:   668 y:  -236 z:  8236vector:   282 x:   360 y:  -184 z:  8328vector:   421 x:   484 y:  -188 z:  8268vector:    52 x:   264 y:  -140 z:  8200vector:   457 x:   600 y:  -332 z:  8428vector:   320 x:   560 y:  -444 z:  8340vector:   378 x:   656 y:  -216 z:  8240vector:   347 x:   692 y:  -188 z:  7996vector:   508 x:   584 y:  -464 z:  8352vector:   393 x:   724 y:  -132 z:  7944vector:   492 x:   588 y:  -164 z:  8232vector:   356 x:   576 y:  -156 z:  8256vector:    20 x:   624 y:  -160 z:  8312vector:    20 x:   608 y:  -156 z:  8272vector:   292 x:   680 y:  -172 z:  8332vector:   333 x:   708 y:  -188 z:  8220vector:   378 x:   620 y:  -200 z:  8220vector:   343 x:   692 y:  -188 z:  8324vector:   287 x:   584 y:  -200 z:  8280vector:   400 x:   664 y:  -232 z:  8260vector:   369 x:   656 y:  -504 z:  8212vector:   476 x:   636 y:  -192 z:  8272vector:   34ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d643e
+file: "./main/i2c.c" line 57
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d643e:0x3ffb4030 0x400d6621:0x3ffb4050 0x400d6346:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 1d029ede4
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  1d029ede4...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:   310 x:   584 y:  -240 z:  8336vector:   298 x:   652 y:  -492 z:  8032vector:   328 x:   632 y:  -220 z:  8444vector:   323 x:   568 y:  -180 z:  8368vector:   321 x:   676 y:  -220 z:  8304vector:   351 x:   612 y:  -228 z:  8136vector:   396 x:   576 y:  -276 z:  8436vector:   355 x:   672 y:  -224 z:  8224vector:   300 x:   584 y:  -248 z:  8392vector:   353 x:   680 y:  -180 z:  8424vector:   281 x:   620 y:  -252 z:  8260vector:   323 x:   596 y:  -164 z:  7952vector:   257 x:   704 y:  -160 z:  8332vector:   419 x:   720 y:  -204 z:  8172vector:   319 x:   672 y:  -228 z:  8360vector:   349 x:   644 y:  -248 z:  8008vector:   398 x:   668 y:  -204 z:  8036vector:   519 x:   696 y:  -224 z:  8184vector:    40 x:   728 y:    -8 z:  8124vector:   337 x:   700 y:  -288 z:  8348vector:   511 x:   704 y:  -464 z:  8064vector:   296 x:   676 y:  -172 z:  8444vector:   304 x:   672 y:  -244 z:  8308vector:    42 x:   644 y:  -188 z:  8592vector:   509 x:   688 y:  -212 z:  8176vector:   368 x:   536 y:  -216 z:  8304vector:   288 x:   636 y:  -276 z:  8324vector:   264 x:   716 y:  -172 z:  8232vector:   433 x:   648 y:  -248 z:  8264vector:   329 x:   620 y:  -216 z:  7960vector:   375 x:   672 y:  -220 z:  8268vector:    81 x:   724 y:  -172 z:  8280vector:   258 x:   676 y:  -164 z:  8196vector:    50 x:   676 y:  -104 z:  8444vector:   275 x:   632 y:  -284 z:  8128vector:   248 x:   716 y:  -180 z:  8332vector:   504 x:   720 y:  -208 z:  8432vector:   122 x:   684 y:  -384 z:  8396vector:   518 x:   668 y:  -224 z:  8272vector:   300 x:   672 y:  -112 z:  8152vector:   279 x:   636 y:  -180 z:  8296vector:   371 x:   696 y:  -236 z:  8428vector:   330 x:   668 y:  -112 z:  8368vector:   311 x:   740 y:  -212 z:  8296vector:   356 x:   720 y:  -204 z:  8336vector:   109 x:   612 y:  -164 z:  8280vector:   315 x:   680 y:  -196 z:  8364vector:   303 x:   664 y:  -168 z:  8344vector:   276 x:   664 y:  -236 z:  8388vector:   312 x:   608 y:  -128 z:  8260vector:   303 x:   624 y:  -236 z:  8020vector:   294 x:   624 y:  -244 z:  8088vector:   500 x:   708 y:  -212 z:  8424vector:   266 x:   620 y:  -492 z:  8208vector:   505 x:   616 y:  -216 z:  8276vector:   481 x:   696 y:  -216 z:  8384vector:   302 x:   628 y:  -472 z:  8196vector:   516 x:   516 y:  -192 z:  8208vector:   272 x:   660 y:  -180 z:  8288vector:   425 x:   596 y:  -420 z:  8204vector:    67 x:   712 y:  -248 z:  8356vector:   221 x:   672 y:  -152 z:  8380vector:   500 x:   620 y:  -148 z:  8220vector:   503 x:   636 y:  -208 z:  8336vector:   348 x:   632 y:  -184 z:  8224vector:    96 x:   672 y:  -200 z:  7948vector:   374 x:   636 y:  -236 z:  8212vector:   393 x:   700 y:  -172 z:  8384vector:   372 x:   668 y:  -112 z:  8344vector:   366 x:   604 y:    -8 z:  8272vector:   399 x:   648 y:  -256 z:  8216vector:   507 x:   696 y:  -352 z:  8416vector:   322 x:   700 y:  -188 z:  8288vector:    58 x:   692 y:  -176 z:  8296vector:   316 x:   664 y:  -144 z:  8384vector:   299 x:   684 y:  -208 z:  8172vector:    26 x:   956 y:  -224 z:  7944vector:   307 x:   660 y:  -260 z:  8232vector:   315 x:   584 y:   -52 z:  8432vector:   284 x:   764 y:  -252 z:  8224vector:   508 x:   668 y:  -140 z:  8212vector:   285 x:   696 y:  -184 z:  8400vector:   244 x:   672 y:  -344 z:  8224vector:   334 x:   584 y:  -176 z:  8288vector:   290 x:   656 y:  -176 z:  8296vector:   353 x:   684 y:  -232 z:  8260vector:    63 x:   720 y:  -192 z:  8364vector:   374 x:   680 y:  -244 z:  7944vector:   289 x:   664 y:  -172 z:  8328vector:   285 x:   616 y:  -200 z:  8244vector:   343 x:   572 y:  -228 z:  8284vector:   267 x:   672 y:  -148 z:  8376vector:    79 x:   668 y:  -200 z:  8232vector:   392 x:   636 y:  -140 z:  8212vector:   494 x:   696 y:  -148 z:  8048vector:   279 x:   708 y:  -184 z:  8240vector:   313 x:   660 y:  -172 z:  7964vector:   298 x:   724 y:  -192 z:  8220vector:   313 x:   632 y:  -136 z:  8220vector:   345 x:   656 y:  -148 z:  8348vector:   253 x:   648 y:  -132 z:  8224vector:   298 x:   708 y:  -216 z:  8252vector:    79 x:   708 y:  -228 z:  8328vector:   245 x:   712 y:  -168 z:  8228vector:   398 x:   684 y:   -20 z:  8444vector:   337 x:   636 y:  -188 z:  8024vector:   326 x:   700 y:  -240 z:  8184vector:   253 x:   608 y:  -168 z:  8380vector:   238 x:   724 y:  -104 z:  8388vector:   301 x:   584 y:  -164 z:  8024vector:   310 x:   636 y:  -220 z:  8288vector:   324 x:   620 y:  -456 z:  8180vector:    85 x:   620 y:  -420 z:  8032vector:   366 x:   636 y:  -176 z:  8248vector:   472 x:   632 y:  -200 z:  8436vector:   263 x:   680 y:  -220 z:  8212vector:   295 x:   544 y:  -168 z:  8176vector:   345 x:   608 y:  -180 z:  8120vector:   246 x:   652 y:  -196 z:  8184vector:   262 x:   664 y:  -208 z:  8384vector:   256 x:   720 y:  -208 z:  8376vector:   377 x:   572 y:  -204 z:  7992vector:   268 x:   616 y:  -200 z:  8260vector:   283 x:   644 y:  -268 z:  8240vector:   306 x:   724 y:  -248 z:  8316vector:   336 x:   720 y:   -96 z:  7956vector:   364 x:   684 y:  -188 z:  8420vector:   324 x:   600 y:   -20 z:  8120vector:   358 x:   724 y:  -260 z:  8356vector:   213 x:   688 y:  -228 z:  8244vector:   374 x:   636 y:  -152 z:  8340vector:   381 x:   668 y:  -168 z:  7996vector:   294 x:   668 y:  -484 z:  8340vector:   532 x:   752 y:  -152 z:  8364vector:   379 x:   556 y:   -96 z:  8376vector:   363 x:   588 y:    -4 z:  8552vector:   319 x:   580 y:  -164 z:  8260vector:   323 x:   568 y:  -208 z:  8236vector:   320 x:   644 y:  -468 z:  8404vector:   281 x:   720 y:   -28 z:  8436vector: 65511 x:   644 y:  -236 z:  8416vector:   318 x:   632 y:  -152 z:  8380vector:   264 x:   660 y:  -276 z:  8496vector:   299 x:   624 y:   -28 z:  8204vector:    72 x:   692 y:  -480 z:  8328vector:   301 x:   600 y:  -136 z:  8256vector:   277 x:   624 y:  -248 z:  8276vector:   297 x:   608 y:  -168 z:  8236vector:   270 x:   700 y:  -160 z:  8204vector:   329 x:   704 y:  -132 z:  7952vector:   356 x:   640 y:  -224 z:  8240vector:   335 x:   624 y:  -244 z:  8032vector:    42 x:   664 y:  -464 z:  8416vector:    23 x:   628 y:  -160 z:  8192vector:   303 x:   692 y:  -168 z:  8356vector:   217 x:   656 y:  -196 z:  8260vector:   267 x:   588 y:  -212 z:  8296vector:   319 x:   620 y:  -224 z:  8280vector:    51 x:   660 y:  -208 z:  8288vector:   352 x:   608 y:  -212 z:  8248vector:   358 x:   600 y:  -220 z:  8220vector:   320 x:   624 y:  -176 z:  8268vector:   512 x:   648 y:  -220 z:  8252vector:   338 x:   652 y:  -220 z:  8176vector:   316 x:   692 y:  -472 z:  8408vector:   248 x:   660 y:    -8 z:  8220vector:   370 x:   704 y:  -232 z:  8244vector:   388 x:   660 y:  -200 z:  8432vector:   259 x:   620 y:  -236 z:  8332vector:   301 x:   568 y:  -236 z:  8276vector:   523 x:   668 y:  -232 z:  8380vector:   388 x:   652 y:  -184 z:  8196vector:   351 x:   696 y:  -156 z:  8432vector:   307 x:   736 y:  -144 z:  8276vector:   279 x:   688 y:   -80 z:  8244vector:   285 x:   632 y:  -220 z:  8380vector:   260 x:   552 y:  -188 z:  8320vector:   368 x:   640 y:  -168 z:  8296vector:   314 x:   620 y:  -448 z:  8164vector:   277 x:   668 y:  -228 z:  8340vector:   301 x:   712 y:  -228 z:  8388vector:   320 x:   684 y:  -140 z:  8272vector:   238 x:   704 y:  -216 z:  8276vector:   300 x:   712 y:  -184 z:  8440vector:   298 x:   668 y:  -220 z:  8276vector:   273 x:   656 y:  -192 z:  8180vector:   317 x:   764 y:  -212 z:  8040vector:   376 x:   616 y:  -148 z:  8300vector:   284 x:   592 y:  -188 z:  8408vector:   299 x:   620 y:  -152 z:  8288vector:   361 x:   600 y:  -176 z:  7964vector:     6 x:   656 y:  -120 z:  8056vector:     9 x:   560 y:  -120 z:  8264vector:   329 x:   584 y:   -92 z:  8068vector:   356 x:   636 y:  -212 z:  8280vector:    54 x:   688 y:   -16 z:  8280vector:   279 x:   732 y:  -248 z:  8348vector:   415 x:   752 y:  -156 z:  8216vector:   515 x:   620 y:  -232 z:  8240vector:   226 x:   664 y:  -176 z:  8260vector:   303 x:   604 y:   -12 z:  8036vector:   338 x:   620 y:  -160 z:  8240vector:   338 x:   512 y:  -156 z:  8316vector:   290 x:   880 y:  -440 z:  8328vector:   121 x:   672 y:  -212 z:  8104vector:   234 x:   640 y:  -208 z:  8128vector:   509 x:   612 y:  -432 z:  8320vector:   328 x:   700 y:  -464 z:  8572vector:   353 x:   624 y:  -236 z:  8252vector:   295 x:   644 y:  -284 z:  8360vector:   320 x:   696 y:  -460 z:  8200vector:    41 x:   524 y:  -180 z:  8316vector:   444 x:   588 y:  -152 z:  7996vector:   224 x:   704 y:  -252 z:  8332vector:   298 x:   736 y:  -136 z:  8404vector:   347 x:   600 y:  -228 z:  8016vector:   489 x:   612 y:  -196 z:  8012vector:   331 x:   668 y:  -352 z:  8168vector:   310 x:   596 y:  -208 z:  8104vector:   340 x:   684 y:  -168 z:  8096vector:   321 x:   580 y:  -256 z:  8408vector:   393 x:   644 y:    -4 z:  8000vector:   310 x:   708 y:  -240 z:  8212vector:   276 x:   672 y:  -136 z:  8044vector:   498 x:   684 y:  -112 z:  8200vector:   291 x:   720 y:  -212 z:  8116vector:   297 x:   480 y:  -184 z:  8316vector:    39 x:   664 y:  -280 z:  8268vector:   352 x:   736 y:  -412 z:  8036vector:   422 x:   656 y:  -184 z:  7992vector:   315 x:   584 y:  -280 z:  7972vector:   393 x:   556 y:  -372 z:  8476vector:   348 x:   668 y:  -420 z:  7968vector:   310 x:   600 y:  -168 z:  8436vector:   398 x:   636 y:  -176 z:  8336vector:   493 x:   620 y:  -248 z:  8436vector:   263 x:   648 y:    -4 z:  8164vector:    81 x:   704 y:  -508 z:  8352vector:   415 x:   584 y:   -56 z:  7952vector:   255 x:   704 y:  -256 z:  8180vector:   476 x:   612 y:  -224 z:  8424vector:   249 x:   716 y:  -244 z:  8104vector:   519 x:   648 y:   -16 z:  8172vector:   295 x:   636 y:  -184 z:  7960vector:   479 x:   724 y:  -240 z:  8284vector:   290 x:   700 y:  -248 z:  8308vector:    23 x:   660 y:  -172 z:  7948vector:   270 x:   660 y:  -184 z:  8400vector:    21 x:   560 y:  -280 z:  7948vector:   312 x:   616 y:  -160 z:  8260vector:   127 x:   584 y:  -456 z:  8152vector:   289 x:   672 y:  -144 z:  8376vector:   541 x:   716 y:  -248 z:  8232vector:   281 x:   932 y:   -16 z:  8424vector:   299 x:   572 y:   -40 z:  7976vector:   268 x:   720 y:  -184 z:  8236vector:    99 x:   664 y:  -252 z:  8208vector:   354 x:   660 y:  -212 z:  8116vector:   341 x:   736 y:  -244 z:  7972vector:   301 x:   684 y:    -8 z:  8196vector:   330 x:   644 y:  -260 z:  8316vector:   351 x:   684 y:  -160 z:  8340vector:   249 x:   540 y:  -156 z:  8192vector:   349 x:   520 y:  -196 z:  8224vector:   454 x:   672 y:  -184 z:  8308vector:   390 x:   748 y:  -204 z:  8284vector:   431 x:   636 y:  -228 z:  8340vector:   294 x:   712 y:  -184 z:  8016vector:   510 x:   668 y:   -52 z:  8476vector:   301 x:   692 y:  -248 z:  8204vector:   351 x:   560 y:   -44 z:  8336vector:   312 x:   672 y:  -152 z:  8436vector:   305 x:   692 y:  -180 z:  8352vector:    67 x:   660 y:  -224 z:  8232vector:   347 x:   680 y:  -252 z:  8396vector:   197 x:   644 y:  -448 z:  8364vector:   327 x:   644 y:  -216 z:  8272vector:   341 x:   648 y:  -156 z:  8372vector:   292 x:   644 y:  -220 z:  8232vector:   306 x:   716 y:  -196 z:  8192vector:   293 x:   616 y:   -12 z:  8280vector:   518 x:   736 y:   -20 z:  8236vector:   393 x:   656 y:  -196 z:  8216vector:   277 x:   632 y:  -292 z:  8436vector:   524 x:   664 y:   -92 z:  8240vector:   325 x:   728 y:  -252 z:  8124vector:   356 x:   688 y:  -156 z:  8288vector:   361 x:   612 y:  -124 z:  7972vector:   292 x:   656 y:  -232 z:  8248vector:   482 x:   632 y:  -140 z:  8268vector:   342 x:   684 y:  -156 z:  8244vector:   278 x:   648 y:  -168 z:  8312vector:   392 x:   672 y:  -244 z:  8344vector:   358 x:   688 y:   -28 z:  8260vector:   373 x:   644 y:  -204 z:  8168vector:   310 x:   624 y:  -192 z:  8272vector:   289 x:   624 y:  -108 z:  8176vector:   325 x:   660 y:  -244 z:  8064vector:   343 x:   656 y:  -160 z:  8048vector:   510 x:   588 y:  -212 z:  8296vector:   504 x:   668 y:  -184 z:  8392vector:   357 x:   648 y:  -224 z:  8192vector:   316 x:   636 y:  -252 z:  8040vector:   310 x:   588 y:  -280 z:  8348vector:   247 x:   636 y:  -204 z:  8224vector:   328 x:   644 y:  -500 z:  8388vector:   328 x:   728 y:   -52 z:  8284vector:   271 x:   656 y:  -236 z:  8324vector:   301 x:   724 y:  -196 z:  8324vector:   354 x:   604 y:  -180 z:  8200vector:   296 x:   684 y:  -172 z:  8420vector:   518 x:   648 y:  -148 z:  8228vector:   325 x:   736 y:  -100 z:  8256vector:   354 x:   640 y:  -168 z:  8352vector:   277 x:   692 y:  -492 z:  8148vector:   361 x:   668 y:  -192 z:  8260vector:   318 x:   664 y:  -232 z:  8276vector:   312 x:   668 y:  -244 z:  8220vector:   306 x:   592 y:  -156 z:  8020vector:   483 x:   616 y:  -220 z:  8208vector:   320 x:   612 y:  -244 z:  8164vector:   348 x:   612 y:  -228 z:  8300vector:   411 x:   688 y:  -460 z:  8428vector:   348 x:   648 y:  -176 z:  8412vector:   304 x:   672 y:  -272 z:  8388vector:   488 x:   712 y:   -32 z:  8116vector:   387 x:   520 y:   -24 z:  8292vector:   281 x:   724 y:  -208 z:  8348vector:   324 x:   596 y:  -228 z:  8148vector:   318 x:   700 y:  -232 z:  8696vector:   354 x:   692 y:   -12 z:  8260vector:    79 x:   668 y:   -12 z:  8364vector:   302 x:   596 y:  -256 z:  8388vector:   284 x:   664 y:  -224 z:  8288vector:    17 x:   604 y:  -224 z:  8256vector:   291 x:   696 y:    -4 z:  7956vector:   338 x:   672 y:  -196 z:  8220vector:   317 x:   676 y:  -128 z:  8224vector:   292 x:   648 y:  -364 z:  8104vector:   330 x:   636 y:  -496 z:  8304vector:   479 x:   548 y:  -496 z:  8252vector:   395 x:   640 y:   -20 z:  7940vector:   334 x:   724 y:  -168 z:  8228vector:   354 x:   640 y:  -164 z:  8280vector:   294 x:   540 y:  -220 z:  8308vector:   282 x:   604 y:  -244 z:  8268vector:   511 x:   764 y:  -200 z:  8232vector:   491 x:   656 y:   -20 z:  8352vector:   315 x:   628 y:  -468 z:  8036vector:   242 x:   616 y:  -184 z:  7936vector:   355 x:   696 y:  -152 z:  8188vector:   273 x:   684 y:  -192 z:  8328vector:   354 x:   708 y:  -236 z:  8392vector:   341 x:   612 y:  -160 z:  8356vector:   315 x:   612 y:  -364 z:  8288vector:   327 x:   928 y:  -256 z:  8436vector:   348 x:   632 y:  -224 z:  8260vector:   366 x:   692 y:  -228 z:  8412vector:   340 x:   656 y:  -220 z:  8236vector:   278 x:   712 y:   -16 z:  8308vector:   343 x:   660 y:  -432 z:  7964vector:   312 x:   636 y:  -500 z:  8288vector:   289 x:   624 y:  -140 z:  8292vector:   325 x:   680 y:  -224 z:  8440vector:   399 x:   652 y:  -328 z:  8172vector:   273 x:   616 y:  -144 z:  8264vector:   347 x:   700 y:  -236 z:  8352vector:   277 x:   676 y:  -208 z:  8144vector:   378 x:   728 y:   -12 z:  8436vector:   303 x:   660 y:  -168 z:  8264vector:   503 x:   632 y:  -160 z:  8204vector:   343 x:   576 y:  -208 z:  8380vector:   269 x:   692 y:  -228 z:  8168vector:   255 x:   572 y:  -184 z:  8208vector:   307 x:   632 y:  -232 z:  8232vector:   322 x:   580 y:   -44 z:  8208vector:   448 x:   608 y:  -148 z:  8376vector:   244 x:   716 y:   -72 z:  8368vector:   328 x:   596 y:  -184 z:  8332vector:    98 x:   628 y:  -264 z:  7948vector:   289 x:   616 y:  -120 z:  8312vector:   323 x:   736 y:  -188 z:  8420vector:   348 x:   588 y:   -64 z:  8424vector: 65515 x:   612 y:  -192 z:  8032vector:    57 x:   692 y:  -120 z:  8324vector:   359 x:   640 y:  -160 z:  8300vector:   360 x:   668 y:  -256 z:  8352vector:   404 x:   656 y:  -184 z:  8252vector:    33 x:   676 y:   -12 z:  8128vector:   303 x:   688 y:  -224 z:  8368vector:   378 x:   728 y:  -208 z:  8028vector:   314 x:   720 y:  -228 z:  8228vector:   330 x:   660 y:  -240 z:  8460vector:   339 x:   652 y:  -204 z:  8228vector:   346 x:   644 y:  -152 z:  8444vector:   344 x:   688 y:  -504 z:  8056vector:   342 x:   616 y:  -244 z:  8400vector:   306 x:   580 y:  -232 z:  8332vector:   258 x:   528 y:  -164 z:  8252vector:   486 x:   664 y:  -244 z:  8428vector:   311 x:   724 y:  -212 z:  7988vector:   270 x:   716 y:  -412 z:  8236vector:   374 x:   688 y:  -184 z:  8092vector:   308 x:   580 y:    -4 z:  8184vector:   314 x:   644 y:  -232 z:  8300vector:   224 x:  1300 y:   -48 z:  7988vector:   395 x:   752 y:   -24 z:  8308vector:   342 x:   684 y:  -288 z:  8256vector:   345 x:   568 y:    -8 z:  8308vector:  8624 x:   580 y:  -468 z:  8060vector:  8513 x:  2180 y:   268 z:  8228vector: 65188 x:  1212 y: -1180 z:  8924vector:   119 x:   232 y:   668 z:  8304vector: 64861 x:   536 y:  -256 z:  8440vector:   465 x:   276 y:   328 z:  8292vector:   505 x:   516 y:  -180 z:  7756vector:   508 x:   448 y:   -84 z:  8564vector:  9265 x:   680 y:     0 z:  8400vector:  7201 x:  5756 y:  1120 z:  8376vector:   366 x:  6064 y:  -452 z:  4008vector: 24817 x:  7740 y: -1192 z:   356vector: 22095 x:  7532 y: -1048 z: -4428vector: 21543 x:  6360 y: -1652 z: -6732vector: 20641 x:  4448 y: -1324 z: -6912vector: 20092 x:  4704 y: -1368 z: -7468vector: 21384 x:  1300 y:   732 z: -10460vector: 21607 x:  1192 y:    64 z: -8476vector: 56806 x:   244 y:  -236 z: -8008vector: 56324 x:   492 y:   -92 z: -8708vector: 21126 x:   860 y:  -144 z: -8208vector: 21231 x:   896 y:   128 z: -8784vector: 21388 x:   244 y:  -108 z: -8436vector: 21104 x:   600 y:   -16 z: -8572vector: 57040 x:   684 y:   -68 z: -8328vector: 56935 x:   -80 y:   160 z: -8748vector: 56934 x:    36 y:   328 z: -8700vector: 56951 x:   252 y:    96 z: -8316vector: 56743 x:  -416 y:  -136 z: -8360vector: 56880 x:  -352 y:   220 z: -7988vector: 56936 x:  -124 y:   368 z: -8644vector: 21063 x:  -296 y:   392 z: -8252vector: 21348 x:    76 y:   296 z: -8440vector: 21005 x:   164 y:   464 z: -8240vector: 21222 x:  -148 y:   500 z: -8516vector: 21333 x:    60 y:   308 z: -8668vector: 21053 x:   192 y:   212 z: -8396vector: 21262 x:  -156 y:   328 z: -8664vector: 57149 x:   164 y:   304 z: -8664vector: 57094 x:   -88 y:   264 z: -8592vector: 21449 x:  -496 y:   556 z: -8776vector: 56824 x:  -144 y:   316 z: -8524vector: 21173 x:  -316 y:   336 z: -8420vector: 56628 x:  -236 y:   284 z: -8624vector: 57421 x:   508 y:   444 z: -8480vector: 21260 x:  -104 y:   128 z: -8564vector: 20976 x:  -124 y:    32 z: -8600vector: 21235 x:    84 y:   444 z: -8668vector: 21766 x:  -180 y:   364 z: -8596vector: 21268 x:  -484 y:   236 z: -8400vector: 20604 x:    36 y:   244 z: -8924vector: 20792 x:  -236 y:  -404 z: -8004vector: 43212 x:  -480 y:   180 z: -8176vector: 43176 x:  -248 y:    60 z: -8456vector: 43042 x:   -64 y:  -208 z: -9180vector: 20836 x:  -300 y:  -148 z: -8660vector: 20407 x:  -320 y:    44 z: -8304vector: 56343 x: -1500 y:   408 z: -9192vector: 24890 x:  2332 y:  -892 z: -4764vector: 62962 x:  7604 y: -2356 z:   676vector: 63430 x:  4148 y: -2696 z:  5360vector: 63139 x:  4764 y: -4296 z:  9340vector: 64584 x:  1812 y: -2520 z:  8248vector: 65089 x:  2324 y: -1460 z:  8988vector: 64793 x:  1252 y: -1596 z:  8508vector: 64949 x:   960 y:  -992 z:  8436vector: 65493 x:   588 y: -1020 z:  7836vector:   148 x:   820 y:  -368 z:  8092vector:    80 x:   736 y:  -356 z:  8356vector:   117 x:   688 y:  -444 z:  8268vector:   169 x:   644 y:  -440 z:  8324vector:   144 x:   656 y:  -388 z:  7956vector:   138 x:   676 y:  -320 z:  8352vector:   259 x:   624 y:  -304 z:  8244vector:   214 x:   624 y:  -332 z:  8160vector:   135 x:   612 y:  -436 z:  8372vector:    49 x:   632 y:  -308 z:  8364vector:   198 x:   656 y:  -420 z:  8024vector:   191 x:  -152 y:  -140 z:  8228vector:   497 x:   636 y:  -504 z:  8436vector:   255 x:  1316 y:  -228 z:  8304vector:   294 x:  1260 y:   -12 z:  8304vector:   387 x:  1124 y:  -308 z:  8244vector:   327 x:  1168 y:   -20 z:  8172vector:    73 x:  1120 y:    -8 z:  8276vector:   266 x:  1164 y:  -248 z:  8072vector:   253 x:  1176 y:  -276 z:  8308vector:   349 x:  1172 y:  -252 z:  7988vector:   494 x:  1104 y:   -16 z:  7956vector:   455 x:  1112 y:  -172 z:  8040vector:   524 x:  1180 y:  -236 z:  8176vector:   316 x:  1104 y:  -248 z:  8264vector:   301 x:  1188 y:  -208 z:  8044vector:   110 x:  1132 y:   -16 z:  8404vector:    68 x:  1196 y:  -132 z:  8212vector:    46 x:  1036 y:  -192 z:  8436vector:   363 x:  1136 y:  -216 z:  8432vector:   405 x:  1200 y:   -36 z:  8128vector:   251 x:  1448 y:  -256 z:  8080vector:   344 x:  1120 y:  -212 z:  8180vector:   443 x:  1196 y:  -396 z:  8180vector:   355 x:  1208 y:  -224 z:  8008vector:   315 x:  1204 y:  -488 z:  8200vector:   330 x:  1172 y:  -164 z:  8408vector:   281 x:  1132 y:  -464 z:  8220vector:   321 x:  1272 y:  -436 z:  7940vector:   284 x:  1100 y:  -268 z:  8304vector:   304 x:  1124 y:  -196 z:  8352vector:   295 x:  1260 y:  -168 z:  8300vector: 10006 x:  1172 y:  -264 z:  7992vector: 65416 x:  1048 y:  -184 z:  7784vector:   361 x:   660 y:  -204 z:  8336vector:   356 x:   632 y:  -188 z:  8232vector:   287 x:   616 y:  -192 z:  8216vector:   316 x:   632 y:  -260 z:  8364vector:   489 x:   668 y:   -24 z:  8096vector:   278 x:   600 y:  -176 z:  8300vector:   331 x:   668 y:  -204 z:  8264vector:   360 x:   648 y:  -252 z:  8372vector:   368 x:   692 y:   -92 z:  8068vector:   499 x:   704 y:  -168 z:  8212vector:   525 x:   656 y:  -168 z:  8408vector: 65523 x: -2648 y:     4 z:  6020vector: 64740 x: -1624 y:  -568 z:  8348vector:   163 x:  1048 y:  -200 z:  8452vector:   377 x:   976 y:    -4 z:  8368vector:   172 x:   576 y:   -56 z:  8220vector:   296 x:   692 y:  -188 z:  8436vector:   294 x:   704 y:  -204 z:  8388vector:   355 x:   660 y:  -200 z:  8292vector:   300 x:   524 y:  -176 z:  8432vector:  8643 x:   648 y:   -24 z: 13584vector:   328 x:  -256 y:  -436 z:  8236vector:   282 x:   664 y:  -180 z:  8228vector:    24 x:   680 y:  -212 z:  8248vector:   338 x:   620 y:  -232 z:  8432vector:   309 x:   540 y:  -188 z:  7940vector:   303 x:   892 y:  -128 z:  8268vector:   403 x:   540 y:  -112 z:  8372vector:   350 x:   528 y:  -204 z:  8336vector:   329 x:   668 y:  -224 z:  8032vector:   290 x:   684 y:  -156 z:  8260vector:   309 x:   716 y:  -216 z:  7936vector:   298 x:   596 y:  -240 z:  8348vector:   318 x:   684 y:  -216 z:  8216vector:    73 x:   608 y:  -272 z:  8220vector:   331 x:   628 y:  -180 z:  8236vector:   383 x:   672 y:  -228 z:  7972vector:   335 x:   696 y:   -84 z:  8312vector:   374 x:   596 y:  -124 z:  8204vector:   520 x:   736 y:  -160 z:  8352vector:   386 x:   704 y:  -252 z:  8212vector:   326 x:   584 y:  -188 z:  8332vector:   315 x:   660 y:  -200 z:  7948vector:   330 x:   756 y:  -172 z:  8304vector:   291 x:   572 y:  -220 z:  8136vector:   239 x:   648 y:  -188 z:  8244vector:   305 x:   316 y:  -228 z:  8268vector:   339 x:   720 y:  -212 z:  8192vector:   315 x:   660 y:  -320 z:  8096vector:   300 x:   668 y:  -108 z:  8236vector: 65329 x:   596 y:  -252 z:  8240vector:   505 x:   552 y:  -144 z:  8372vector:   349 x:   556 y:  -176 z:  8368vector:   296 x:   760 y:  -296 z:  8280vector:   284 x:   696 y:  -128 z:  8232vector:   441 x:   700 y:  -128 z:  8412vector:   396 x:   744 y:  -244 z:  8220vector:   386 x:   264 y:    -8 z:  8264vector:   479 x:   956 y:   -36 z:  8384vector:   326 x:   620 y:  -176 z:  8300vector:    52 x:   684 y:  -208 z:  8572vector:   294 x:   916 y:  -144 z:  8212vector:   324 x:   620 y:  -144 z:  8196vector:   288 x:   568 y:  -200 z:  8220vector:   258 x:   636 y:  -188 z:  8220vector:   327 x:   664 y:  -252 z:  8312vector:   345 x:   648 y:  -120 z:  8420vector:   300 x:   652 y:  -220 z:  8156vector:   377 x:   752 y:  -196 z:  8328vector:   284 x:   592 y:  -152 z:  8324vector:   299 x:   692 y:  -208 z:  8308vector:   377 x:   656 y:  -188 z:  8272vector:   285 x:   680 y:  -224 z:  8040vector:   322 x:   680 y:  -232 z:  8300vector:   357 x:   680 y:  -184 z:  8180vector:   311 x:   712 y:  -228 z:  8220vector:   432 x:   744 y:  -120 z:  8056vector:    64 x:   636 y:   -20 z:  8172vector:   180 x:   676 y:  -168 z:  8136vector:   312 x:   664 y:  -164 z:  7988vector:   375 x:   600 y:  -108 z:  8216vector:   282 x:   648 y:  -224 z:  8280vector:   342 x:   684 y:  -144 z:  8236vector:   387 x:   648 y:  -172 z:  8112vector:   396 x:   668 y:  -212 z:  8212vector:   343 x:   732 y:  -208 z:  8216vector:   337 x:   624 y:  -164 z:  8208vector:   284 x:   520 y:  -480 z:  8216vector:   326 x:   628 y:  -172 z:  8380vector:   347 x:   716 y:  -208 z:  7964vector:   433 x:   676 y:  -224 z:  8196vector:   346 x:   620 y:  -216 z:  8388vector:   314 x:   632 y:  -252 z:  8344vector:   309 x:   564 y:  -224 z:  8228vector:   329 x:   728 y:  -220 z:  8248vector:   283 x:   668 y:  -184 z:  8284vector:   336 x:   612 y:  -156 z:  8044vector:   320 x:   680 y:  -164 z:  8180vector:   344 x:   712 y:  -144 z:  8260vector: 65484 x:   620 y:  -244 z:  8200vector:  8964 x:  1652 y:   336 z:  8264vector: 61545 x:  -712 y: -5112 z:  8724vector: 56151 x: -12392 y:  2712 z:  3040vector: 19865 x: -5068 y:    28 z: -1984vector: 17936 x: -5456 y:  2048 z: -8684vector: 42144 x: -2300 y:  -172 z: -6304vector: 20936 x:  -344 y:   -96 z: -8668vector: 42522 x:  -440 y:  -412 z: -7540vector: 44147 x:  -332 y:  -636 z: -6096vector: 40293 x: -2620 y:  -624 z: -7456vector: 19382 x: -10960 y:  1248 z: -4300vector: 21135 x: -6796 y:  2048 z:   944vector: 10629 x: -4004 y: -2900 z:  6100vector:  6250 x:  6808 y:  -304 z: 12180vector: 65029 x:  3980 y:  1244 z:  8644vector:  1057 x: -1168 y:   200 z:  7308vector:   121 x:   -44 y:  1960 zESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d643e
+file: "./main/i2c.c" line 57
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d643e:0x3ffb4030 0x400d6610:0x3ffb4050 0x400d6346:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 1d029ede4
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  1d029ede4...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:   316 x:   668 y:  -184 z:  8220vector:   193 x:   620 y:  -164 z:  8252vector:   299 x:   700 y:  -240 z:  8288vector:   454 x:   732 y:  -228 z:  8228vector:   472 x:   600 y:  -152 z:  8280vector:   381 x:   760 y:  -140 z:  8092vector:   194 x:   608 y:   -16 z:  8424vector:   340 x:   668 y:  -440 z:  8308vector:   413 x:   704 y:  -172 z:  8100vector:   361 x:   632 y:  -192 z:  8236vector:   380 x:   684 y:  -144 z:  8432vector:   336 x:   968 y:  -240 z:  7740vector:    70 x:   728 y:  -456 z:  8404vector:   370 x:   732 y:  -104 z:  8204vector:   364 x:   688 y:  -328 z:  8028vector:   389 x:   704 y:  -120 z:  8428vector:    14 x:   576 y:  -284 z:  8416vector:   346 x:   636 y:  -176 z:  8280vector:   295 x:   748 y:    -4 z:  8316vector:   312 x:   696 y:  -204 z:  7980vector:   314 x:   620 y:   -20 z:  8192vector:   386 x:   716 y:  -264 z:  7936vector:   328 x:   672 y:  -196 z:  8084vector:   300 x:   596 y:  -256 z:  8252vector:   491 x:   692 y:  -240 z:  8272vector:   321 x:   616 y:  -164 z:  8168vector:   346 x:   640 y:  -216 z:  8276vector:   267 x:   644 y:  -216 z:  8240vector:   411 x:   656 y:  -384 z:  8260vector:    10 x:  1128 y:   -84 z:  8268vector: 26476 x:  -140 y:  -456 z:  8284vector: 60975 x: -2460 y:   180 z:  6872vector: 57673 x: -8040 y:   244 z:  4788vector: 41813 x: -7692 y:   228 z:  1476vector: 41335 x: -7428 y:  -596 z: -2448vector: 18863 x: -5500 y:  -528 z: -5612vector: 19507 x: -2604 y:    16 z: -8184vector: 19930 x: -2060 y:   188 z: -6556vector: 20312 x: -2044 y:   508 z: -8508vector: 20175 x: -1612 y:   440 z: -7804vector: 19925 x: -1932 y:   788 z: -8316vector: 19975 x: -1512 y:   648 z: -7700vector: 19709 x: -1440 y:   792 z: -7868vector: 20017 x: -1340 y:   820 z: -7916vector: 20106 x: -1748 y:   912 z: -8216vector: 19848 x: -1608 y:   676 z: -7632vector: 20420 x: -1708 y:   604 z: -7880vector: 20298 x: -2128 y:   668 z: -7760vector: 20385 x: -2264 y:   600 z: -7944vector: 20098 x: -2256 y:   840 z: -8256vector: 19519 x: -1640 y:   980 z: -7920vector: 20031 x: -2120 y:   904 z: -8336vector: 21212 x: -2164 y:   560 z: -8108vector: 21389 x: -2628 y:    52 z: -5420vector: 58569 x: -4444 y:  1392 z:   120vector: 25436 x: -3244 y: -1444 z:  7608vector: 24012 x: -2888 y:  -732 z: 12532vector:    45 x:  -748 y: -1048 z:  7752vector:  8299 x: -1688 y:  -548 z:  8336vector:  8133 x:  1096 y:  -472 z:  8160vector:  8334 x:  1048 y:   472 z:  8316vector:   260 x:   716 y:  -144 z:  8240vector:   390 x:   660 y:  -888 z:  8204vector:    42 x:   636 y:   -40 z:  8004vector:   227 x:   680 y:  -224 z:  8296vector:  8688 x:   696 y: -2760 z:  8192vector:   592 x:  1764 y:    24 z:  8528vector: 15861 x:  2304 y:   320 z: 14412vector:  6805 x:  2952 y:  2124 z: 15012vector: 35897 x:  2368 y:   704 z: -5524vector: 17019 x: -3400 y:   672 z: -6664vector:   295 x:  1496 y:  3692 z: 27844vector:  8381 x:  1040 y:   452 z:  5660vector:  7909 x:  1336 y:   220 z:  7816vector:  7468 x:   400 y: -2044 z:  8276vector:   296 x:   764 y:   -40 z:  4596vector:   256 x:   752 y:  -188 z:  8432vector:   289 x:   736 y:  -264 z:  8332vector:   347 x:   704 y:  -172 z:  8284vector:   363 x:   716 y:  -768 z:  7980vector:   295 x:   696 y:  -164 z:  8188vector:   387 x:   552 y:  -200 z:  8404vector:   292 x:   624 y:  -180 z:  8204vector:   356 x:   716 y:  -384 z:  8220vector:   126 x:   588 y:  -172 z:  8204vector:   316 x:   584 y:   -12 z:  8252vector:   270 x:   716 y:  -180 z:  7936vector:   342 x:   728 y:  -424 z:  8352vector:    63 x:   696 y:  -220 z:  8012vector:   310 x:   668 y:  -312 z:  8992vector:   293 x:   528 y:  -224 z:  8020vector:   364 x:   632 y:  -244 z:  7952vector:   247 x:   628 y:  -256 z:  8384vector:   520 x:   636 y:  -232 z:  8348vector:   347 x:   752 y:  -216 z:  8380vector:   290 x:   532 y:  -472 z:  8348vector:   309 x:   696 y:  -216 z:  8056vector:   311 x:   600 y:  -180 z:  8276vector:   373 x:   588 y:  -180 z:  8272vector:   338 x:   656 y:  -192 z:  8228vector:   144 x:   612 y:  -132 z:  8144vector:   476 x:   648 y:   -40 z:  8292vector:   520 x:   636 y:  -168 z:  8224vector:   229 x:   608 y:  -128 z:  8288vector:   178 x:   728 y:  -252 z:  8180vector:   315 x:   684 y:  -232 z:  8264vector:   332 x:   680 y:  -192 z:  8324vector: 65170 x:   632 y:  -240 z:  8456vector:   428 x:   576 y:   800 z:  8208vector:   333 x:   760 y:   324 z:  8080vector:   468 x:   960 y:    84 z:  8592vector: 65214 x:   492 y:   288 z:  8412vector:   267 x:   420 y:  -300 z:  8304vector:   242 x:   700 y:    -8 z:  8272vector: 65396 x:  -536 y:  -156 z:  8164vector:  7734 x:   936 y:   296 z: 10116vector: 11647 x:  4844 y:  1176 z:  6364vector:   404 x:  4492 y:  -592 z:  3432vector: 23216 x:  6132 y:  -536 z: -2028vector: 22124 x:  6812 y:  -780 z: -5880vector: 22053 x:  6384 y: -1020 z: -7056vector: 21138 x:  4764 y:  -580 z: -6900vector: 20806 x:  4664 y: -1336 z: -6456vector: 20451 x:  1048 y: -1752 z: -7596vector: 21555 x:  1936 y:  -584 z: -8428vector: 56864 x:  1568 y:   732 z: -8724vector: 56857 x:  1256 y:   280 z: -8592vector: 56669 x:   528 y:   272 z: -8772vector: 57385 x:  -184 y:   464 z: -8692vector: 56845 x:   304 y:   264 z: -8344vector: 56857 x:   276 y:   360 z: -8648vector: 56981 x:   116 y:   172 z: -8228vector: 57009 x:   212 y:   232 z: -8420vector: 57068 x:   372 y:   268 z: -8812vector: 56962 x:   168 y:   432 z: -8416vector: 57296 x:   352 y:   308 z: -8476vector: 57077 x:   224 y:   240 z: -8528vector: 56644 x:   132 y:   168 z: -8540vector: 57245 x:   176 y:     4 z: -8364vector: 56608 x:   200 y:   168 z: -8624vector: 57225 x:   284 y:   248 z: -8400vector: 57045 x:   240 y:   192 z: -8252vector: 57484 x:   352 y:   328 z: -8336vector: 21461 x:   468 y:   520 z: -8920vector: 57213 x:   508 y:   488 z: -8788vector: 56797 x:    96 y:   652 z: -8944vector: 57087 x:   180 y:   700 z: -8572vector: 56793 x:   108 y:   144 z: -8208vector: 56812 x:    92 y:    64 z: -8440vector: 56414 x:   152 y:    92 z: -8876vector: 43061 x:   496 y:  -216 z: -8260vector: 21930 x:  2692 y:   300 z: -9228vector: 24457 x:  5276 y:   288 z: -4572vector: 62943 x:  6732 y: -2236 z:   516vector: 62882 x:  4088 y: -3016 z:  6400vector: 63556 x:  2940 y: -1144 z:  9364vector:    35 x:   496 y:  -632 z:  9644vector: 65389 x:  -284 y: -1160 z:  8316vector:   171 x:   920 y:   588 z:  8384vector:   294 x:   720 y:   -80 z:  8024vector:   342 x:   672 y:  -204 z:  8032vector:   515 x:   668 y:  -136 z:  8172vector:   475 x:   608 y:  -172 z:  8044vector:   363 x:   652 y:  -464 z:  8096vector:   313 x:   728 y:   -56 z:  8080vector:   317 x:   716 y:  -192 z:  8196vector:   306 x:   556 y:  -156 z:  8268vector:   317 x:   728 y:  -256 z:  8252vector:   414 x:   632 y:  -168 z:  8420vector:   338 x:   628 y:  -168 z:  8388vector:   366 x:   588 y:  -208 z:  8132vector:   390 x:   648 y:  -480 z:  8384vector:   363 x:   676 y:  -436 z:  8000vector:   264 x:   632 y:  -136 z:  8260vector:   398 x:   616 y:  -104 z:  8256vector:   351 x:   640 y:  -248 z:  8388vector:   292 x:   620 y:  -252 z:  8232vector:   367 x:   636 y:  -288 z:  8356vector:   301 x:   692 y:  -204 z:  8384vector:   434 x:   684 y:  -148 z:  8428vector:   393 x:   656 y:  -240 z:  8248vector:   341 x:   604 y:  -200 z:  7984vector:   434 x:   660 y:   -28 z:  8220vector:   287 x:   520 y:  -192 z:  8428vector:   344 x:   624 y:  -452 z:  8356vector:   347 x:   712 y:  -200 z:  8092vector:   359 x:   640 y:  -240 z:  8228vector:   310 x:   720 y:  -176 z:  8232vector:   517 x:   632 y:  -176 z:  8248vector:   527 x:   740 y:  -752 z:  8632vector:   261 x:  3260 y:  2564 z:  9436vector: 64438 x:  -312 y:  -404 z:  9336vector: 11988 x:  1432 y:  1016 z: 10556vector: 65139 x:  5304 y:  -844 z:  9548vector: 61633 x:  3876 y: -3884 z:  6628vector: 22044 x:  2324 y: -6832 z:   984vector: 58394 x:  1096 y: -6948 z:   100vector: 21543 x:  -372 y: -7552 z:   652vector: 21472 x:   548 y: -8356 z:   -80vector: 21177 x:   408 y: -8764 z:   276vector: 21363 x:   324 y: -8256 z:  -144vector: 21047 x:   508 y: -8480 z:   -36vector: 57306 x:  1056 y: -8452 z:  -340vector: 21088 x:  1140 y: -8600 z:   -80vector: 21330 x:  1236 y: -8620 z:  -100vector: 21179 x:  1296 y: -8372 z:  -116vector: 21221 x:   968 y: -8356 z:    12vector: 57006 x:  1024 y: -8464 z:  -680vector: 21096 x:  1252 y: -8180 z:  -172vector: 57336 x:  1108 y: -8052 z:  -356vector: 20936 x:  1336 y: -8652 z:  -360vector: 57346 x:  1380 y: -8480 z:  -268vector: 57112 x:   816 y: -8396 z:  -840vector: 58749 x:  1016 y: -7388 z:  1556vector: 61081 x:   -40 y: -6880 z:  6420vector:     4 x:  -500 y: -2516 z:  6064vector: 65005 x:   700 y:  1428 z:  8240vector: 65510 x:  1908 y:  3756 z:  7492vector: 64910 x:  2256 y:  6796 z:  5116vector:   172 x:  2256 y:  7896 z:  2728vector:  8340 x:   668 y:  7252 z:  1708vector:  7751 x:  1176 y:  9084 z:   336vector:  7490 x:   528 y:  9136 z:  -296vector:  8229 x:  1080 y:  8704 z:  -496vector:   384 x:  1048 y:  7768 z:    64vector:  8645 x:   704 y:  7484 z:   412vector:   349 x:  1172 y:  7992 z:   260vector:   433 x:   836 y:  7996 z:    76vector:  8319 x:   780 y:  8148 z:   -72vector:  8148 x:   988 y:  8268 z:  -312vector:  8519 x:  1100 y:  8164 z:    88vector:  8394 x:  1092 y:  7796 z:   472vector:   413 x:  1032 y:  7892 z:   168vector:   386 x:  1244 y:  8320 z:    -4vector:  7981 x:  1304 y:  8396 z:   112vector:  8030 x:  1076 y:  8476 z:  -120vector:  8092 x:  1208 y:  8164 z:  -204vector:  7935 x:  1412 y:  8204 z:  -232vector:  8218 x:  1040 y:  8248 z:   -16vector:   342 x:  1168 y:  8096 z:   -56vector:  8299 x:  1104 y:  8060 z:    52vector:   300 x:  1044 y:  8144 z:   -88vector:   288 x:  1484 y:  8360 z:  -172vector:   450 x:  1112 y:  8340 z:   -16vector:  8279 x:  1304 y:  8072 z:  -184vector:   361 x:  1104 y:  7956 z:  -268vector:   416 x:  1288 y:  8156 z:  -500vector:   438 x:  1060 y:  8120 z:  -192vector: 65517 x:  1360 y:  7968 z:  -356vector:   407 x:  1112 y:  8196 z:  -288vector:   382 x:  1024 y:  8200 z:  -452vector:   426 x:  1160 y:  8400 z:  -428vector: 65345 x:  1276 y:  8044 z:  -204vector:   117 x:   976 y:  8044 z:  -516vector:  9336 x:   856 y:  8324 z:   572vector: 10089 x:   400 y:  8320 z:  2412vector: 10870 x:   504 y:  8772 z:  5876vector: 12111 x:  2928 y:  6288 z:  4912vector: 60725 x:  1664 y:  -416 z:  6368vector: 59835 x:  3752 y: -4560 z:  3020vector: 20381 x:   876 y: -7692 z:  -624vector: 20749 x:   132 y: -8864 z:   740vector: 21256 x:   544 y: -8260 z:    28vector: 57284 x:   -52 y: -8252 z:  -944vector: 57064 x:   260 y: -8060 z:  -524vector: 21445 x:   472 y: -8512 z:   -52vector: 21289 x:  -316 y: -8204 z:  -216vector: 21365 x:   192 y: -8552 z:  -700vector: 43059 x:  -208 y: -7896 z:  -124vector: 43954 x: -1452 y: -6744 z:   -32vector: 22983 x:   532 y: -5660 z:  -972vector: 24057 x:  3660 y: -4912 z:   -52vector: 24960 x: 11040 y: -3648 z: -2112vector: 25906 x:  8136 y:  -448 z: -2532vector: 26038 x:  9420 y:     8 z: -2116vector: 26015 x:  9052 y:  -260 z: -1828vector: 25985 x:  8252 y:  -440 z: -1276vector: 26359 x:  7880 y: -1044 z:  -796vector: 26040 x:  8008 y:  -556 z: -1880vector: 25959 x:  8508 y:  -344 z: -1496vector: 25952 x:  8692 y:  -324 z: -1680vector: 26162 x:  8280 y:  -500 z: -1700vector: 26116 x:  8376 y:  -596 z: -1400vector: 26473 x:  7940 y:  -580 z: -1100vector: 26209 x:  8612 y:   -56 z: -1704vector: 27029 x:  8080 y:  -284 z: -1420vector: 64857 x:  8308 y:   100 z: -1488vector: 64924 x:  8636 y:   824 z: -1428vector: 65181 x:  8748 y:   560 z: -1304vector: 64868 x:  8432 y:   504 z: -1316vector: 64847 x:  8360 y:   500 z: -1232vector: 65128 x:  8604 y:   300 z: -1224vector: 65294 x:  8628 y:   304 z:  -948vector: 65039 x:  8664 y:   208 z:  -952vector: 64948 x:  8592 y:   228 z:  -932vector: 64859 x:  8616 y:    68 z:  -976vector: 65267 x:  8580 y:   124 z:  -912vector: 27032 x:  8548 y:   184 z: -1164vector:  1069 x:  9344 y:   208 z:  -696vector: 63952 x: 10520 y: -1488 z:    68vector: 59941 x:  6448 y: -3788 z:   920vector: 21047 x:   528 y: -5984 z:  1280vector: 20911 x: -3472 y: -5216 z:  1856vector: 20495 x: -5912 y: -3892 z:  1624vector: 20323 x: -9088 y: -2016 z:  1192vector: 20532 x: -7764 y: -1352 z:  1084vector: 21139 x: -7556 y:  -852 z:   948vector: 20601 x: -7212 y: -1096 z:  1328vector: 21381 x: -7248 y:  -780 z:  1040vector: 21153 x: -7812 y: -1108 z:  1120vector: 21450 x: -7524 y:  -988 z:  1160vector: 21226 x: -7832 y:  -964 z:  1044vector: 21371 x: -7768 y:  -832 z:  1188vector: 21338 x: -8176 y: -1024 z:   988vector: 21844 x: -8032 y:  -788 z:  1400vector: 21142 x: -7772 y:  -616 z:  1328vector: 21528 x: -7384 y: -1020 z:  1356vector: 21354 x: -7776 y:  -512 z:  1140vector: 21395 x: -7880 y:  -664 z:  1672vector: 21461 x: -7756 y:  -692 z:  1472vector: 20965 x: -7520 y:  -632 z:  1360vector: 21545 x: -7088 y:  -204 z:  1160vector: 21219 x: -7428 y:  -316 z:  1944vector: 20974 x: -7064 y:    84 z:   596vector: 21167 x: -8844 y:    28 z:   -40vector: 23383 x: -6352 y: -3032 z:  2932vector: 24026 x:  -372 y: -6544 z:  5860vector: 63717 x:   420 y: -3184 z:  7368vector:   127 x:  2392 y:   572 z:  8712vector: 26445 x:  3052 y: -1256 z: 15156vector: 64950 x:  1548 y: -1076 z:  8832vector:   279 x:   796 y:   168 z:  8056vector:   394 x:   740 y:  -180 z:  8432vector:   319 x:   696 y:  -204 z:  7944vector:   362 x:   668 y:  -220 z:  8300vector:   300 x:   680 y:  -188 z:  8468vector:   376 x:   696 y:  -152 z:  8156vector:   304 x:   740 y:  -136 z:  8412vector:   436 x:   692 y:  -184 z:  8216vector:   390 x:   672 y:  -104 z:  8332vector:   345 x:   704 y:  -176 z:  8264vector:   361 x:   680 y:  -168 z:  8428vector:   434 x:   648 y:  -232 z:  8212vector:   271 x:   732 y:  -252 z:  8256vector:   370 x:   676 y:  -152 z:  8268vector:   282 x:   716 y:  -204 z:  8416vector:   245 x:   664 y:   -84 z:  7888vector:   449 x:   732 y:  -184 z:  8512vector:   296 x:   580 y:   -44 z:  8236vector:   318 x:   732 y:  -184 z:  8420vector:   352 x:   624 y:  -244 z:  8216vector:    78 x:   736 y:  -196 z:  8216vector:   267 x:   632 y:  -188 z:  8384vector:   286 x:   648 y:  -180 z:  8272vector:   272 x:   588 y:  -144 z:  8076vector:   411 x:   704 y:  -240 z:  8252vector:    89 x:   668 y:  -200 z:  8228vector:   371 x:   672 y:  -476 z:  8208vector:   260 x:   600 y:  -188 z:  8336vector:   417 x:   736 y:  -160 z:  8148vector:   374 x:   652 y:  -224 z:  8292vector:   448 x:   588 y:  -120 z:  8344vector:   364 x:   644 y:  -156 z:  8412vector:   324 x:   512 y:  -172 z:  8200vector:   407 x:   668 y:  -164 z:  8248vector:   3ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d64bc
+file: "./main/i2c.c" line 74
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f30 0x400869c5:0x3ffb3f50 0x4008cc7d:0x3ffb3f70 0x40086957:0x3ffb3fe0 0x400d64bc:0x3ffb4010 0x400d6640:0x3ffb4030 0x400d669d:0x3ffb4060 0x400d6355:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 1d029ede4
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  1d029ede4...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:   293 x:   576 y:  -248 z:  8328vector:   426 x:   660 y:  -188 z:  8216vector:   338 x:   700 y:   -24 z:  8376vector:   358 x:   736 y:  -200 z:  8296vector:   333 x:   696 y:  -176 z:  8328vector:   319 x:   712 y:  -228 z:  7972vector:   414 x:   356 y:  -128 z:  8012vector:   307 x:   580 y:  -164 z:  8308vector:   395 x:   692 y:  -172 z:  8236vector:   395 x:   684 y:   -36 z:  8216vector:   333 x:   636 y:  -196 z:  8508vector:   522 x:   688 y:  -380 z:  8220vector:   323 x:   664 y:  -180 z:  8192vector:   397 x:   620 y:  -212 z:  8356vector:   359 x:   616 y:  -108 z:  8108vector:   331 x:   668 y:  -172 z:  8528vector:   440 x:   636 y:  -224 z:  8212vector:   342 x:   760 y:  -144 z:  8884vector:   343 x:   648 y:  -140 z:  8260vector:   373 x:   768 y:  -212 z:  8064vector:   507 x:   656 y:  -172 z:  8084vector:    86 x:   684 y:  -132 z:  8212vector:   357 x:   688 y:  -144 z:  8024vector:   384 x:   684 y:  -156 z:  8356vector:   444 x:   672 y:   -88 z:  8416vector:   478 x:   684 y:  -168 z:  8292vector:   373 x:   668 y:   -92 z:  8372vector:   282 x:   664 y:  -132 z:  8016vector:   480 x:   612 y:  -244 z:  8676vector:   289 x:   624 y:  -136 z:  8060vector:   384 x:  1000 y:  -168 z:  8364vector:   305 x:   604 y:  -184 z:  8200vector:   268 x:   600 y:  -148 z:  8436vector:   295 x:   660 y:  -172 z:  8336vector:   310 x:   948 y:  -120 z:  8212vector:   297 x:   684 y:  -232 z:  8332vector:   333 x:   712 y:  -232 z:  8428vector:   389 x:   732 y:  -204 z:  8360vector:   299 x:   700 y:  -152 z:  8204vector:   316 x:   700 y:   -44 z:  8420vector:   341 x:   660 y:  -152 z:  8040vector:    86 x:   668 y:  -192 z:  8240vector:   321 x:   724 y:  -216 z:  8228vector:   308 x:   676 y:  -168 z:  8108vector:   332 x:   624 y:  -208 z:  8072vector:   329 x:   624 y:   -84 z:  8364vector:   514 x:   740 y:  -216 z:ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d643e
+file: "./main/i2c.c" line 57
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f50 0x400869c5:0x3ffb3f70 0x4008cc7d:0x3ffb3f90 0x40086957:0x3ffb4000 0x400d643e:0x3ffb4030 0x400d6621:0x3ffb4050 0x400d6346:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 1d029ede4
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  1d029ede4...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:   323 x:   612 y:  -164 z:  8320vector:   344 x:   652 y:  -228 z:  8424vector:   361 x:   612 y:  -240 z:  8088vector:   463 x:   672 y:  -128 z:  8056vector:   321 x:   624 y:  -160 z:  8264vector:   283 x:   684 y:  -120 z:  8240vector:   362 x:   580 y:  -156 z:  8412vector:   319 x:   660 y:  -172 z:  7936vector:   305 x:   716 y:  -144 z:  8048vector:   334 x:   664 y:  -156 z:  8156vector:   515 x:   672 y:  -128 z:  8260vector:   318 x:   672 y:  -232 z:  8332vector:   280 x:   680 y:  -188 z:  8208vector:   307 x:   652 y:  -168 z:  8300vector:   308 x:   648 y:  -216 z:  8200vector:   280 x:   648 y:  -156 z:  8396vector:   324 x:   752 y:  -272 z:  7964vector:   382 x:   712 y:  -216 z:  8268vector:   392 x:   648 y:  -188 z:  8400vector:   435 x:   636 y:  -236 z:  8396vector:   240 x:   668 y:  -100 z:  8296vector:   295 x:   656 y:  -232 z:  8256vector:   298 x:   676 y:  -232 z:  8288vector:   325 x:   952 y:  -184 z:  8316vector:   322 x:   656 y:  -232 z:  8308vector:   291 x:   716 y:  -160 z:  8152vector:   351 x:   648 y:  -168 z:  8044vector:   305 x:   668 y:  -184 z:  8224vector:   344 x:   704 y:  -408 z:  8372vector:   331 x:   632 y:   -84 z:  8444vector:   326 x:   620 y:  -196 z:  8244vector:   366 x:   740 y:  -224 z:  8240vector:   270 x:   672 y:  -232 z:  8340vector:   331 x:   684 y:  -252 z:  8336vector:   312 x:   692 y:  -492 z:  8000vector:   324 x:   680 y:  -136 z:  8252vector:   279 x:   648 y:  -144 z:  8240vector:   298 x:   652 y:  -216 z:  8208vector:   377 x:   648 y:  -144 z:  8304vector:   335 x:   728 y:  -120 z:  8328vector:   347 x:   652 y:  -192 z:  7952vector:   257 x:   664 y:  -204 z:  8328vector:   337 x:   636 y:  -128 z:  8256vector:   427 x:   572 y:  -140 z:  8432vector:   324 x:   740 y:  -156 z:  8224vector:   290 x:   628 y:   -76 z:  8444vector:   372 x:   672 y:  -128 z:  8376vector:   333 x:   532 y:  -152 z:  8392vector:   204 x:   680 y:  -176 z:  8068vector:   324 x:   596 y:   -12 z:  8360vector:   391 x:   668 y:  -184 z:  8012vector:   369 x:   888 y:  -188 z:  8268vector:   267 x:   724 y:  -212 z:  8212vector:   357 x:   752 y:  -200 z:  8356vector:   402 x:   632 y:  -144 z:  8288vector:     6 x:   648 y:  -136 z:  8208vector:   376 x:   920 y:  -112 z:  8388vector:   274 x:   672 y:   -96 z:  8220vector:   343 x:   732 y:  -160 z:  8320vector:   238 x:   644 y:  -156 z:  8244vector:   306 x:   684 y:  -176 z:  8088vector:    85 x:   660 y:  -400 z:  8280vector:   316 x:   672 y:   -32 z:  8400vector:   337 x:   680 y:  -184 z:  8444vector:   269 x:   728 y:  -100 z:  8036vector:   359 x:   680 y:  -192 z:  8200vector:   515 x:   696 y:  -176 z:  8076vector:   275 x:   596 y:  -136 z:  8196vector:   317 x:   632 y:  -152 z:  8152vector:   330 x:   644 y:  -220 z:  8316vector:   342 x:   696 y:  -180 z:  8036vector:   336 x:   664 y:  -180 z:  8392vector:   394 x:   692 y:  -164 z:  8324vector:   363 x:   656 y:  -164 z:  8224vector:   304 x:   680 y:  -220 z:  8264vector:   270 x:   624 y:  -200 z:  8228vector:   424 x:   680 y:  -424 z:  8184vector:   371 x:   740 y:  -176 z:  8400vector:   351 x:   632 y:  -128 z:  8276vector:   382 x:   712 y:  -128 z:  8252vector:   274 x:   668 y:  -252 z:  8264vector:   287 x:   668 y:  -208 z:  8196vector:   368 x:   584 y:  -184 z:  8052vector:   327 x:   648 y:  -168 z:  8312vector:   347 x:   644 y:  -148 z:  8288vector:   393 x:   684 y:  -252 z:  8292vector:   286 x:   616 y:  -192 z:  8424vector:   301 x:   668 y:  -172 z:  8176vector:   333 x:   748 y:  -176 z:  8180vector:   402 x:   708 y:  -152 z:  8340vector:   391 x:   680 y:  -136 z:  8220vector:   325 x:   684 y:  -168 z:  8264vector:   417 x:   636 y:  -220 z:  8068vector:   333 x:   660 y:  -416 z:  8144vector:   339 x:   652 y:  -196 z:  8196vector:    70 x:   964 y:  -176 z:  8000vector:   387 x:   664 y:  -220 z:  8376vector:   352 x:   672 y:  -168 z:  7940vector:   430 x:   684 y:  -428 z:  8292vector:   509 x:   664 y:  -148 z:  7996vector:   354 x:   672 y:  -180 z:  8248vector:   292 x:   628 y:  -140 z:  8324vector:    93 x:   688 y:  -200 z:  7964vector:   330 x:   620 y:  -168 z:  8192vector:   320 x:   696 y:  -144 z:  8076vector:   322 x:   560 y:  -200 z:  8416vector:   330 x:   704 y:  -132 z:  8288vector:    88 x:   644 y:  -180 z:  8068vector:   319 x:   724 y:  -256 z:  8284vector:   332 x:   696 y:  -172 z:  8324vector:   337 x:   676 y:  -180 z:  8356vector:   408 x:   640 y:  -196 z:  8232vector:   332 x:   608 y:  -132 z:  8272vector:   308 x:   656 y:  -192 z:  8388vector:   335 x:   664 y:  -152 z:  8308vector:   396 x:   536 y:  -164 z:  8136vector:   307 x:   616 y:  -132 z:  8148vector:   370 x:   636 y:  -156 z:  8196vector:   366 x:   712 y:  -188 z:  8436vector:   358 x:   684 y:  -168 z:  7960vector:   318 x:   608 y:  -428 z:  8240vector:   323 x:   620 y:  -124 z:  8224vector:   311 x:   624 y:  -204 z:  8324vector:   270 x:   756 y:  -112 z:  8232vector:   293 x:   660 y:  -120 z:  8036vector:   306 x:   624 y:  -112 z:  8192vector:   137 x:   668 y:  -188 z:  8196vector:   368 x:   708 y:  -112 z:  8260vector:   345 x:   728 y:  -224 z:  8204vector:   319 x:   664 y:  -200 z:  7936vector:   314 x:   736 y:  -164 z:  8292vector:   406 x:   668 y:  -220 z:  8396vector:   320 x:   628 y:  -140 z:  8244vector:   478 x:   608 y:  -116 z:  8336vector:   305 x:   604 y:  -180 z:  8024vector:   262 x:   584 y:   -36 z:  8480vector:   368 x:   644 y:  -140 z:  8332vector:   338 x:   748 y:  -132 z:  8348vector:   418 x:   596 y:  -196 z:  8268vector:   308 x:   648 y:  -248 z:  8256vector:   380 x:   696 y:  -196 z:  8352vector:   365 x:   644 y:  -416 z:  8120vector:   304 x:   608 y:  -176 z:  8276vector:   448 x:   664 y:  -152 z:  8076vector:   398 x:   648 y:  -180 z:  8304vector:   403 x:   704 y:  -200 z:  8068vector:   290 x:   708 y:  -152 z:  8260vector:   283 x:   588 y:  -236 z:  8340vector:   327 x:   620 y:   -24 z:  8292vector:   427 x:   688 y:  -136 z:  8288vector:   431 x:   688 y:  -184 z:  8348vector:   382 x:   712 y:  -128 z:  8384vector:   522 x:   644 y:  -240 z:  8332ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d64bc
+file: "./main/i2c.c" line 74
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40086957 on core 0
+
+
+Backtrace: 0x400869fd:0x3ffb3f30 0x400869c5:0x3ffb3f50 0x4008cc7d:0x3ffb3f70 0x40086957:0x3ffb3fe0 0x400d64bc:0x3ffb4010 0x400d6681:0x3ffb4030 0x400d66a3:0x3ffb4060 0x400d6355:0x3ffb4080 0x400e6b89:0x3ffb40a0 0x400875d9:0x3ffb40d0
+
+
+
+
+ELF file SHA256: 1d029ede4
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b3cch ( 46028) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b3f4 vaddr=3ffb0000 size=02458h (  9304) load[0m
+[0;32mI (108) esp_image: segment 2: paddr=0001d854 vaddr=40080000 size=027c4h ( 10180) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=172f8h ( 94968) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=00037320 vaddr=400827c4 size=0c238h ( 49720) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=00043560 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (176) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (176) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu start user code[0m
+[0;32mI (195) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (195) app_init: Application information:[0m
+[0;32mI (195) app_init: Project name:     lab5[0m
+[0;32mI (198) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (203) app_init: Compile time:     Oct 15 2025 09:32:54[0m
+[0;32mI (208) app_init: ELF file SHA256:  1d029ede4...[0m
+[0;32mI (212) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (217) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (221) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (229) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (235) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FFB2DA8 len 0002D258 (180 KiB): DRAM[0m
+[0;32mI (245) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (251) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 4008E9FC len 00011604 (69 KiB): IRAM[0m
+[0;33mW (263) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (275) spi_flash: detected chip: generic[0m
+[0;32mI (278) spi_flash: flash io: dio[0m
+[0;33mW (281) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (293) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+vector:   380 x:   692 y:   -28 z:  7972vector:   307 x:   640 y:  -136 z:  8140vector:   276 x:   724 y:  -104 z:  8212vector:   334 x:   696 y:  -192 z:  8268vector:   269 x:   608 y:   -56 z:  8204vector:    63 x:   676 y:  -232 z:  8212vector:   408 x:   604 y:  -192 z:  8264vector:   417 x:   704 y:  -232 z:  8268vector:   328 x:   688 y:  -188 z:  8316vector:   378 x:   684 y:  -164 z:  8224vector:   345 x:   664 y:  -128 z:  8412vector:   251 x:   572 y:  -156 z:  8392vector:   369 x:   656 y:  -208 z:  8212vector:   354 x:   700 y:  -192 z:  8024vector:   335 x:   720 y:  -404 z:  8080vector:   311 x:   624 y:  -216 z:  8360vector:   363 x:   628 y:  -240 z:  8320vector:   498 x:   708 y:  -440 z:  8324vector:   286 x:   660 y:  -232 z:  8356vector:   343 x:   720 y:  -168 z:  8356vector:   325 x:   652 y:  -392 z:  8300vector:   510 x:   588 y:  -216 z:  8240vector:   326 x:   556 y:  -256 z:  8308vector:   351 x:   776 y:  -176 z:  8148vector:   298 x:   588 y:  -236 z:  8008vector:   253 x:   640 y:  -152 z:  8172vector:   387 x:   668 y:  -200 z:  8436vector:   276 x:   616 y:  -132 z:  8012vector:   398 x:   592 y:  -148 z:  8288vector:   344 x:   680 y:  -152 z:  8316vector:   463 x:   612 y:  -200 z:  8244vector:   355 x:   728 y:  -112 z:  8012vector:   334 x:   664 y:  -232 z:  8224vector:   292 x:   724 y:  -200 z:  8392vector:   382 x:   672 y:  -292 z:  8204vector:   421 x:   724 y:  -200 z:  8160vector:   442 x:   624 y:   -72 z:  8260vector:   289 x:   700 y:  -112 z:  8052vector:   294 x:   668 y:  -216 z:  8148vector:   293 x:   728 y:  -164 z:  7956vector:   279 x:   652 y:  -156 z:  8436vector:    38 x:   676 y:  -148 z:  8400vector:   364 x:   684 y:  -188 z:  8436vector:   295 x:   724 y:  -168 z:  8260vector:   422 x:   684 y:  -200 z:  7940vector:   296 x:   564 y:  -112 z:  8204vector:   361 x:   632 y:  -220 z:  8228vector:   276 x:   660 y:  -172 z:  7972vector:   354 x:   640 y:  -192 z:  8240vector:   324 x:   700 y:  -188 z:  8276vector:   405 x:   624 y:   -96 z:  8300vector:   368 x:   556 y:   -92 z:  8404vector:   140 x:   688 y:  -388 z:  8168vector:   323 x:   672 y:  -204 z:  8248vector:   365 x:   552 y:  -104 z:  8292vector:   418 x:   652 y:  -204 z:  8244vector:   292 x:   724 y:  -164 z:  8236vector:   362 x:   952 y:  -240 z:  8288vector:   265 x:   688 y:  -260 z:  8424vector:   373 x:   724 y:  -160 z:  8296vector:   286 x:   656 y:  -112 z:  8312vector:   304 x:   684 y:  -144 z:  8052vector:   109 x:   664 y:  -240 z:  8120vector:   374 x:   624 y:  -104 z:  7944vector:   295 x:   648 y:  -196 z:  8316vector:   389 x:   628 y:  -100 z:  8376vector:   292 x:   704 y:  -176 z:  8368vector:   315 x:   620 y:  -192 z:  8244vector:   311 x:   688 y:  -184 z:  7944vector:   369 x:   648 y:   -16 z:  8368vector:   365 x:   708 y:  -220 z:  8208vector:   417 x:   672 y:  -136 z:  8024vector:   293 x:   632 y:  -164 z:  8200vector:   326 x:   640 y:  -224 z:  8108vector:   533 x:   684 y:  -168 z:  8284vector:   321 x:   668 y:  -208 z:  8104vector:   355 x:   600 y:  -208 z:  8124vector:   356 x:   728 y:  -116 z:  8356vector:   392 x:   648 y:    -8 z:  8216vector:   348 x:   660 y:  -188 z:  8328vector:   240 x:   604 y:  -104 z:  8232vector:   290 x:   660 y:  -240 z:  8016vector:   362 x:   684 y:  -176 z:  8220vector:   365 x:   612 y:  -156 z:  8492

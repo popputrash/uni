@@ -1,0 +1,214 @@
+Command: /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/minipops/uni/da267a/labs/lab5/build/lab5.elf /home/minipops/uni/da267a/labs/lab5/build/bootloader/bootloader.elf -m '/home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/opt/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc04h ( 48132) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc2c vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e0cc vaddr=40080000 size=01f4ch (  8012) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=180ech ( 98540) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=00038114 vaddr=40081f4c size=0ece4h ( 60644) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046e00 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  52231bc27...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:   8194 x:    144 y:   -164 z:   8192 stepcount:   0vector:   8182 x:    112 y:   -252 z:   8084 stepcount:   0vector:   8207 x:    104 y:   -216 z:   8204 stepcount:   0vector:   8157 x:     88 y:   -240 z:   8008 stepcount:   0vector:   8296 x:    168 y:   -228 z:   8292 stepcount:   0vector:   8291 x:    180 y:   -148 z:   8288 stepcount:   0vector:   8196 x:    172 y:   -276 z:   8268 stepcount:   0vector:   8181 x:    112 y:   -140 z:   8180 stepcount:   0vector:   8223 x:    200 y:   -148 z:   8220 stepcount:   0vector:   8285 x:    144 y:   -208 z:   8220 stepcount:   0vector:   8229 x:    188 y:   -236 z:   8224 stepcount:   0vector:   8185 x:    168 y:   -236 z:   8180 stepcount:   0vector:   8272 x:    180 y:   -264 z:   8212 stepcount:   0vector:   8162 x:    116 y:   -152 z:   8160 stepcount:   0vector:   8315 x:    108 y:   -232 z:   8312 stepcount: ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d66de
+file: "./main/i2c.c" line 58
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40088917 on core 0
+
+
+Backtrace: 0x400889f5:0x3ffb6fc0 0x40088985:0x3ffb6fe0 0x4008eeb1:0x3ffb7000 0x40088917:0x3ffb7070 0x400d66de:0x3ffb70a0 0x400d691d:0x3ffb70c0 0x400d693f:0x3ffb70f0 0x400d648b:0x3ffb7110 0x40089629:0x3ffb7140
+
+
+
+
+ELF file SHA256: 52231bc27
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc04h ( 48132) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc2c vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e0cc vaddr=40080000 size=01f4ch (  8012) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=180ech ( 98540) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=00038114 vaddr=40081f4c size=0ece4h ( 60644) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046e00 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  52231bc27...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (225) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:   7874 x:   -296 y:   -128 z:   7868 stepcount:   0vector:   8338 x:   -200 y:   -276 z:   8348 stepcount:   0vector:   8066 x:    228 y:   -236 z:   8060 stepcount:   0vector:   8162 x:    264 y:   -224 z:   8160 stepcount:   0vector:   7950 x:    156 y:   -272 z:   8200 stepcount:   0vector:   8093 x:    192 y:   -216 z:   8088 stepcount:   0vector:   8238 x:    172 y:   -268 z:   8232 stepcount:   0vector:   7973 x:    232 y:   -200 z:   8224 stepcount:   0vector:  13661 x:  -5424 y:   -616 z:  12524 stepcount:   0vector:  17479 x:  -2952 y:    224 z:   9380 stepcount:   0vector:   8937 x:   1552 y:   -856 z:   8760 stepcount:   1vector:   8117 x:    204 y:   -236 z:   8112 stepcount:   1vector:   8104 x:    340 y:   -148 z:   8100 stepcount:   1vector:   8152 x:    184 y:   -212 z:   8148 stepcount:   1vector:   8219 x:    160 y:   -196 z:   8216 stepcount:   1vector:   8080 x:     88 y:   -204 z:   8076 stepcount:   1vector:   8081 x:    268 y:   -140 z:   8076 stepcount:   1vectESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d6758
+file: "./main/i2c.c" line 76
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40088917 on core 0
+
+
+Backtrace: 0x400889f5:0x3ffb6fe0 0x40088985:0x3ffb7000 0x4008eeb1:0x3ffb7020 0x40088917:0x3ffb7090 0x400d6758:0x3ffb70c0 0x400d68ac:0x3ffb70e0 0x400d647c:0x3ffb7110 0x40089629:0x3ffb7140
+
+
+
+
+ELF file SHA256: 52231bc27
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc04h ( 48132) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc2c vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e0cc vaddr=40080000 size=01f4ch (  8012) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=180ech ( 98540) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=00038114 vaddr=40081f4c size=0ece4h ( 60644) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046e00 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  52231bc27...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (225) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:   8232 x:    184 y:   -192 z:   8228 stepcount:   0vector:   8294 x:    264 y:   -248 z:   8112 stepcount:   0vector:   8131 x:    164 y:   -192 z:   8128 stepcount:   0vector:   8392 x:    156 y:   -196 z:   8388 stepcount:   0vector:   8217 x:    120 y:   -264 z:   7956 stepcount:   0vector:   8341 x:    224 y:   -188 z:   8336 stepcount:   0vector:   8180 x:     64 y:   -196 z:   8176 stepcount:   0vector:   8662 x:  -1244 y:   -392 z:   8308 stepcount:   0vector:   8369 x:    220 y:   -216 z:   8364 stepcount:   0vector:   8209 x:    292 y:   -176 z:   8204 stepcount:   0vector:   8159 x:    108 y:   -204 z:   8156 stepcount:   1vector:   8369 x:    -68 y:   -116 z:   8368 stepcount:   1vector:   8654 x:    612 y:   -100 z:   8640 stepcount:   1vector:   8467 x:    172 y:   -408 z:   8200 stepcount:   1vector:   8334 x:   -224 y:    228 z:   8328 stepcount:   1vector:   8160 x:    436 y:    392 z:   8160 stepcount:   1vector:   7364 x:    364 y:    236 z:   7864 stepcount:   1vector:   8631 x:    -60 y:  -1108 z:   8560 stepcount:   1vector:   8433 x:     84 y:    -12 z:   8428 stepcount:   1vector:   8246 x:   -728 y:   1644 z:   8788 stepcount:   1vector:  10124 x:    116 y:    496 z:  10112 stepcount:   2vector:   8275 x:  -1376 y:  -1916 z:   8020 stepcount:   2vector:   8519 x:    808 y:   -980 z:   8168 stepcount:   2vector:   8441 x:    -64 y:   -304 z:   8436 stepcount:   2vector:   7792 x:   -244 y:     40 z:   7772 stepcount:   2vector:   8260 x:    228 y:   -144 z:   8256 stepcount:   2vector:   8326 x:    176 y:   -276 z:   8320 stepcount:   2vector:   8610 x:    376 y:    676 z:   8540 stepcount:   2vector:   7916 x:   2704 y:  -1312 z:   6044 stepcount:   2vector:   8032 x:   -420 pp`ppp`�pp`ppp`pp��`ppp`ppp`��pp`ppp`pp������|��|���`ppp`~�������|p�`ppp`�p�p�p`�pp`pp�p�`~ p��`ppp|`�p|pp`��pp`pp��p�p`������|��|���pp`pp|�������|p�p� pp`�p|�~ `�ppp`pp�p~ pp��`ppp|`�p�p| `��pp`pp�p~�~ p������|��|���`ppp`~�������|p�`ppp`�p�pp`�pp`p~p�p`pp��`pp|p�`p�p~ `��pppp|p�`~ p�������|��|���pp`pp|�������|p�pp`pp�p`�pp�ppp`p|p�p���| p��ppp`�pp�p| p��p`ppp�`�p| p������|��|���ppp`p~�������|`�ppp`p�pp| p�p`ppp�`�p| p��ppp|`�pp~ `p��ppppp`�ppp������|��|���pp� pp|�������|p�p`ppp�`~�| p�ppp`p�p|`� p��`ppp~�pp�p�`p��p`ppp�`| pp������|��|���ppp`p|�������|p�ppp`p�p�p�`p�p`ppp�`~ pp��ppp`|p�pp`p��p`ppp�`ppp������|��|���ppp`p|�������|p�p`ppp�`�p�pp�ppp`p�p�p�`p��p`pp|p��p~ `��pp� pp�`�p�pp������|��|���ppp`p|�������|`�ppp`p�p�p�`p�p`ppp�`�p| p��ppp`|p�p�p`p��p`ppp�`~ppp������|��|���ppp`p~�������|`�ppp`p�p���| p�ppp`ppp`p��p`pp|p�`ppp��ppp� p�p�`�pp��������|��|���ppp`p~�������|`�ppp`p�p~`p�p`ppp�`| pp��ppp`|p�pp~ p��p`ppp�`| pp������|��|���ppp`p|�������|`�ppp`p�p~�| p�p`pp� p�p`p��p`pp|p�`p| p��ppp`p�p�p~ p���� ���|��|���� pp`p|�������|`�ppp`p�p|�| p�p`ppp�`ppp��ppp`|p�p|�~ p��p`ppp�`~ pp������|��|���ppp`p|�������|`�ppp`p�p�p`p�p`ppp�`p| p��pp� p|p�`~ pp��ppp`p�p�p~ p������|��|���p� pp`|��������|p�`ppp`�p||p`�pp`pp�p|ppp��`ppp|`�p�p�p`��pp`pp�p�`| p������|��|���`ppp`|�������|p�`ppp`�p�pp`�pp`pp�p�`�pp��`ppp|`�ppp`��p� pp`�p| p`������|��|���pp`pp|��������|p�`ppp`���|�| `�pp`ppp�`| p��`ppp|`�p| p`��pp`pp�p~�~ p������|��|���`ppp`|�������|p�`ppp`�p�pp`�pp`pp�p|�~ p��`ppp~`�p|pp`��pp`pp�p�p~ p������|��|���`ppp`~�������|p�`ppp`�p�p�����pp�`p���|`��� �p�� �p|����`p������������p`��pp| p���p�����pp�����p�~��p����ppp �pp| pp�~�|����|p ���p|���p`�p��|�p|�|pp�~�pp||�|��`�pp|` ����||�pp��� ��`�` �~p ���������`�|�|ppp����|` � p ��|p� p�� ��p�� |�|���p �`�~p`| p`pp�p�`~ p|�| p��|`�pp~p � p � p p� ������� ����p`p| `ppp�`���p�p`��p���|����ppp| pp`p�pp�`�pp��`���|���p`p~ `pp����p�p`��p����| p`ppp~ pp`p�p�p~ppp��`����~ p| p`p~ `p�~�|����p`��p����| p ppp| pp�|p�p��pp��`����| p�p`p~ `p�|`�p��p`��p����| p�ppp~ pp�~�| p��pp��`����~p�pp`p| `pp�p|pp�p�p`��p����|p| p|p � p � p � p � p ��`��p�p|��`pp�`�p|pp`�p�p�p�`�p����`~� p � p p�����|�|���p|����� p �����p��| p�p�pp�pp�p�pp�p�p�p�p�p�p|�|� p � p p����pp��p|�����|�����p����p���ppp�|�|���pp��p�pp|� �p����� �p�����p�pp��p�p�p���pp|p |�|�|���p�����p�ppp pp�p���ppp���|p ||||�������pppp�������pppp���������pppp|��p������pppp |���������pppp���������pppp|p �|�|����p��p�p� p�|�||��p��p��p�p|p �|�|��pp��p���pp�pp�|��|pp||ppp|p  |�| ppp�� �p| p�p�pp��|�|�| p|� p �|�|��pp| pp| pppp�|��|pp�p�p�p�p|� p �|�|��pp| pppp| pp�|��|pp�pp| p|p ��|�����pp| pppp||pp|p p ppp�pppp��|�|���pp�p��p���pp��� ��|pp�pp��p�p����p��p��p�p|��p��� ���p��|�|��|�|����|p p ppp�pppp��|�|���pp��|�| �p|��p��p�|�pp|�p�p�pp�pp�p�ppp|pp�pp�p| p|p p ppp�pppp��|�|���pp|��|���p���|p�p��|�|��|�|����|p p p|p�pppp��|�|���pp�|| p����p���p�|�|ppp���pp|p p p|p| p��|�|��������p�p�ppp�p pp���pppppp�pp| p|pp�|p p p|ppppp��|�|��������p�p�ppp�p p|�|���ppppppp�pp��p�p� p p p�|ppppp��|�|��������p�p�ppp�p p�|��| pp�p��p�pp�p| �|p p p�|�| p��|�|���pp|�||�|��ppp��p� �|p|����| ��p��|��������� p p p�| pppp��|�|���pp����p��p�|�| p�� �|���p|p p p�|ppppp��|�|���pp�p�ppp��| pppppppppppp��|� ���pppppppppp����pp�pp�������pppp��|���|� p p p�|pppp��|�|���ppppp|����pppppppppppppp��p��pp�� �� ppppppppp�ppp�pppppp�ppppppppp| ppp|p p p�|�| p��|�|���ppp�pp|��|�||��pppppppppp�p�� �� ppppppppppp�ppp�pppppp�pppppppp�pppp|p p p�|ppppp��|�|���ppp�pp�� ����|p��pppppppppp�� ����|p��p ppppppppppppppp�pppppppp�pppppp|p p p�| pppp��|�|���pp|��p|��p� ���p��p�|�| p�� �|���|p p p p�pppp����|�|����pp�����|�|��pp�pp� �����pppp�ppp�ppp�� �����p�p�| ppp�ppp��p����pp���p| | p p| p�p�p�pppp|� �|p p ppp�pppp����|�|����pp�����|�|��p�p�pp� �����pppp�p����p�p�� �����p�p���ppppp��p����pp�p|pp| p pp�p�p| pppp|�|��|p p ppp�pppp����|�|����pp�����|�|��p�p�pp� �����pppp�pp���p�� �����p| pppppppp��p����pp�p�||| p pppp�p�pppp|�|��|p p pp�p�pppp����|�|����pp�����|�|��p�p�pp� �����pppp�ppp�ppp�� �����p| pp�pp�ppp��p����p�ppp��| p p�pp�p| pppp|� �|p p pp�p�pppp����|�|����pp�����|�|��p|ppp� �����pppp�pp�p�p| p�� �����p| ppp�p�||p��p����pp���| | p p| p|�|�| p|�|��|p p pp|�| p����|�|����pp�����|�|��p�p�pp� �����pppp|�|��ppp�� �����p�ppppppppp��p����pppp�pp| p pppp�p�pppp|�|��|p p ppp�pppp��|�|���ppp�|���p p���|�| p� ���p��p�|�| p �p|�������pp��ppppp|p p ppp�pppp��|�|���pp��p��� �||�|��ppp��p� �|p|����| ��p��|��������� p p pp�p�pppp�����|�� ���pp|��|���p���|p�p �|p p pppp�pppp�����|�� ���pp�p�| p���p��� ��p�����p��|����|p p pppp�pppp�����|�� ���pp���p������pp�p| pppppppppp�|p p pppp�pppp ��|�||���pp |||� ��p�|�| pp|���|p�|� ��p�|�|pp|p p pppp�pppp ��|�||���pp�p�|p|�����p|�|��pppppp|���p|p p pppp| p ��|�||���pp p������p�|�|pppppppp�p�p� ���p|����p�����|p p ppp�p�pppp ��|�||���pp �|�| �p|��p��p�|��ppppppp|�p�p�pp�pp�p�pp�pp�p�p�p�p�p�p|p p ppp�p| p ��|�||���ppp��p��p|��ppp�p�p|pppp�p�p�p�p�p����p|���� p p ppp�p�pppp ��|�||���pp�p��p����pppppppppppp��� ��|pp�pp��p�p����p��p���|p p ppp�p�pppp��������|�||���pp|�p| p�|| p����pppppp�p p|p p ppp�p�pppp��������|�||���pp|� p�|| p����pppppp���pp�pp|p p ppp�p�pppp��������|�||���pp || p����pppppppppp���pp|p p ppp�p| p|��� ��|�||���ppp||���p� ||p�p|�� pp� �|p �� �p|�|��p��|pp���|�|�p��p |�|�||� ��p�|�|pp|p p ppp|�| p|��� ��|�||���pp �p�p��� �|��pp|��| ppppp�p�p�ppp�| p�p �pp�pp�p� �|�|p p ppp|pppp|��� ��|�||���pp �p�p�� �p��ppp|��| pppp�p���p pppppp�p �pp�pp�p� �|�|p p ppp�p| p|��� ��|�||���pp �p�p���p|�| pp|��| ppppp�p �ppp| p�p �pp�pp��pp��|�|p p ppp�p�pppp|��� ��|�||���pp �p�p���||p�ppp|��| pppp�p �  ppp�p�pp�p �pp�pp��pp��|�|p p ppp|�| p|��� ��|�||���pp �p| pp�pp ��ppp|��| ppppp���p�pp�| pp�p �pp�pppp� �|�|p ��ppp|pppp��p����|��|ppp���������p��|� p�|��| p�|| p����p����p|��p��|����p��p���p��� p��|pp| ��p�|� | p���||��p�|�|||���� p|�|��p�p�p����p�pp��|���� ��pp�����p�p���|pp � pp| p|�|�����|�|���p���|p p pppp�pppp��p����|��|ppp���������p�|| �pp��|����p���|p p pppp| p��p����|��|ppp�|��| pp�|ppp��p�|� p ��pppp�pppp��p����|��|ppp���������p��p���| p�p||| p|�����p�|| p�|��p��p��pp| p�|��p��p|���pp�|� ���p|��� ���ppp| p��pp p��|�p|��p�|��p��p��pp| p�|��p��p|���pp�|� ���p|��� ���� p ��p|pp�ppppp�p��pp�|||p���p���pp��p | p|�|��p���p��� p|��� ���p|�p���� ��p��|���p |||� ��p�|�| p��|���p��| p �� �p���p����|pp����|����� | �|p p p|p�p�pp`p|� �p|����� �����p`p�� ����`|�| p ���p~p p p|p�p�pp`p~� �p|����� �����p` � |�||�|��` ���|�`| � ` ` p|`�p�p`p`�~�p`��������||��p����p���||�|��`��|�|��p���p` ������`�``p�p~ ` p �p���p�ppp�`| p ` �p���`p�p``ppp pp|��|��p�|����ppp ��p����~p p `|p�p�`ppp|� �p|����� �����`p`�����|���p��|�| p ���|�p| � p �������|p

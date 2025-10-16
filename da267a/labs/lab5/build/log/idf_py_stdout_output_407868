@@ -1,0 +1,2192 @@
+Command: /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/minipops/uni/da267a/labs/lab5/build/lab5.elf /home/minipops/uni/da267a/labs/lab5/build/bootloader/bootloader.elf -m '/home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/opt/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc4ch ( 48204) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bc74 vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e114 vaddr=40080000 size=01f04h (  7940) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=181bch ( 98748) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=000381e4 vaddr=40081f04 size=0ed2ch ( 60716) load[0m
+[0;32mI (175) esp_image: segment 5: paddr=00046f18 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (217) app_init: ELF file SHA256:  03b7312b4...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (230) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (234) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:  8249 x:   672 y:  -132 z:  8296
+vector:  8297 x:   572 y:  -192 z:  8240
+vector:  8042 x:   660 y:  -168 z:  8252
+vector:  8023 x:   696 y:   -20 z:  8328
+vector:  8304 x:   764 y:  -212 z:  8292
+vector:  8287 x:   704 y:  -172 z:  8400
+vector:  8053 x:   680 y:  -196 z:  8300
+vector:  8351 x:   736 y:  -244 z:  8364
+buffer val: 8249 buffer val: 8297 buffer val: 8042 buffer val: 8023 buffer val: 8304 buffer val: 8287 buffer val: 8053 buffer val: 8351 buffer total: 65606 
+sd:3 mean:8200 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8253 x:   660 y:  -188 z:  8188
+vector:  8469 x:   700 y:  -220 z:  8188
+vector:  8224 x:   656 y:  -148 z:  8016
+vector:  8282 x:   752 y:    -8 z:  8132
+vector:  6229 x:   704 y:  -204 z:  8360
+vector:  8645 x:   788 y:  -196 z:  7744
+vector:  8263 x:   648 y:   -40 z:  8380
+vector:  8322 x:   708 y:  -180 z:  8128
+buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1010582585 
+sd:4 mean:126322823 size:8
+vector:  8287 x:   752 y:  -108 z:  8276
+vector:  8334 x:   600 y:  -180 z:  8244
+vector:  8422 x:   632 y:  -188 z:  8356
+vector:  8071 x:   568 y:   -48 z:  8424
+vector:  8366 x:   532 y:  -136 z:  8388
+vector:  8238 x:   600 y:  -224 z:  8212
+vector:  8080 x:   692 y:  -176 z:  8276
+vector:  8417 x:   648 y:  -236 z:  8340
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -252643089 
+sd:10 mean:-31580386 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8118 x:   668 y:   -88 z:  8020
+vector:  8333 x:   664 y:  -152 z:  8236
+vector:  8083 x:   640 y:  -168 z:  8424
+vector:  8307 x:   672 y:  -128 z:  8336
+vector:  8319 x:   688 y:   -92 z:  8400
+vector:  8309 x:   688 y:  -168 z:  8040
+vector:  8234 x:   676 y:  -140 z:  8288
+vector:  8138 x:   648 y:  -420 z:  8196
+vector:  8369 x:   596 y:  -196 z:  8188
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1263227722 
+sd:3 mean:140358635 size:9
+vector:  8182 x:   720 y:  -160 z:  8248
+vector:  8418 x:   632 y:  -228 z:  8260
+vector:  8195 x:   620 y:  -148 z:  8160
+vector:  8040 x:   656 y:  -116 z:  8156
+vector:  8285 x:   672 y:  -156 z:  8304
+vector:  8085 x:   672 y:  -196 z:  7948
+vector:  8455 x:   948 y:  -156 z:  8272
+vector:  8229 x:   652 y:  -256 z:  7976
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer total: -2147481600 
+sd:10 mean:-268435200 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8393 x:   644 y:  -144 z:  8444
+vector:  8227 x:   612 y:    -4 z:  8312
+vector:  8254 x:   660 y:  -192 z:  8088
+vector:  8025 x:   660 y:  -172 z:  8236
+vector:  8336 x:   700 y:   -84 z:  8244
+vector:  8320 x:   584 y:  -160 z:  8360
+vector:  8362 x:   628 y:  -188 z:  8304
+vector:  8413 x:   656 y:   -84 z:  8144
+buffer val: 8393 buffer val: 8227 buffer val: 8254 buffer val: 8025 buffer val: 8336 buffer val: 8320 buffer val: 8362 buffer val: 8413 buffer total: 66330 
+sd:3 mean:8291 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8322 x:   616 y:  -152 z:  7968
+vector:  8276 x:   680 y:  -220 z:  8128
+vector:  8434 x:   672 y:  -212 z:  8396
+vector:  8333 x:   656 y:  -252 z:  8268
+vector:  8093 x:   696 y:  -168 z:  7948
+vector:  8275 x:   636 y:  -196 z:  8380
+vector:  8337 x:   656 y:  -176 z:  8420
+vector:  8217 x:   704 y:  -160 z:  8260
+buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1642195422 
+sd:3 mean:205274427 size:8
+vector:  8101 x:   680 y:  -232 z:  8236
+vector:  8294 x:   680 y:   -60 z:  8368
+vector:  8403 x:   588 y:   -72 z:  8120
+vector:  8322 x:   616 y:  -140 z:  8380
+vector:  8192 x:   648 y:  -152 z:  8412
+vector:  8460 x:   676 y:  -156 z:  8124
+vector:  8419 x:   584 y:  -232 z:  8356
+vector:  8093 x:   624 y:   -12 z:  8240
+vector:  8178 x:   636 y:   -20 z:  8272
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -1136901063 
+sd:10 mean:-126322340 size:9
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8103 x:   564 y:   -12 z:  8316
+vector:  8375 x:   616 y:  -196 z:  8360
+vector:  8357 x:   600 y:  -232 z:  8284
+vector:  8450 x:   652 y:  -172 z:  8004
+vector:  8208 x:   700 y:  -228 z:  8416
+vector:  8311 x:   644 y:  -180 z:  8208
+vector:  8179 x:   680 y:  -156 z:  8408
+vector:  8444 x:   660 y:  -212 z:  8128
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -252643089 
+sd:10 mean:-31580386 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8035 x:   680 y:  -184 z:  8272
+vector:  7995 x:   640 y:  -216 z:  8120
+vector:  8214 x:   672 y:  -236 z:  8296
+vector:  8468 x:   636 y:  -216 z:  8268
+vector:  8268 x:   572 y:   -80 z:  8228
+vector:  8092 x:   664 y:  -212 z:  8316
+vector:  8251 x:   684 y:  -208 z:  8396
+vector:  8316 x:   640 y:  -204 z:  8044
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer total: -1515868763 
+sd:10 mean:-189483595 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8259 x:   652 y:  -192 z:  8408
+vector:  8232 x:   668 y:  -128 z:  8420
+vector:  8071 x:   676 y:    -8 z:  8140
+vector:  8205 x:   628 y:  -176 z:  7984
+vector:  8014 x:   672 y:  -212 z:  8424
+vector:  8144 x:   620 y:  -424 z:  8188
+vector:  8355 x:   684 y:  -232 z:  8336
+vector:  8421 x:   608 y:  -208 z:  8276
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer total: 0 
+Guru Meditation Error: Core  0 panic'ed (IntegerDivideByZero). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400d655a  PS      : 0x00060530  A0      : 0x8008962c  A1      : 0x3ffb6760  
+A2      : 0x00000000  A3      : 0x00000008  A4      : 0x00000000  A5      : 0x43d00000  
+A6      : 0x7fffffff  A7      : 0x00000008  A8      : 0x800d6551  A9      : 0x3ffb6750  
+A10     : 0x7fffffff  A11     : 0x43d00000  A12     : 0x7fffffff  A13     : 0x7fffffff  
+A14     : 0x7ff00000  A15     : 0x0000041d  SAR     : 0x00000000  EXCCAUSE: 0x00000006  
+EXCVADDR: 0x00000000  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x400d6557:0x3ffb6760 0x40089629:0x3ffb6790
+
+
+
+
+ELF file SHA256: 03b7312b4
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc4ch ( 48204) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc74 vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e114 vaddr=40080000 size=01f04h (  7940) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=181bch ( 98748) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=000381e4 vaddr=40081f04 size=0ed2ch ( 60716) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046f18 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  03b7312b4...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:  8414 x:   648 y:  -236 z:  8244
+vector:  8228 x:   684 y:  -192 z:  8228
+vector:  8327 x:   692 y:  -200 z:  8284
+vector:  8345 x:   632 y:  -128 z:  8420
+vector:  8444 x:   536 y:   -76 z:  8188
+vector:  8144 x:   664 y:  -148 z:  8260
+vector:  8185 x:   664 y:   -88 z:  8360
+vector:  8300 x:   636 y:  -240 z:  8112
+buffer val: 8414 buffer val: 8228 buffer val: 8327 buffer val: 8345 buffer val: 8444 buffer val: 8144 buffer val: 8185 buffer val: 8300 buffer total: 66387 
+sd:3 mean:8298 size:8
+step detected
+step detected
+step detected
+step detected
+vector:  7971 x:   728 y:  -180 z:  8256
+vector:  8461 x:   648 y:  -176 z:  8268
+vector:  8266 x:   680 y:  -208 z:  8320
+vector:  8016 x:   628 y:  -236 z:  8344
+vector:  8337 x:   692 y:  -216 z:  8232
+vector:  8342 x:   672 y:  -232 z:  8104
+vector:  8285 x:   724 y:  -148 z:  8276
+vector:  8161 x:   608 y:  -172 z:  8324
+buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1010582585 
+sd:4 mean:126322823 size:8
+vector:  8215 x:   684 y:  -108 z:  8236
+vector:  8363 x:   604 y:  -464 z:  8324
+vector:  8250 x:   696 y:  -256 z:  8136
+vector:  8266 x:   652 y:  -136 z:  8240
+vector:  8157 x:   668 y:  -416 z:  8252
+vector:  8418 x:   648 y:  -200 z:  7988
+vector:  8233 x:   680 y:  -204 z:  8148
+vector:  8429 x:   948 y:  -244 z:  8388
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -252643089 
+sd:10 mean:-31580386 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  7962 x:   660 y:  -204 z:  8288
+vector:  8408 x:   580 y:  -220 z:  8180
+vector:  8213 x:   692 y:  -180 z:  8200
+vector:  8344 x:   688 y:  -212 z:  8236
+vector:  8458 x:   664 y:  -176 z:  8284
+vector:  8413 x:   620 y:  -208 z:  8092
+vector:  8245 x:   572 y:  -188 z:  8324
+vector:  8291 x:   696 y:   -12 z:  7996
+vector:  8456 x:   668 y:  -232 z:  8252
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1263227722 
+sd:3 mean:140358635 size:9
+vector:  8282 x:   644 y:  -224 z:  8024
+vector:  8150 x:   628 y:  -192 z:  8412
+vector:  8451 x:   596 y:  -248 z:  8072
+vector:  8023 x:   596 y:  -224 z:  8176
+vector:  8414 x:   656 y:  -112 z:  8420
+vector:  8322 x:   632 y:  -192 z:  8088
+vector:  8135 x:   660 y:  -208 z:  8424
+vector:  8166 x:   700 y:  -140 z:  8400
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer total: -2147481600 
+sd:10 mean:-268435200 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8269 x:   552 y:  -240 z:  8380
+vector:  8285 x:   624 y:  -232 z:  8300
+vector:  8227 x:   680 y:  -224 z:  8204
+vector:  8198 x:   560 y:  -152 z:  8412
+vector:  7998 x:   664 y:  -164 z:  8300
+vector:  8247 x:   660 y:  -240 z:  8224
+vector:  8361 x:   692 y:  -380 z:  8236
+vector:  8217 x:   632 y:  -176 z:  8244
+buffer val: 8269 buffer val: 8285 buffer val: 8227 buffer val: 8198 buffer val: 7998 buffer val: 8247 buffer val: 8361 buffer val: 8217 buffer total: 65802 
+sd:3 mean:8225 size:8
+step detected
+step detected
+step detected
+step detected
+vector:  8450 x:   644 y:  -160 z:  7996
+vector:  8292 x:   708 y:  -124 z:  8208
+vector:  8289 x:   608 y:  -184 z:  8380
+vector:  8339 x:   552 y:  -108 z:  8224
+vector:  8185 x:   588 y:  -172 z:  8320
+vector:  8349 x:   648 y:  -424 z:  8012
+vector:  8422 x:   644 y:  -184 z:  8244
+vector:  8262 x:   636 y:  -224 z:  7972
+buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1642195422 
+sd:3 mean:205274427 size:8
+vector:  7939 x:   692 y:  -152 z:  8240
+vector:  8159 x:   764 y:  -160 z:  8384
+vector:  8245 x:   608 y:  -468 z:  8296
+vector:  8473 x:   616 y:  -192 z:  8200
+vector:  8627 x:   632 y:  -120 z:  8444
+vector:  8027 x:   632 y:  -232 z:  8204
+vector:  7991 x:   680 y:  -252 z:  7944
+vector:  8206 x:   600 y:  -172 z:  8432
+vector:  8267 x:   668 y:  -220 z:  8324
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -1136901063 
+sd:10 mean:-126322340 size:9
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8255 x:   660 y:  -240 z:  8288
+vector:  8186 x:   632 y:  -228 z:  8420
+vector:  8315 x:   700 y:  -212 z:  8300
+vector:  8377 x:   684 y:  -236 z:  8148
+vector:  8427 x:   692 y:  -152 z:  8288
+vector:  8222 x:   620 y:  -240 z:  7964
+vector:  8390 x:   664 y:  -204 z:  8444
+vector:  8174 x:   580 y:  -208 z:  8352
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -252643089 
+sd:10 mean:-31580386 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8405 x:   640 y:  -212 z:  8420
+vector:  8233 x:   644 y:  -484 z:  8036
+vector:  8168 x:   604 y:  -228 z:  8232
+vector:  8354 x:   688 y:  -148 z:  7972
+vector:  8167 x:   588 y:   -76 z:  8200
+vector:  8056 x:   596 y:    -8 z:  8432
+vector:  8451 x:   636 y:  -212 z:  8012
+vector:  8437 x:   624 y:  -196 z:  8080
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer total: -1515868763 
+sd:10 mean:-189483595 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8373 x:   604 y:  -220 z:  8332
+vector:  8289 x:   628 y:  -224 z:  8200
+vector:  8257 x:   740 y:  -180 z:  8196
+vector:  8229 x:   604 y:  -164 z:  8224
+vector:  7987 x:   640 y:  -144 z:  7968
+vector:  8368 x:   636 y:  -160 z:  8360
+vector:  8314 x:   612 y:  -252 z:  7948
+vector:  8374 x:   588 y:   -16 z:  8440
+vector:  8206 x:   704 y:  -160 z:  8212
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer total: 2048 
+sd:10 mean:227 size:9
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8055 x:   676 y:  -104 z:  8376
+vector:  8290 x:   720 y:  -172 z:  8252
+vector:  8420 x:   720 y:  -256 z:  8000
+vector:  8193 x:   648 y:  -152 z:  8156
+vector:  8239 x:   612 y:  -172 z:  8260
+vector:  8287 x:   692 y:  -480 z:  7924
+vector:  8077 x:   724 y:  -256 z:  8296
+vector:  8026 x:   512 y:  -244 z:  8272
+buffer val: 8055 buffer val: 8290 buffer val: 8420 buffer val: 8193 buffer val: 8239 buffer val: 8287 buffer val: 8077 buffer val: 8026 buffer total: 65587 
+sd:4 mean:8198 size:8
+step detected
+step detected
+step detected
+step detected
+vector:  8368 x:   700 y:  -184 z:  8124
+vector:  8370 x:   736 y:  -196 z:  8436
+vector:  8212 x:   728 y:  -228 z:  8384
+vector:  8096 x:   664 y:  -168 z:  8396
+vector:  8327 x:   692 y:   -84 z:  8244
+vector:  8059 x:   544 y:  -152 z:  8328
+vector:  7768 x:   672 y:  -180 z:  8156
+vector:  8740 x:   784 y:  -244 z:  8228
+buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1642195422 
+sd:3 mean:205274427 size:8
+vector:  8228 x:   716 y:  -164 z:  8060
+vector:  8010 x:   732 y:  -232 z:  8148
+vector:  8386 x:   696 y:  -148 z:  8044
+vector:  8323 x:   616 y:  -164 z:  8016
+vector:  8077 x:   612 y:   -12 z:  8384
+vector:  7985 x:   608 y:  -148 z:  8328
+vector:  8331 x:   644 y:  -216 z:  8436
+vector:  8377 x:   648 y:  -416 z:  8332
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 378969748 
+sd:6 mean:47371218 size:8
+vector:  7976 x:   700 y:  -164 z:  8068
+vector:  7990 x:   400 y:  -212 z:  8228
+vector:  8075 x:   620 y:  -220 z:  8156
+vector:  8263 x:   692 y:  -388 z:  8240
+vector:  8267 x:   648 y:  -128 z:  8244
+vector:  8108 x:   708 y:  -172 z:  8268
+vector:  8270 x:   888 y:  -208 z:  8188
+vector:  8300 x:   640 y:  -220 z:  8316
+vector:  8271 x:   648 y:  -212 z:  8168
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1894840559 
+sd:3 mean:210537839 size:9
+vector:  8363 x:   564 y:  -204 z:  8260
+vector:  8223 x:   592 y:  -184 z:  7952
+vector:  8316 x:   620 y:  -228 z:  8504
+vector:  8155 x:   684 y:  -252 z:  8432
+vector:  8427 x:   716 y:  -192 z:  8116
+vector:  8866 x:   740 y:  -224 z:  8632
+vector:  8167 x:   604 y:  -176 z:  8252
+vector:  8016 x:   688 y:   -80 z:  7984
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer total: -1515868763 
+sd:10 mean:-189483595 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8329 x:   708 y:  -184 z:  8348
+vector:  8370 x:   612 y:   -80 z:  8124
+vector:  8087 x:   620 y:  -232 z:  8216
+vector:  8426 x:   648 y:  -148 z:  8280
+vector:  8437 x:   672 y:  -136 z:  8380
+vector:  8243 x:   608 y:  -220 z:  8236
+vector:  8015 x:   676 y:  -192 z:  8212
+vector:  7994 x:   676 y:   -80 z:  7940
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer total: 0 
+Guru Meditation Error: Core  0 panic'ed (IntegerDivideByZero). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400d655a  PS      : 0x00060b30  A0      : 0x8008962c  A1      : 0x3ffb6760  
+A2      : 0x00000000  A3      : 0x00000008  A4      : 0x00000000  A5      : 0x43d00000  
+A6      : 0x7fffffff  A7      : 0x00000008  A8      : 0x800d6551  A9      : 0x3ffb6750  
+A10     : 0x7fffffff  A11     : 0x43d00000  A12     : 0x7fffffff  A13     : 0x7fffffff  
+A14     : 0x7ff00000  A15     : 0x0000041d  SAR     : 0x00000000  EXCCAUSE: 0x00000006  
+EXCVADDR: 0x00000000  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x400d6557:0x3ffb6760 0x40089629:0x3ffb6790
+
+
+
+
+ELF file SHA256: 03b7312b4
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc4ch ( 48204) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc74 vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e114 vaddr=40080000 size=01f04h (  7940) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=181bch ( 98748) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=000381e4 vaddr=40081f04 size=0ed2ch ( 60716) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046f18 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  03b7312b4...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:  7984 x:   644 y:  -164 z:  8432
+vector:  8343 x:   628 y:   -40 z:  8372
+vector:  8225 x:   588 y:  -108 z:  8320
+vector:  8342 x:   668 y:  -392 z:  8400
+vector:  8188 x:   608 y:  -160 z:  7516
+vector:  8057 x:   636 y:  -156 z:  8292
+vector:  8251 x:   744 y:  -216 z:  8364
+vector:  8379 x:   700 y:  -168 z:  7992
+buffer val: 7984 buffer val: 8343 buffer val: 8225 buffer val: 8342 buffer val: 8188 buffer val: 8057 buffer val: 8251 buffer val: 8379 buffer total: 65769 
+sd:4 mean:8221 size:8
+step detected
+step detected
+step detected
+step detected
+vector:  8275 x:   668 y:  -248 z:  8212
+vector:  8105 x:   940 y:  -164 z:  8260
+vector:  8312 x:   668 y:   -60 z:  8264
+vector:  8279 x:   656 y:  -152 z:  8420
+vector:  8255 x:   620 y:  -232 z:  8348
+vector:  8467 x:   628 y:  -252 z:  8120
+vector:  8378 x:   632 y:  -196 z:  8000
+vector:  8259 x:   672 y:  -184 z:  8300
+buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1010582585 
+sd:4 mean:126322823 size:8
+vector:  8364 x:   680 y:  -140 z:  8412
+vector:  8419 x:   644 y:  -184 z:  8404
+vector:  8336 x:   696 y:  -156 z:  8440
+vector:  8320 x:   376 y:  -192 z:  8420
+vector:  8128 x:   600 y:  -192 z:  8120
+vector:  8283 x:   712 y:  -164 z:  8212
+vector:  8408 x:   656 y:   -64 z:  8212
+vector:  8258 x:   656 y:  -204 z:  8180
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -252643089 
+sd:10 mean:-31580386 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8090 x:   580 y:  -468 z:  8304
+vector:  8296 x:   652 y:  -160 z:  8144
+vector:  8246 x:   624 y:  -212 z:  8084
+vector:  8174 x:   648 y:  -104 z:  8184
+vector:  8270 x:   700 y:  -136 z:  8256
+vector:  8133 x:   660 y:  -240 z:  8128
+vector:  7982 x:   576 y:  -172 z:  8220
+vector:  8237 x:   676 y:  -232 z:  8204
+vector:  7987 x:   584 y:  -160 z:  8168
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1263227722 
+sd:3 mean:140358635 size:9
+vector:  8354 x:   608 y:  -180 z:  8412
+vector:  8077 x:   680 y:  -192 z:  8204
+vector:  8294 x:   628 y:  -208 z:  7940
+vector:  8406 x:   604 y:  -144 z:  8008
+vector:  8181 x:   624 y:  -160 z:  8268
+vector:  8235 x:   716 y:  -200 z:  8272
+vector:  8393 x:   632 y:  -164 z:  8296
+vector:  8346 x:   724 y:   -36 z:  8308
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer total: -2147481600 
+sd:10 mean:-268435200 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8326 x:   516 y:  -444 z:  8304
+vector:  8243 x:   620 y:  -196 z:  7960
+vector:  8319 x:   680 y:   -12 z:  8408
+vector:  8133 x:   692 y:  -152 z:  8160
+vector:  7995 x:   572 y:  -116 z:  8240
+vector:  8112 x:   652 y:  -168 z:  8276
+vector:  8409 x:   684 y:  -200 z:  8228
+vector:  7978 x:   708 y:  -212 z:  8216
+buffer val: 8326 buffer val: 8243 buffer val: 8319 buffer val: 8133 buffer val: 7995 buffer val: 8112 buffer val: 8409 buffer val: 7978 buffer total: 65515 
+sd:4 mean:8189 size:8
+step detected
+step detected
+step detected
+step detected
+vector:  8028 x:   684 y:  -104 z:  8340
+vector:  8124 x:   992 y:  -212 z:  8468
+vector:  8230 x:   660 y:  -112 z:  8324
+vector:  8097 x:   672 y:  -248 z:  8140
+vector:  8323 x:   636 y:  -104 z:  8392
+vector:  8484 x:   716 y:  -176 z:  8276
+vector:  8257 x:   652 y:  -196 z:  8100
+vector:  8346 x:   620 y:  -188 z:  8284
+buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1642195422 
+sd:3 mean:205274427 size:8
+vector:  8454 x:   588 y:  -192 z:  7952
+vector:  8322 x:   712 y:  -184 z:  8328
+vector:  7980 x:   664 y:  -216 z:  8176
+vector:  8265 x:   644 y:  -208 z:  8252
+vector:  8274 x:   616 y:   -68 z:  8244
+vector:  8161 x:   704 y:  -120 z:  8196
+vector:  8316 x:   640 y:   -92 z:  8420
+vector:  8479 x:   624 y:   -96 z:  8132
+vector:  8330 x:   736 y:  -224 z:  8128
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -1136901063 
+sd:10 mean:-126322340 size:9
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8468 x:   640 y:  -228 z:  7984
+vector:  8354 x:   668 y:  -188 z:  8416
+vector:  8418 x:   680 y:  -100 z:  8076
+vector:  8421 x:   608 y:  -144 z:  8432
+vector:  7593 x:   628 y:  -144 z:  8152
+vector:  8558 x:   768 y:  -116 z:  8004
+vector:  8331 x:   664 y:  -128 z:  8160
+vector:  8287 x:   616 y:  -256 z:  8260
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -252643089 
+sd:10 mean:-31580386 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8496 x:   588 y:  -200 z:  8080
+vector:  8287 x:   648 y:  -248 z:  8332
+vector:  8215 x:   704 y:  -216 z:  8424
+vector:  8428 x:   652 y:  -224 z:  8220
+vector:  8025 x:   668 y:  -180 z:  8428
+vector:  8247 x:   692 y:  -212 z:  7996
+vector:  8282 x:   592 y:  -440 z:  8268
+vector:  8023 x:   540 y:  -252 z:  8232
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer total: -1515868763 
+sd:10 mean:-189483595 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8300 x:   664 y:  -156 z:  8200
+vector:  8255 x:   628 y:  -260 z:  8280
+vector:  8197 x:   636 y:  -512 z:  8376
+vector:  8056 x:   556 y:  -408 z:  8084
+vector:  8199 x:   692 y:   -64 z:  8316
+vector:  8032 x:   652 y:  -172 z:  7944
+vector:  8314 x:   636 y:  -432 z:  8028
+vector:  8288 x:   580 y:    -4 z:  8256
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer total: 0 
+Guru Meditation Error: Core  0 panic'ed (IntegerDivideByZero). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400d655a  PS      : 0x00060130  A0      : 0x8008962c  A1      : 0x3ffb6760  
+A2      : 0x00000000  A3      : 0x00000008  A4      : 0x00000000  A5      : 0x43d00000  
+A6      : 0x7fffffff  A7      : 0x00000008  A8      : 0x800d6551  A9      : 0x3ffb6750  
+A10     : 0x7fffffff  A11     : 0x43d00000  A12     : 0x7fffffff  A13     : 0x7fffffff  
+A14     : 0x7ff00000  A15     : 0x0000041d  SAR     : 0x00000000  EXCCAUSE: 0x00000006  
+EXCVADDR: 0x00000000  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x400d6557:0x3ffb6760 0x40089629:0x3ffb6790
+
+
+
+
+ELF file SHA256: 03b7312b4
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc4ch ( 48204) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc74 vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e114 vaddr=40080000 size=01f04h (  7940) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=181bch ( 98748) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=000381e4 vaddr=40081f04 size=0ed2ch ( 60716) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046f18 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  03b7312b4...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:  8378 x:   640 y:  -100 z:  8212
+vector:  8281 x:   580 y:    -8 z:  8000
+vector:  8233 x:   636 y:  -216 z:  8316
+vector:  8326 x:   680 y:  -172 z:  8384
+vector:  8320 x:   652 y:  -212 z:  8440
+vector:  8008 x:   632 y:  -160 z:  8012
+vector:  8464 x:   584 y:  -136 z:  8260
+vector:  8199 x:   756 y:  -156 z:  8212
+buffer val: 8378 buffer val: 8281 buffer val: 8233 buffer val: 8326 buffer val: 8320 buffer val: 8008 buffer val: 8464 buffer val: 8199 buffer total: 66209 
+sd:3 mean:8276 size:8
+step detected
+step detected
+step detected
+step detected
+vector:  8229 x:   600 y:  -164 z:  8276
+vector:  8027 x:   620 y:  -176 z:  8308
+vector:  8428 x:   612 y:  -244 z:  7984
+vector:  7964 x:   680 y:  -208 z:  8436
+vector:  8431 x:   512 y:  -468 z:  8280
+vector:  8278 x:   644 y:    -8 z:  8260
+vector:  8270 x:   620 y:  -192 z:  8196
+vector:  8288 x:   636 y:  -148 z:  8108
+buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1010582585 
+sd:4 mean:126322823 size:8
+vector:  8271 x:   588 y:  -200 z:  8068
+vector:  8246 x:   704 y:   -16 z:  8328
+vector:  8187 x:   684 y:  -160 z:  8256
+vector:  8270 x:   704 y:  -208 z:  8348
+vector:  8459 x:   584 y:  -148 z:  8324
+vector:  8229 x:   560 y:  -176 z:  8240
+vector:  8148 x:   596 y:  -504 z:  8324
+vector:  8292 x:   636 y:  -176 z:  8220
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -252643089 
+sd:10 mean:-31580386 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8334 x:   656 y:  -120 z:  8128
+vector:  8012 x:   700 y:  -152 z:  8344
+vector:  8315 x:   592 y:  -184 z:  8408
+vector:  8159 x:   644 y:  -128 z:  8224
+vector:  8329 x:   672 y:   -16 z:  8424
+vector:  8240 x:   668 y:  -192 z:  8340
+vector:  8327 x:   632 y:  -144 z:  8328
+vector:  8251 x:   656 y:  -124 z:  8320
+vector:  8098 x:   604 y:  -144 z:  8444
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1263227722 
+sd:3 mean:140358635 size:9
+vector:  8367 x:   632 y:  -144 z:  8248
+vector:  8467 x:   740 y:  -112 z:  8244
+vector:  8017 x:   928 y:  -188 z:  8312
+vector:  7986 x:   652 y:   -24 z:  8108
+vector:  8157 x:   636 y:  -252 z:  8364
+vector:  8246 x:   640 y:  -144 z:  8292
+vector:  8363 x:   664 y:  -236 z:  8324
+vector:  8450 x:   700 y:  -216 z:  8388
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer total: -2147481600 
+sd:10 mean:-268435200 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8239 x:   712 y:  -180 z:  8252
+vector:  7988 x:   588 y:  -140 z:  8112
+vector:  8257 x:   656 y:  -224 z:  7972
+vector:  7981 x:   728 y:  -156 z:  8220
+vector:  8232 x:   720 y:  -212 z:  8244
+vector:  8277 x:   700 y:  -184 z:  8244
+vector:  8031 x:   672 y:  -488 z:  8268
+vector:  8255 x:   636 y:  -248 z:  8172
+buffer val: 8239 buffer val: 7988 buffer val: 8257 buffer val: 7981 buffer val: 8232 buffer val: 8277 buffer val: 8031 buffer val: 8255 buffer total: 65260 
+sd:3 mean:8157 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8046 x:   640 y:  -300 z:  8276
+vector:  8278 x:   668 y:  -140 z:  8376
+vector:  8087 x:   624 y:  -128 z:  8284
+vector:  8323 x:   612 y:  -216 z:  8180
+vector:  8431 x:   624 y:  -124 z:  8332
+vector:  8401 x:   700 y:  -172 z:  8248
+vector:  8222 x:   692 y:   -28 z:  8204
+vector:  8468 x:   632 y:  -208 z:  7956
+vector:  8392 x:   720 y:  -256 z:  8036
+buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 126324611 
+sd:10 mean:14036067 size:9
+vector:  8402 x:   616 y:  -160 z:  8384
+vector:  8456 x:   632 y:  -192 z:  8220
+vector:  8265 x:   648 y:  -232 z:  8436
+vector:  8227 x:   708 y:  -128 z:  8192
+vector:  8251 x:   668 y:  -168 z:  8372
+vector:  8126 x:   724 y:  -176 z:  8340
+vector:  8194 x:   592 y:   -56 z:  8260
+vector:  8450 x:   612 y:  -220 z:  8324
+buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1010582585 
+sd:4 mean:126322823 size:8
+vector:  8397 x:   680 y:  -196 z:  8300
+vector:  8262 x:   664 y:  -156 z:  8360
+vector:  8078 x:   584 y:  -220 z:  8200
+vector:  8286 x:   612 y:  -208 z:  8288
+vector:  8182 x:   556 y:  -192 z:  8184
+vector:  8287 x:   680 y:  -204 z:  8252
+vector:  8253 x:   648 y:  -348 z:  8384
+vector:  8016 x:   684 y:  -176 z:  8048
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -252643089 
+sd:10 mean:-31580386 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8063 x:   596 y:  -188 z:  8016
+vector:  8427 x:   712 y:  -204 z:  8388
+vector:  8254 x:   696 y:  -436 z:  8256
+vector:  8282 x:   680 y:  -168 z:  8368
+vector:  8000 x:   624 y:  -124 z:  8128
+vector:  8365 x:   604 y:  -144 z:  8120
+vector:  8063 x:   628 y:  -200 z:  8224
+vector:  8105 x:   520 y:  -216 z:  7964
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer total: -1515868763 
+sd:10 mean:-189483595 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8279 x:   704 y:  -136 z:  7980
+vector:  8052 x:   612 y:  -176 z:  8224
+vector:  8296 x:   700 y:  -188 z:  8400
+vector:  8247 x:   708 y:  -192 z:  8328
+vector:  8245 x:   656 y:  -176 z:  7936
+vector:  8447 x:   692 y:  -376 z:  8252
+vector:  8234 x:   676 y:  -180 z:  8316
+vector:  8081 x:   600 y:  -240 z:  8276
+vector:  8240 x:   644 y:  -184 z:  8324
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer total: 2048 
+sd:10 mean:227 size:9
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8318 x:   672 y:  -224 z:  8144
+vector:  8392 x:   640 y:  -176 z:  8248
+vector:  8242 x:   636 y:  -172 z:  8412
+vector:  8475 x:   660 y:  -188 z:  8272
+vector:  7966 x:   612 y:  -188 z:  8176
+vector:  8450 x:   668 y:  -204 z:  8336
+vector:  8239 x:   672 y:  -216 z:  8256
+vector:  8398 x:   624 y:  -164 z:  8228
+buffer val: 8318 buffer val: 8392 buffer val: 8242 buffer val: 8475 buffer val: 7966 buffer val: 8450 buffer val: 8239 buffer val: 8398 buffer total: 66480 
+sd:4 mean:8310 size:8
+step detected
+step detected
+step detected
+step detected
+vector:  8360 x:   680 y:  -204 z:  8232
+vector:  8430 x:   636 y:  -200 z:  8000
+vector:  8141 x:   652 y:  -152 z:  8356
+vector:  8406 x:   648 y:  -180 z:  8080
+vector:  8286 x:   680 y:  -164 z:  8392
+vector:  8308 x:   640 y:  -192 z:  8188
+vector:  8269 x:   576 y:  -168 z:  8124
+vector:  8260 x:   656 y:  -180 z:  8088
+buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1642195422 
+sd:3 mean:205274427 size:8
+vector:  7990 x:   672 y:  -180 z:  8232
+vector:  8287 x:   588 y:  -240 z:  8032
+vector:  8334 x:   648 y:  -232 z:  7972
+vector:  8261 x:   636 y:  -180 z:  8160
+vector:  8167 x:   684 y:  -184 z:  8184
+vector:  8299 x:   624 y:  -196 z:  8432
+vector:  8170 x:   720 y:  -184 z:  8176
+vector:  8313 x:   580 y:  -232 z:  8408
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 378969748 
+sd:6 mean:47371218 size:8
+vector:  8377 x:   716 y:  -112 z:  8128
+vector:  8352 x:   924 y:  -200 z:  8280
+vector:  8195 x:   724 y:  -432 z:  8436
+vector:  8376 x:   672 y:  -172 z:  8292
+vector:  8423 x:   672 y:  -192 z:  7992
+vector:  8236 x:   616 y:  -144 z:  8216
+vector:  8053 x:   636 y:  -120 z:  8408
+vector:  8257 x:   708 y:  -224 z:  7964
+vector:  8359 x:   608 y:  -132 z:  8380
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1894840559 
+sd:3 mean:210537839 size:9
+vector:  8262 x:   656 y:   -16 z:  8376
+vector:  8299 x:   724 y:   -16 z:  8168
+vector:  8432 x:   712 y:  -248 z:  8268
+vector:  8299 x:   664 y:  -188 z:  8244
+vector:  8276 x:   648 y:  -192 z:  8316
+vector:  7968 x:   656 y:  -476 z:  8072
+vector:  8310 x:   712 y:   -40 z:  8268
+vector:  8384 x:   592 y:  -188 z:  8140
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer total: -1515868763 
+sd:10 mean:-189483595 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8251 x:   892 y:  -212 z:  8308
+vector:  8014 x:   700 y:  -220 z:  8004
+vector:  8188 x:   700 y:  -176 z:  7972
+vector:  8219 x:   612 y:  -184 z:  8220
+vector:  8348 x:   692 y:  -240 z:  8040
+vector:  8248 x:   644 y:  -160 z:  8164
+vector:  8242 x:   652 y:  -268 z:  8432
+vector:  8246 x:   720 y:  -156 z:  8288
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer total: 0 
+Guru Meditation Error: Core  0 panic'ed (IntegerDivideByZero). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400d655a  PS      : 0x00060b30  A0      : 0x8008962c  A1      : 0x3ffb6760  
+A2      : 0x00000000  A3      : 0x00000008  A4      : 0x00000000  A5      : 0x43d00000  
+A6      : 0x7fffffff  A7      : 0x00000008  A8      : 0x800d6551  A9      : 0x3ffb6750  
+A10     : 0x7fffffff  A11     : 0x43d00000  A12     : 0x7fffffff  A13     : 0x7fffffff  
+A14     : 0x7ff00000  A15     : 0x0000041d  SAR     : 0x00000000  EXCCAUSE: 0x00000006  
+EXCVADDR: 0x00000000  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x400d6557:0x3ffb6760 0x40089629:0x3ffb6790
+
+
+
+
+ELF file SHA256: 03b7312b4
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc4ch ( 48204) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc74 vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e114 vaddr=40080000 size=01f04h (  7940) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=181bch ( 98748) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=000381e4 vaddr=40081f04 size=0ed2ch ( 60716) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046f18 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  03b7312b4...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:  8181 x:   644 y:  -236 z:  8340
+vector:  8088 x:   636 y:  -388 z:  8260
+vector:  8260 x:   616 y:  -232 z:  8020
+vector:  8457 x:   632 y:  -132 z:  8380
+vector:  8243 x:   648 y:  -152 z:  8256
+vector:  7987 x:   620 y:  -232 z:  8444
+vector:  8106 x:   700 y:  -120 z:  8260
+vector:  8418 x:   584 y:  -180 z:  8256
+buffer val: 8181 buffer val: 8088 buffer val: 8260 buffer val: 8457 buffer val: 8243 buffer val: 7987 buffer val: 8106 buffer val: 8418 buffer total: 65740 
+sd:4 mean:8217 size:8
+step detected
+step detected
+step detected
+step detected
+vector:  8458 x:   588 y:  -136 z:  8408
+vector:  8301 x:   696 y:  -176 z:  8388
+vector:  8297 x:   680 y:  -208 z:  7980
+vector:  8467 x:   668 y:  -108 z:  8212
+vector:  8254 x:   724 y:  -212 z:  8268
+vector:  8239 x:   540 y:  -204 z:  8212
+vector:  8341 x:   616 y:  -184 z:  8404
+vector:  8206 x:   672 y:  -192 z:  8424
+buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1010582585 
+sd:4 mean:126322823 size:8
+vector:  8401 x:   636 y:  -216 z:  8232
+vector:  8353 x:   612 y:   -56 z:  8252
+vector:  8302 x:   600 y:  -212 z:  8304
+vector:  8293 x:   572 y:  -132 z:  8112
+vector:  8384 x:   596 y:  -156 z:  8252
+vector:  8317 x:   560 y:  -216 z:  8328
+vector:  8020 x:   712 y:  -228 z:  8268
+vector:  8084 x:   712 y:  -168 z:  8220
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -252643089 
+sd:10 mean:-31580386 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8126 x:   656 y:  -240 z:  8128
+vector:  8020 x:   588 y:  -136 z:  8264
+vector:  8242 x:   624 y:  -176 z:  7984
+vector:  8221 x:   600 y:  -460 z:  8260
+vector:  8394 x:   584 y:   -36 z:  8436
+vector:  8228 x:   680 y:  -436 z:  8224
+vector:  7990 x:   592 y:  -168 z:  8436
+vector:  8252 x:   648 y:  -168 z:  8228
+vector:  8190 x:   580 y:  -280 z:  8220
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1263227722 
+sd:3 mean:140358635 size:9
+vector:  8223 x:   656 y:  -208 z:  8240
+vector:  8117 x:   764 y:  -212 z:  8252
+vector:  8373 x:   636 y:  -476 z:  8296
+vector:  8052 x:   616 y:  -168 z:  8388
+vector:  8443 x:   668 y:  -184 z:  8272
+vector:  8372 x:   600 y:  -220 z:  8268
+vector:  8224 x:   700 y:  -164 z:  7996
+vector:  8282 x:   596 y:  -180 z:  8304
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer total: -2147481600 
+sd:10 mean:-268435200 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8257 x:   676 y:  -208 z:  8028
+vector:  8226 x:   572 y:  -156 z:  8268
+vector:  8314 x:   640 y:  -156 z:  8444
+vector:  8052 x:   696 y:  -208 z:  8052
+vector:  8222 x:   740 y:  -128 z:  8284
+vector:  8380 x:   616 y:  -184 z:  8220
+vector:  8164 x:   636 y:  -256 z:  7968
+vector:  8193 x:   704 y:  -184 z:  8392
+buffer val: 8257 buffer val: 8226 buffer val: 8314 buffer val: 8052 buffer val: 8222 buffer val: 8380 buffer val: 8164 buffer val: 8193 buffer total: 65808 
+sd:2 mean:8226 size:8
+step detected
+step detected
+step detected
+vector:  8321 x:   656 y:  -128 z:  8128
+vector:  8245 x:   624 y:  -188 z:  8416
+vector:  8166 x:   544 y:  -180 z:  8216
+vector:  8448 x:   700 y:  -196 z:  8040
+vector:  8423 x:   712 y:  -156 z:  8272
+vector:  8353 x:   612 y:  -176 z:  8372
+vector:  7997 x:   592 y:  -228 z:  8112
+vector:  8222 x:   616 y:  -224 z:  8404
+buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1642195422 
+sd:3 mean:205274427 size:8
+vector:  8453 x:   608 y:    -8 z:  8204
+vector:  8445 x:   612 y:  -152 z:  8396
+vector:  8248 x:   684 y:  -188 z:  8212
+vector:  8261 x:   708 y:  -152 z:  8296
+vector:  8240 x:   640 y:   -24 z:  8428
+vector:  8415 x:   612 y:  -408 z:  8204
+vector:  8468 x:   608 y:  -156 z:  8048
+vector:  8274 x:   676 y:    -8 z:  8240
+vector:  8449 x:   632 y:  -500 z:  8400
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -1136901063 
+sd:10 mean:-126322340 size:9
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8430 x:   636 y:  -244 z:  8220
+vector:  7995 x:   572 y:  -192 z:  8192
+vector:  8304 x:   596 y:  -160 z:  8280
+vector:  8264 x:   644 y:  -236 z:  8172
+vector:  8221 x:   708 y:  -120 z:  8212
+vector:  8446 x:   656 y:  -204 z:  8184
+vector:  8264 x:   648 y:  -252 z:  8432
+vector:  8393 x:   632 y:  -160 z:  8324
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -252643089 
+sd:10 mean:-31580386 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8370 x:   556 y:  -248 z:  8292
+vector:  7992 x:   680 y:  -160 z:  8324
+vector:  8143 x:   728 y:   -96 z:  8252
+vector:  8218 x:   740 y:  -188 z:  8244
+vector:  8287 x:   668 y:  -220 z:  8168
+vector:  8390 x:   680 y:  -180 z:  8292
+vector:  8209 x:   644 y:   -28 z:  8324
+vector:  8027 x:   672 y:  -192 z:  8192
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer total: -1515868763 
+sd:10 mean:-189483595 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8235 x:   592 y:  -256 z:  8440
+vector:  8328 x:   748 y:  -256 z:  8188
+vector:  8307 x:   588 y:  -208 z:  8032
+vector:  8242 x:   568 y:  -492 z:  8104
+vector:  8306 x:   576 y:  -220 z:  8204
+vector:  8228 x:   700 y:  -244 z:  8364
+vector:  8398 x:   680 y:  -256 z:  8160
+vector:  8041 x:   596 y:  -440 z:  7976
+vector:  7973 x:   696 y:  -200 z:  8324
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer total: 2048 
+sd:10 mean:227 size:9
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8209 x:   724 y:  -156 z:  8412
+vector:  8318 x:   672 y:  -148 z:  8212
+vector:  8271 x:   700 y:  -208 z:  8200
+vector:  8260 x:   664 y:  -136 z:  8204
+vector:  8242 x:   624 y:  -152 z:  8292
+vector:  8218 x:   612 y:  -188 z:  8212
+vector:  8085 x:   716 y:   -28 z:  8400
+vector:  8426 x:   576 y:  -156 z:  8236
+buffer val: 8209 buffer val: 8318 buffer val: 8271 buffer val: 8260 buffer val: 8242 buffer val: 8218 buffer val: 8085 buffer val: 8426 buffer total: 66029 
+sd:2 mean:8253 size:8
+step detected
+step detected
+step detected
+step detected
+vector:  8296 x:   616 y:  -476 z:  8176
+vector:  8312 x:   640 y:  -196 z:  8180
+vector:  8211 x:   584 y:  -140 z:  8300
+vector:  8281 x:   616 y:  -152 z:  8268
+vector:  8049 x:   600 y:  -184 z:  8168
+vector:  8374 x:   688 y:  -116 z:  8056
+vector:  8333 x:   684 y:    -4 z:  8000
+vector:  8340 x:   632 y:   -28 z:  8220
+buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1642195422 
+sd:3 mean:205274427 size:8
+vector:  8087 x:   636 y:  -188 z:  8328
+vector:  8457 x:   660 y:  -124 z:  8196
+vector:  8249 x:   680 y:  -152 z:  8372
+vector:  8240 x:   744 y:  -228 z:  8316
+vector:  8244 x:   600 y:  -156 z:  8416
+vector:  8380 x:   636 y:  -224 z:  8240
+vector:  8242 x:   600 y:  -184 z:  8184
+vector:  8360 x:   700 y:  -160 z:  8396
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 378969748 
+sd:6 mean:47371218 size:8
+vector:  8238 x:   640 y:  -252 z:  8424
+vector:  8197 x:   728 y:  -224 z:  8372
+vector:  8252 x:   652 y:  -180 z:  8316
+vector:  8432 x:   648 y:  -164 z:  8012
+vector:  8301 x:   548 y:  -212 z:  8384
+vector:  8391 x:   628 y:  -228 z:  8228
+vector:  8143 x:   624 y:   -20 z:  8208
+vector:  8415 x:   680 y:  -160 z:  8240
+vector:  8406 x:   608 y:  -144 z:  8360
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1894840559 
+sd:3 mean:210537839 size:9
+vector:  8337 x:   656 y:  -180 z:  8320
+vector:  8166 x:   680 y:  -160 z:  8308
+vector:  8159 x:   624 y:  -152 z:  8196
+vector:  8284 x:   652 y:  -208 z:  8256
+vector:  8245 x:   704 y:  -188 z:  8432
+vector:  8143 x:   644 y:  -408 z:  8192
+vector:  7986 x:   620 y:  -160 z:  8068
+vector:  8150 x:   596 y:  -188 z:  8188
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer total: -1515868763 
+sd:10 mean:-189483595 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  7991 x:   684 y:  -220 z:  8208
+vector:  8282 x:   624 y:  -392 z:  8256
+vector:  8356 x:   632 y:  -432 z:  8216
+vector:  8296 x:   616 y:  -504 z:  8212
+vector:  8064 x:   548 y:  -240 z:  8316
+vector:  8285 x:   648 y:  -156 z:  8288
+vector:  8287 x:   692 y:  -196 z:  8056
+vector:  8381 x:   692 y:  -168 z:  8196
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer total: 0 
+Guru Meditation Error: Core  0 panic'ed (IntegerDivideByZero). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400d655a  PS      : 0x00060b30  A0      : 0x8008962c  A1      : 0x3ffb6760  
+A2      : 0x00000000  A3      : 0x00000008  A4      : 0x00000000  A5      : 0x43d00000  
+A6      : 0x7fffffff  A7      : 0x00000008  A8      : 0x800d6551  A9      : 0x3ffb6750  
+A10     : 0x7fffffff  A11     : 0x43d00000  A12     : 0x7fffffff  A13     : 0x7fffffff  
+A14     : 0x7ff00000  A15     : 0x0000041d  SAR     : 0x00000000  EXCCAUSE: 0x00000006  
+EXCVADDR: 0x00000000  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x400d6557:0x3ffb6760 0x40089629:0x3ffb6790
+
+
+
+
+ELF file SHA256: 03b7312b4
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc4ch ( 48204) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc74 vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e114 vaddr=40080000 size=01f04h (  7940) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=181bch ( 98748) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=000381e4 vaddr=40081f04 size=0ed2ch ( 60716) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046f18 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  03b7312b4...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:  8390 x:   644 y:  -144 z:  8276
+vector:  8414 x:   692 y:   -24 z:  8128
+vector:  8310 x:   676 y:  -188 z:  8204
+vector:  8297 x:   644 y:  -288 z:  8244
+vector:  8226 x:   648 y:  -220 z:  8284
+vector:  8240 x:   660 y:  -208 z:  8136
+vector:  8579 x:   672 y:  -156 z:  8204
+vector:  8121 x:   644 y:  -296 z:  8220
+buffer val: 8390 buffer val: 8414 buffer val: 8310 buffer val: 8297 buffer val: 8226 buffer val: 8240 buffer val: 8579 buffer val: 8121 buffer total: 66577 
+sd:4 mean:8322 size:8
+step detected
+step detected
+step detected
+vector:  8190 x:   600 y:  -200 z:  8408
+vector:  8329 x:   660 y:   -40 z:  8204
+vector:  8198 x:   644 y:   -20 z:  8024
+vector:  8148 x:   672 y:   -88 z:  8288
+vector:  8028 x:   664 y:  -200 z:  8428
+vector:  8072 x:   652 y:   -84 z:  8420
+vector:  8217 x:   648 y:  -208 z:  8280
+vector:  8343 x:   700 y:   -16 z:  8424
+buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1010582585 
+sd:4 mean:126322823 size:8
+vector:  7965 x:   624 y:  -172 z:  8312
+vector:  8240 x:   688 y:  -140 z:  8356
+vector:  8196 x:   572 y:  -464 z:  8428
+vector:  8334 x:   620 y:  -200 z:  8216
+vector:  8247 x:   628 y:  -204 z:  8124
+vector:  8017 x:   560 y:  -244 z:  8340
+vector:  8155 x:   580 y:  -188 z:  8236
+vector:  8202 x:   652 y:  -152 z:  7964
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -252643089 
+sd:10 mean:-31580386 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8293 x:   600 y:  -108 z:  8396
+vector:  8528 x:   664 y:  -180 z:  8192
+vector:  8475 x:   608 y:  -228 z:  7992
+vector:  8290 x:   740 y:  -168 z:  8228
+vector:  8301 x:   680 y:  -168 z:  8304
+vector:  8143 x:   740 y:  -248 z:  8248
+vector:  8436 x:   696 y:  -208 z:  8196
+vector:  8280 x:   716 y:  -168 z:  8004
+vector:  8292 x:   640 y:  -108 z:  8368
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1263227722 
+sd:3 mean:140358635 size:9
+vector:  8181 x:   692 y:  -136 z:  7980
+vector:  8227 x:   712 y:  -428 z:  8220
+vector:  8159 x:   732 y:  -220 z:  8364
+vector:  8215 x:   704 y:  -248 z:  8016
+vector:  8027 x:   572 y:  -184 z:  8360
+vector:  8346 x:   660 y:  -212 z:  8172
+vector:  8443 x:   560 y:  -136 z:  8244
+vector:  8283 x:   624 y:  -144 z:  8252
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer total: -2147481600 
+sd:10 mean:-268435200 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8428 x:   624 y:  -212 z:  8424
+vector:  8445 x:   656 y:  -164 z:  8444
+vector:  8425 x:   712 y:  -252 z:  8252
+vector:  8331 x:   732 y:  -164 z:  8076
+vector:  8056 x:   672 y:  -224 z:  8228
+vector:  8087 x:   612 y:  -292 z:  8204
+vector:  8251 x:   696 y:  -208 z:  8188
+vector:  8248 x:   656 y:  -192 z:  8312
+buffer val: 8428 buffer val: 8445 buffer val: 8425 buffer val: 8331 buffer val: 8056 buffer val: 8087 buffer val: 8251 buffer val: 8248 buffer total: 66271 
+sd:4 mean:8283 size:8
+step detected
+step detected
+step detected
+step detected
+vector:  8261 x:   636 y:   -36 z:  8232
+vector:  8184 x:   680 y:  -240 z:  8252
+vector:  8343 x:   612 y:  -256 z:  8292
+vector:  8243 x:   592 y:  -200 z:  7984
+vector:  8351 x:   636 y:  -196 z:  8392
+vector:  8059 x:   740 y:  -212 z:  8176
+vector:  8101 x:   656 y:  -128 z:  8284
+vector:  8278 x:   676 y:  -208 z:  8316
+vector:  8395 x:   720 y:  -252 z:  8220
+buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 126324611 
+sd:10 mean:14036067 size:9
+vector:  8296 x:   632 y:  -196 z:  8248
+vector:  8252 x:   664 y:  -220 z:  8192
+vector:  8095 x:   676 y:  -424 z:  8444
+vector:  8446 x:   592 y:  -180 z:  8424
+vector:  8268 x:   680 y:  -172 z:  8276
+vector:  8245 x:   648 y:  -180 z:  8124
+vector:  8282 x:   668 y:  -204 z:  8372
+vector:  8306 x:   704 y:  -176 z:  8356
+buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1010582585 
+sd:4 mean:126322823 size:8
+vector:  8381 x:   660 y:    -8 z:  8204
+vector:  8398 x:   708 y:  -224 z:  8288
+vector:  8357 x:   648 y:  -160 z:  8340
+vector:  8471 x:   684 y:  -228 z:  8432
+vector:  8378 x:   672 y:  -124 z:  8264
+vector:  8467 x:   688 y:  -236 z:  8216
+vector:  8309 x:   740 y:  -256 z:  8044
+vector:  7981 x:   584 y:  -256 z:  8244
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -252643089 
+sd:10 mean:-31580386 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8062 x:   672 y:  -100 z:  8392
+vector:  8256 x:   620 y:  -200 z:  8204
+vector:  8283 x:   644 y:  -200 z:  8348
+vector:  8286 x:   736 y:  -212 z:  8200
+vector:  8244 x:   644 y:  -232 z:  8168
+vector:  8248 x:   648 y:  -180 z:  7952
+vector:  8284 x:   668 y:  -196 z:  8264
+vector:  8067 x:   684 y:  -256 z:  8052
+vector:  8315 x:   656 y:  -176 z:  8004
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1263227722 
+sd:3 mean:140358635 size:9
+vector:  8215 x:   664 y:  -152 z:  8288
+vector:  8346 x:   636 y:  -172 z:  8388
+vector:  8218 x:   676 y:  -236 z:  8208
+vector:  8165 x:   660 y:  -128 z:  8032
+vector:  8287 x:   672 y:  -244 z:  8200
+vector:  8368 x:   680 y:  -200 z:  8232
+vector:  8006 x:   616 y:  -244 z:  8244
+vector:  7987 x:   616 y:  -232 z:  8304
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer total: -2147481600 
+sd:10 mean:-268435200 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8394 x:   628 y:  -220 z:  8040
+vector:  8297 x:   612 y:  -152 z:  8088
+vector:  8291 x:   636 y:  -156 z:  8384
+vector:  8292 x:   628 y:  -156 z:  8252
+vector:  8322 x:   604 y:  -208 z:  8376
+vector:  8081 x:   632 y:  -220 z:  8132
+vector:  8134 x:   652 y:  -164 z:  8424
+vector:  8190 x:   660 y:  -208 z:  7968
+buffer val: 8394 buffer val: 8297 buffer val: 8291 buffer val: 8292 buffer val: 8322 buffer val: 8081 buffer val: 8134 buffer val: 8190 buffer total: 66001 
+sd:3 mean:8250 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8325 x:   592 y:   -24 z:  8460
+vector:  8350 x:   624 y:  -188 z:  8156
+vector:  8369 x:   684 y:   -40 z:  8280
+vector:  8265 x:   524 y:  -184 z:  8236
+vector:  8251 x:   724 y:  -236 z:  8156
+vector:  8244 x:   672 y:  -252 z:  7996
+vector:  8248 x:   704 y:  -192 z:  8408
+vector:  8027 x:   728 y:  -180 z:  8164
+buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1642195422 
+vector:  8238 x:   700 y:  -184 z:  8252
+sd:3 mean:205274427 size:8
+vector:  8258 x:   660 y:  -144 z:  8304
+vector:  8368 x:   668 y:  -208 z:  8200
+vector:  8255 x:   612 y:  -180 z:  8236
+vector:  8303 x:   720 y:  -228 z:  8164
+vector:  8401 x:   636 y:  -228 z:  8272
+vector:  8383 x:   672 y:  -112 z:  7976
+vector:  8426 x:   576 y:  -144 z:  8236
+vector:  8389 x:   692 y:  -232 z:  8144
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -1136901063 
+sd:10 mean:-126322340 size:9
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8177 x:   640 y:  -192 z:  8304
+vector:  8242 x:   640 y:  -220 z:  8388
+vector:  8469 x:   748 y:  -232 z:  8300
+vector:  8472 x:   632 y:  -168 z:  8224
+vector:  8184 x:   612 y:  -204 z:  8388
+vector:  8304 x:   644 y:  -240 z:  8032
+vector:  8473 x:   680 y:  -200 z:  8228
+vector:  8381 x:   632 y:  -168 z:  8260
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -252643089 
+sd:10 mean:-31580386 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8271 x:   648 y:  -248 z:  8144
+vector:  8071 x:   628 y:  -224 z:  8228
+vector:  8121 x:   748 y:  -168 z:  8340
+vector:  8260 x:   648 y:   -36 z:  8276
+vector:  8246 x:   656 y:  -128 z:  8168
+vector:  8272 x:   628 y:   -20 z:  8004
+vector:  8339 x:   720 y:  -208 z:  8428
+vector:  8327 x:   616 y:  -188 z:  8188
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer total: -1515868763 
+sd:10 mean:-189483595 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8443 x:   692 y:  -208 z:  8204
+vector:  7966 x:   568 y:  -224 z:  8048
+vector:  8007 x:   664 y:  -172 z:  8356
+vector:  8199 x:   664 y:  -164 z:  8028
+vector:  8071 x:   624 y:  -112 z:  8344
+vector:  8290 x:   620 y:  -220 z:  8364
+vector:  8264 x:   600 y:  -232 z:  8360
+vector:  8195 x:   612 y:  -172 z:  8208
+vector:  8283 x:   600 y:  -184 z:  8292
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer total: 2048 
+sd:10 mean:227 size:9
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8259 x:   676 y:  -200 z:  8324
+vector:  8438 x:   636 y:  -196 z:  8180
+vector:  8337 x:   596 y:  -160 z:  8180
+vector:  8295 x:   664 y:  -248 z:  8304
+vector:  8297 x:   716 y:  -104 z:  8340
+vector:  8388 x:   576 y:  -168 z:  8244
+vector:  8168 x:   612 y:  -256 z:  8380
+vector:  8423 x:   716 y:  -136 z:  8372
+buffer val: 8259 buffer val: 8438 buffer val: 8337 buffer val: 8295 buffer val: 8297 buffer val: 8388 buffer val: 8168 buffer val: 8423 buffer total: 66605 
+sd:2 mean:8325 size:8
+step detected
+step detected
+step detected
+step detected
+vector:  8404 x:   612 y:    -4 z:  8216
+vector:  8307 x:   664 y:   -92 z:  7980
+vector:  8259 x:   688 y:  -168 z:  8032
+vector:  8249 x:   736 y:  -196 z:  8260
+vector:  8448 x:   720 y:   -88 z:  7936
+vector:  8153 x:   684 y:  -256 z:  8008
+vector:  8251 x:   632 y:  -112 z:  7984
+vector:  8330 x:   712 y:  -216 z:  8296
+buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1642195422 
+sd:3 mean:205274427 size:8
+vector:  8364 x:   604 y:  -192 z:  8148
+vector:  8310 x:   660 y:  -168 z:  8436
+vector:  8190 x:   608 y:  -148 z:  8260
+vector:  8415 x:   740 y:  -200 z:  8404
+vector:  8465 x:   656 y:  -176 z:  8348
+vector:  8035 x:   640 y:  -484 z:  8224
+vector:  8227 x:   684 y:  -416 z:  7952
+vector:  8002 x:   660 y:  -148 z:  8228
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 378969748 
+sd:6 mean:47371218 size:8
+vector:  8416 x:   700 y:  -196 z:  8284
+buffer val: 8416 buffer total: 8416 
+sd:0 mean:8416 size:1
+ESP_ERROR_CHECK failed: esp_err_t 0x107 (ESP_ERR_TIMEOUT) at 0x400d6794
+file: "./main/i2c.c" line 75
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40088917 on core 0
+
+
+Backtrace: 0x400889f5:0x3ffb6f90 0x40088985:0x3ffb6fb0 0x4008eeb1:0x3ffb6fd0 0x40088917:0x3ffb7040 0x400d6794:0x3ffb7070 0x400d68e8:0x3ffb7090 0x400d648c:0x3ffb70c0 0x40089629:0x3ffb70f0
+
+
+
+
+ELF file SHA256: 03b7312b4
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc4ch ( 48204) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc74 vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e114 vaddr=40080000 size=01f04h (  7940) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=181bch ( 98748) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=000381e4 vaddr=40081f04 size=0ed2ch ( 60716) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046f18 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  03b7312b4...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:  8287 x:   640 y:  -184 z:  8256
+vector:  8215 x:   728 y:  -196 z:  8420
+vector:  8264 x:   648 y:  -132 z:  7972
+vector:  8280 x:   632 y:  -152 z:  8384
+vector:  8184 x:   628 y:  -252 z:  8204
+vector:  8405 x:   668 y:  -192 z:  8400
+vector:  8055 x:   712 y:   -44 z:  8176
+vector:  8437 x:   632 y:  -124 z:  8304
+buffer val: 8287 buffer val: 8215 buffer val: 8264 buffer val: 8280 buffer val: 8184 buffer val: 8405 buffer val: 8055 buffer val: 8437 buffer total: 66127 
+sd:3 mean:8265 size:8
+step detected
+step detected
+step detected
+step detected
+vector:  8387 x:   644 y:  -208 z:  8148
+vector:  8247 x:   628 y:   -16 z:  8316
+vector:  8221 x:   668 y:   -96 z:  8184
+vector:  8251 x:   680 y:  -424 z:  8400
+vector:  8416 x:   692 y:  -168 z:  8388
+vector:  8223 x:   656 y:   -64 z:  8404
+vector:  8381 x:   632 y:  -116 z:  8288
+vector:  8267 x:   624 y:  -184 z:  8344
+buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1010582585 
+sd:4 mean:126322823 size:8
+vector:  8460 x:   708 y:  -136 z:  8188
+vector:  8413 x:   648 y:  -244 z:  8232
+vector:  8234 x:   696 y:  -148 z:  8120
+vector:  8274 x:   672 y:  -236 z:  8304
+vector:  8272 x:   752 y:  -120 z:  8440
+vector:  8419 x:   600 y:  -192 z:  8444
+vector:  8307 x:   684 y:  -228 z:  8416
+vector:  8275 x:   640 y:  -200 z:  8304
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -252643089 
+sd:10 mean:-31580386 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8259 x:   696 y:  -212 z:  8416
+vector:  8165 x:   636 y:  -252 z:  8336
+vector:  8424 x:   648 y:  -196 z:  8444
+vector:  8082 x:   652 y:  -160 z:  8324
+vector:  8240 x:   588 y:  -216 z:  8244
+vector:  8280 x:   648 y:  -208 z:  8280
+vector:  8199 x:   652 y:  -160 z:  8264
+vector:  8237 x:   620 y:  -252 z:  8384
+vector:  8394 x:   588 y:  -152 z:  8344
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1263227722 
+sd:3 mean:140358635 size:9
+vector:  8058 x:   704 y:  -248 z:  8308
+vector:  8222 x:   604 y:  -172 z:  8248
+vector:  8395 x:   664 y:  -204 z:  8184
+vector:  8115 x:   580 y:  -224 z:  7996
+vector:  8390 x:   684 y:  -224 z:  8444
+vector:  8381 x:   732 y:  -192 z:  8100
+vector:  8209 x:   616 y:  -196 z:  8092
+vector:  8208 x:   608 y:  -116 z:  8104
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer total: -2147481600 
+sd:10 mean:-268435200 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8241 x:   660 y:  -176 z:  8128
+vector:  8291 x:   644 y:  -184 z:  7984
+vector:  8258 x:   620 y:  -480 z:  8396
+vector:  8223 x:   544 y:  -188 z:  7940
+vector:  8288 x:   600 y:  -136 z:  8260
+vector:  8035 x:   704 y:  -232 z:  8296
+vector:  8227 x:   708 y:  -168 z:  8440
+vector:  8292 x:   668 y:   -68 z:  8400
+buffer val: 8241 buffer val: 8291 buffer val: 8258 buffer val: 8223 buffer val: 8288 buffer val: 8035 buffer val: 8227 buffer val: 8292 buffer total: 65855 
+sd:2 mean:8231 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8247 x:   568 y:  -304 z:  8636
+vector:  8242 x:   636 y:  -256 z:  8252
+vector:  8066 x:   696 y:    -4 z:  8384
+vector:  8365 x:   624 y:  -480 z:  8052
+vector:  8314 x:   556 y:  -196 z:  8300
+vector:  8420 x:   604 y:  -244 z:  8372
+vector:  8178 x:   644 y:  -200 z:  8216
+vector:  8342 x:   604 y:  -148 z:  8280
+vector:  8417 x:   660 y:  -128 z:  8276
+buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 126324611 
+sd:10 mean:14036067 size:9
+vector:  8299 x:   620 y:  -180 z:  8276
+vector:  8430 x:   632 y:  -164 z:  7972
+vector:  8366 x:   720 y:  -116 z:  8192
+vector:  8211 x:   648 y:  -232 z:  8232
+vector:  8234 x:   612 y:  -180 z:  8268
+vector:  8378 x:   712 y:   -76 z:  8396
+vector:  8436 x:   600 y:  -180 z:  8200
+vector:  8395 x:   728 y:  -184 z:  8268
+buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1010582585 
+sd:4 mean:126322823 size:8
+vector:  8133 x:   644 y:  -120 z:  8284
+vector:  8246 x:   680 y:  -172 z:  8012
+vector:  8267 x:   700 y:  -200 z:  8200
+vector:  8272 x:   912 y:  -188 z:  8340
+vector:  8183 x:   588 y:  -124 z:  8340
+vector:  8450 x:   588 y:  -168 z:  8024
+vector:  8124 x:   600 y:  -240 z:  8248
+vector:  8336 x:   692 y:  -188 z:  8200
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -252643089 
+sd:10 mean:-31580386 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8219 x:   712 y:  -164 z:  8316
+vector:  8475 x:   640 y:  -152 z:  7940
+vector:  8346 x:   632 y:  -136 z:  8416
+vector:  8013 x:   548 y:  -152 z:  8144
+vector:  8293 x:   760 y:  -164 z:  8228
+vector:  8325 x:   664 y:   -24 z:  8264
+vector:  8354 x:   584 y:  -224 z:  8008
+vector:  8394 x:   640 y:  -196 z:  8428
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer total: -1515868763 
+sd:10 mean:-189483595 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8369 x:   588 y:  -200 z:  8292
+vector:  8446 x:   644 y:  -236 z:  8060
+vector:  8463 x:   612 y:  -184 z:  8296
+vector:  8317 x:   652 y:  -176 z:  7944
+vector:  8282 x:   624 y:  -208 z:  8212
+vector:  8323 x:   712 y:  -196 z:  8084
+vector:  8210 x:   556 y:    -8 z:  8632
+vector:  8269 x:   664 y:   -84 z:  8008
+vector:  8278 x:   544 y:   -76 z:  8276
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer total: 2048 
+sd:10 mean:227 size:9
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8317 x:   636 y:  -144 z:  8296
+vector:  8387 x:   552 y:  -380 z:  8204
+vector:  8205 x:   656 y:  -200 z:  8236
+vector:  8284 x:   648 y:  -204 z:  8312
+vector:  8092 x:   732 y:  -240 z:  8128
+vector:  8012 x:   672 y:  -160 z:  8036
+vector:  8263 x:   644 y:  -208 z:  8244
+vector:  8339 x:   740 y:  -176 z:  8304
+buffer val: 8317 buffer val: 8387 buffer val: 8205 buffer val: 8284 buffer val: 8092 buffer val: 8012 buffer val: 8263 buffer val: 8339 buffer total: 65899 
+sd:3 mean:8237 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8311 x:   624 y:  -168 z:  8444
+vector:  8256 x:   668 y:  -144 z:  8176
+vector:  8296 x:   620 y:  -140 z:  8376
+vector:  8229 x:   560 y:  -232 z:  8436
+vector:  8231 x:   660 y:  -116 z:  8180
+vector:  8433 x:   644 y:  -232 z:  8232
+vector:  8198 x:   672 y:  -112 z:  8212
+vector:  8046 x:   644 y:  -148 z:  8228
+buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1642195422 
+sd:3 mean:205274427 size:8
+vector:  8222 x:   620 y:  -264 z:  8224
+vector:  7964 x:   656 y:  -272 z:  8280
+vector:  8464 x:   556 y:  -248 z:  8196
+vector:  8309 x:   628 y:  -192 z:  8252
+vector:  7969 x:   516 y:  -104 z:  8400
+vector:  8233 x:   620 y:  -200 z:  8144
+vector:  8012 x:   656 y:   -64 z:  8344
+vector:  8177 x:   636 y:  -228 z:  8016
+vector:  8422 x:   612 y:  -128 z:  7980
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -1136901063 
+sd:10 mean:-126322340 size:9
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8234 x:   660 y:  -216 z:  8284
+vector:  8240 x:   608 y:  -148 z:  8252
+vector:  7982 x:   632 y:  -148 z:  8340
+vector:  8246 x:   600 y:  -196 z:  8292
+vector:  8223 x:   584 y:  -156 z:  7984
+vector:  8131 x:   708 y:  -152 z:  8220
+vector:  8357 x:   716 y:  -228 z:  7936
+vector:  8154 x:   624 y:  -228 z:  8180
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: -252643089 
+sd:10 mean:-31580386 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8309 x:   624 y:  -212 z:  8384
+vector:  8304 x:   668 y:  -244 z:  8300
+vector:  8183 x:   696 y:  -184 z:  8160
+vector:  8291 x:   632 y:   -92 z:  8304
+vector:  8415 x:   644 y:  -132 z:  8248
+vector:  8310 x:   600 y:  -148 z:  7976
+vector:  8425 x:   668 y:  -180 z:  8248
+vector:  8138 x:   716 y:  -204 z:  8336
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer total: -1515868763 
+sd:10 mean:-189483595 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8307 x:   680 y:  -284 z:  7944
+vector:  8169 x:   644 y:  -224 z:  8292
+vector:  8233 x:   632 y:  -168 z:  8340
+vector:  8125 x:   620 y:  -204 z:  8212
+vector:  8117 x:   640 y:  -428 z:  7984
+vector:  8107 x:   736 y:  -240 z:  8384
+vector:  8309 x:   624 y:  -172 z:  8404
+vector:  8142 x:   660 y:  -228 z:  8208
+vector:  8350 x:   624 y:  -104 z:  8344
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer total: 2048 
+sd:10 mean:227 size:9
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8231 x:   588 y:  -284 z:  8184
+vector:  8222 x:   636 y:  -192 z:  8332
+vector:  8309 x:   640 y:  -244 z:  8376
+vector:  7990 x:   704 y:  -160 z:  8272
+vector:  8324 x:   688 y:  -200 z:  8260
+vector:  8269 x:   684 y:  -184 z:  8204
+vector:  8718 x:   680 y:  -248 z:  8300
+vector:  8444 x:   612 y:  -180 z:  8400
+buffer val: 8231 buffer val: 8222 buffer val: 8309 buffer val: 7990 buffer val: 8324 buffer val: 8269 buffer val: 8718 buffer val: 8444 buffer total: 66507 
+sd:6 mean:8313 size:8
+step detected
+step detected
+vector:  8185 x:   696 y:    -8 z:  8220
+vector:  8350 x:   596 y:  -244 z:  8156
+vector:  8430 x:   684 y:  -116 z:  7984
+vector:  8105 x:   644 y:  -164 z:  8196
+vector:  8428 x:   592 y:  -284 z:  8200
+vector:  8233 x:   712 y:    -8 z:  8084
+vector:  8044 x:   688 y:   -84 z:  7980
+vector:  8359 x:   660 y:  -184 z:  8076
+buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1642195422 
+sd:3 mean:205274427 size:8
+vector:  8253 x:   672 y:  -164 z:  8356
+vector:  8271 x:   684 y:  -228 z:  8212
+vector:  8399 x:   608 y:  -192 z:  8228
+vector:  8099 x:   604 y:  -452 z:  7988
+vector:  8423 x:   752 y:  -200 z:  8220
+vector:  8270 x:   728 y:  -204 z:  8112
+vector:  8341 x:   720 y:  -196 z:  8432
+vector:  8390 x:   640 y:  -164 z:  8144
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 378969748 
+sd:6 mean:47371218 size:8
+vector:  8058 x:   612 y:  -180 z:  8436
+vector:  8381 x:   704 y:  -188 z:  8372
+vector:  8147 x:   620 y:  -196 z:  8360
+vector:  8264 x:   604 y:  -148 z:  8216
+vector:  8338 x:   688 y:  -132 z:  7988
+vector:  8302 x:   648 y:  -216 z:  8308
+vector:  8358 x:   696 y:  -252 z:  8272
+vector:  8319 x:   668 y:  -116 z:  8356
+vector:  8329 x:   712 y:   -12 z:  8212
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer val: -1515870811 buffer val: -1515870811 buffer total: 1894840559 
+sd:3 mean:210537839 size:9
+vector:  8285 x:   632 y:  -236 z:  8368
+vector:  8111 x:   684 y:  -192 z:  8132
+vector:  8130 x:   652 y:  -136 z:  8404
+vector:  8463 x:   672 y:  -208 z:  7992
+vector:  8308 x:   664 y:  -100 z:  8220
+vector:  8295 x:   704 y:  -244 z:  8332
+vector:  8367 x:   640 y:  -444 z:  8324
+vector:  8247 x:   632 y:  -204 z:  8252
+buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: -2147483648 buffer val: 2048 buffer val: -1515870811 buffer total: -1515868763 
+sd:10 mean:-189483595 size:8
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+step detected
+vector:  8368 x:   700 y:  -160 z:  7940
+vector:  8450 x:   640 y:   -92 z:  8296
+vector:  8309 x:   644 y:  -180 z:  8252

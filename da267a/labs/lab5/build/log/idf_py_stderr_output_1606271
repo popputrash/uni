@@ -1,0 +1,42 @@
+Command: /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/minipops/uni/da267a/labs/lab5/build/lab5.elf /home/minipops/uni/da267a/labs/lab5/build/bootloader/bootloader.elf -m '/home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/opt/esp-idf/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.7.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32m/opt/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32m/opt/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x400d6aa2: [0;33mreadI2C[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/i2c.c[0m[0m:[1;31m58[0m
+[0m--- 0x40088ab3: [0;33m_esp_error_check_failed[0m[0m at [0;32m/opt/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x40088b91: [0;33mpanic_abort[0m[0m at [0;32m/opt/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x40088b21: [0;33mesp_system_abort[0m[0m at [0;32m/opt/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x4008f06d: [0;33mabort[0m[0m at [0;32m/opt/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x40088ab3: [0;33m_esp_error_check_failed[0m[0m at [0;32m/opt/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x400d6aa2: [0;33mreadI2C[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/i2c.c[0m[0m:[1;31m58[0m
+[0m--- 0x400d6cb1: [0;33mget_accel_y[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/accel.c[0m[0m:[1;31m84[0m
+[0m--- 0x400d6795: [0;33msampling_task[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/main.c[0m[0m:[1;31m92[0m
+[0m--- 0x400897c5: [0;33mvPortTaskWrapper[0m[0m at [0;32m/opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32m/opt/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32m/opt/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x400d6b1c: [0;33mreadI2C[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/i2c.c[0m[0m:[1;31m76[0m
+[0m--- 0x40088ab3: [0;33m_esp_error_check_failed[0m[0m at [0;32m/opt/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x40088b91: [0;33mpanic_abort[0m[0m at [0;32m/opt/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x40088b21: [0;33mesp_system_abort[0m[0m at [0;32m/opt/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x4008f06d: [0;33mabort[0m[0m at [0;32m/opt/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x40088ab3: [0;33m_esp_error_check_failed[0m[0m at [0;32m/opt/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x400d6b1c: [0;33mreadI2C[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/i2c.c[0m[0m:[1;31m76[0m
+[0m--- 0x400d6ce1: [0;33mget_accel_z[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/accel.c[0m[0m:[1;31m93[0m
+[0m--- 0x400d679a: [0;33msampling_task[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/main.c[0m[0m:[1;31m93[0m
+[0m--- 0x400897c5: [0;33mvPortTaskWrapper[0m[0m at [0;32m/opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32m/opt/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32m/opt/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x400d6b1c: [0;33mreadI2C[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/i2c.c[0m[0m:[1;31m76[0m
+[0m--- 0x40088ab3: [0;33m_esp_error_check_failed[0m[0m at [0;32m/opt/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x40088b91: [0;33mpanic_abort[0m[0m at [0;32m/opt/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x40088b21: [0;33mesp_system_abort[0m[0m at [0;32m/opt/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x4008f06d: [0;33mabort[0m[0m at [0;32m/opt/esp-idf/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x40088ab3: [0;33m_esp_error_check_failed[0m[0m at [0;32m/opt/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x400d6b1c: [0;33mreadI2C[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/i2c.c[0m[0m:[1;31m76[0m
+[0m--- 0x400d6ce1: [0;33mget_accel_z[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/accel.c[0m[0m:[1;31m93[0m
+[0m--- 0x400d679a: [0;33msampling_task[0m[0m at [0;32m/home/minipops/uni/da267a/labs/lab5/main/main.c[0m[0m:[1;31m93[0m
+[0m--- 0x400897c5: [0;33mvPortTaskWrapper[0m[0m at [0;32m/opt/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32m/opt/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2235[0m
+[0m--- 0x40080638: [0;33mcall_start_cpu0[0m[0m at [0;32m/opt/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m

@@ -1,0 +1,438 @@
+Command: /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/minipops/uni/da267a/labs/lab5/build/lab5.elf /home/minipops/uni/da267a/labs/lab5/build/bootloader/bootloader.elf -m '/home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/opt/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc44h ( 48196) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bc6c vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e10c vaddr=40080000 size=01f0ch (  7948) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1813ch ( 98620) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=00038164 vaddr=40081f0c size=0ed24h ( 60708) load[0m
+[0;32mI (175) esp_image: segment 5: paddr=00046e90 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  d40d87bc1...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (238) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:  8267 x:   424 y:  -160 z:  8440 stepcount:     0
+vector:  8284 x:   388 y:  -204 z:  8108 stepcount:     0
+vector:  8444 x:   368 y:   -80 z:  8204 stepcount:     0
+vector:  8253 x:   340 y:  -256 z:  8228 stepcount:     0
+vector:  7990 x:   336 y:  -176 z:  8260 stepcount:     0
+vector:  8236 x:   452 y:  -192 z:  8340 stepcount:     0
+vector:  8232 x:   344 y:  -220 z:  8308 stepcount:     0
+vector:  8170 x:   328 y:   -32 z:  8352 stepcount:     0
+d: 1089.000000
+d: 2500.000000
+d: 44100.000000
+d: 361.000000
+d: 59536.000000
+d: 4.000000
+d: 4.000000
+d: 4096.000000
+sd - before:118 mean:8234 size:8
+sd:1000 mean:8234 size:8
+vector:  8051 x:   440 y:  -208 z:  8316 stepcount:     0
+vector:  7971 x:   352 y:  -184 z:  8444 stepcount:     0
+vector:  8425 x:   388 y:  -152 z:  8388 stepcount:     0
+vector:  7996 x:   372 y:  -196 z:  8388 stepcount:     0
+vector:  8041 x:   320 y:  -120 z:  8284 stepcount:     0
+vector:  8266 x:   456 y:  -128 z:  8048 stepcount:     0
+vector:  8435 x:   376 y:  -152 z:  8204 stepcount:     0
+vector:  8409 x:   404 y:  -184 z:  8372 stepcount:     0
+d: 21904.000000
+d: 51984.000000
+d: 51076.000000
+d: 41209.000000
+d: 24964.000000
+d: 4489.000000
+d: 55696.000000
+d: 44100.000000
+sd - before:192 mean:8199 size:8
+sd:1000 mean:8199 size:8
+vector:  8182 x:   364 y:  -124 z:  8148 stepcount:     0
+vector:  8381 x:   388 y:  -176 z:  8352 stepcount:     0
+vector:  8253 x:   452 y:  -172 z:  8120 stepcount:     0
+vector:  7977 x:   404 y:  -204 z:  8300 stepcount:     0
+vector:  8451 x:   412 y:   -68 z:  8024 stepcount:     0
+vector:  8206 x:   328 y:  -244 z:  8176 stepcount:     0
+vector:  8314 x:   340 y:  -156 z:  8280 stepcount:     0
+vector:  8210 x:   304 y:  -444 z:  8196 stepcount:     0
+d: 4096.000000
+d: 18225.000000
+d: 49.000000
+d: 72361.000000
+d: 42025.000000
+d: 1600.000000
+d: 4624.000000
+d: 1296.000000
+sd - before:134 mean:8246 size:8
+sd:1000 mean:8246 size:8
+vector:  7992 x:   396 y:  -156 z:  8252 stepcount:     0
+vector:  8257 x:   412 y:  -124 z:  8272 stepcount:     0
+vector:  8135 x:   320 y:  -192 z:  8304 stepcount:     0
+vector:  7957 x:   356 y:  -148 z:  8360 stepcount:     0
+vector:  8273 x:   424 y:  -128 z:  8312 stepcount:     0
+vector:  8009 x:   408 y:  -128 z:  8168 stepcount:     0
+vector:  8229 x:   332 y:  -244 z:  8040 stepcount:     0
+vector:  8447 x:   432 y:  -220 z:  8328 stepcount:     0
+vector:  8388 x:   320 y:   -80 z:  8096 stepcount:     0
+d: 38025.000000
+d: 4900.000000
+d: 2704.000000
+d: 52900.000000
+d: 7396.000000
+d: 31684.000000
+d: 1764.000000
+d: 67600.000000
+d: 40401.000000
+sd - before:165 mean:8187 size:9
+sd:1000 mean:8187 size:9
+vector:  7959 x:   256 y:   -80 z:  8204 stepcount:     0
+vector:  8275 x:   444 y:  -144 z:  8084 stepcount:     0
+vector:  8333 x:   432 y:  -412 z:  8116 stepcount:     0
+vector:  7967 x:   404 y:  -192 z:  8348 stepcount:     0
+vector:  8078 x:   428 y:  -240 z:  7988 stepcount:     0
+vector:  8162 x:   328 y:  -172 z:  8312 stepcount:     0
+vector:  8434 x:   360 y:  -136 z:  8248 stepcount:     0
+vector:  8225 x:   360 y:  -112 z:  8000 stepcount:     0
+d: 48400.000000
+d: 9216.000000
+d: 23716.000000
+d: 44944.000000
+d: 10201.000000
+d: 289.000000
+d: 65025.000000
+d: 2116.000000
+sd - before:159 mean:8179 size:8
+sd:1000 mean:8179 size:8
+vector:  8001 x:   372 y:  -180 z:  8200 stepcount:     0
+vector:  8079 x:   432 y:  -240 z:  8280 stepcount:     0
+vector:  8013 x:   356 y:  -200 z:  8180 stepcount:     0
+vector:  8283 x:   356 y:  -220 z:  7464 stepcount:     0
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x400d672a
+file: "./main/i2c.c" line 58
+func: readI2C
+expression: res
+
+abort() was called at PC 0x40088917 on core 0
+
+
+Backtrace: 0x400889f5:0x3ffb6fe0 0x40088985:0x3ffb7000 0x4008eeb1:0x3ffb7020 0x40088917:0x3ffb7090 0x400d672a:0x3ffb70c0 0x400d68fc:0x3ffb70e0 0x400d6484:0x3ffb7110 0x40089629:0x3ffb7140
+
+
+
+
+ELF file SHA256: d40d87bc1
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 15 2025 07:58:48[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc44h ( 48196) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001bc6c vaddr=3ffb0000 size=02498h (  9368) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001e10c vaddr=40080000 size=01f0ch (  7948) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1813ch ( 98620) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=00038164 vaddr=40081f0c size=0ed24h ( 60708) load[0m
+[0;32mI (174) esp_image: segment 5: paddr=00046e90 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) app_init: Application information:[0m
+[0;32mI (203) app_init: Project name:     lab5[0m
+[0;32mI (207) app_init: App version:      29eaf56-dirty[0m
+[0;32mI (211) app_init: Compile time:     Oct 15 2025 10:23:15[0m
+[0;32mI (216) app_init: ELF file SHA256:  d40d87bc1...[0m
+[0;32mI (221) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (226) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (229) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (233) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (237) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (244) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (249) heap_init: At 3FFB2E58 len 0002D1A8 (180 KiB): DRAM[0m
+[0;32mI (254) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (259) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (265) heap_init: At 40090C30 len 0000F3D0 (60 KiB): IRAM[0m
+[0;33mW (271) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (302) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+[0;32mI (333) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 240, APB_MIN: 80, Light sleep: ENABLED[0m
+[0;32mI (333) main_task: Returned from app_main()[0m
+vector:  8545 x:   420 y:  -856 z:  8252 stepcount:     0
+vector:  8298 x:   712 y:  -732 z:  8012 stepcount:     0
+vector:  8329 x:   492 y:  -768 z:  8360 stepcount:     0
+vector:  8256 x:   520 y:  -616 z:  8032 stepcount:     0
+vector:  8113 x:   648 y:  -768 z:  8360 stepcount:     0
+vector:  8154 x:   668 y:  -560 z:  8308 stepcount:     0
+vector:  6630 x:   368 y:  -668 z:  7464 stepcount:     0
+vector:  7129 x:   536 y:  -380 z:  8328 stepcount:     0
+d: 376996.000000
+d: 134689.000000
+d: 158404.000000
+d: 105625.000000
+d: 33124.000000
+d: 49729.000000
+d: 1692601.000000
+d: 643204.000000
+sd - before:631 mean:7931 size:8
+sd:1000 mean:7931 size:8
+vector:  5902 x:   248 y:  -704 z:  9540 stepcount:     0
+vector:  8400 x:   300 y:  -200 z:  8352 stepcount:     0
+vector:  8097 x:   328 y:  -184 z:  8272 stepcount:     0
+vector:  8339 x:   368 y:   -84 z:  8036 stepcount:     0
+vector:  8271 x:   432 y:  -148 z:  8232 stepcount:     0
+vector:  8134 x:   372 y:  -184 z:  8408 stepcount:     0
+vector:  8267 x:   320 y:  -212 z:  8252 stepcount:     0
+vector:  8234 x:   464 y:  -192 z:  8332 stepcount:     0
+d: 4214809.000000
+d: 198025.000000
+d: 20164.000000
+d: 147456.000000
+d: 99856.000000
+d: 32041.000000
+d: 97344.000000
+d: 77841.000000
+sd - before:781 mean:7955 size:8
+sd:1000 mean:7955 size:8
+vector:  8447 x:   408 y:  -376 z:  8336 stepcount:     0
+vector:  8425 x:   440 y:    76 z:  7708 stepcount:     0
+vector:  8078 x:   620 y:  -208 z:  8636 stepcount:     0
+vector:  7200 x:   328 y:   -52 z:  8652 stepcount:     0
+vector:  7667 x:   608 y:  -364 z:  6560 stepcount:     0
+vector:  8509 x: -1632 y:   -28 z:  8528 stepcount:     0
+vector:  9359 x:   420 y:   136 z:  8552 stepcount:     0
+vector:  6492 x:   500 y:  -236 z:  7552 stepcount:     0
+d: 180625.000000
+d: 162409.000000
+d: 3136.000000
+d: 675684.000000
+d: 126025.000000
+d: 237169.000000
+d: 1787569.000000
+d: 2340900.000000
+sd - before:830 mean:8022 size:8
+sd:1000 mean:8022 size:8
+vector:  8932 x:   356 y: -1268 z:  5116 stepcount:     1
+vector:  9282 x: -5184 y:  -888 z:  6216 stepcount:     1
+vector:  9095 x:  -132 y:   124 z:  8088 stepcount:     1
+vector:  7668 x:   308 y:   240 z:  8780 stepcount:     1
+vector:  4705 x:   960 y:  -856 z:  5868 stepcount:     1
+vector:  8487 x:    28 y:  -136 z: 11032 stepcount:     1
+vector:  8259 x:  1132 y:  -712 z:  8316 stepcount:     1
+vector: 10724 x:   540 y:  -376 z:  8544 stepcount:     1
+vector:  4491 x:  1324 y:  -396 z:  7092 stepcount:     1
+d: 944784.000000
+d: 1747684.000000
+d: 1288225.000000
+d: 85264.000000
+d: 10595025.000000
+d: 277729.000000
+d: 89401.000000
+d: 7639696.000000
+d: 12033961.000000
+sd - before:1963 mean:7960 size:9
+sd:1963 mean:7960 size:9
+vector: 32634 x:   916 y: -2300 z:  3480 stepcount:     2
+vector:  8182 x:  2668 y:  -776 z: 15236 stepcount:     2
+vector:  8198 x:   508 y:   440 z:  8328 stepcount:     2
+vector:  7999 x:   364 y:    36 z:  8368 stepcount:     2
+vector:  8263 x:   400 y:  -104 z:  8292 stepcount:     2
+vector:  8246 x:   736 y:  -304 z:  8152 stepcount:     2
+vector:  8008 x:   544 y:  -356 z:  8368 stepcount:     2
+vector:  8353 x:   476 y:  -148 z:  7556 stepcount:     2
+d: 457917201.000000
+d: 9320809.000000
+d: 9223369.000000
+d: 10471696.000000
+d: 8832784.000000
+d: 8934121.000000
+d: 10413529.000000
+d: 8305924.000000
+sd - before:8088 mean:11235 size:8
+sd:8088 mean:11235 size:8
+vector:  8330 x:   680 y:   -24 z:  8424 stepcount:     3
+vector:  8384 x:   604 y:  -216 z:  7964 stepcount:     3
+vector:  8291 x:   576 y:  -336 z:  8304 stepcount:     3
+vector:  8412 x:   644 y:  -216 z:  8212 stepcount:     3
+vector:  8046 x:   508 y:  -564 z:  8040 stepcount:     3
+vector:  7978 x:   576 y:  -424 z:  8368 stepcount:     3
+vector:  8463 x:   324 y:  -152 z:  8352 stepcount:     3
+vector:  9393 x:   628 y:   924 z:  8092 stepcount:     3
+d: 6724.000000
+d: 784.000000
+d: 14641.000000
+d: 0.000000
+d: 133956.000000
+d: 188356.000000
+d: 2601.000000
+d: 962361.000000
+sd - before:404 mean:8412 size:8
+sd:1000 mean:8412 size:8
+vector:  8854 x:   692 y:   988 z:  9088 stepcount:     3
+vector:  8416 x:   564 y: -1096 z:  7704 stepcount:     3
+vector:  8097 x:   344 y: -1788 z:  7700 stepcount:     3
+vector:  7919 x:   120 y: -2540 z:  7328 stepcount:     3
+vector:  7581 x:   440 y: -2704 z:  7944 stepcount:     3
+vector:  7780 x:  1396 y: -2412 z:  7632 stepcount:     3
+vector:  8821 x:   824 y: -1948 z:  8012 stepcount:     3
+vector:  8641 x:  1964 y: -1804 z:  8860 stepcount:     3
+vector:  7312 x:   944 y: -1796 z:  7456 stepcount:     3
+d: 485809.000000
+d: 67081.000000
+d: 3600.000000
+d: 56644.000000
+d: 331776.000000
+d: 142129.000000
+d: 440896.000000
+d: 234256.000000
+d: 714025.000000
+sd - before:524 mean:8157 size:9
+sd:1000 mean:8157 size:9
+vector:  7976 x:  2344 y:  3488 z: 12292 stepcount:     3
+vector:  7724 x:  1092 y: -3112 z:  8480 stepcount:     3
+vector:  7805 x:   332 y: -3268 z:  8304 stepcount:     3
+vector:  7018 x:  2524 y: -1420 z:  8912 stepcount:     3
+vector:  9290 x:  2076 y: -3276 z:  5896 stepcount:     3
+vector: 10652 x:  1216 y: -4492 z:  7772 stepcount:     3
+vector: 10032 x:  3060 y: -3040 z:  7828 stepcount:     3
+vector: 10104 x:  2696 y: -3824 z:  7824 stepcount:     3
+d: 720801.000000
+d: 1212201.000000
+d: 1040400.000000
+d: 3265249.000000
+d: 216225.000000
+d: 3337929.000000
+d: 1456849.000000
+d: 1635841.000000
+sd - before:1269 mean:8825 size:8
+sd:1269 mean:8825 size:8
+vector: 10353 x:   892 y: -2580 z:  6372 stepcount:     4
+vector:  6404 x:  1804 y: -2528 z:  5124 stepcount:     4
+vector:  8421 x:  1416 y: -1060 z:  4348 stepcount:     4
+vector:  8193 x: -2272 y: -2460 z:  9736 stepcount:     4
+vector:  8943 x: -2108 y: -1332 z:  9532 stepcount:     4
+vector:  7765 x:  -652 y:   -68 z:  7284 stepcount:     4
+vector:  7783 x:  -568 y: -1612 z:  6724 stepcount:     4
+vector:  9543 x:  -116 y: -1072 z:  8368 stepcount:     4
+d: 3717184.000000
+d: 4084441.000000
+d: 16.000000
+d: 53824.000000
+d: 268324.000000
+d: 435600.000000
+d: 412164.000000
+d: 1249924.000000
+sd - before:1130 mean:8425 size:8
+sd:1130 mean:8425 size:8
+vector:  4572 x:   176 y: -1084 z:  7264 stepcount:     5
+vector:  8319 x:  -800 y: -3672 z:  8180 stepcount:     5
+vector:  8808 x:   836 y: -1892 z:  7768 stepcount:     5
+vector:  9389 x:  2168 y: -2560 z:  7484 stepcount:     5
+vector:  8031 x:   -32 y:  -996 z:  7376 stepcount:     5
+vector:  7872 x:   716 y:  -276 z:  9060 stepcount:     5
+vector:  6254 x:   372 y: -1804 z:  7072 stepcount:     5
+vector:  8495 x:   704 y: -1144 z:  9764 stepcount:     5
+vector:  8936 x:  1008 y:  -884 z:  8276 stepcount:     5
+d: 10758400.000000
+d: 218089.000000
+d: 913936.000000
+d: 2362369.000000
+d: 32041.000000
+d: 400.000000
+d: 2553604.000000
+d: 413449.000000
+d: 1175056.000000
+sd - before:1430 mean:7852 size:9
+sd:1430 mean:7852 size:9
+vector:  8159 x:   736 y: -1220 z:  7492 stepcount:     6
+vector:  7178 x:  1188 y: -1212 z:  8356 stepcount:     6
+vector:  7933 x:  1908 y: -1512 z:  9108 stepcount:     6
+vector:  7105 x:  1404 y: -1132 z:  7424 stepcount:     6
+vector:  8486 x:  -392 y: -1364 z:  9424 stepcount:     6
+vector:  6109 x:  1176 y:  -876 z:  8756 stepcount:     6
+vector:  7628 x:  2968 y: -1204 z:  7924 stepcount:     6
+vector:  9534 x:  1252 y: -1772 z:  8540 stepcount:     6
+d: 154449.000000
+d: 345744.000000
+d: 27889.000000
+d: 436921.000000
+d: 518400.000000
+d: 2745649.000000
+d: 19044.000000
+d: 3125824.000000
+sd - before:960 mean:7766 size:8
+sd:1000 mean:7766 size:8
+�������|p�`ppp|�|ppp�ppp`| p| `��pp~`�p�p�p�`p��p`p|�|�|�~ p������|��|���`ppp`pp|` �������|p�`ppp�`�p�pp�ppp~`�p�p�p`��pp|`�p�p| `p��p`pp�p�`�pp������|��|���`pppppp|` �������|p�`ppp`�p�pp�ppp|`�p| p`��pp|`�p�p�p~ p��p`pp| `pp������|��|���`ppp`pp|` �������|p�`ppp�`p�pp�ppp`pp~ `��pp`|p�pp`p��p`p|�~ `pp������|��|���`ppp`pp|` �������|p�`ppp�`�p�pp�ppp`~p�p| `��pp`|p�p|�| p��p`pp�p~ pp������|��|���`ppp`pp|` �������|p�`ppp�`~ppp�ppp`~p�p�p`��pp`|pp�p�`p��p`pp�p`| p������|��|���`ppp`pp|` ���p`~�|pp`~� p`ppp`~p ���`p�p�p~p�p�p ppp`pp|` ���pp�`p�p�p�`|� p`ppp`~p ���`p�p|``�p p`ppp`|p ���`ppp�`~� p`ppp`|p ���`p�p�p�`�p p`ppp`|p ���`p�p�p~pp�p `ppp`p~p ���pp�p~�|p~� ppp`pp|` ~�p|`p����|p��`�p|�~ `~�� |ppp�p`| p��p���p`~p ~��p�pp`pp|�� |pp`�pp| `��p���pp|` �������|p�`ppp|�| pp�ppp`�p|�~ `��pp`~pp�p`p��p`p|p`| p������|��|���`ppp`pp|` �������|p� pp|`|pp�ppp`�p�pp`��pp`|p�p�p`p��p`pp|`�pp������|��|���`ppp`pp|` �������|p�`ppp�`�p| p�ppp`�p�p�p`��pp`|p|�~ `p��p`pp�p| pp������|��|���`ppp`pp|` �������|p�`ppp�`p�pp�ppp`�p�pp`��pp`~p|�~ `p��p`ppp~ pp������|��|���`ppp`pp|` �������|p��ppp�`�p�pp�ppp`�p| p`��pp`|p|pp`p��p`pp�p�`~ p������|��|���`ppp`pp|` �������|p�`ppp|p| p�ppp`pp| `��pp~p�pp�p�`p��p`p| p�`�pp������|��|���`ppp`pp|` �������|p�`pp�p�`|�| p�ppp�`�p| p`��pp`~p�pp`p��p`pp�p~�~ p������|��|���`ppp`pp|` �������|p�`pp~�~�~ pp�ppp`pp| `��pp~`�p|�~ `p��p`pp�p~ pp������|��|���`ppp`pp|` ���p`�p�p�p�`�p p`ppp`|p ���`p�p�p�`|p|� ppp`pp|` ���pp�`�p|� `ppp`p|p ���pp�p| p�p `ppp`p|p ���pp�p�`�p|�|� ppp`pp|` ���pp�`|�|�~� ppp`pp|` ���pp|�~�| p`�p p`ppp`|p ���`p|�|�~�|pp�p ppp`pp|` |�p|`p����|p��`|p�p`~�� |ppp�p~|pp��p���p`~p ~��p�pp`pp|�� |pp`�p||p`��p���pp|` �������|p�`pp|`~ppp�ppp`~p| p`��pp|`�p|pp`p��p`p|�| `pp������|��|���`ppp`pp|` �������|p�`ppp`|�| p�ppp`�p�p| `��pp|`�pp�p| p��p`p|�| `pp������|��|���`ppp`pp|` �������|p�`pp~ `p�pp�ppp`~�|�~ `��pp|p�p�p�p| p��p`pp�p�`pp������|��|���`ppp`pp|` �������|p�`ppp|�| pp�ppp`�p�pp`��pp|`�pp| `p��p`pp| `~ p������|��|���`ppp`pp|` �������|p�`ppp|p�pp�ppp�`�p| p`��pp~`�p|�| `p��p`pp�p�`�pp������|��|���`ppp`pp|` �������|p�`pp~�|pp�pp�ppp`~p�p�p`��pp|`�ppp`p��p`pp�p| pp������|��|���`ppp`pp|` �������|p�`pp||`�ppp�ppp`~~p�p`��pp|`�p�pp`p��p`pp| `pp������|��|���`ppp`pp|` �������|p�`ppp`|ppp�ppp�`�ppp`��pp|`�p||p~ p��p`p| p�`| p������|��|���`ppp`pp|` ���p`�p| p|� pp`ppp|p ���p`�p| p` pp`ppp|p ���p`�p|p~p p`ppp`~p ���`p||p`�p�p|� ppp`pp|` ���pp| p�pp`�p p`ppp`|p ���`p�p~`�pp�p ppp`pp|` ���pp~�|�| p�`|� p`ppp`~p ���`p�p�p`~� p`ppp`~p �������|`�ppp`p�p�p`�pp`p||p| p��p`|p�pp| pp��`pp~�|~p| p������|��|���ppp`ppp~p ~�`~pp����|p��p|�~ `p~�� |ppp`�p| p�p���`p|p |��p�p`ppp|�� |``pp�p| p��`���pp|p �������|p�`pp~`�p�pp�ppp`|�| p`��pp~`�pp�p| p��p`p|�|``~ p������|��|���`ppp`pp|` �������|p�`pp~`�p| p�ppp�`�p�p�p`��pp|`�p�p�p�`p��p`p| p`pp������|��|���`ppp`pp|` �������|p�`ppp�`p�pp�ppp�`�p�pp`��pp~`�p�p| `p��p`pp�p| pp������|��|���`ppp`pp|` �������|p�`ppp�`p�pp�ppp�`p| p`��pp|`�p�p~ `p��p`p|�~�~ppp������|��|���`ppp`pp|` �������|p�`ppp�`�p| p�ppp�`|�|�| `��pp|`�p�p�p�`p��p`p|�~|`| p������|��|���`ppp`pp|` �������|p�`ppp�`||pp�ppp`|�|pp`��pp~`�p�p�p| p��p`p|�~�|ppp������|��|���`ppp`pp|` �������|p��ppp~�~ pp�ppp`p| p`��pp|`�pp~�| p��p`p| p�`�pp������|��|���`ppp`pp|` �������|p�`ppp�`�p| p�ppp�`�p�p| `��pp~`�p�p�p�`p��p`p| p~ pp������|��|���`ppp`pp|` ���p`�p||p�`�p�p `ppp`p|p ���pp�p�`�p|pp~� pp`ppp~p ���p`p�pp~p p`ppp`|p ���`p�pp`�p|� `ppp`p~p ���pp�p�`|�|p ppp`pp|` ���pp|pp�p|� pp`ppp|p ���p`|�|�~� ppp`pp|` ���pp�`�pp~` pp`ppp|p ���p`|pp�p�` pp`ppp~p |�`|pp����|p��p�p||`p|�� |ppp�`p�pp�p���`�p|p |��p�p`ppp~�� |``p�pp�`p��`���p�p|p �������|p�`ppp�`ppp�ppp�`�p| p`��pp|`�pp�p`p��p`p|pp�`pp������|��|���`ppp`pp|` �������|p�`pp�p`�ppp�ppp�`�ppp`��pp~`�p�pp| p��p`p|�|``~ p������|��|���`ppp`pp|` �������|p�`ppp~�~�| p�ppp�`p|�~ `��pp~`�p| p| p��p`pp| `pp������|��|���`ppp`pp|` �������|p�`ppp�`�p�pp�ppp`ppp`��pp~`�pp�p~ p��p`p|p�`| p������|��|���`ppp`pp|` �������|p�`pp~`|ppp�ppp`�p�pp`��pp|`�p�p~�~ p��p`p|p~ pp������|��|���`ppp`pp|` �������|p�`ppp�`�p| p�ppp�`�p�p| `��pp|`�p�p�p~ p��p`p| p�`pp������|��|���`ppp`pp|` �������|p�`ppp�`�p| p�ppp�`�p�p�p`��pp~`�p�pp`p��p`p| p�`�pp������|��|���`pppppp|` �������|p�`ppp�`�p�pp�ppp�`�p| p`��pp|`�p�p~``p��p`p|�~�~ pp������|��|���`ppp`pp|` ���p`~�|pp�`�p p`ppp`|p ���`p| p�`�p�p�p ppp`pp|` ���pp~pppp�` pp`ppp|p ���p`�p�p�p~� pp`ppp|p ���p`�p| p�`�p�p `ppp`p~p ���pp�p�`pp�p ppp`pp|` ���pp�`|�|�|` pp`ppp~p ���p`�p| p�p~� p`ppp`|p ~�p~pp����|`�������p��| p�p�pp�pp�p�pp�p�p�p�p�p�p|�|� p � p p����pp��pp ��p���p�p�p��p����p���ppp�|�|���pp��p�pp|� �p����� �p�����p�pp��p�p�p���pp|p |�|�|���p�����p�ppp pp�p���ppp���|p ||||�������pppp�������pppp���������pppp|��p������pppp |���������pppp���������pppp|p �|�|����p��p�p� p�|�||��p��p��p�p|p �|�|��pp��p���pp�pp�|��|pp||ppp|p  |�| ppp�� �p| p�p�pp��|�|�| p|� p �|�|��pp| pp| pppp�|��|pp�p�p�p�p|� p �|�|��pp| pppp| pp�|��|pp�pp| p|p ��|�����pp| pppp||pp|p p ppp�pppp��|�|���pp�p��p���pp��� ��|pp�pp��p�p����p��p��p�p|��p��� ���p��|�|��|�|����|p p ppp�pppp��|�|���pp��|�| �p|��p��p�|�pp|�p�p�pp�pp�p�ppp|pp�pp�p| p|p p ppp�pppp��|�|���pp|��|���p���|p�p��|�|��|�|����|p p p|p�pppp��|�|���pp�|| p����p���p�|�|ppp���pp|p p p|p| p��|�|��������p�p�ppp�p pp���pppppp�pp| p|pp�|p p p|ppppp��|�|��������p�p�ppp�p p|�|���ppppppp�pp��p�p� p p p�|ppppp��|�|��������p�p�ppp�p p�|��| pp�p��p�pp�p| �|p p p�|�| p��|�|���pp|�||�|��ppp��p� �|p|����| ��p��|��������� p p p�| pppp��|�|���pp����p��p�|�| p�� �|���p|p p p�|ppppp��|�|���pp�p�ppp��| pppppppppppp��|� ���pppppppppp����pp�pp�������pppp��|���|� p p p�|pppp��|�|���ppppp|����pppppppppppppp��p��pp�� �� ppppppppp�ppp�pppppp�ppppppppp| ppp|p p p�|�| p��|�|���ppp�pp|��|�||��pppppppppp�p�� �� ppppppppppp�ppp�pppppp�pppppppp�pppp|p p p�|ppppp��|�|���ppp�pp�� ����|p��pppppppppp�� ����|p��p ppppppppppppppp�pppppppp�pppppp|p p p�| pppp��|�|���pp|��p|��p� ���p��p�|�| p�� �|���|p p p p�pppp����|�|����pp�����|�|��pp�pp� �����pppp�ppp�ppp�� �����p�p�| ppp�ppp��p����pp���|�| | p p| p�p�p| p|� �|p p ppp| p����|�|����pp�����|�|��p�p�pp� �����pppp�p���||p�� �����p�p���ppppp��p����pp�p|pp| p pp�p�p| pppp|�|��|p p ppp�pppp����|�|����pp�����|�|��p�p�pp� �����pppp�p��pp�p�� �����p| pppppppp��p����pp�p�p�| p pp|p| pppp|�|��|p p pp�p�pppp����|�|����pp�����|�|��p�p�pp� �����pppp�ppp�ppp�� �����p| pp�pp�ppp��p����p�pp�p�p�| p p�pp|pppppp|� �|p p pp�p�pppp����|�|����pp�����|�|��p|ppp� �����pppp�pp�p|�| p�� �����p| ppp�p�p�p��p����pp��p| | p p| p| ppppp|�|��|p p pp|�| p����|�|����pp�����|�|��p�p�pp� �����pppp|�|����ppp�� �����p�ppppppppp��p����pppp�pp| p pppp�p�pppp|�|��|p p ppp�pppp��|�|���ppp�|���p p���|�| p� ���p��p�|�| p �p|�������pp��ppppp|p p ppp�pppp��|�|���pp��p��� �||�|��ppp��p� �|p|����| ��p��|��������� p p pp�p�pppp�����|�� ���pp|��|���p���|p�p �|p p pppp�pppp�����|�� ���pp�p�| p���p��� ��p�����p��|����|p p pppp�pppp�����|�� ���pp���p������pp�p| pppppppppp�|p p pppp�pppp ��|�||���pp |||� ��p�|�| pp|���|p�|� ��p�|�|pp|p p pppp�pppp ��|�||���pp�p�|p|�����p|�|��pppppp|���p|p p pppp| p ��|�||���pp p������p�|�|pppppppp�p�p� ���p|����p�����|p p ppp�p�pppp ��|�||���pp �|�| �p|��p��p�|��ppppppp|�p�p�pp�pp�p�pp�pp�p�p�p�p�p�p|p p ppp�p| p ��|�||���ppp��p��p|��ppp�p�p|pppp�| p�p|p����p��� p p ppp�p�pppp ��|�||���pp�p��p����pppppppppppp��� ��|pp�pp��p�p����p��p���|p p ppp�p| p��������|�||���pp|�p| p�|| p����pppppp�p p|p p ppp�p�pppp��������|�||���pp|� p�|| p����pppppp���pp�pp|p p ppp�p�pppp��������|�||���pp || p����pppppppppp���pp|p p ppp�ppppp|��� ��|�||���ppp||���p� ||p�p|�� pp� �|p �� �p|�|��p��|pp���|�|�p��p |�|�||� ��p�|�|pp|p p ppp|�| p|��� ��|�||���pp �p�p��� �|��pp|��| ppppp�p�p�ppp�| p�p �pp�pp�p� �|�|p p ppp|pppp|��� ��|�||���pp �p�p�� �p��ppp|��| pppp�p���p pppppp�p �pp�pp�p� �|�|p p ppp�p| p|��� ��|�||���pp �p�p���p|�| pp|��| ppppp�p �ppp| p�p �pp�pp��pp��|�|p p ppp�p�pppp|��� ��|�||���pp �p�p���||p�ppp|��| pppp�p �  ppp�p�pp�p �pp�pp��pp��|�|p p ppp|�| p|��� ��|�||���pp �p| pp�pp ��ppp|��| ppppp���p�pp�| pp�p �pp�pppp� �|�|p ��ppp|pppp��p����|��|ppp���������p��|� p�|��| p�|| p����p����p|��p��|����p��p���p��� p��|pp| ��p�|� | p���||��p�|�|||���� p|�|��p�p�p����p�pp��|���� ��pp�����p�p���|pp � pp| p|�|�����|�|���p���|p p pppp�pppp��p����|��|ppp���������p�|| �pp��|����p���|p p pppp| p��p����|��|ppp�|��| pp�|ppp��p�|� p ��ppp�ppppp��p����|��|ppp���������p��p���| p�p||| p|�����p�|| p�|��p��p��pp| p�|��p��p|���pp�|� ���p|��� ���ppp| p��pp p��|�p|��p�|��p��p��pp| p�|��p��p|���pp�|� ���p|��� ���� p ��p|pp�ppppp�p��pp�|||p���p���pp��p | p|�|��p���p��� p|��� ���p|�p���� ��p��|���p |||� ��p�|�| p��|���p��| p �� �p���p����|pp����|����� | �|p p p|p�p�pp`p~� �p|����� �����p`p�� ����`|�| p ���p|p p p~p�p�pp`p|� �p|����� �����p` � |�||�|��` ���|�`| � ` ` p|`�p�p`p`�~�p`��������||��p����p���||�|��`��|�|��p���p` ������`�``p�p| ` p �p���p�ppp�`~ p ` �p���`p�p``ppp pp|��|��p�|����ppp p����|p p p~p�`�pppp~� �p|����� �����ppp�����|���p���|�| ` ���|�`| � ` �������|p�`pp~`ppp�ppp�`�p| p`��pp~`�p|�~``p��p`p|�|`�pp������|��|���`ppp`pp|` �������|p�pppp�p~pp�ppp`|p�p`��pp|`�p| p| p��p`pp�p`| p������|��|���`pppppp|` �������|p�`ppp�`|�| p�ppp`| pp`��pp|`�p�p�p`p��p`pp�p`| p������|��|���`ppp`pp|` �������|p�`ppp`|pp�ppp`�ppp`��pp~`�p�p�p| p��p`p|p`pp������|��|���`ppp`pp|` �������|p�`ppp�`�p�pp�ppp`| p| `��pp|`�p�pp`p��p`p|p�`~ p������|��|���`ppp`pp|` �������|p�`pp~�~ p�pp�ppp`�ppp`��pp|`�p|p�`p��p`p|�| `~ p������|��|���`ppp`pp|` �������|p�`ppp�`�p| p�ppp`�p�p�pp��pp~`�p|p| p��p`p|�| `pp������|��|���`ppp`pp|` �������|p�`ppp�`~�| p�ppp`pp~ `��pp|`�p�pp`p��p`pp�p`~ p������|��|���`ppp`pp|` ���p`�pp�p|�~� p`ppp`~p ���`p�p|�~�~p `ppp`p|p ���pp�p~ pp|� ppp`pp|` ���pp�`�p| p�` pp`ppp~p ���p`p�pp` pp`ppp|p ���p`�p�p�p| pp `ppp`p~p ���pp~ `�p||p|� pp`ppp|p ���p`�p�pp~� pp`ppp~p ~�`~pp����|p��p�p�p~ p~�� |ppp�`�p�pp�p���`p~p |��p�p`ppp~�� |``p�p�p�`p��`���pp~p �������|p�pppp|�|ppp�ppp`�p�p~ `��pp~`�p||p~ p��p`p|�~�|�| p������|��|���`ppp`pp|` �������|p�`ppp�`�p�pp�ppp`�ppp`��pp|`�p|pp`p��p`ppp�`~ p������|��|���`ppp`pp|` �������|p�`ppp|�|pp�ppp`ppp`��pp|`�p|�|p`p��p`p|p�`| p������|��|���`ppp`pp|` �������|p�`ppp�`|�| p�ppp|`�ppp`��pp~`�p�p�p| p��p`pp�p`| p������|��|���pppp`pp|` �������|p�`ppp�`�p�pp�ppp`p�p| `��pp|`�p| p`p��p`p|p�`pp������|��|���`ppp`pp|` �������|p��ppp|�|�| p�ppp`�p�p| `��pp|`�p�p�p~ p��p`pp�p�`pp������|��|���`ppp`pp|` �������|p�`ppp�`�p�pp�ppp`~�| p`��pp~`�p�p�p`p��p`p| p~�| p������|��|���`ppp`pp|` �������|p�`pp~�|pppp�ppp�`|ppp`��pp|`�p| p`p��p`p|�~�~�| p������|��|���`ppp`pp|` ���p`�p|p|�~� p`ppp`~p ���`p|�|``|� p`ppp`|p ���`p�p�p~�| p�p ppp`pp|` ���pp~ p|� `ppp`p~p ���pp�p�`p|� `ppp`p|p ���pp�p|�~�|p ppp`pp|` ���pp�`| p�p ppp`pp|` ���pp|�|�|p~�~� p`ppp`~p |�p|pp����|`��p�p`~ p|�� |pp`�pp~ `��p���pp|` |��p�`ppp`|�� |ppp�p`| p��p���p`|p �������|p�`ppp�`�p| p�ppp�`~p�p`��pp|`�p�p| `p��p`p|�~ `pp������|��|���`ppp`pp|` �������|p�pppp�`ppp�ppp�`~�|pp`��pp~`�pp�p| p��p`pp||`~ p������|��|���`ppp`pp|` �������|p�`pp|`p| p�ppp�`| p~ `��pp~`�p|p| p��p`pp�p�`| p������|��|���`ppp`pp|` �������|p�`ppp`�p�pp�ppp�`p�pp`��pp|`�p�p�p~ p��p`p|pp�`| p������|��|���`ppp`pp|` �������|p�`ppp|�|�| p�ppp�`p�p�p`��pp|`�p�p�p| p��p`p�p~�~�| p������|��|���`ppp`pp|` �������|p�`ppp�`~~pp�ppp�`�p|pp`��pp~`�p|�~�~ p��p`p|pp�`pp������|��|���`ppp`pp|` �������|p��ppp�`�p| p�ppp�`|ppp`��pp|`�p|�| `p��p`pp�p�`~ p������|��|���`ppp`pp|` �������|p�`ppp`p�pp�ppp�`�p�p~ p��pp~`�p�p~�| p��p`pp�p~�| p������|��|���`ppp`pp|` ���p`~�|�|� ppp`pp|` ���pp~ p�p~``�p p`ppp`~p ���`p�pp�`p|pp�` pp`ppp|p ���p`�p�p�p~� pp`ppp|p ���p`�p�p�p|p|� `ppp`p|p ���pp�p~�~�|� `ppp`p~p ���pp�p~� pp`ppp~p ���p`�p| p`|� p`ppp`|p |�p|pp����|`��p|�||pp|�� |pp`�p�p�p`��p���pp|` |��p�`ppp`~�� |ppp�p�`�pp��p���p`~p �������|`�ppp`~�|pp`�pp`�p�pp`p��p`~p�pp�`�pp��`pp| `�p| p������|��|���ppp`ppp|p �������|p�`pp|�|p| p�ppp�`�ppp`��pp|`�p| p`p��p`p| p`pp������|��|���`ppp`pp|` �������|p�`ppp�`�ppp�ppp`p�p�p`��pp|`�p|�|�| p��p`pp~ `pp������|��|���`ppp`pp|` �������|p�`ppp|�|�| p�ppp�`�p�p| `��pp|`�pp�p| p��pppp~ `~ p������|��|���`ppp`pp|` �������|p�`ppp�`|pp�ppp�`ppp`��pp~`�ppp`p��p`pp�p`pp������|��|���`ppp`pp|` �������|p�`pp~`p�pp�ppp�`~�| p`��pp~`�pp~ `p��p`pp�p~ pp������|��|���pppp`pp|` 
