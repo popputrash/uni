@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #include "double_linked_list.h"
-//#include "esp_random.h"
+#include "esp_random.h"
 #include "single_linked_list.h"
 
 int verifySingleLinkedListSorted(struct singleLinkedList *list) {
@@ -263,7 +263,7 @@ void test9_stress_test() {
 
   // (optional) You can also time the operations or run memory leak check here
 }
-void main() {
+void app_main() {
 
   struct singleLinkedList slist;
   initSingleLinkedList(&slist);

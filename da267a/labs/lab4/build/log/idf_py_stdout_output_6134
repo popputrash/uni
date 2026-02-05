@@ -1,0 +1,366 @@
+Command: /home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/minipops/uni/da267a/labs/lab4/build/lab4.elf /home/minipops/uni/da267a/labs/lab4/build/bootloader/bootloader.elf -m '/home/minipops/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/opt/esp-idf/tools/idf.py'
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  8 2025 00:30:29[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v1.0[0m
+[0;32mI (34) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09db0h ( 40368) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=00019dd8 vaddr=3ffb0000 size=023d8h (  9176) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001c1b8 vaddr=40080000 size=03e60h ( 15968) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=13e4ch ( 81484) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=00033e74 vaddr=40083e60 size=09150h ( 37200) load[0m
+[0;32mI (157) esp_image: segment 5: paddr=0003cfcc vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (163) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (163) boot: Disabling RNG early entropy source...[0m
+[0;32mI (175) cpu_start: Multicore app[0m
+[0;32mI (183) cpu_start: Pro cpu start user code[0m
+[0;32mI (183) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (183) app_init: Application information:[0m
+[0;32mI (183) app_init: Project name:     lab4[0m
+[0;32mI (187) app_init: App version:      7934501-dirty[0m
+[0;32mI (191) app_init: Compile time:     Oct 21 2025 12:09:09[0m
+[0;32mI (196) app_init: ELF file SHA256:  93cb117fb...[0m
+[0;32mI (201) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (205) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (209) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (213) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (217) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (228) heap_init: At 3FFB2CA0 len 0002D360 (180 KiB): DRAM[0m
+[0;32mI (234) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (239) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (245) heap_init: At 4008CFB0 len 00013050 (76 KiB): IRAM[0m
+[0;33mW (251) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (263) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (269) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (282) main_task: Started on CPU0[0m
+[0;32mI (292) main_task: Calling app_main()[0m
+----Sorted insert test----
+single linked list: 
+added:43
+added:62
+list[first: 0] [0 29 33 43 62 ]
+
+
+double linked list: 
+added:8
+added:52
+added:56
+added:56
+added:19
+list(first: 8, last: 56) [8 19 52 56 56 ]
+----Removeing elements test----
+single linked list: 
+added:51
+added:43
+added:8
+list[first: 5] [5 8 11 43 51 ]
+removing first element
+list[first: 8] [8 11 43 51 ]
+5 removed
+removing last element
+list[first: 8] [8 11 43 ]
+51 removed
+
+
+double linked list: 
+added:93
+added:30
+added:66
+added:69
+added:32
+list(first: 30, last: 93) [30 32 66 69 93 ]
+removing first element
+list(first: 32, last: 93) [32 66 69 93 ]
+30 removed
+list(first: 32, last: 69) [32 66 69 ]
+93 removed
+----Remove from empty list----
+remove from empty sll
+remove first: -2147483648
+remove last: -2147483648
+remove from empty dll
+remove first: -2147483648
+remove last: -2147483648
+
+
+----Adding duplicate values----
+single linked list: 
+list[first: 1] [1 1 ]
+double linked list: 
+added:1
+added:1
+list(first: 1, last: 1) [1 1 ]
+
+
+----Adding values to beginning----
+single linked list: 
+list[first: 0] [0 1 1 ]
+double linked list: 
+added:1
+added:1
+added:0
+list(first: 0, last: 1) [0 1 1 ]
+
+
+----Adding values to end----
+single linked list: 
+added:3
+list[first: 0] [0 1 1 3 ]
+double linked list: 
+added:3
+list(first: 0, last: 3) [0 1 1 3 ]
+
+
+ ----Removeing only element----single linked list: 
+list[first: 1] [1 ]
+removing first element
+removed: 1double linked list: 
+added:1
+list(first: 1, last: 1) [1 ]
+list is empty
+removed: 1 
+
+----Test 7: Structural integrity check----
+added:4
+added:2
+added:4
+added:1
+list[first: 1] [1 2 4 ]
+list(first: 1, last: 4) [1 2 4 ]
+Singly linked list sorted: YES
+Doubly linked list structure valid: YES
+
+
+----Test 8: Inserting [3,1,4,2] and checking sort----
+added:3
+added:1
+added:4
+added:4
+added:2
+added:2
+list[first: 1] [1 2 3 4 ]
+list(first: 1, last: 4) [1 2 3 4 ]
+Singly linked list sorted: YES
+Doubly linked list structure valid: YES
+
+
+----Test 9: Stress test with 100 elements----
+added:917
+added:847
+added:972
+added:972
+added:868
+added:868
+added:980
+added:980
+added:223
+added:549
+added:549
+added:592
+added:592
+added:164
+added:169
+added:169
+added:551
+added:551
+added:427
+added:427
+added:190
+added:190
+added:624
+added:624
+added:635
+added:635
+added:920
+added:920
+added:944
+added:944
+added:310
+added:310
+added:862
+added:862
+added:484
+added:484
+added:363
+added:363
+added:301
+added:301
+added:710
+added:710
+added:236
+added:236
+added:876
+added:876
+added:431
+added:431
+added:929
+added:929
+added:397
+added:397
+added:675
+added:675
+added:491
+added:491
+added:190
+added:190
+added:344
+added:344
+added:134
+added:425
+added:425
+added:629
+added:629
+added:30
+added:727
+added:727
+added:126
+added:126
+added:743
+added:743
+added:334
+added:334
+added:104
+added:104
+added:760
+added:760
+added:749
+added:749
+added:620
+added:620
+added:256
+added:256
+added:932
+added:932
+added:572
+added:572
+added:613
+added:613
+added:490
+added:490
+added:509
+added:509
+added:119
+added:119
+added:405
+added:405
+added:695
+added:695
+added:49
+added:49
+added:327
+added:327
+added:719
+added:719
+added:497
+added:497
+added:824
+added:824
+added:596
+added:596
+added:649
+added:649
+added:356
+added:356
+added:184
+added:184
+added:93
+added:93
+added:245
+added:245
+added:7
+added:306
+added:306
+added:509
+added:509
+added:754
+added:754
+added:352
+added:352
+added:665
+added:665
+added:783
+added:783
+added:738
+added:738
+added:801
+added:801
+added:690
+added:690
+added:330
+added:330
+added:337
+added:337
+added:195
+added:195
+added:656
+added:656
+added:963
+added:963
+added:11
+added:11
+added:427
+added:427
+added:42
+added:42
+added:106
+added:106
+added:968
+added:968
+added:212
+added:212
+added:1
+added:510
+added:510
+added:480
+added:480
+added:658
+added:658
+added:571
+added:571
+added:331
+added:331
+added:814
+added:814
+added:847
+added:847
+added:564
+added:564
+added:197
+added:197
+added:625
+added:625
+added:438
+added:438
+added:931
+added:931
+added:18
+added:18
+added:487
+added:487
+Single list node count: 100
+Double list node count: 100
+Singly linked list sorted: YES
+Doubly linked list structure valid: YES
+[0;32mI (662) main_task: Returned from app_main()[0m

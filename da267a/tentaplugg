@@ -1,0 +1,106 @@
+C-Basics
+1. Name 5 types used in C.
+2. What is the size of an integer in C?
+3. How is a foor loop structured? What is it used for?
+4. Are arguments passed by value or reference in C?
+5. What is the difference between a struct and a union in C?
+6. Describe the use of the stack and the heap memory in c.
+7. Give an example of how the stack can overflow.
+8. Give an example of a recursive function. 
+Can you also provide its code?
+
+
+Advanced C
+1. What is the difference between declaring and defining a variable in C?
+2. What is a header file used for in C?
+3. What are the steps needed to compile a 
+piece of code from source to executable?
+4. What is the role of the C pre-processor?
+5. What are typical cooands used in the C pre-processor?
+6. What are the include guard and what are they used for?
+7. How can one access IO peripherals from C code?
+8. Can one access a memory location directly in C code?
+9. What bitwise opeation are useful in C to manipulate the 
+content of a register?
+10. How do you set the 2nd bit from the right to 1 of a pointer to a 
+u_int8_t?
+11. How can you define a struct where the first two fields, 
+named A and B, take 1 bit each and the third, C, takes 6 bits?
+12. What is a bootloader? Why is it needed?
+13. How do you avoid loading a corrupted firmware?
+14. How does bootloading work on an ESP32?
+
+ESP32 Platform
+1. Name 5 features included in the ESP32
+2. What is a datasheet? Why do you need it?
+3. How can software running on a microcontroller be debugged?
+4. Describe what pull-down, pull-up and open drain configurations are-
+5. What can a pin configured with internal pull-up be used for?
+6. You are connection a pushbutton to a pin of the MCU on one end 
+and to Vcc to the other end. How should you configure you pub to detect
+when the button is press? You have the 2 following options to configure:
+- Direction: input/output
+- Connection: direct/pullup/pulldown
+
+ADC-DAC
+1. What is the difference between direct and successive approximation 
+ADC conversion? What are the advantages and disadvantages of each technique?
+2. Suppose that you have connected your 10-bit ADC to a distance 
+sensor that produces 2V when the distance from an object is 0m 
+and 0V when the distance is 50m (with anything in between linearly 
+scaled between those values). Write the formula that converts the ADC 
+value into distance (in meters).
+3. When converting a raw ADC value to a physical quantity, what are 
+the advantages of using a lookup table? And the disadvantages?
+4. What is aliasing and how can it be avoided?
+5. I am sampling a 50Hz sinusoid signal with a sampling frequency of 
+60Hz, what frequency should I observe in my sampled signal?
+6. Define the duty cycle in a PWM modulation.
+7. What are the advantages of using a DAC vs PWM?
+
+RTOS
+1. Explain the difference between a general purpose OS (like Windows) 
+and a Real -Time Operating system (like FreeRTOS).
+2. What is the difference between a hard real time and a soft real 
+time constraints? Provide examples of use cases.
+3. In what sense is a context switch between executing tasks costly?
+4. Describe the difference between cooperative, time-slice and 
+pre-emptive scheduling approaches.
+5. Provide 6 examples of hard and soft deadlines to be met by an 
+embedded system.
+6. Define the Processor Utilization Factor, U. What condition(s) must 
+be met about U to ensure that tasks will be schedulable?
+7. What is the formula of the Processor Utilization Factor when we 
+consider context switching into it?
+8. I have 1 task that needs to be scheduled every 2 seconds and takes 
+2 seconds to be executed and another task that needs to be executed
+every 3 seconds and takes 2 seconds to be executed. Would these tasks
+be schedulable with an RMS approach?
+9. A task is developed with 200 lines of code. Given an approximate 
+Worst Case Execution Time estimation for that tasks supposin g a 80MhZ
+clock.
+10. What’s priority inversion and how can it be fixed?
+11. Describe the FreeRTOS task state machine.
+12. Name and briefly 3 examples of task synchronisation primitives 
+available in FreeRTOS.
+13. You are developing a little computer for a bike. The device 
+includes a sensor that detects rotations of the wheel. At each rotation
+an interrupt is raised on a pin. When a user presses a button (which 
+can trigger another interrupt), the device shows current distance 
+(based on rot ations) for 1 minute and then the screen is turned 
+off to save battery. How would you structure the code to manage this 
+device into FreeRTOS tasks? What would each task do? How do synchronise
+tasks and ISRs?
+
+Power optimization and communication
+1. What strategies exist to reduce power consumption in an embedded
+system?
+2. Provide examples of sleep modes on a microcontroller.
+3. What are the 5 power modes of the ESP32?
+4. How can FreeRTOS allow low power modes?
+5. What types of peripherals use digital communication protocols?
+6. Describe the Inter-integrated circuit (I2C) protocol
+7. If you have to connect two system located in a production line of a 
+factory, which would you use among: Bluetooth, RS232 and SPI?
+8. Compute the checksum of the following sequence of bytes, using a 1 
+byte checksum: {01, 10, 05, 04, 25, 15}

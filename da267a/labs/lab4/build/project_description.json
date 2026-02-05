@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "lab4",
-    "project_version":    "29eaf56-dirty",
+    "project_version":    "7934501-dirty",
     "project_path":       "/home/minipops/uni/da267a/labs/lab4",
     "idf_path":           "/opt/esp-idf",
     "build_dir":          "/home/minipops/uni/da267a/labs/lab4/build",
