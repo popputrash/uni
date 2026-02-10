@@ -1,0 +1,14 @@
+Command: /home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/minipops/uni/da383a/lab3/build/..elf /home/minipops/uni/da383a/lab3/build/bootloader/bootloader.elf -m '/home/minipops/.espressif/python_env/idf5.5_py3.14_env/bin/python' '/opt/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:4916
+load:0x40078000,len:16436
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3524
+entry 0x400805b8
+hello

@@ -1,5 +1,8 @@
 {
-  "theme": "moonstone",
-  "accentColor": "#ff8ffb",
-  "cssTheme": ""
+  "theme": "obsidian",
+  "accentColor": "#fbff00",
+  "cssTheme": "",
+  "interfaceFontFamily": "",
+  "monospaceFontFamily": "SFMono Nerd Font Mono",
+  "nativeMenus": false
 }

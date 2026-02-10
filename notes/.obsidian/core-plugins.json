@@ -4,7 +4,7 @@
   "switcher": true,
   "graph": true,
   "backlink": true,
-  "canvas": true,
+  "canvas": false,
   "outgoing-link": true,
   "tag-pane": true,
   "properties": false,
@@ -29,5 +29,5 @@
   "sync": false,
   "webviewer": false,
   "footnotes": false,
-  "bases": true
+  "bases": false
 }

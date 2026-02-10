@@ -1,1 +1,6 @@
-{}
+{
+  "promptDelete": false,
+  "strictLineBreaks": true,
+  "propertiesInDocument": "visible",
+  "vimMode": true
+}
