@@ -1,8 +1,10 @@
 {
   "theme": "obsidian",
   "accentColor": "#fbff00",
-  "cssTheme": "",
-  "interfaceFontFamily": "",
+  "cssTheme": "Pink Topaz",
+  "interfaceFontFamily": "Inter",
   "monospaceFontFamily": "SFMono Nerd Font Mono",
-  "nativeMenus": false
+  "nativeMenus": false,
+  "showRibbon": false,
+  "textFontFamily": ""
 }

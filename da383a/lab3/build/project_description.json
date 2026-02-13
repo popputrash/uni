@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       ".",
-    "project_version":    "8f0b655-dirty",
+    "project_version":    "6030680-dirty",
     "project_path":       "/home/minipops/uni/da383a/lab3",
     "idf_path":           "/opt/esp-idf",
     "build_dir":          "/home/minipops/uni/da383a/lab3/build",

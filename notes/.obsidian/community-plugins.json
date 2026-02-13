@@ -1,6 +1,16 @@
 [
   "obsidian-kanban",
   "obsidian-latex-suite",
-  "copilot",
-  "pretty-properties"
+  "pretty-properties",
+  "templater-obsidian",
+  "omnisearch",
+  "obsidian-icon-folder",
+  "notebook-navigator",
+  "quickadd",
+  "vertical-tabs",
+  "smart-connections",
+  "latex-math",
+  "obsidian-style-settings",
+  "various-complements",
+  "settings-search"
 ]

@@ -4,23 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "baee1dc21c38941a",
+        "id": "969acdbf245a86eb",
         "type": "tabs",
         "children": [
           {
-            "id": "f17ff4f5c2c66619",
+            "id": "ab5ef7fab1f3ba62",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "Untitled Kanban 1.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": []
+                "file": "uni/da268a/Cellular Wireless Networks.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
                 }
               },
-              "icon": "lucide-trello",
-              "title": "Untitled Kanban 1"
+              "icon": "lucide-file",
+              "title": "Cellular Wireless Networks"
             }
           }
         ]
@@ -33,16 +41,36 @@
     "type": "split",
     "children": [
       {
-        "id": "24aad729ee1e81bc",
+        "id": "1da0be6911b60998",
         "type": "tabs",
         "children": [
           {
-            "id": "9171f92864d04c51",
+            "id": "1680dab63a27679b",
+            "type": "leaf",
+            "state": {
+              "type": "notebook-navigator",
+              "state": {},
+              "icon": "notebook-navigator",
+              "title": "Notebook Navigator"
+            }
+          },
+          {
+            "id": "6e8651dde49dbe2f",
+            "type": "leaf",
+            "state": {
+              "type": "vertical-tabs",
+              "state": {},
+              "icon": "vertical-tabs",
+              "title": "Vertical tabs"
+            }
+          },
+          {
+            "id": "369f38b06109e71a",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:lecture",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -54,7 +82,7 @@
             }
           },
           {
-            "id": "04be2ea6ce613a66",
+            "id": "7ddf20f593fc8f26",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -62,26 +90,13 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
-          },
-          {
-            "id": "44e604f5a67ee669",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "5141c88de9f456a9",
@@ -97,12 +112,46 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "da393a/F4.md",
+                "file": "uni/da268a/Cellular Wireless Networks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from F4"
+              "title": "Outgoing links from Cellular Wireless Networks"
+            }
+          },
+          {
+            "id": "0eef0999d597124d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "uni/da268a/Cellular Wireless Networks.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Cellular Wireless Networks"
+            }
+          },
+          {
+            "id": "6dfc1fee922db5ae",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "uni/da268a/Cellular Wireless Networks.md",
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Cellular Wireless Networks"
             }
           },
           {
@@ -112,7 +161,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
+                "useHierarchy": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -121,42 +170,21 @@
             }
           },
           {
-            "id": "0eef0999d597124d",
+            "id": "53023fce61c4c229",
             "type": "leaf",
             "state": {
-              "type": "outline",
-              "state": {
-                "file": "da216a/F1.md"
-              },
-              "icon": "lucide-list",
-              "title": "Outline of F1"
-            }
-          },
-          {
-            "id": "6dfc1fee922db5ae",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "da216a/F1.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for F1"
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 248.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,50 +194,55 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-kanban:Create new board": false,
-      "copilot:Open Copilot Chat": false
+      "templater-obsidian:Templater": false,
+      "omnisearch:Omnisearch": false,
+      "notebook-navigator:Notebook Navigator": true,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Smart Lookup: Open lookup view": false,
+      "smart-connections:Smart Connections: Open random connection": false
     }
   },
-  "active": "f17ff4f5c2c66619",
+  "active": "ab5ef7fab1f3ba62",
   "lastOpenFiles": [
-    "Untitled Kanban.md",
-    "Untitled Kanban 1.md",
-    "da216a/F1.md",
-    "da383a",
-    "copilot/copilot-custom-prompts/Translate to Chinese.md",
-    "copilot/copilot-custom-prompts/Summarize.md",
-    "copilot/copilot-custom-prompts/Simplify.md",
-    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
-    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
-    "copilot/copilot-custom-prompts/Remove URLs.md",
-    "copilot/copilot-custom-prompts/Make shorter.md",
-    "copilot/copilot-custom-prompts/Generate table of contents.md",
-    "copilot/copilot-custom-prompts/Generate glossary.md",
-    "copilot/copilot-custom-prompts/Explain like I am 5.md",
-    "copilot/copilot-custom-prompts/Emojify.md",
-    "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
-    "copilot/copilot-custom-prompts/Clip Web Page.md",
-    "copilot/copilot-custom-prompts/Make longer.md",
-    "copilot/copilot-custom-prompts/Fix grammar and spelling.md",
+    "uni/da268a/Coding and Error Control.md",
+    "uni/da268a/Cellular Wireless Networks.md",
+    "uni/da268a/5G, 6G and Framtiden.md",
+    "uni/da268a/Short-range and application.md",
+    "uni/da268a/Untitled.md",
+    "uni/da268a/Transmissonens Grunder.md",
+    "uni/da268a/F1.md",
+    "uni/da268a/Den trådlösa kanalen.md",
+    "uni/da268a/Modulering.md",
+    "uni/da268a/F3.md",
+    "uni/da268a/Spread Spectrum.md",
+    "uni/da268a/Transmission Fundamentals.md",
+    "uni/da268a/Orthogonal Frequency Division Multiplexing (OFDM).md",
+    "templates/lecture.md",
+    "uni/da268a/Historia.md",
+    "Untitled.md",
+    "uni/da268a/hISTORIA.md",
+    "uni/da268a/F1 1.md",
+    "da268.md",
+    "uni/da393a/F2.md",
+    "TODO.md",
+    "templates",
+    "Tags",
+    "uni/da393a/F1.md",
+    "uni/da393a/F4.md",
+    "uni/da393a/F3.md",
+    "uni/da343/F1.md",
+    "uni/da343/F6.md",
+    "uni",
+    "uni/da383a",
     "copilot/copilot-custom-prompts",
     "copilot",
-    "Lagerbot/Protocol.md",
-    "Lagerbot/Länkar.md",
-    "Kanban.md",
-    "Royce.md",
-    "BLE.md",
-    "da393a/Pasted image 20250403123547.png",
-    "da393a/F3.md",
-    "da393a/F4.md",
-    "da393a/F2.md",
-    "da393a/Pasted image 20250403112948.png",
+    "uni/da393a/Pasted image 20250403123547.png",
+    "uni/da393a/Pasted image 20250403112948.png",
     "Untitled.base",
     "Untitled.canvas",
     "Untitled 4.base",
     "Untitled 5.base",
     "Untitled 3.base",
-    "Untitled 2.base",
-    "Untitled 1.base",
-    "da393a/Pasted image 20250403123504.png",
-    "da268a"
+    "uni/da393a/Pasted image 20250403123504.png"
   ]
 }

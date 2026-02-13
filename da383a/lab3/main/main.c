@@ -2,6 +2,7 @@
 #include "driver/dac.h"
 #include "driver/gpio.h"
 #include "esp32/rom/ets_sys.h"
+#include "esp_rom_sys.h"
 #include "esp_task_wdt.h"
 #include "esp_timer.h"
 #include "soc/dac_channel.h"
@@ -10,29 +11,29 @@
 
 // The sampling freq to be used
 int freq = 10000;
-static float b[M + 1] = {0.3333, 0.3333, 0.3333};
-
-static float xbuf[M + 1];
 // Callback for how often you sample.
 static void periodic_timer_callback(void *arg) {
   gpio_set_level(GPIO_NUM_14, 1);
 
-  float val = adc1_get_raw(ADC1_CHANNEL_4);
-  val = val / 16;
+  static float b[M + 1] = {0.3333, 0.3333, 0.3333};
 
-  for (int i = M; i >= 0; i--) {
-    xbuf[i + 1] = xbuf[i];
-  }
-  xbuf[0] = (float)val;
-  float sum = 0;
-  for (int i = 0; i < M; i++) {
-    sum += b[i] * xbuf[i];
-    ;
-  }
+  static float xbuf[M + 1] = {0};
 
-  uint32_t outval = (uint32_t)sum;
-  dac_output_voltage(DAC_CHANNEL_1, outval);
   gpio_set_level(GPIO_NUM_14, 0);
+  float val = adc1_get_raw(ADC1_CHANNEL_4);
+
+  for (int i = M; i > 0; i--) {
+    xbuf[i] = xbuf[i - 1];
+  }
+  xbuf[0] = val;
+
+  float sum = 0;
+
+  for (int i = 0; i <= M; i++) {
+    sum += b[i] * xbuf[i];
+  }
+
+  dac_output_voltage(DAC_CHANNEL_1, (int)sum / 16);
 }
 
 void app_main() {
@@ -55,11 +56,6 @@ void app_main() {
       .name = "periodic"};
 
   esp_timer_handle_t periodic_timer;
-
-  for (int i = 0; i < M; i++) {
-    xbuf[i] = 0;
-    b[i] = 0;
-  }
 
   ESP_ERROR_CHECK(esp_timer_create(&periodic_timer_args, &periodic_timer));
   ESP_ERROR_CHECK(esp_timer_start_periodic(periodic_timer, 1000000 / freq));
