@@ -1,10 +1,15 @@
 {
   "theme": "obsidian",
   "accentColor": "#fbff00",
-  "cssTheme": "Pink Topaz",
-  "interfaceFontFamily": "Inter",
-  "monospaceFontFamily": "SFMono Nerd Font Mono",
+  "cssTheme": "Sunbather",
+  "interfaceFontFamily": "FiraCode Nerd Font",
+  "monospaceFontFamily": "FiraCode Nerd Font Mono",
   "nativeMenus": false,
   "showRibbon": false,
-  "textFontFamily": ""
+  "textFontFamily": "FiraCode Nerd Font",
+  "baseFontSizeAction": false,
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "uitfont"
+  ]
 }

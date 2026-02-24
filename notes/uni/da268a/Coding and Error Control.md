@@ -1,7 +1,7 @@
 ---
 date: 2026-02-13
 course: da268a
-topic: Untitled 1
+topic:
 tags:
   - lecture
 ---

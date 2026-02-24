@@ -1,11 +1,12 @@
 ---
-date: 2026-02-13
+date: Friday, February 13th 2026, 8:36:04 pm
 course: da268a
 topic: Untitled 1
 tags:
   - lecture
 aliases:
   - OFDM
+updated: Monday, February 16th 2026, 10:59:13 am
 ---
 # Introduktion och Bakgrund
 OFDM är en teknik för "Multicarrier Modulation" som revolutionerade trådlös kommunikation genom att erbjuda hög spektrumeffektivitet och god motståndskraft mot störningar.
@@ -14,6 +15,7 @@ OFDM är en teknik för "Multicarrier Modulation" som revolutionerade trådlös 
 	- Hög spektrumeffektivitet (bps/Hz)
 	- Minskar problem med Intersymbol Interference (ISI)
 	- Förbättrad felhantering
+
 # Principen: FDM vs OFDM
 För att förstå ODM måste man jämföra det med traditionell FDM (Frequency Division Multiplexing)
 - **FDM (Traditionell):**

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "uni/da268a/Cellular Wireless Networks.md",
+                "file": "uni/da383a/IIR Filter.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,83 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Cellular Wireless Networks"
+              "title": "IIR Filter"
+            }
+          },
+          {
+            "id": "c20178d7c168bc46",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "uni/da383a/IIR Filter.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "IIR Filter"
+            }
+          },
+          {
+            "id": "162789a135509c68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "uni/da383a/IIR Filter.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "IIR Filter"
+            }
+          },
+          {
+            "id": "4e6956dcb3bd68ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "uni/da383a/IIR Filter.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "IIR Filter"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -52,16 +125,6 @@
               "state": {},
               "icon": "notebook-navigator",
               "title": "Notebook Navigator"
-            }
-          },
-          {
-            "id": "6e8651dde49dbe2f",
-            "type": "leaf",
-            "state": {
-              "type": "vertical-tabs",
-              "state": {},
-              "icon": "vertical-tabs",
-              "title": "Vertical tabs"
             }
           },
           {
@@ -90,13 +153,22 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "f725627d03341c2b",
+            "type": "leaf",
+            "state": {
+              "type": "vertical-tabs",
+              "state": {},
+              "icon": "vertical-tabs",
+              "title": "Vertical tabs"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 552.5
   },
   "right": {
     "id": "5141c88de9f456a9",
@@ -112,12 +184,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "uni/da268a/Cellular Wireless Networks.md",
+                "file": "uni/da268a/F1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Cellular Wireless Networks"
+              "title": "Outgoing links from F1"
             }
           },
           {
@@ -126,13 +198,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "uni/da268a/Cellular Wireless Networks.md",
+                "file": "uni/da268a/F1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Cellular Wireless Networks"
+              "title": "Outline of F1"
             }
           },
           {
@@ -141,7 +213,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "uni/da268a/Cellular Wireless Networks.md",
+                "file": "uni/da268a/F1.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -151,7 +223,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Cellular Wireless Networks"
+              "title": "Backlinks for F1"
             }
           },
           {
@@ -184,7 +256,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 248.5
+    "width": 248.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,47 +275,48 @@
       "smart-connections:Smart Connections: Open random connection": false
     }
   },
-  "active": "ab5ef7fab1f3ba62",
+  "active": "4e6956dcb3bd68ae",
   "lastOpenFiles": [
-    "uni/da268a/Coding and Error Control.md",
-    "uni/da268a/Cellular Wireless Networks.md",
+    "uni/da383a/Linear Phase Filters.md",
+    "uni/da383a/IIR Filter.md",
+    "Pasted image 20260216110442.png",
+    "uni/da268a/Orthogonal Frequency Division Multiplexing (OFDM).md",
     "uni/da268a/5G, 6G and Framtiden.md",
+    "uni/da268a/Coding and Error Control.md",
+    "Pasted image 20260216105214.png",
+    "uni/da383a/IIR Filter_tmp_jupytext_73369.ipynb",
+    "uni/da383a/IIR Filter_tmp_jupytext_73255.ipynb",
+    "uni/da383a/IIR Filter_tmp_jupytext_72657.ipynb",
+    "uni/da383a/IIR Filter.ipynb",
+    "templates/lecture.md",
+    "2026-02-16.md",
+    "templates/lecture.md~",
+    "uni/da268a/Cellular Wireless Networks.md",
+    "uni/Untitled.md",
+    "uni/test.md",
+    "uni/test_tmp_jupytext_11543.ipynb",
+    "uni/da268a/Modulering.md",
+    "uni/da268a/Den trådlösa kanalen.md",
+    "uni/da268a/Transmission Fundamentals.md",
+    "uni/da268a/Spread Spectrum.md",
+    "uni/test.ipynb",
+    "uni/da268a/F1.md",
     "uni/da268a/Short-range and application.md",
     "uni/da268a/Untitled.md",
     "uni/da268a/Transmissonens Grunder.md",
-    "uni/da268a/F1.md",
-    "uni/da268a/Den trådlösa kanalen.md",
-    "uni/da268a/Modulering.md",
     "uni/da268a/F3.md",
-    "uni/da268a/Spread Spectrum.md",
-    "uni/da268a/Transmission Fundamentals.md",
-    "uni/da268a/Orthogonal Frequency Division Multiplexing (OFDM).md",
-    "templates/lecture.md",
     "uni/da268a/Historia.md",
     "Untitled.md",
     "uni/da268a/hISTORIA.md",
     "uni/da268a/F1 1.md",
     "da268.md",
     "uni/da393a/F2.md",
-    "TODO.md",
     "templates",
     "Tags",
-    "uni/da393a/F1.md",
-    "uni/da393a/F4.md",
-    "uni/da393a/F3.md",
-    "uni/da343/F1.md",
-    "uni/da343/F6.md",
     "uni",
-    "uni/da383a",
-    "copilot/copilot-custom-prompts",
-    "copilot",
     "uni/da393a/Pasted image 20250403123547.png",
     "uni/da393a/Pasted image 20250403112948.png",
-    "Untitled.base",
     "Untitled.canvas",
-    "Untitled 4.base",
-    "Untitled 5.base",
-    "Untitled 3.base",
     "uni/da393a/Pasted image 20250403123504.png"
   ]
 }

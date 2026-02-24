@@ -12,5 +12,7 @@
   "latex-math",
   "obsidian-style-settings",
   "various-complements",
-  "settings-search"
+  "settings-search",
+  "jupymd",
+  "obsidian-linter"
 ]
