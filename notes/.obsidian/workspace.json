@@ -8,84 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ab5ef7fab1f3ba62",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uni/da383a/IIR Filter.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "IIR Filter"
-            }
-          },
-          {
-            "id": "c20178d7c168bc46",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uni/da383a/IIR Filter.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "IIR Filter"
-            }
-          },
-          {
-            "id": "162789a135509c68",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uni/da383a/IIR Filter.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "IIR Filter"
-            }
-          },
-          {
             "id": "4e6956dcb3bd68ae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "uni/da383a/IIR Filter.md",
+                "file": "uni/da383a/Fast Fourier Transform.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,11 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "IIR Filter"
+              "title": "Fast Fourier Transform"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -213,17 +140,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "uni/da268a/F1.md",
+                "file": "uni/da383a/Fast Fourier Transform.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for F1"
+              "title": "Backlinks for Fast Fourier Transform"
             }
           },
           {
@@ -275,15 +202,20 @@
       "smart-connections:Smart Connections: Open random connection": false
     }
   },
-  "active": "4e6956dcb3bd68ae",
+  "active": "1680dab63a27679b",
   "lastOpenFiles": [
-    "uni/da383a/Linear Phase Filters.md",
-    "uni/da383a/IIR Filter.md",
-    "Pasted image 20260216110442.png",
-    "uni/da268a/Orthogonal Frequency Division Multiplexing (OFDM).md",
     "uni/da268a/5G, 6G and Framtiden.md",
-    "uni/da268a/Coding and Error Control.md",
+    "uni/da383a/IIR Filter.md",
+    "uni/da268a/Orthogonal Frequency Division Multiplexing (OFDM).md",
+    "uni/da268a/Transmission Fundamentals.md",
+    "uni/da383a/Fast Fourier Transform.md",
+    "uni/da383a/Discrete Fourier Transform.md",
+    "uni/da383a/Linear Phase Filters.md",
+    "Untitled 1.md",
+    "Pasted image 20260216110442.png",
     "Pasted image 20260216105214.png",
+    "Fast Fourier Transform.md",
+    "uni/da268a/Coding and Error Control.md",
     "uni/da383a/IIR Filter_tmp_jupytext_73369.ipynb",
     "uni/da383a/IIR Filter_tmp_jupytext_73255.ipynb",
     "uni/da383a/IIR Filter_tmp_jupytext_72657.ipynb",
@@ -297,7 +229,6 @@
     "uni/test_tmp_jupytext_11543.ipynb",
     "uni/da268a/Modulering.md",
     "uni/da268a/Den trådlösa kanalen.md",
-    "uni/da268a/Transmission Fundamentals.md",
     "uni/da268a/Spread Spectrum.md",
     "uni/test.ipynb",
     "uni/da268a/F1.md",
@@ -308,9 +239,6 @@
     "uni/da268a/Historia.md",
     "Untitled.md",
     "uni/da268a/hISTORIA.md",
-    "uni/da268a/F1 1.md",
-    "da268.md",
-    "uni/da393a/F2.md",
     "templates",
     "Tags",
     "uni",

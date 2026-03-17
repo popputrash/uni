@@ -1,0 +1,18 @@
+N = 600;
+fs = 800;
+ts = 1/fs;
+L = N * ts;
+x = 0:ts:(N-1)*ts;
+y = sin(50*2 * pi * x) + 0.5*sin(80*2*pi*x);
+R = fft(y);
+R = R(1:N/2+1);
+R = R/N;
+R(2:end-1) = 2*R(2:end-1);
+f = fs * (0:(N/2))/N;
+subplot(2, 1, 1);
+plot(f, abs(R));
+title('fft');
+tid = ifft(R);
+subplot(2, 1, 2);
+plot(x(1:100), tid(1:100));
+title('ifft');
